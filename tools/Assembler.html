@@ -1,0 +1,368 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Assembler | GCModeller docs library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="Assembler [version 3.0.34.0]Module AssemblyName: file:///F:/GCModeller/GCModeller-x64/Assembler.exeRoot namespace: LANS.SystemsBiology.Toolkits.RNA_Seq.Assembler.CLI
+All of the command that available">
+<meta name="keywords">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Assembler">
+<meta property="og:url" content="http://docs.gcmodeller.org/tools/Assembler.html">
+<meta property="og:site_name" content="GCModeller docs library">
+<meta property="og:description" content="Assembler [version 3.0.34.0]Module AssemblyName: file:///F:/GCModeller/GCModeller-x64/Assembler.exeRoot namespace: LANS.SystemsBiology.Toolkits.RNA_Seq.Assembler.CLI
+All of the command that available">
+<meta property="og:updated_time" content="2016-06-12T16:26:14.559Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Assembler">
+<meta name="twitter:description" content="Assembler [version 3.0.34.0]Module AssemblyName: file:///F:/GCModeller/GCModeller-x64/Assembler.exeRoot namespace: LANS.SystemsBiology.Toolkits.RNA_Seq.Assembler.CLI
+All of the command that available">
+    
+      <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="/css/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tags">
+                  
+                  
+
+                
+                  Tags
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/archives">
+                  
+                  
+
+                
+                  Archives
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/SMRUCC/">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://docs.gcmodeller.org"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/tools/Assembler.html">
+      <h1 class="article-title" itemprop="name">
+        Assembler
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/tools/Assembler.html" class="article-date">
+  <time datetime="2016-06-12T16:26:14.000Z" itemprop="datePublished">2016-06-13</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/tools/Assembler.html">
+      <h1 class="article-title" itemprop="name">
+        Assembler
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Assembler-version-3-0-34-0"><span class="toc-number">1.</span> <span class="toc-text">Assembler [version 3.0.34.0]</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Commands"><span class="toc-number">1.1.</span> <span class="toc-text">Commands</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Export’"><span class="toc-number">1.1.0.0.1.</span> <span class="toc-text">Help for command ‘/Export’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Trim-Mappings’"><span class="toc-number">1.1.0.0.2.</span> <span class="toc-text">Help for command ‘/Trim.Mappings’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-assemble’"><span class="toc-number">1.1.0.0.3.</span> <span class="toc-text">Help for command ‘-assemble’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-assemble-Task’"><span class="toc-number">1.1.0.0.4.</span> <span class="toc-text">Help for command ‘-assemble.Task’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘–Data-Views’"><span class="toc-number">1.1.0.0.5.</span> <span class="toc-text">Help for command ‘–Data.Views’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘–Genemark’"><span class="toc-number">1.1.0.0.6.</span> <span class="toc-text">Help for command ‘–Genemark’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Merge’"><span class="toc-number">1.1.0.0.7.</span> <span class="toc-text">Help for command ‘-Merge’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘–parse-GeneMark’"><span class="toc-number">1.1.0.0.8.</span> <span class="toc-text">Help for command ‘–parse.GeneMark’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Split’"><span class="toc-number">1.1.0.0.9.</span> <span class="toc-text">Help for command ‘-Split’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Trim’"><span class="toc-number">1.1.0.0.10.</span> <span class="toc-text">Help for command ‘-Trim’:</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="Assembler-version-3-0-34-0"><a href="#Assembler-version-3-0-34-0" class="headerlink" title="Assembler [version 3.0.34.0]"></a>Assembler [version 3.0.34.0]</h1><p><strong>Module AssemblyName</strong>: file:///F:/GCModeller/GCModeller-x64/Assembler.exe<br><strong>Root namespace</strong>: LANS.SystemsBiology.Toolkits.RNA_Seq.Assembler.CLI</p>
+<p>All of the command that available in this program has been list below:</p>
+<table>
+<thead>
+<tr>
+<th>Function API</th>
+<th>Info</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/Export</td>
+<td>Exports the result of fq reads aligned to the target genome using blastn.</td>
+</tr>
+<tr>
+<td>/Trim.Mappings</td>
+<td>Removes the not-unique reads and not perfect aligned reads from the mapping result.</td>
+</tr>
+<tr>
+<td>-assemble</td>
+<td></td>
+</tr>
+<tr>
+<td>-assemble.Task</td>
+<td></td>
+</tr>
+<tr>
+<td>–Data.Views</td>
+<td>Display the brief summary information about your blastn mapping data.</td>
+</tr>
+<tr>
+<td>–Genemark</td>
+<td></td>
+</tr>
+<tr>
+<td>-Merge</td>
+<td></td>
+</tr>
+<tr>
+<td>–parse.GeneMark</td>
+<td></td>
+</tr>
+<tr>
+<td>-Split</td>
+<td>Split the transcript loci data into different files base on the location relationship between the loci and their associated genes.</td>
+</tr>
+<tr>
+<td>-Trim</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Commands"><a href="#Commands" class="headerlink" title="Commands"></a>Commands</h2><hr>
+<h5 id="Help-for-command-‘-Export’"><a href="#Help-for-command-‘-Export’" class="headerlink" title="Help for command ‘/Export’:"></a>Help for command ‘/Export’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.Toolkits.RNA_Seq.Assembler.CLI::Int32 ExportBlastnMapping(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  Exports the result of fq reads aligned to the target genome using blastn.</span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\Assembler.exe /Export -blastn &lt;blastn_log&gt; [-out &lt;saved_csv&gt;]</span><br><span class="line">Example:      Assembler /Export</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-Trim-Mappings’"><a href="#Help-for-command-‘-Trim-Mappings’" class="headerlink" title="Help for command ‘/Trim.Mappings’:"></a>Help for command ‘/Trim.Mappings’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.Toolkits.RNA_Seq.Assembler.CLI::Int32 TrimMappingResult(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  Removes the not-unique reads and not perfect aligned reads from the mapping result.</span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\Assembler.exe /Trim.Mappings /in &lt;blastn_mappings.csv&gt; [/out &lt;out.csv&gt;]</span><br><span class="line">Example:      Assembler /Trim.Mappings</span><br></pre></td></tr></table></figure>
+<p>  Parameters information:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> /in</span><br><span class="line"> Description:  Mappings result on the reference genome.</span><br><span class="line"></span><br><span class="line"> Example:      /in &quot;&quot;</span><br><span class="line"></span><br><span class="line">[/out]</span><br><span class="line"> Description:  The excel sheet file location for saving the result.</span><br><span class="line"></span><br><span class="line"> Example:      /out &quot;&quot;</span><br></pre></td></tr></table></figure></p>
+<h5 id="Help-for-command-‘-assemble’"><a href="#Help-for-command-‘-assemble’" class="headerlink" title="Help for command ‘-assemble’:"></a>Help for command ‘-assemble’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.Toolkits.RNA_Seq.Assembler.CLI::Int32 Assembler(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\Assembler.exe -assemble /parser &lt;blastnMapping/sam&gt; /reads &lt;readsFile/source&gt; [/Merge.Source -out &lt;out_csv&gt; /ptt &lt;ptt&gt; /trim -delta 35 -TSSs.threshold 30 /ATG.Dist 500]</span><br><span class="line">Example:      Assembler -assemble</span><br></pre></td></tr></table></figure>
+<p>  Parameters information:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">    /reads</span><br><span class="line">    Description:  The parameter can be both reads file or a directory which contains some reads file base on the </span><br><span class="line">switch parameter /Merge.Source is exists or not. When /Merge.Source is represented then this parameter value is indicates </span><br><span class="line">a directory source, and all of the reads file in that directory will be merged into a big source.</span><br><span class="line"></span><br><span class="line">    Example:      /reads &quot;&quot;</span><br></pre></td></tr></table></figure></p>
+<h5 id="Help-for-command-‘-assemble-Task’"><a href="#Help-for-command-‘-assemble-Task’" class="headerlink" title="Help for command ‘-assemble.Task’:"></a>Help for command ‘-assemble.Task’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.Toolkits.RNA_Seq.Assembler.CLI::Int32 AssemblerTask(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\Assembler.exe /parser &lt;blastnMapping/sam&gt; /source &lt;dir&gt; [-out &lt;out_dir&gt; /ptt &lt;ptt&gt; /trim -delta 40 -TSSs.threshold 30]</span><br><span class="line">Example:      Assembler -assemble.Task</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘–Data-Views’"><a href="#Help-for-command-‘–Data-Views’" class="headerlink" title="Help for command ‘–Data.Views’:"></a>Help for command ‘–Data.Views’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.Toolkits.RNA_Seq.Assembler.CLI::Int32 DataView(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  Display the brief summary information about your blastn mapping data.</span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\Assembler.exe --Data.Views -in &amp;lt;blastnMapping.csv&gt;</span><br><span class="line">Example:      Assembler --Data.Views</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘–Genemark’"><a href="#Help-for-command-‘–Genemark’" class="headerlink" title="Help for command ‘–Genemark’:"></a>Help for command ‘–Genemark’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.Toolkits.RNA_Seq.Assembler.CLI::Int32 GeneMark(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\Assembler.exe --Genemark /in &lt;anno.fasta&gt; [/not-bacterial /liner]</span><br><span class="line">Example:      Assembler --Genemark</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-Merge’"><a href="#Help-for-command-‘-Merge’" class="headerlink" title="Help for command ‘-Merge’:"></a>Help for command ‘-Merge’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.Toolkits.RNA_Seq.Assembler.CLI::Int32 Merge(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\Assembler.exe -Merge /source &lt;dir&gt; [/support.Trim 30 -out &lt;out_Csv&gt; /delta 3]</span><br><span class="line">Example:      Assembler -Merge</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘–parse-GeneMark’"><a href="#Help-for-command-‘–parse-GeneMark’" class="headerlink" title="Help for command ‘–parse.GeneMark’:"></a>Help for command ‘–parse.GeneMark’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.Toolkits.RNA_Seq.Assembler.CLI::Int32 ParseGeneMark(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\Assembler.exe --parse.GeneMark /doc &lt;geneMark.txt&gt; [/nt &lt;nt.fasta&gt; /out &lt;out.dir&gt;]</span><br><span class="line">Example:      Assembler --parse.GeneMark</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-Split’"><a href="#Help-for-command-‘-Split’" class="headerlink" title="Help for command ‘-Split’:"></a>Help for command ‘-Split’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.Toolkits.RNA_Seq.Assembler.CLI::Int32 Split(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  Split the transcript loci data into different files base on the location relationship between the loci and their associated genes.</span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\Assembler.exe -Split -input &lt;TranscriptInputs&gt; [-out &lt;ExportDir&gt;]</span><br><span class="line">Example:      Assembler -Split</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-Trim’"><a href="#Help-for-command-‘-Trim’" class="headerlink" title="Help for command ‘-Trim’:"></a>Help for command ‘-Trim’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.Toolkits.RNA_Seq.Assembler.CLI::Int32 Trim(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\Assembler.exe -Trim -in &lt;Transcripts.csv&gt; [-SharedReads 30]</span><br><span class="line">Example:      Assembler -Trim</span><br></pre></td></tr></table></figure>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/tools/Assembler.html" class="article-date">
+  <time datetime="2016-06-12T16:26:14.000Z" itemprop="datePublished">2016-06-13</time>
+</a>
+              <a data-url="http://docs.gcmodeller.org/tools/Assembler.html" data-id="cipct1usk00000ov44ihtmbjq" class="article-share-link">Share</a>
+              
+              
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/">undefined</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/">undefined</a></li></ul>
+
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 GCModeller docs library<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/SMRUCC/" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

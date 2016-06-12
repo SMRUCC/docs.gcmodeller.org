@@ -1,0 +1,436 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>mpl | GCModeller docs library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="GCModeller [version 1.0.0.0]Module AssemblyName: file:///F:/GCModeller/GCModeller-x64/mpl.exeRoot namespace: LANS.SystemsBiology.AnalysisTools.ProteinTools.MPAlignment.CLI
+All of the command that avai">
+<meta name="keywords">
+<meta property="og:type" content="website">
+<meta property="og:title" content="mpl">
+<meta property="og:url" content="http://docs.gcmodeller.org/tools/mpl.html">
+<meta property="og:site_name" content="GCModeller docs library">
+<meta property="og:description" content="GCModeller [version 1.0.0.0]Module AssemblyName: file:///F:/GCModeller/GCModeller-x64/mpl.exeRoot namespace: LANS.SystemsBiology.AnalysisTools.ProteinTools.MPAlignment.CLI
+All of the command that avai">
+<meta property="og:updated_time" content="2016-06-12T16:26:39.408Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="mpl">
+<meta name="twitter:description" content="GCModeller [version 1.0.0.0]Module AssemblyName: file:///F:/GCModeller/GCModeller-x64/mpl.exeRoot namespace: LANS.SystemsBiology.AnalysisTools.ProteinTools.MPAlignment.CLI
+All of the command that avai">
+    
+      <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="/css/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tags">
+                  
+                  
+
+                
+                  Tags
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/archives">
+                  
+                  
+
+                
+                  Archives
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/SMRUCC/">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://docs.gcmodeller.org"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/tools/mpl.html">
+      <h1 class="article-title" itemprop="name">
+        mpl
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/tools/mpl.html" class="article-date">
+  <time datetime="2016-06-12T16:26:39.000Z" itemprop="datePublished">2016-06-13</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/tools/mpl.html">
+      <h1 class="article-title" itemprop="name">
+        mpl
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#GCModeller-version-1-0-0-0"><span class="toc-number">1.</span> <span class="toc-text">GCModeller [version 1.0.0.0]</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Commands"><span class="toc-number">1.1.</span> <span class="toc-text">Commands</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Build-Db-CDD’"><span class="toc-number">1.1.0.0.1.</span> <span class="toc-text">Help for command ‘/Build.Db.CDD’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Build-Db-Family’"><span class="toc-number">1.1.0.0.2.</span> <span class="toc-text">Help for command ‘/Build.Db.Family’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Build-Db-Family-Manual-Build’"><span class="toc-number">1.1.0.0.3.</span> <span class="toc-text">Help for command ‘/Build.Db.Family.Manual-Build’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Build-Db-Ortholog’"><span class="toc-number">1.1.0.0.4.</span> <span class="toc-text">Help for command ‘/Build.Db.Ortholog’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Build-Db-PPI’"><span class="toc-number">1.1.0.0.5.</span> <span class="toc-text">Help for command ‘/Build.Db.PPI’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Build-PPI-Signature’"><span class="toc-number">1.1.0.0.6.</span> <span class="toc-text">Help for command ‘/Build.PPI.Signature’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-KEGG-Family’"><span class="toc-number">1.1.0.0.7.</span> <span class="toc-text">Help for command ‘/KEGG.Family’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Motif-Density’"><span class="toc-number">1.1.0.0.8.</span> <span class="toc-text">Help for command ‘/Motif.Density’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Pfam-Align’"><span class="toc-number">1.1.0.0.9.</span> <span class="toc-text">Help for command ‘/Pfam.Align’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Pfam-Sub’"><span class="toc-number">1.1.0.0.10.</span> <span class="toc-text">Help for command ‘/Pfam.Sub’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Pfam-String-Dump’"><span class="toc-number">1.1.0.0.11.</span> <span class="toc-text">Help for command ‘/Pfam-String.Dump’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Select-Pfam-String’"><span class="toc-number">1.1.0.0.12.</span> <span class="toc-text">Help for command ‘/Select.Pfam-String’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘–align’"><span class="toc-number">1.1.0.0.13.</span> <span class="toc-text">Help for command ‘–align’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘–align-Family’"><span class="toc-number">1.1.0.0.14.</span> <span class="toc-text">Help for command ‘–align.Family’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘–align-Family-test’"><span class="toc-number">1.1.0.0.15.</span> <span class="toc-text">Help for command ‘–align.Family_test’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘–align-Function’"><span class="toc-number">1.1.0.0.16.</span> <span class="toc-text">Help for command ‘–align.Function’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘–align-PPI’"><span class="toc-number">1.1.0.0.17.</span> <span class="toc-text">Help for command ‘–align.PPI’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘–align-PPI-test’"><span class="toc-number">1.1.0.0.18.</span> <span class="toc-text">Help for command ‘–align.PPI_test’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘–align-String’"><span class="toc-number">1.1.0.0.19.</span> <span class="toc-text">Help for command ‘–align.String’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘–blast-allhits’"><span class="toc-number">1.1.0.0.20.</span> <span class="toc-text">Help for command ‘–blast.allhits’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘–View-Alignment’"><span class="toc-number">1.1.0.0.21.</span> <span class="toc-text">Help for command ‘–View.Alignment’:</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="GCModeller-version-1-0-0-0"><a href="#GCModeller-version-1-0-0-0" class="headerlink" title="GCModeller [version 1.0.0.0]"></a>GCModeller [version 1.0.0.0]</h1><p><strong>Module AssemblyName</strong>: file:///F:/GCModeller/GCModeller-x64/mpl.exe<br><strong>Root namespace</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.MPAlignment.CLI</p>
+<p>All of the command that available in this program has been list below:</p>
+<table>
+<thead>
+<tr>
+<th>Function API</th>
+<th>Info</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/Build.Db.CDD</td>
+<td>Install NCBI CDD database into the GCModeller repository database for the MPAlignment analysis.</td>
+</tr>
+<tr>
+<td>/Build.Db.Family</td>
+<td>Build protein family database from KEGG database dump data and using for the protein family annotation by MPAlignment.</td>
+</tr>
+<tr>
+<td>/Build.Db.Family.Manual-Build</td>
+<td></td>
+</tr>
+<tr>
+<td>/Build.Db.Ortholog</td>
+<td>Build protein functional orthology database from KEGG orthology or NCBI COG database.</td>
+</tr>
+<tr>
+<td>/Build.Db.PPI</td>
+<td>Build protein interaction seeds database from string-db.</td>
+</tr>
+<tr>
+<td>/Build.PPI.Signature</td>
+<td></td>
+</tr>
+<tr>
+<td>/KEGG.Family</td>
+<td></td>
+</tr>
+<tr>
+<td>/Motif.Density</td>
+<td></td>
+</tr>
+<tr>
+<td>/Pfam.Align</td>
+<td>Align your proteins with selected protein domain structure database by using blast+ program.</td>
+</tr>
+<tr>
+<td>/Pfam.Sub</td>
+<td></td>
+</tr>
+<tr>
+<td>/Pfam-String.Dump</td>
+<td>Dump the pfam-String domain Structure composition information from the blastp alignment result.</td>
+</tr>
+<tr>
+<td>/Select.Pfam-String</td>
+<td></td>
+</tr>
+<tr>
+<td>–align</td>
+<td>MPAlignment on your own dataset.</td>
+</tr>
+<tr>
+<td>–align.Family</td>
+<td>Protein family annotation by using MPAlignment algorithm.</td>
+</tr>
+<tr>
+<td>–align.Family_test</td>
+<td></td>
+</tr>
+<tr>
+<td>–align.Function</td>
+<td>Protein function annotation by using MPAlignment algorithm.</td>
+</tr>
+<tr>
+<td>–align.PPI</td>
+<td>Protein-Protein interaction network annotation by using MPAlignment algorithm.</td>
+</tr>
+<tr>
+<td>–align.PPI_test</td>
+<td></td>
+</tr>
+<tr>
+<td>–align.String</td>
+<td>MPAlignment test, pfam-string value must be in format as  <locusid>:<length>:<pfam-string></pfam-string></length></locusid></td>
+</tr>
+<tr>
+<td>–blast.allhits</td>
+<td></td>
+</tr>
+<tr>
+<td>–View.Alignment</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Commands"><a href="#Commands" class="headerlink" title="Commands"></a>Commands</h2><hr>
+<h5 id="Help-for-command-‘-Build-Db-CDD’"><a href="#Help-for-command-‘-Build-Db-CDD’" class="headerlink" title="Help for command ‘/Build.Db.CDD’:"></a>Help for command ‘/Build.Db.CDD’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.MPAlignment.CLI::Int32 InstallCDD(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  Install NCBI CDD database into the GCModeller repository database for the MPAlignment analysis.</span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\mpl.exe /Build.Db.CDD /source &lt;source.DIR&gt;</span><br><span class="line">Example:      mpl /Build.Db.CDD</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-Build-Db-Family’"><a href="#Help-for-command-‘-Build-Db-Family’" class="headerlink" title="Help for command ‘/Build.Db.Family’:"></a>Help for command ‘/Build.Db.Family’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.MPAlignment.CLI::Int32 BuildFamily(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  Build protein family database from KEGG database dump data and using for the protein family annotation by MPAlignment.</span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\mpl.exe /Build.Db.Family /source &lt;source.KEGG.fasta&gt; /pfam &lt;pfam-string.csv&gt;</span><br><span class="line">Example:      mpl /Build.Db.Family</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-Build-Db-Family-Manual-Build’"><a href="#Help-for-command-‘-Build-Db-Family-Manual-Build’" class="headerlink" title="Help for command ‘/Build.Db.Family.Manual-Build’:"></a>Help for command ‘/Build.Db.Family.Manual-Build’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.MPAlignment.CLI::Int32 ManualBuild(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\mpl.exe /Build.Db.Family.Manual-Build /pfam-string &lt;pfam-string.csv&gt; /name &lt;familyName&gt;</span><br><span class="line">Example:      mpl /Build.Db.Family.Manual-Build</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-Build-Db-Ortholog’"><a href="#Help-for-command-‘-Build-Db-Ortholog’" class="headerlink" title="Help for command ‘/Build.Db.Ortholog’:"></a>Help for command ‘/Build.Db.Ortholog’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.MPAlignment.CLI::Int32 BuildOrthologDb(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  Build protein functional orthology database from KEGG orthology or NCBI COG database.</span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\mpl.exe /Build.Db.Ortholog [/COG &lt;cogDIR&gt; /KO]</span><br><span class="line">Example:      mpl /Build.Db.Ortholog</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-Build-Db-PPI’"><a href="#Help-for-command-‘-Build-Db-PPI’" class="headerlink" title="Help for command ‘/Build.Db.PPI’:"></a>Help for command ‘/Build.Db.PPI’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.MPAlignment.CLI::Int32 BuildPPIDb(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  Build protein interaction seeds database from string-db.</span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\mpl.exe </span><br><span class="line">Example:      mpl /Build.Db.PPI</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-Build-PPI-Signature’"><a href="#Help-for-command-‘-Build-PPI-Signature’" class="headerlink" title="Help for command ‘/Build.PPI.Signature’:"></a>Help for command ‘/Build.PPI.Signature’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.MPAlignment.CLI::Int32 BuildSignature(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\mpl.exe /Build.PPI.Signature /in &lt;clustalW.fasta&gt; [/level &lt;5&gt; /out &lt;out.xml&gt;]</span><br><span class="line">Example:      mpl /Build.PPI.Signature</span><br></pre></td></tr></table></figure>
+<p>  Parameters information:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">   [/level]</span><br><span class="line">Description:  It is not recommended to modify this value. The greater of this value, the more strict of the interaction scoring. level 5 is enough.</span><br><span class="line"></span><br><span class="line">Example:      /level &quot;&quot;</span><br></pre></td></tr></table></figure></p>
+<h5 id="Help-for-command-‘-KEGG-Family’"><a href="#Help-for-command-‘-KEGG-Family’" class="headerlink" title="Help for command ‘/KEGG.Family’:"></a>Help for command ‘/KEGG.Family’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.MPAlignment.CLI::Int32 KEGGFamilys(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\mpl.exe /KEGG.Family /in &lt;inDIR&gt; /pfam &lt;pfam-string.csv&gt; [/out &lt;out.csv&gt;]</span><br><span class="line">Example:      mpl /KEGG.Family</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-Motif-Density’"><a href="#Help-for-command-‘-Motif-Density’" class="headerlink" title="Help for command ‘/Motif.Density’:"></a>Help for command ‘/Motif.Density’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.MPAlignment.CLI::Int32 MotifDensity(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\mpl.exe /Motif.Density /in &lt;pfam-string.csv&gt; [/out &lt;out.csv&gt;]</span><br><span class="line">Example:      mpl /Motif.Density</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-Pfam-Align’"><a href="#Help-for-command-‘-Pfam-Align’" class="headerlink" title="Help for command ‘/Pfam.Align’:"></a>Help for command ‘/Pfam.Align’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.MPAlignment.CLI::Int32 AlignPfam(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  Align your proteins with selected protein domain structure database by using blast+ program.</span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\mpl.exe /Pfam.Align /query &lt;query.fasta&gt; [/db &lt;name/path&gt; /out &lt;blastOut.txt&gt;]</span><br><span class="line">Example:      mpl /Pfam.Align</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-Pfam-Sub’"><a href="#Help-for-command-‘-Pfam-Sub’" class="headerlink" title="Help for command ‘/Pfam.Sub’:"></a>Help for command ‘/Pfam.Sub’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.MPAlignment.CLI::Int32 SubPfam(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\mpl.exe /Pfam.Sub /index &lt;bbh_index.csv&gt; /pfam &lt;pfam-string&gt; [/out &lt;sub-out.csv&gt;]</span><br><span class="line">Example:      mpl /Pfam.Sub</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-Pfam-String-Dump’"><a href="#Help-for-command-‘-Pfam-String-Dump’" class="headerlink" title="Help for command ‘/Pfam-String.Dump’:"></a>Help for command ‘/Pfam-String.Dump’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.MPAlignment.CLI::Int32 DumpPfamString(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  Dump the pfam-String domain Structure composition information from the blastp alignment result.</span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\mpl.exe /Pfam-String.Dump /In &lt;blastp_out.txt&gt; [/out &lt;pfam-String.csv&gt; /evalue &lt;0.001&gt; /identities &lt;0.2&gt; /coverage &lt;0.85&gt;]</span><br><span class="line">Example:      mpl /Pfam-String.Dump</span><br></pre></td></tr></table></figure>
+<p>  Parameters information:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> /In</span><br><span class="line"> Description:  The blastp output For the protein alignment, which the aligned database can be selected from Pfam-A Or NCBI CDD. And blast+ program Is recommended For used For the domain alignment.</span><br><span class="line"></span><br><span class="line"> Example:      /In &quot;&quot;</span><br><span class="line"></span><br><span class="line">[/out]</span><br><span class="line"> Description:  The output Excel .csv data file path For the dumped pfam-String data Of your annotated protein. If this parameter Is empty, Then the file will saved On the same location With your blastp input file.</span><br><span class="line"></span><br><span class="line"> Example:      /out &quot;&quot;</span><br></pre></td></tr></table></figure></p>
+<h5 id="Help-for-command-‘-Select-Pfam-String’"><a href="#Help-for-command-‘-Select-Pfam-String’" class="headerlink" title="Help for command ‘/Select.Pfam-String’:"></a>Help for command ‘/Select.Pfam-String’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.MPAlignment.CLI::Int32 SelectPfams(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\mpl.exe /Select.Pfam-String /in &lt;pfam-string.csv&gt; /hits &lt;bbh/sbh.csv&gt; [/hit_name /out &lt;out.csv&gt;]</span><br><span class="line">Example:      mpl /Select.Pfam-String</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘–align’"><a href="#Help-for-command-‘–align’" class="headerlink" title="Help for command ‘–align’:"></a>Help for command ‘–align’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.MPAlignment.CLI::Int32 MPAlignment(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  MPAlignment on your own dataset.</span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\mpl.exe --align /query &lt;pfam-string.csv&gt; /subject &lt;pfam-string.csv&gt; [/hits &lt;query_vs_sbj.blastp.csv&gt; /flip-bbh /out &lt;alignment_out.csv&gt; /mp &lt;cutoff:=0.65&gt; /swap /parts]</span><br><span class="line">Example:      mpl --align</span><br></pre></td></tr></table></figure>
+<p>  Parameters information:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">       [/swap]</span><br><span class="line">    Description:  Swap the location of query and subject in the output result set.</span><br><span class="line"></span><br><span class="line">    Example:      /swap &quot;&quot;</span><br><span class="line"></span><br><span class="line">   [/parts]</span><br><span class="line">    Description:  Does the domain motif equals function determine the domain positioning equals just if one side in the high scoring then thoese two domain its position is equals? </span><br><span class="line">Default is not, default checks right side and left side.</span><br><span class="line"></span><br><span class="line">    Example:      /parts &quot;&quot;</span><br><span class="line"></span><br><span class="line">   [/flip-bbh]</span><br><span class="line">    Description:  Swap the direction of the query_name/hit_name in the hits?</span><br><span class="line"></span><br><span class="line">    Example:      /flip-bbh &quot;&quot;</span><br></pre></td></tr></table></figure></p>
+<h5 id="Help-for-command-‘–align-Family’"><a href="#Help-for-command-‘–align-Family’" class="headerlink" title="Help for command ‘–align.Family’:"></a>Help for command ‘–align.Family’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.MPAlignment.CLI::Int32 FamilyClassified(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  Protein family annotation by using MPAlignment algorithm.</span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\mpl.exe --align.Family /query &lt;pfam-string.csv&gt; [/out &lt;out.csv&gt; /threshold 0.5 /mp 0.6 /Name &lt;null&gt;]</span><br><span class="line">Example:      mpl --align.Family</span><br></pre></td></tr></table></figure>
+<p>  Parameters information:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">   [/Name]</span><br><span class="line">Description:  The database name of the aligned subject, if this value is empty or not exists in the source, then the entired Family database will be used.</span><br><span class="line"></span><br><span class="line">Example:      /Name &quot;&quot;</span><br></pre></td></tr></table></figure></p>
+<h5 id="Help-for-command-‘–align-Family-test’"><a href="#Help-for-command-‘–align-Family-test’" class="headerlink" title="Help for command ‘–align.Family_test’:"></a>Help for command ‘–align.Family_test’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.MPAlignment.CLI::Int32 FamilyAlignmentTest(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\mpl.exe --align.Family_test /query &lt;pfam-string&gt; /name &lt;dbName/Path&gt; [/threshold &lt;0.65&gt; /mpCut &lt;0.65&gt; /accept &lt;10&gt;]</span><br><span class="line">Example:      mpl --align.Family_test</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘–align-Function’"><a href="#Help-for-command-‘–align-Function’" class="headerlink" title="Help for command ‘–align.Function’:"></a>Help for command ‘–align.Function’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.MPAlignment.CLI::Int32 AlignFunction(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  Protein function annotation by using MPAlignment algorithm.</span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\mpl.exe </span><br><span class="line">Example:      mpl --align.Function</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘–align-PPI’"><a href="#Help-for-command-‘–align-PPI’" class="headerlink" title="Help for command ‘–align.PPI’:"></a>Help for command ‘–align.PPI’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.MPAlignment.CLI::Int32 MplPPI(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  Protein-Protein interaction network annotation by using MPAlignment algorithm.</span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\mpl.exe </span><br><span class="line">Example:      mpl --align.PPI</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘–align-PPI-test’"><a href="#Help-for-command-‘–align-PPI-test’" class="headerlink" title="Help for command ‘–align.PPI_test’:"></a>Help for command ‘–align.PPI_test’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.MPAlignment.CLI::Int32 StructureAlign(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\mpl.exe --align.PPI_test /query &lt;contacts.fasta&gt; /db &lt;ppi_signature.Xml&gt; [/mp &lt;cutoff:=0.9&gt; /out &lt;outDIR&gt;]</span><br><span class="line">Example:      mpl --align.PPI_test</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘–align-String’"><a href="#Help-for-command-‘–align-String’" class="headerlink" title="Help for command ‘–align.String’:"></a>Help for command ‘–align.String’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.MPAlignment.CLI::Int32 MPAlignment2(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  MPAlignment test, pfam-string value must be in format as  &lt;locusId&gt;:&lt;length&gt;:&lt;pfam-string&gt;</span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\mpl.exe --align.String /query &lt;pfam-string&gt; /subject &lt;pfam-string&gt; [/mp &lt;cutoff:=0.65&gt; /out &lt;outDIR&gt; /parts]</span><br><span class="line">Example:      mpl --align.String</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘–blast-allhits’"><a href="#Help-for-command-‘–blast-allhits’" class="headerlink" title="Help for command ‘–blast.allhits’:"></a>Help for command ‘–blast.allhits’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.MPAlignment.CLI::Int32 ExportAppSBH(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\mpl.exe --blast.allhits /blast &lt;blastp.txt&gt; [/out &lt;sbh.csv&gt; /coverage &lt;0.5&gt; /identities 0.15]</span><br><span class="line">Example:      mpl --blast.allhits</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘–View-Alignment’"><a href="#Help-for-command-‘–View-Alignment’" class="headerlink" title="Help for command ‘–View.Alignment’:"></a>Help for command ‘–View.Alignment’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.MPAlignment.CLI::Int32 ViewAlignment(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\mpl.exe --View.Alignment /blast &lt;blastp.txt&gt; /name &lt;queryName&gt; [/out &lt;out.png&gt;]</span><br><span class="line">Example:      mpl --View.Alignment</span><br></pre></td></tr></table></figure>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/tools/mpl.html" class="article-date">
+  <time datetime="2016-06-12T16:26:39.000Z" itemprop="datePublished">2016-06-13</time>
+</a>
+              <a data-url="http://docs.gcmodeller.org/tools/mpl.html" data-id="cipct1uui000j0ov45e3sbikf" class="article-share-link">Share</a>
+              
+              
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/">undefined</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/">undefined</a></li></ul>
+
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 GCModeller docs library<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/SMRUCC/" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

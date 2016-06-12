@@ -1,0 +1,407 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SMART | GCModeller docs library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="GCModeller [version 1.123.0.0]Module AssemblyName: file:///F:/GCModeller/GCModeller-x64/SMART.exeRoot namespace: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI
+All of the command that availa">
+<meta name="keywords">
+<meta property="og:type" content="website">
+<meta property="og:title" content="SMART">
+<meta property="og:url" content="http://docs.gcmodeller.org/tools/SMART.html">
+<meta property="og:site_name" content="GCModeller docs library">
+<meta property="og:description" content="GCModeller [version 1.123.0.0]Module AssemblyName: file:///F:/GCModeller/GCModeller-x64/SMART.exeRoot namespace: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI
+All of the command that availa">
+<meta property="og:updated_time" content="2016-06-12T16:26:44.453Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="SMART">
+<meta name="twitter:description" content="GCModeller [version 1.123.0.0]Module AssemblyName: file:///F:/GCModeller/GCModeller-x64/SMART.exeRoot namespace: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI
+All of the command that availa">
+    
+      <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="/css/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tags">
+                  
+                  
+
+                
+                  Tags
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/archives">
+                  
+                  
+
+                
+                  Archives
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/SMRUCC/">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://docs.gcmodeller.org"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/tools/SMART.html">
+      <h1 class="article-title" itemprop="name">
+        SMART
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/tools/SMART.html" class="article-date">
+  <time datetime="2016-06-12T16:26:44.000Z" itemprop="datePublished">2016-06-13</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/tools/SMART.html">
+      <h1 class="article-title" itemprop="name">
+        SMART
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#GCModeller-version-1-123-0-0"><span class="toc-number">1.</span> <span class="toc-text">GCModeller [version 1.123.0.0]</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Commands"><span class="toc-number">1.1.</span> <span class="toc-text">Commands</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘–align’"><span class="toc-number">1.1.0.0.1.</span> <span class="toc-text">Help for command ‘–align’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘–align-family’"><span class="toc-number">1.1.0.0.2.</span> <span class="toc-text">Help for command ‘–align.family’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-build-cache’"><span class="toc-number">1.1.0.0.3.</span> <span class="toc-text">Help for command ‘-build_cache’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-buildsmart’"><span class="toc-number">1.1.0.0.4.</span> <span class="toc-text">Help for command ‘-buildsmart’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘convert’"><span class="toc-number">1.1.0.0.5.</span> <span class="toc-text">Help for command ‘convert’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘export’"><span class="toc-number">1.1.0.0.6.</span> <span class="toc-text">Help for command ‘export’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘–Export-Domains’"><span class="toc-number">1.1.0.0.7.</span> <span class="toc-text">Help for command ‘–Export.Domains’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘–Export-Pfam-String’"><span class="toc-number">1.1.0.0.8.</span> <span class="toc-text">Help for command ‘–Export.Pfam-String’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘–Family-Align’"><span class="toc-number">1.1.0.0.9.</span> <span class="toc-text">Help for command ‘–Family.Align’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘–Family-Domains’"><span class="toc-number">1.1.0.0.10.</span> <span class="toc-text">Help for command ‘–Family.Domains’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘–Family-Stat’"><span class="toc-number">1.1.0.0.11.</span> <span class="toc-text">Help for command ‘–Family.Stat’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘grep’"><span class="toc-number">1.1.0.0.12.</span> <span class="toc-text">Help for command ‘grep’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘–manual-Build’"><span class="toc-number">1.1.0.0.13.</span> <span class="toc-text">Help for command ‘–manual-Build’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘–MPAlignment’"><span class="toc-number">1.1.0.0.14.</span> <span class="toc-text">Help for command ‘–MPAlignment’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘pure-domain’"><span class="toc-number">1.1.0.0.15.</span> <span class="toc-text">Help for command ‘pure_domain’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘–SelfAlign’"><span class="toc-number">1.1.0.0.16.</span> <span class="toc-text">Help for command ‘–SelfAlign’:</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="GCModeller-version-1-123-0-0"><a href="#GCModeller-version-1-123-0-0" class="headerlink" title="GCModeller [version 1.123.0.0]"></a>GCModeller [version 1.123.0.0]</h1><p><strong>Module AssemblyName</strong>: file:///F:/GCModeller/GCModeller-x64/SMART.exe<br><strong>Root namespace</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI</p>
+<p>All of the command that available in this program has been list below:</p>
+<table>
+<thead>
+<tr>
+<th>Function API</th>
+<th>Info</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>–align</td>
+<td></td>
+</tr>
+<tr>
+<td>–align.family</td>
+<td></td>
+</tr>
+<tr>
+<td>-build_cache</td>
+<td></td>
+</tr>
+<tr>
+<td>-buildsmart</td>
+<td></td>
+</tr>
+<tr>
+<td>convert</td>
+<td></td>
+</tr>
+<tr>
+<td>export</td>
+<td></td>
+</tr>
+<tr>
+<td>–Export.Domains</td>
+<td></td>
+</tr>
+<tr>
+<td>–Export.Pfam-String</td>
+<td></td>
+</tr>
+<tr>
+<td>–Family.Align</td>
+<td>Family Annotation by MPAlignment</td>
+</tr>
+<tr>
+<td>–Family.Domains</td>
+<td>Build the Family database for the protein family annotation by MPAlignment.</td>
+</tr>
+<tr>
+<td>–Family.Stat</td>
+<td></td>
+</tr>
+<tr>
+<td>grep</td>
+<td>The gene id in the blast output log file are not well format for reading and program processing, so before you generate the venn diagram you should call this command to parse the gene id from the log file. You can also done this id parsing job using other tools.</td>
+</tr>
+<tr>
+<td>–manual-Build</td>
+<td></td>
+</tr>
+<tr>
+<td>–MPAlignment</td>
+<td></td>
+</tr>
+<tr>
+<td>pure_domain</td>
+<td></td>
+</tr>
+<tr>
+<td>–SelfAlign</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Commands"><a href="#Commands" class="headerlink" title="Commands"></a>Commands</h2><hr>
+<h5 id="Help-for-command-‘–align’"><a href="#Help-for-command-‘–align’" class="headerlink" title="Help for command ‘–align’:"></a>Help for command ‘–align’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 Align(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\SMART.exe --align /query &lt;query.csv&gt; /subject &lt;subject.csv&gt; [/out &lt;out.DIR&gt; /inst]</span><br><span class="line">Example:      SMART --align</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘–align-family’"><a href="#Help-for-command-‘–align-family’" class="headerlink" title="Help for command ‘–align.family’:"></a>Help for command ‘–align.family’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 FamilyAlign(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\SMART.exe --align.family /In &lt;In.bbh.csv&gt; /query &lt;query-pfam.csv&gt; /subject &lt;subject-pfam.csv&gt; [/out &lt;out.DIR&gt; /mp &lt;mp-align:0.65&gt; /lev &lt;lev-align:0.65&gt;]</span><br><span class="line">Example:      SMART --align.family</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-build-cache’"><a href="#Help-for-command-‘-build-cache’" class="headerlink" title="Help for command ‘-build_cache’:"></a>Help for command ‘-build_cache’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 BuildCache(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\SMART.exe -build_cache -i &lt;fsa_file&gt; [-o &lt;export_file&gt; -db &lt;cdd_db_name&gt; -cdd &lt;cdd_db_path&gt; -grep_script &lt;script&gt;]</span><br><span class="line">Example:      SMART -build_cache</span><br></pre></td></tr></table></figure>
+<p>  Parameters information:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">   [-cdd]</span><br><span class="line">Description:  The cdd database directory, if this switch value is null then system will using the default position in the profile file.</span><br><span class="line"></span><br><span class="line">Example:      -cdd &quot;&quot;</span><br></pre></td></tr></table></figure></p>
+<h5 id="Help-for-command-‘-buildsmart’"><a href="#Help-for-command-‘-buildsmart’" class="headerlink" title="Help for command ‘-buildsmart’:"></a>Help for command ‘-buildsmart’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 BuildSmart(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\SMART.exe </span><br><span class="line">Example:      SMART -buildsmart</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘convert’"><a href="#Help-for-command-‘convert’" class="headerlink" title="Help for command ‘convert’:"></a>Help for command ‘convert’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 Convert(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\SMART.exe convert -i &lt;input_file&gt; [-o &lt;xml_file&gt;]</span><br><span class="line">Example:      SMART convert</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘export’"><a href="#Help-for-command-‘export’" class="headerlink" title="Help for command ‘export’:"></a>Help for command ‘export’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 Export(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\SMART.exe export -keyword &lt;keyword_list&gt; [-m &lt;any/all&gt;] -o &lt;export_file&gt; [-d &lt;db_name&gt; -casesense &lt;T/F&gt;]</span><br><span class="line">Example:      SMART export</span><br></pre></td></tr></table></figure>
+<p>  Parameters information:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">    -d</span><br><span class="line">    Description:  This switch value can be both a domain database name or a fasta file path.</span><br><span class="line"></span><br><span class="line">    Example:      -d &quot;&quot;</span><br><span class="line"></span><br><span class="line">-keyword</span><br><span class="line">    Description:  The keyword list will be use for the sequence record search, each keyword should seperated by comma character.</span><br><span class="line"></span><br><span class="line">    Example:      -keyword &quot;HTH,GGDEF,Clp,REC&quot;</span><br></pre></td></tr></table></figure></p>
+<h5 id="Help-for-command-‘–Export-Domains’"><a href="#Help-for-command-‘–Export-Domains’" class="headerlink" title="Help for command ‘–Export.Domains’:"></a>Help for command ‘–Export.Domains’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 ExportRegpreciseDomains(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\SMART.exe --Export.Domains /in &lt;pfam-string.csv&gt;</span><br><span class="line">Example:      SMART --Export.Domains</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘–Export-Pfam-String’"><a href="#Help-for-command-‘–Export-Pfam-String’" class="headerlink" title="Help for command ‘–Export.Pfam-String’:"></a>Help for command ‘–Export.Pfam-String’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 ExportPfamString(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\SMART.exe --Export.Pfam-String /in &lt;blast_out.txt&gt;</span><br><span class="line">Example:      SMART --Export.Pfam-String</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘–Family-Align’"><a href="#Help-for-command-‘–Family-Align’" class="headerlink" title="Help for command ‘–Family.Align’:"></a>Help for command ‘–Family.Align’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 FamilyClassify(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  Family Annotation by MPAlignment</span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\SMART.exe --Family.Align /query &lt;pfam-string.csv&gt; [/threshold 0.65 /mp 0.65 /Name &lt;null&gt;]</span><br><span class="line">Example:      SMART --Family.Align</span><br></pre></td></tr></table></figure>
+<p>  Parameters information:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">   [/Name]</span><br><span class="line">Description:  The database name of the aligned subject, if this value is empty or not exists in the source, then the entired Family database will be used.</span><br><span class="line"></span><br><span class="line">Example:      /Name &quot;&quot;</span><br></pre></td></tr></table></figure></p>
+<h5 id="Help-for-command-‘–Family-Domains’"><a href="#Help-for-command-‘–Family-Domains’" class="headerlink" title="Help for command ‘–Family.Domains’:"></a>Help for command ‘–Family.Domains’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 FamilyDomains(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  Build the Family database for the protein family annotation by MPAlignment.</span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\SMART.exe --Family.Domains /regprecise &lt;regulators.fasta&gt; /pfam &lt;pfam-string.csv&gt;</span><br><span class="line">Example:      SMART --Family.Domains</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘–Family-Stat’"><a href="#Help-for-command-‘–Family-Stat’" class="headerlink" title="Help for command ‘–Family.Stat’:"></a>Help for command ‘–Family.Stat’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 FamilyStat(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\SMART.exe --Family.Stat /in &lt;anno_out.csv&gt;</span><br><span class="line">Example:      SMART --Family.Stat</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘grep’"><a href="#Help-for-command-‘grep’" class="headerlink" title="Help for command ‘grep’:"></a>Help for command ‘grep’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 Grep(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  The gene id in the blast output log file are not well format for reading and program processing, so before you generate the venn diagram you should call this command to parse the gene id from the log file. You can also done this id parsing job using other tools.</span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\SMART.exe grep -i &lt;xml_log_file&gt; -q &lt;script_statements&gt; -h &lt;script_statements&gt;</span><br><span class="line">Example:      SMART grep grep -i C:\Users\WORKGROUP\Desktop\blast_xml_logs\1__8004_ecoli_prot.log.xml -q &quot;tokens | 4&quot; -h &quot;&apos;tokens | 2&apos;;&apos;tokens &apos; &apos; 0&apos;&quot;</span><br></pre></td></tr></table></figure>
+<p>  Parameters information:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">    -q</span><br><span class="line">    Description:  The parsing script for parsing the gene_id from the blast log file, this switch value is consist of sevral operation tokens, and each token is separate by the &apos;;&apos; character and the token unit in each script token should seperate by the &apos; character.</span><br><span class="line">              There are two basic operation in this parsing script:</span><br><span class="line">               tokens - Split the query or hit name string into sevral piece of string by the specific delimiter character and           get the specifc location unit in the return string array.</span><br><span class="line">                 Usage:   tokens &lt;delimiter&gt; &lt;position&gt;</span><br><span class="line">                 Example: tokens | 3 match - match a gene id using a specific pattern regular expression.</span><br><span class="line">                 usage:   match &lt;regular_expression&gt;</span><br><span class="line">                 Example: match .+[-]\d&#123;5&#125;</span><br><span class="line"></span><br><span class="line">    Example:      -q &quot;&apos;tokens | 5&apos;;&apos;match .+[-].+&apos;&quot;</span><br><span class="line"></span><br><span class="line">-h</span><br><span class="line">    Description:  The parsing script for parsing the gene_id from the blast log file, this switch value is consist of sevral operation tokens, and each token is separate by the &apos;;&apos; character and the token unit in each script token should seperate by the &apos; character.</span><br><span class="line">              There are two basic operation in this parsing script:</span><br><span class="line">               tokens - Split the query or hit name string into sevral piece of string by the specific delimiter character and           get the specifc location unit in the return string array.</span><br><span class="line">                 Usage:   tokens &lt;delimiter&gt; &lt;position&gt;</span><br><span class="line">                 Example: tokens | 3 match - match a gene id using a specific pattern regular expression.</span><br><span class="line">                 usage:   match &lt;regular_expression&gt;</span><br><span class="line">                 Example: match .+[-]\d&#123;5&#125;</span><br><span class="line"></span><br><span class="line">    Example:      -h &quot;&apos;tokens | 5&apos;;&apos;match .+[-].+&apos;&quot;</span><br></pre></td></tr></table></figure></p>
+<h5 id="Help-for-command-‘–manual-Build’"><a href="#Help-for-command-‘–manual-Build’" class="headerlink" title="Help for command ‘–manual-Build’:"></a>Help for command ‘–manual-Build’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 ManualBuild(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\SMART.exe --manual-Build /pfam-string &lt;pfam-string.csv&gt; /name &lt;familyName&gt;</span><br><span class="line">Example:      SMART --manual-Build</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘–MPAlignment’"><a href="#Help-for-command-‘–MPAlignment’" class="headerlink" title="Help for command ‘–MPAlignment’:"></a>Help for command ‘–MPAlignment’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 SBHAlignment(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\SMART.exe --MPAlignment /sbh &lt;sbh.csv&gt; /query &lt;pfam-string.csv&gt; /subject &lt;pfam-string.csv&gt; [/mp &lt;0.65&gt; /out &lt;out.csv&gt;]</span><br><span class="line">Example:      SMART --MPAlignment</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘pure-domain’"><a href="#Help-for-command-‘pure-domain’" class="headerlink" title="Help for command ‘pure_domain’:"></a>Help for command ‘pure_domain’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 FiltePureDomain(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\SMART.exe pure_domain -i &lt;input_smart_log&gt; -o &lt;output_file&gt;</span><br><span class="line">Example:      SMART pure_domain</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘–SelfAlign’"><a href="#Help-for-command-‘–SelfAlign’" class="headerlink" title="Help for command ‘–SelfAlign’:"></a>Help for command ‘–SelfAlign’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.AnalysisTools.ProteinTools.SMART.CLI::Int32 SelfAlign(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\SMART.exe --SelfAlign /query &lt;pfam-string.csv&gt; /subject &lt;subject.csv&gt; /aln &lt;mpalignment.csv&gt; [/lstID &lt;lstID.txt&gt; /mp &lt;0.65&gt; /id &lt;id&gt;]</span><br><span class="line">Example:      SMART --SelfAlign</span><br></pre></td></tr></table></figure>
+<p>  Parameters information:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">    [/lstID]</span><br><span class="line"> Description:  If this parameter is not empty, then the /aln parameter will be disable</span><br><span class="line"></span><br><span class="line"> Example:      /lstID &quot;&quot;</span><br><span class="line"></span><br><span class="line">[/id]</span><br><span class="line"> Description:  If this parameter is not null, then the record of this query or hits will be used to subset the alignment set.</span><br><span class="line"></span><br><span class="line"> Example:      /id &quot;&quot;</span><br></pre></td></tr></table></figure></p>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/tools/SMART.html" class="article-date">
+  <time datetime="2016-06-12T16:26:44.000Z" itemprop="datePublished">2016-06-13</time>
+</a>
+              <a data-url="http://docs.gcmodeller.org/tools/SMART.html" data-id="cipct1uu7000d0ov4lviqtynm" class="article-share-link">Share</a>
+              
+              
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/">undefined</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/">undefined</a></li></ul>
+
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 GCModeller docs library<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/SMRUCC/" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

@@ -1,0 +1,569 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>localblast | GCModeller docs library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="GCModeller [version 1.0.0.0]Module AssemblyName: file:///F:/GCModeller/GCModeller-x64/localblast.exeRoot namespace: LANS.SystemsBiology.NCBI.Extensions.CLI
+All of the command that available in this pr">
+<meta name="keywords">
+<meta property="og:type" content="website">
+<meta property="og:title" content="localblast">
+<meta property="og:url" content="http://docs.gcmodeller.org/tools/localblast.html">
+<meta property="og:site_name" content="GCModeller docs library">
+<meta property="og:description" content="GCModeller [version 1.0.0.0]Module AssemblyName: file:///F:/GCModeller/GCModeller-x64/localblast.exeRoot namespace: LANS.SystemsBiology.NCBI.Extensions.CLI
+All of the command that available in this pr">
+<meta property="og:updated_time" content="2016-06-12T16:26:38.327Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="localblast">
+<meta name="twitter:description" content="GCModeller [version 1.0.0.0]Module AssemblyName: file:///F:/GCModeller/GCModeller-x64/localblast.exeRoot namespace: LANS.SystemsBiology.NCBI.Extensions.CLI
+All of the command that available in this pr">
+    
+      <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="/css/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tags">
+                  
+                  
+
+                
+                  Tags
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/archives">
+                  
+                  
+
+                
+                  Archives
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/SMRUCC/">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://docs.gcmodeller.org"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/tools/localblast.html">
+      <h1 class="article-title" itemprop="name">
+        localblast
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/tools/localblast.html" class="article-date">
+  <time datetime="2016-06-12T16:26:38.000Z" itemprop="datePublished">2016-06-13</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/tools/localblast.html">
+      <h1 class="article-title" itemprop="name">
+        localblast
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#GCModeller-version-1-0-0-0"><span class="toc-number">1.</span> <span class="toc-text">GCModeller [version 1.0.0.0]</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Commands"><span class="toc-number">1.1.</span> <span class="toc-text">Commands</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-add-locus-tag’"><span class="toc-number">1.1.0.0.1.</span> <span class="toc-text">Help for command ‘/add.locus_tag’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-add-names’"><span class="toc-number">1.1.0.0.2.</span> <span class="toc-text">Help for command ‘/add.names’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Bash-Venn’"><span class="toc-number">1.1.0.0.3.</span> <span class="toc-text">Help for command ‘/Bash.Venn’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-bbh-Export’"><span class="toc-number">1.1.0.0.4.</span> <span class="toc-text">Help for command ‘/bbh.Export’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-BBH-Merge’"><span class="toc-number">1.1.0.0.5.</span> <span class="toc-text">Help for command ‘/BBH.Merge’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-BestHits-Filtering’"><span class="toc-number">1.1.0.0.6.</span> <span class="toc-text">Help for command ‘/BestHits.Filtering’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-blastn-Query’"><span class="toc-number">1.1.0.0.7.</span> <span class="toc-text">Help for command ‘/blastn.Query’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Blastp-BBH-Query’"><span class="toc-number">1.1.0.0.8.</span> <span class="toc-text">Help for command ‘/Blastp.BBH.Query’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-COG-Statics’"><span class="toc-number">1.1.0.0.9.</span> <span class="toc-text">Help for command ‘/COG.Statics’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Copy-PTT’"><span class="toc-number">1.1.0.0.10.</span> <span class="toc-text">Help for command ‘/Copy.PTT’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Copys’"><span class="toc-number">1.1.0.0.11.</span> <span class="toc-text">Help for command ‘/Copys’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Export-Blastn’"><span class="toc-number">1.1.0.0.12.</span> <span class="toc-text">Help for command ‘/Export.Blastn’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Export-blastnMaps’"><span class="toc-number">1.1.0.0.13.</span> <span class="toc-text">Help for command ‘/Export.blastnMaps’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Export-BlastX’"><span class="toc-number">1.1.0.0.14.</span> <span class="toc-text">Help for command ‘/Export.BlastX’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-EXPORT-COGs-from-DOOR’"><span class="toc-number">1.1.0.0.15.</span> <span class="toc-text">Help for command ‘/EXPORT.COGs.from.DOOR’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Export-gb’"><span class="toc-number">1.1.0.0.16.</span> <span class="toc-text">Help for command ‘/Export.gb’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Export-gpff’"><span class="toc-number">1.1.0.0.17.</span> <span class="toc-text">Help for command ‘/Export.gpff’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Export-gpffs’"><span class="toc-number">1.1.0.0.18.</span> <span class="toc-text">Help for command ‘/Export.gpffs’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Export-Locus’"><span class="toc-number">1.1.0.0.19.</span> <span class="toc-text">Help for command ‘/Export.Locus’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-export-prot’"><span class="toc-number">1.1.0.0.20.</span> <span class="toc-text">Help for command ‘/export.prot’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Identities-Matrix’"><span class="toc-number">1.1.0.0.21.</span> <span class="toc-text">Help for command ‘/Identities.Matrix’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-locus-Selects’"><span class="toc-number">1.1.0.0.22.</span> <span class="toc-text">Help for command ‘/locus.Selects’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-MAT-evalue’"><span class="toc-number">1.1.0.0.23.</span> <span class="toc-text">Help for command ‘/MAT.evalue’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Merge-faa’"><span class="toc-number">1.1.0.0.24.</span> <span class="toc-text">Help for command ‘/Merge.faa’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Paralog’"><span class="toc-number">1.1.0.0.25.</span> <span class="toc-text">Help for command ‘/Paralog’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Print’"><span class="toc-number">1.1.0.0.26.</span> <span class="toc-text">Help for command ‘/Print’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-SBH-BBH-Batch’"><span class="toc-number">1.1.0.0.27.</span> <span class="toc-text">Help for command ‘/SBH.BBH.Batch’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-SBH-Export-Large’"><span class="toc-number">1.1.0.0.28.</span> <span class="toc-text">Help for command ‘/SBH.Export.Large’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-SBH-Trim’"><span class="toc-number">1.1.0.0.29.</span> <span class="toc-text">Help for command ‘/SBH.Trim’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-sbh2bbh’"><span class="toc-number">1.1.0.0.30.</span> <span class="toc-text">Help for command ‘/sbh2bbh’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Select-Meta’"><span class="toc-number">1.1.0.0.31.</span> <span class="toc-text">Help for command ‘/Select.Meta’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-SSBH2BH-LDM’"><span class="toc-number">1.1.0.0.32.</span> <span class="toc-text">Help for command ‘/SSBH2BH_LDM’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-SSDB-Export’"><span class="toc-number">1.1.0.0.33.</span> <span class="toc-text">Help for command ‘/SSDB.Export’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-venn-BBH’"><span class="toc-number">1.1.0.0.34.</span> <span class="toc-text">Help for command ‘/venn.BBH’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-venn-BlastAll’"><span class="toc-number">1.1.0.0.35.</span> <span class="toc-text">Help for command ‘/venn.BlastAll’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-venn-cache’"><span class="toc-number">1.1.0.0.36.</span> <span class="toc-text">Help for command ‘/venn.cache’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-venn-sbh-thread’"><span class="toc-number">1.1.0.0.37.</span> <span class="toc-text">Help for command ‘/venn.sbh.thread’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-Venn-Single’"><span class="toc-number">1.1.0.0.38.</span> <span class="toc-text">Help for command ‘/Venn.Single’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘–bbh-export’"><span class="toc-number">1.1.0.0.39.</span> <span class="toc-text">Help for command ‘–bbh.export’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘blast’"><span class="toc-number">1.1.0.0.40.</span> <span class="toc-text">Help for command ‘blast’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘–blast-self’"><span class="toc-number">1.1.0.0.41.</span> <span class="toc-text">Help for command ‘–blast.self’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-copy’"><span class="toc-number">1.1.0.0.42.</span> <span class="toc-text">Help for command ‘-copy’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘–Export-Fasta’"><span class="toc-number">1.1.0.0.43.</span> <span class="toc-text">Help for command ‘–Export.Fasta’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘–Export-Overviews’"><span class="toc-number">1.1.0.0.44.</span> <span class="toc-text">Help for command ‘–Export.Overviews’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘–Export-SBH’"><span class="toc-number">1.1.0.0.45.</span> <span class="toc-text">Help for command ‘–Export.SBH’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-export-besthit’"><span class="toc-number">1.1.0.0.46.</span> <span class="toc-text">Help for command ‘-export_besthit’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘grep’"><span class="toc-number">1.1.0.0.47.</span> <span class="toc-text">Help for command ‘grep’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘logs-analysis’"><span class="toc-number">1.1.0.0.48.</span> <span class="toc-text">Help for command ‘logs_analysis’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘merge’"><span class="toc-number">1.1.0.0.49.</span> <span class="toc-text">Help for command ‘merge’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘-merge-besthit’"><span class="toc-number">1.1.0.0.50.</span> <span class="toc-text">Help for command ‘-merge_besthit’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘–Xml2Excel’"><span class="toc-number">1.1.0.0.51.</span> <span class="toc-text">Help for command ‘–Xml2Excel’:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Help-for-command-‘–Xml2Excel-Batch’"><span class="toc-number">1.1.0.0.52.</span> <span class="toc-text">Help for command ‘–Xml2Excel.Batch’:</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="GCModeller-version-1-0-0-0"><a href="#GCModeller-version-1-0-0-0" class="headerlink" title="GCModeller [version 1.0.0.0]"></a>GCModeller [version 1.0.0.0]</h1><p><strong>Module AssemblyName</strong>: file:///F:/GCModeller/GCModeller-x64/localblast.exe<br><strong>Root namespace</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI</p>
+<p>All of the command that available in this program has been list below:</p>
+<table>
+<thead>
+<tr>
+<th>Function API</th>
+<th>Info</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/add.locus_tag</td>
+<td>Add locus_tag qualifier into the feature slot.</td>
+</tr>
+<tr>
+<td>/add.names</td>
+<td></td>
+</tr>
+<tr>
+<td>/Bash.Venn</td>
+<td></td>
+</tr>
+<tr>
+<td>/bbh.Export</td>
+<td></td>
+</tr>
+<tr>
+<td>/BBH.Merge</td>
+<td></td>
+</tr>
+<tr>
+<td>/BestHits.Filtering</td>
+<td></td>
+</tr>
+<tr>
+<td>/blastn.Query</td>
+<td></td>
+</tr>
+<tr>
+<td>/Blastp.BBH.Query</td>
+<td></td>
+</tr>
+<tr>
+<td>/COG.Statics</td>
+<td></td>
+</tr>
+<tr>
+<td>/Copy.PTT</td>
+<td></td>
+</tr>
+<tr>
+<td>/Copys</td>
+<td></td>
+</tr>
+<tr>
+<td>/Export.Blastn</td>
+<td></td>
+</tr>
+<tr>
+<td>/Export.blastnMaps</td>
+<td></td>
+</tr>
+<tr>
+<td>/Export.BlastX</td>
+<td></td>
+</tr>
+<tr>
+<td>/EXPORT.COGs.from.DOOR</td>
+<td></td>
+</tr>
+<tr>
+<td>/Export.gb</td>
+<td>Export the <em>.fna, </em>.faa, *.ptt file from the gbk file.</td>
+</tr>
+<tr>
+<td>/Export.gpff</td>
+<td></td>
+</tr>
+<tr>
+<td>/Export.gpffs</td>
+<td></td>
+</tr>
+<tr>
+<td>/Export.Locus</td>
+<td></td>
+</tr>
+<tr>
+<td>/export.prot</td>
+<td></td>
+</tr>
+<tr>
+<td>/Identities.Matrix</td>
+<td></td>
+</tr>
+<tr>
+<td>/locus.Selects</td>
+<td></td>
+</tr>
+<tr>
+<td>/MAT.evalue</td>
+<td></td>
+</tr>
+<tr>
+<td>/Merge.faa</td>
+<td></td>
+</tr>
+<tr>
+<td>/Paralog</td>
+<td></td>
+</tr>
+<tr>
+<td>/Print</td>
+<td></td>
+</tr>
+<tr>
+<td>/SBH.BBH.Batch</td>
+<td></td>
+</tr>
+<tr>
+<td>/SBH.Export.Large</td>
+<td></td>
+</tr>
+<tr>
+<td>/SBH.Trim</td>
+<td></td>
+</tr>
+<tr>
+<td>/sbh2bbh</td>
+<td></td>
+</tr>
+<tr>
+<td>/Select.Meta</td>
+<td></td>
+</tr>
+<tr>
+<td>/SSBH2BH_LDM</td>
+<td></td>
+</tr>
+<tr>
+<td>/SSDB.Export</td>
+<td></td>
+</tr>
+<tr>
+<td>/venn.BBH</td>
+<td>2. Build venn table And bbh data from the blastp result out Or sbh data cache.</td>
+</tr>
+<tr>
+<td>/venn.BlastAll</td>
+<td>Completely paired combos blastp bbh operations for the venn diagram Or network builder.</td>
+</tr>
+<tr>
+<td>/venn.cache</td>
+<td>1. [SBH_Batch] Creates the sbh cache data for the downstream bbh analysis. </td>
+</tr>
+</tbody>
+</table>
+<pre><code>And this batch function is suitable with any scale of the blastp sbh data output.|
+</code></pre><p>|/venn.sbh.thread||<br>|/Venn.Single||<br>|–bbh.export|Batch export bbh result data from a directory.|<br>|blast|In order to draw as venn diagram for a specific set of genome and study the diferrence and consists between these genomes, you should do the blast operation from the protein amino aciad sequence first. The blastp operation can be performenced by the blast+ program which you can download from the NCBI website, this command is a interop service for the NCBI blast program, you should install the blast+ program at first.|<br>|–blast.self||<br>|-copy||<br>|–Export.Fasta||<br>|–Export.Overviews||<br>|–Export.SBH||<br>|-export_besthit||<br>|grep|The gene id in the blast output log file are not well format for reading and program processing, so before you generate the venn diagram you should call this command to parse the gene id from the log file. You can also done this id parsing job using other tools.|<br>|logs_analysis|Parsing the xml format blast log into a csv data file that use for venn diagram drawing.|<br>|merge|This program can not use the blast parsing result for the venn diagram drawing operation, and this command is using for generate the drawing data for the venn diagram drawing command, this command merge the blast log parsing result and then using the parsing result for drawing a venn diagram.|<br>|-merge_besthit||<br>|–Xml2Excel||<br>|–Xml2Excel.Batch||</p>
+<h2 id="Commands"><a href="#Commands" class="headerlink" title="Commands"></a>Commands</h2><hr>
+<h5 id="Help-for-command-‘-add-locus-tag’"><a href="#Help-for-command-‘-add-locus-tag’" class="headerlink" title="Help for command ‘/add.locus_tag’:"></a>Help for command ‘/add.locus_tag’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 AddLocusTag(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  Add locus_tag qualifier into the feature slot.</span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /add.locus_tag /gb &lt;gb.gbk&gt; /prefix &lt;prefix&gt; [/add.gene /out &lt;out.gb&gt;]</span><br><span class="line">Example:      localblast /add.locus_tag</span><br></pre></td></tr></table></figure>
+<p>  Parameters information:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">   [/add.gene]</span><br><span class="line">Description:  Add gene features?</span><br><span class="line"></span><br><span class="line">Example:      /add.gene &quot;&quot;</span><br></pre></td></tr></table></figure></p>
+<h5 id="Help-for-command-‘-add-names’"><a href="#Help-for-command-‘-add-names’" class="headerlink" title="Help for command ‘/add.names’:"></a>Help for command ‘/add.names’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 AddNames(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /add.names /anno &lt;anno.csv&gt; /gb &lt;genbank.gbk&gt; [/out &lt;out.gbk&gt; /tag &lt;overrides_name&gt;]</span><br><span class="line">Example:      localblast /add.names</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-Bash-Venn’"><a href="#Help-for-command-‘-Bash-Venn’" class="headerlink" title="Help for command ‘/Bash.Venn’:"></a>Help for command ‘/Bash.Venn’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 BashShell(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /Bash.Venn /blast &lt;blastDIR&gt; /inDIR &lt;fasta.DIR&gt; /inRef &lt;inRefAs.DIR&gt; [/out &lt;outDIR&gt; /evalue &lt;evalue:10&gt;]</span><br><span class="line">Example:      localblast /Bash.Venn</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-bbh-Export’"><a href="#Help-for-command-‘-bbh-Export’" class="headerlink" title="Help for command ‘/bbh.Export’:"></a>Help for command ‘/bbh.Export’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 BBHExportFile(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /bbh.Export /query &lt;query.blastp_out&gt; /subject &lt;subject.blast_out&gt; [/out &lt;bbh.csv&gt; /evalue 1e-3 /coverage 0.85 /identities 0.3]</span><br><span class="line">Example:      localblast /bbh.Export</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-BBH-Merge’"><a href="#Help-for-command-‘-BBH-Merge’" class="headerlink" title="Help for command ‘/BBH.Merge’:"></a>Help for command ‘/BBH.Merge’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 MergeBBH(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /BBH.Merge /in &lt;inDIR&gt; [/out &lt;out.csv&gt;]</span><br><span class="line">Example:      localblast /BBH.Merge</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-BestHits-Filtering’"><a href="#Help-for-command-‘-BestHits-Filtering’" class="headerlink" title="Help for command ‘/BestHits.Filtering’:"></a>Help for command ‘/BestHits.Filtering’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 BestHitFiltering(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /BestHits.Filtering /in &lt;besthit.xml&gt; /sp &lt;table.txt&gt; [/out &lt;out.Xml&gt;]</span><br><span class="line">Example:      localblast /BestHits.Filtering</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-blastn-Query’"><a href="#Help-for-command-‘-blastn-Query’" class="headerlink" title="Help for command ‘/blastn.Query’:"></a>Help for command ‘/blastn.Query’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 BlastnQuery(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /blastn.Query /query &lt;query.fna&gt; /db &lt;db.DIR&gt; [/evalue 1e-5 /out &lt;out.DIR&gt;]</span><br><span class="line">Example:      localblast /blastn.Query</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-Blastp-BBH-Query’"><a href="#Help-for-command-‘-Blastp-BBH-Query’" class="headerlink" title="Help for command ‘/Blastp.BBH.Query’:"></a>Help for command ‘/Blastp.BBH.Query’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 BlastpBBHQuery(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /Blastp.BBH.Query /query &lt;query.fasta&gt; /hit &lt;hit.source&gt; [/out &lt;outDIR&gt; /overrides /num_threads &lt;-1&gt;]</span><br><span class="line">Example:      localblast /Blastp.BBH.Query</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-COG-Statics’"><a href="#Help-for-command-‘-COG-Statics’" class="headerlink" title="Help for command ‘/COG.Statics’:"></a>Help for command ‘/COG.Statics’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 COGStatics(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /COG.Statics /in &lt;myva_cogs.csv&gt; [/locus &lt;locus.txt/csv&gt; /locuMap &lt;Gene&gt; /out &lt;out.csv&gt;]</span><br><span class="line">Example:      localblast /COG.Statics</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-Copy-PTT’"><a href="#Help-for-command-‘-Copy-PTT’" class="headerlink" title="Help for command ‘/Copy.PTT’:"></a>Help for command ‘/Copy.PTT’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 CopyPTT(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /Copy.PTT /in &lt;inDIR&gt; [/out &lt;outDIR&gt;]</span><br><span class="line">Example:      localblast /Copy.PTT</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-Copys’"><a href="#Help-for-command-‘-Copys’" class="headerlink" title="Help for command ‘/Copys’:"></a>Help for command ‘/Copys’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 Copys(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /Copys /imports &lt;DIR&gt; [/out &lt;outDIR&gt;]</span><br><span class="line">Example:      localblast /Copys</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-Export-Blastn’"><a href="#Help-for-command-‘-Export-Blastn’" class="headerlink" title="Help for command ‘/Export.Blastn’:"></a>Help for command ‘/Export.Blastn’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 ExportBlastn(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /Export.Blastn /in &lt;in.txt&gt; [/out &lt;out.csv&gt;]</span><br><span class="line">Example:      localblast /Export.Blastn</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-Export-blastnMaps’"><a href="#Help-for-command-‘-Export-blastnMaps’" class="headerlink" title="Help for command ‘/Export.blastnMaps’:"></a>Help for command ‘/Export.blastnMaps’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 ExportBlastnMaps(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /Export.blastnMaps /in &lt;blastn.txt&gt; [/out &lt;out.csv&gt;]</span><br><span class="line">Example:      localblast /Export.blastnMaps</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-Export-BlastX’"><a href="#Help-for-command-‘-Export-BlastX’" class="headerlink" title="Help for command ‘/Export.BlastX’:"></a>Help for command ‘/Export.BlastX’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 ExportBlastX(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /Export.BlastX /in &lt;blastx.txt&gt; [/out &lt;out.csv&gt;]</span><br><span class="line">Example:      localblast /Export.BlastX</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-EXPORT-COGs-from-DOOR’"><a href="#Help-for-command-‘-EXPORT-COGs-from-DOOR’" class="headerlink" title="Help for command ‘/EXPORT.COGs.from.DOOR’:"></a>Help for command ‘/EXPORT.COGs.from.DOOR’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 ExportDOORCogs(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /EXPORT.COGs.from.DOOR /in &lt;DOOR.opr&gt; [/out &lt;out.csv&gt;]</span><br><span class="line">Example:      localblast /EXPORT.COGs.from.DOOR</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-Export-gb’"><a href="#Help-for-command-‘-Export-gb’" class="headerlink" title="Help for command ‘/Export.gb’:"></a>Help for command ‘/Export.gb’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 ExportPTTDb(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  Export the *.fna, *.faa, *.ptt file from the gbk file.</span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /Export.gb /gb &lt;genbank.gb&gt; [/out &lt;outDIR&gt;]</span><br><span class="line">Example:      localblast /Export.gb</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-Export-gpff’"><a href="#Help-for-command-‘-Export-gpff’" class="headerlink" title="Help for command ‘/Export.gpff’:"></a>Help for command ‘/Export.gpff’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 EXPORTgpff(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /Export.gpff /in &lt;genome.gpff&gt; /gff &lt;genome.gff&gt; [/out &lt;out.PTT&gt;]</span><br><span class="line">Example:      localblast /Export.gpff</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-Export-gpffs’"><a href="#Help-for-command-‘-Export-gpffs’" class="headerlink" title="Help for command ‘/Export.gpffs’:"></a>Help for command ‘/Export.gpffs’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 EXPORTgpffs(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /Export.gpffs [/in &lt;inDIR&gt;]</span><br><span class="line">Example:      localblast /Export.gpffs</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-Export-Locus’"><a href="#Help-for-command-‘-Export-Locus’" class="headerlink" title="Help for command ‘/Export.Locus’:"></a>Help for command ‘/Export.Locus’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 ExportLocus(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /Export.Locus /in &lt;sbh/bbh_DIR&gt; [/hit /out &lt;out.txt&gt;]</span><br><span class="line">Example:      localblast /Export.Locus</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-export-prot’"><a href="#Help-for-command-‘-export-prot’" class="headerlink" title="Help for command ‘/export.prot’:"></a>Help for command ‘/export.prot’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 ExportProt(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /export.prot /gb &lt;genome.gbk&gt; [/out &lt;out.fasta&gt;]</span><br><span class="line">Example:      localblast /export.prot</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-Identities-Matrix’"><a href="#Help-for-command-‘-Identities-Matrix’" class="headerlink" title="Help for command ‘/Identities.Matrix’:"></a>Help for command ‘/Identities.Matrix’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 IdentitiesMAT(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /Identities.Matrix /hit &lt;sbh/bbh.csv&gt; [/out &lt;out.csv&gt; /cut 0.65]</span><br><span class="line">Example:      localblast /Identities.Matrix</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-locus-Selects’"><a href="#Help-for-command-‘-locus-Selects’" class="headerlink" title="Help for command ‘/locus.Selects’:"></a>Help for command ‘/locus.Selects’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 LocusSelects(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /locus.Selects /locus &lt;locus.txt&gt; /bh &lt;bbhindex.csv&gt; [/out &lt;out.csv&gt;]</span><br><span class="line">Example:      localblast /locus.Selects</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-MAT-evalue’"><a href="#Help-for-command-‘-MAT-evalue’" class="headerlink" title="Help for command ‘/MAT.evalue’:"></a>Help for command ‘/MAT.evalue’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 EvalueMatrix(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /MAT.evalue /in &lt;sbh.csv&gt; [/out &lt;mat.csv&gt; /flip]</span><br><span class="line">Example:      localblast /MAT.evalue</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-Merge-faa’"><a href="#Help-for-command-‘-Merge-faa’" class="headerlink" title="Help for command ‘/Merge.faa’:"></a>Help for command ‘/Merge.faa’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 MergeFaa(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /Merge.faa /in &lt;DIR&gt; /out &lt;out.fasta&gt;</span><br><span class="line">Example:      localblast /Merge.faa</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-Paralog’"><a href="#Help-for-command-‘-Paralog’" class="headerlink" title="Help for command ‘/Paralog’:"></a>Help for command ‘/Paralog’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 ExportParalog(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /Paralog /blastp &lt;blastp.txt&gt; [/coverage 0.5 /identities 0.3 /out &lt;out.csv&gt;]</span><br><span class="line">Example:      localblast /Paralog</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-Print’"><a href="#Help-for-command-‘-Print’" class="headerlink" title="Help for command ‘/Print’:"></a>Help for command ‘/Print’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 Print(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /Print /in &lt;inDIR&gt; [/ext &lt;ext&gt; /out &lt;out.Csv&gt;]</span><br><span class="line">Example:      localblast /Print</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-SBH-BBH-Batch’"><a href="#Help-for-command-‘-SBH-BBH-Batch’" class="headerlink" title="Help for command ‘/SBH.BBH.Batch’:"></a>Help for command ‘/SBH.BBH.Batch’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 SBH_BBH_Batch(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /SBH.BBH.Batch /in &lt;sbh.DIR&gt; [/identities &lt;-1&gt; /coverage &lt;-1&gt; /all /out &lt;bbh.DIR&gt; /num_threads &lt;-1&gt;]</span><br><span class="line">Example:      localblast /SBH.BBH.Batch</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-SBH-Export-Large’"><a href="#Help-for-command-‘-SBH-Export-Large’" class="headerlink" title="Help for command ‘/SBH.Export.Large’:"></a>Help for command ‘/SBH.Export.Large’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 ExportBBHLarge(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /SBH.Export.Large /in &lt;blast_out.txt&gt; [/trim-kegg /out &lt;bbh.csv&gt; /identities 0.15 /coverage 0.5]</span><br><span class="line">Example:      localblast /SBH.Export.Large</span><br></pre></td></tr></table></figure>
+<p>  Parameters information:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">   [/trim-KEGG]</span><br><span class="line">Description:  If the fasta sequence source is comes from the KEGG database, and you want to removes the kegg species brief code for the locus_tag, then enable this option.</span><br><span class="line"></span><br><span class="line">Example:      /trim-KEGG &quot;&quot;</span><br></pre></td></tr></table></figure></p>
+<h5 id="Help-for-command-‘-SBH-Trim’"><a href="#Help-for-command-‘-SBH-Trim’" class="headerlink" title="Help for command ‘/SBH.Trim’:"></a>Help for command ‘/SBH.Trim’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 SBHTrim(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /SBH.Trim /in &lt;sbh.csv&gt; /evalue &lt;evalue&gt; [/identities 0.15 /coverage 0.5 /out &lt;out.csv&gt;]</span><br><span class="line">Example:      localblast /SBH.Trim</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-sbh2bbh’"><a href="#Help-for-command-‘-sbh2bbh’" class="headerlink" title="Help for command ‘/sbh2bbh’:"></a>Help for command ‘/sbh2bbh’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 BBHExport2(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /sbh2bbh /qvs &lt;qvs.sbh.csv&gt; /svq &lt;svq.sbh.csv&gt; [/identities &lt;-1&gt; /coverage &lt;-1&gt; /all /out &lt;bbh.csv&gt;]</span><br><span class="line">Example:      localblast /sbh2bbh</span><br></pre></td></tr></table></figure>
+<p>  Parameters information:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">    [/identities]</span><br><span class="line"> Description:  Makes a further filtering on the bbh by using this option, default value is -1, so that this means no filter.</span><br><span class="line"></span><br><span class="line"> Example:      /identities &quot;&quot;</span><br><span class="line"></span><br><span class="line">[/coverage]</span><br><span class="line"> Description:  Makes a further filtering on the bbh by using this option, default value is -1, so that this means no filter.</span><br><span class="line"></span><br><span class="line"> Example:      /coverage &quot;&quot;</span><br></pre></td></tr></table></figure></p>
+<h5 id="Help-for-command-‘-Select-Meta’"><a href="#Help-for-command-‘-Select-Meta’" class="headerlink" title="Help for command ‘/Select.Meta’:"></a>Help for command ‘/Select.Meta’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 SelectsMeta(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /Select.Meta /in &lt;meta.Xml&gt; /bbh &lt;bbh.csv&gt; [/out &lt;out.csv&gt;]</span><br><span class="line">Example:      localblast /Select.Meta</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-SSBH2BH-LDM’"><a href="#Help-for-command-‘-SSBH2BH-LDM’" class="headerlink" title="Help for command ‘/SSBH2BH_LDM’:"></a>Help for command ‘/SSBH2BH_LDM’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 KEGGSSOrtholog2Bh(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /SSBH2BH_LDM /in &lt;ssbh.csv&gt; [/xml /coverage 0.8 /identities 0.3 /out &lt;out.xml&gt;]</span><br><span class="line">Example:      localblast /SSBH2BH_LDM</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-SSDB-Export’"><a href="#Help-for-command-‘-SSDB-Export’" class="headerlink" title="Help for command ‘/SSDB.Export’:"></a>Help for command ‘/SSDB.Export’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 KEGGSSDBExport(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /SSDB.Export /in &lt;inDIR&gt; [/coverage 0.8 /identities 0.3 /out &lt;out.Xml&gt;]</span><br><span class="line">Example:      localblast /SSDB.Export</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-venn-BBH’"><a href="#Help-for-command-‘-venn-BBH’" class="headerlink" title="Help for command ‘/venn.BBH’:"></a>Help for command ‘/venn.BBH’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 VennBBH(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  2. Build venn table And bbh data from the blastp result out Or sbh data cache.</span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /venn.BBH /imports &lt;blastp_out.DIR&gt; [/skip-load /query &lt;queryName&gt; /all /coverage &lt;0.6&gt; /identities &lt;0.3&gt; /out &lt;outDIR&gt;]</span><br><span class="line">Example:      localblast /venn.BBH</span><br></pre></td></tr></table></figure>
+<p>  Parameters information:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">   [/skip-load]</span><br><span class="line">Description:  If the data source in the imports directory Is already the sbh data source, then using this parameter to skip the blastp file parsing.</span><br><span class="line"></span><br><span class="line">Example:      /skip-load &quot;&quot;</span><br></pre></td></tr></table></figure></p>
+<h5 id="Help-for-command-‘-venn-BlastAll’"><a href="#Help-for-command-‘-venn-BlastAll’" class="headerlink" title="Help for command ‘/venn.BlastAll’:"></a>Help for command ‘/venn.BlastAll’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 vennBlastAll(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  Completely paired combos blastp bbh operations for the venn diagram Or network builder.</span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /venn.BlastAll /query &lt;queryDIR&gt; /out &lt;outDIR&gt; [/num_threads &lt;-1&gt; /evalue 10 /overrides /all /coverage &lt;0.8&gt; /identities &lt;0.3&gt;]</span><br><span class="line">Example:      localblast /venn.BlastAll</span><br></pre></td></tr></table></figure>
+<p>  Parameters information:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"> /query</span><br><span class="line"> Description:  Recommended format of the fasta title Is that the fasta title only contains gene locus_tag.</span><br><span class="line"></span><br><span class="line"> Example:      /query &quot;&quot;</span><br><span class="line"></span><br><span class="line">[/num_threads]</span><br><span class="line"> Description:  The number of the parallel blast task in this command, default value Is -1 which means the number of the blast threads Is determined by system automatically.</span><br><span class="line"></span><br><span class="line"> Example:      /num_threads &quot;&quot;</span><br><span class="line"></span><br><span class="line">[/all]</span><br><span class="line"> Description:  If this parameter Is represent, then all of the paired best hit will be export, otherwise only the top best will be export.</span><br><span class="line"></span><br><span class="line"> Example:      /all &quot;&quot;</span><br></pre></td></tr></table></figure></p>
+<h5 id="Help-for-command-‘-venn-cache’"><a href="#Help-for-command-‘-venn-cache’" class="headerlink" title="Help for command ‘/venn.cache’:"></a>Help for command ‘/venn.cache’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 VennCache(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Information:  1. [SBH_Batch] Creates the sbh cache data for the downstream bbh analysis. </span><br><span class="line">             And this batch function is suitable with any scale of the blastp sbh data output.</span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /venn.cache /imports &lt;blastp.DIR&gt; [/out &lt;sbh.out.DIR&gt; /coverage &lt;0.6&gt; /identities &lt;0.3&gt; /num_threads &lt;-1&gt; /overrides]</span><br><span class="line">Example:      localblast /venn.cache</span><br></pre></td></tr></table></figure>
+<p>  Parameters information:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">   [/num_threads]</span><br><span class="line">Description:  The number of the sub process thread. -1 value is stands for auto config by the system.</span><br><span class="line"></span><br><span class="line">Example:      /num_threads &quot;&quot;</span><br></pre></td></tr></table></figure></p>
+<h5 id="Help-for-command-‘-venn-sbh-thread’"><a href="#Help-for-command-‘-venn-sbh-thread’" class="headerlink" title="Help for command ‘/venn.sbh.thread’:"></a>Help for command ‘/venn.sbh.thread’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 SBHThread(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /venn.sbh.thread /in &lt;blastp.txt&gt; [/out &lt;out.sbh.csv&gt; /coverage &lt;0.6&gt; /identities &lt;0.3&gt; /overrides]</span><br><span class="line">Example:      localblast /venn.sbh.thread</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-Venn-Single’"><a href="#Help-for-command-‘-Venn-Single’" class="headerlink" title="Help for command ‘/Venn.Single’:"></a>Help for command ‘/Venn.Single’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 VennSingle(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe /Venn.Single /in &lt;besthits.Xml&gt; [/out &lt;out.csv&gt;]</span><br><span class="line">Example:      localblast /Venn.Single</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘–bbh-export’"><a href="#Help-for-command-‘–bbh-export’" class="headerlink" title="Help for command ‘–bbh.export’:"></a>Help for command ‘–bbh.export’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 ExportBBH(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  Batch export bbh result data from a directory.</span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe --bbh.export /in &lt;blast_out.DIR&gt; [/all /out &lt;out.DIR&gt; /single-query &lt;queryName&gt; /coverage &lt;0.5&gt; /identities 0.15]</span><br><span class="line">Example:      localblast --bbh.export</span><br></pre></td></tr></table></figure>
+<p>  Parameters information:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">   [/all]</span><br><span class="line">Description:  If this all Boolean value is specific, then the program will export all hits for the bbh not the top 1 best.</span><br><span class="line"></span><br><span class="line">Example:      /all &quot;&quot;</span><br></pre></td></tr></table></figure></p>
+<h5 id="Help-for-command-‘blast’"><a href="#Help-for-command-‘blast’" class="headerlink" title="Help for command ‘blast’:"></a>Help for command ‘blast’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 BLASTA(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  In order to draw as venn diagram for a specific set of genome and study the diferrence and consists between these genomes, you should do the blast operation from the protein amino aciad sequence first. The blastp operation can be performenced by the blast+ program which you can download from the NCBI website, this command is a interop service for the NCBI blast program, you should install the blast+ program at first.</span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe blast -i &lt;file_directory&gt; -blast_bin &lt;BLAST_program_directory&gt; -program &lt;program_type_name&gt; [-ld &lt;log_dir&gt; -xld &lt;xml_log_dir&gt;]</span><br><span class="line">Example:      localblast blast blast -i /home/xieguigang/GCModeller/examples/blast_test/ -ld ~/Desktop/logs -xld ~/Desktop/xmls -blast_bin ~/BLAST/bin</span><br></pre></td></tr></table></figure>
+<p>  Parameters information:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">    -i</span><br><span class="line">    Description:  The input data directory which is contains the FASTA format protein amino acid sequence data file.</span><br><span class="line"></span><br><span class="line">    Example:      -i &quot;~/Desktop/8004&quot;</span><br><span class="line"></span><br><span class="line">-blast_bin</span><br><span class="line">    Description:  The localtion for the blast+ program, you should specific this switch value or this program will throw an exception.</span><br><span class="line"></span><br><span class="line">    Example:      -blast_bin &quot;~/BLAST/bin&quot;</span><br><span class="line"></span><br><span class="line">-program</span><br><span class="line">    Description:  The program type name for the NCBI local blast executable assembly.</span><br><span class="line"></span><br><span class="line">    Example:      -program &quot;blast+&quot;</span><br><span class="line"></span><br><span class="line">   [-xld]</span><br><span class="line">    Description:  Optional, the parsed and well organized blast log file output directory, if this switch value is not specific by the user then the user desktop directoy will be used as default.</span><br><span class="line"></span><br><span class="line">    Example:      -xld &quot;~/Desktop/xml_logs&quot;</span><br><span class="line"></span><br><span class="line">   [-ld]</span><br><span class="line">    Description:  Optional, the blastp log file output directory for the NCBI blast+ program. If this switch value is not specific by the user then the user desktop directory will be specific for the logs file output as default.</span><br><span class="line"></span><br><span class="line">    Example:      -ld &quot;~/Desktop/logs/&quot;</span><br></pre></td></tr></table></figure></p>
+<h5 id="Help-for-command-‘–blast-self’"><a href="#Help-for-command-‘–blast-self’" class="headerlink" title="Help for command ‘–blast.self’:"></a>Help for command ‘–blast.self’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 SelfBlast(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe --blast.self /query &lt;query.fasta&gt; [/blast &lt;blast_HOME&gt; /out &lt;out.csv&gt;]</span><br><span class="line">Example:      localblast --blast.self</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-copy’"><a href="#Help-for-command-‘-copy’" class="headerlink" title="Help for command ‘-copy’:"></a>Help for command ‘-copy’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 Copy(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe -copy -i &lt;index_file&gt; -os &lt;output_saved&gt; [-osidx &lt;id_column_index&gt; -os_skip_first &lt;T/F&gt;]</span><br><span class="line">Example:      localblast -copy</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘–Export-Fasta’"><a href="#Help-for-command-‘–Export-Fasta’" class="headerlink" title="Help for command ‘–Export.Fasta’:"></a>Help for command ‘–Export.Fasta’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 ExportFasta(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe --Export.Fasta /hits &lt;query-hits.csv&gt; /query &lt;query.fasta&gt; /subject &lt;subject.fasta&gt;</span><br><span class="line">Example:      localblast --Export.Fasta</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘–Export-Overviews’"><a href="#Help-for-command-‘–Export-Overviews’" class="headerlink" title="Help for command ‘–Export.Overviews’:"></a>Help for command ‘–Export.Overviews’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 ExportOverviews(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe --Export.Overviews /blast &lt;blastout.txt&gt; [/out &lt;overview.csv&gt;]</span><br><span class="line">Example:      localblast --Export.Overviews</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘–Export-SBH’"><a href="#Help-for-command-‘–Export-SBH’" class="headerlink" title="Help for command ‘–Export.SBH’:"></a>Help for command ‘–Export.SBH’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 ExportSBH(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe --Export.SBH /in &lt;in.DIR&gt; /prefix &lt;queryName&gt; /out &lt;out.csv&gt; [/txt]</span><br><span class="line">Example:      localblast --Export.SBH</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘-export-besthit’"><a href="#Help-for-command-‘-export-besthit’" class="headerlink" title="Help for command ‘-export_besthit’:"></a>Help for command ‘-export_besthit’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 ExportBestHit(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe -export_besthit -i &lt;input_csv_file&gt; -o &lt;output_saved_csv&gt;</span><br><span class="line">Example:      localblast -export_besthit</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘grep’"><a href="#Help-for-command-‘grep’" class="headerlink" title="Help for command ‘grep’:"></a>Help for command ‘grep’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 Grep(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  The gene id in the blast output log file are not well format for reading and program processing, so before you generate the venn diagram you should call this command to parse the gene id from the log file. You can also done this id parsing job using other tools.</span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe grep -i &lt;xml_log_file&gt; -q &lt;script_statements&gt; -h &lt;script_statements&gt;</span><br><span class="line">Example:      localblast grep grep -i C:\Users\WORKGROUP\Desktop\blast_xml_logs\1__8004_ecoli_prot.log.xml -q &quot;tokens | 4&quot; -h &quot;&apos;tokens | 2&apos;;&apos;tokens &apos; &apos; 0&apos;&quot;</span><br></pre></td></tr></table></figure>
+<p>  Parameters information:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">    -q</span><br><span class="line">    Description:  The parsing script for parsing the gene_id from the blast log file, this switch value is consist of sevral operation tokens, and each token is separate by the &apos;;&apos; character and the token unit in each script token should seperate by the &apos; character.</span><br><span class="line">              There are two basic operation in this parsing script:</span><br><span class="line">               tokens - Split the query or hit name string into sevral piece of string by the specific delimiter character and           get the specifc location unit in the return string array.</span><br><span class="line">                 Usage:   tokens &lt;delimiter&gt; &lt;position&gt;</span><br><span class="line">                 Example: tokens | 3 match - match a gene id using a specific pattern regular expression.</span><br><span class="line">                 usage:   match &lt;regular_expression&gt;</span><br><span class="line">                 Example: match .+[-]\d&#123;5&#125;</span><br><span class="line"></span><br><span class="line">    Example:      -q &quot;&apos;tokens | 5&apos;;&apos;match .+[-].+&apos;&quot;</span><br><span class="line"></span><br><span class="line">-h</span><br><span class="line">    Description:  The parsing script for parsing the gene_id from the blast log file, this switch value is consist of sevral operation tokens, and each token is separate by the &apos;;&apos; character and the token unit in each script token should seperate by the &apos; character.</span><br><span class="line">              There are two basic operation in this parsing script:</span><br><span class="line">               tokens - Split the query or hit name string into sevral piece of string by the specific delimiter character and           get the specifc location unit in the return string array.</span><br><span class="line">                 Usage:   tokens &lt;delimiter&gt; &lt;position&gt;</span><br><span class="line">                 Example: tokens | 3 match - match a gene id using a specific pattern regular expression.</span><br><span class="line">                 usage:   match &lt;regular_expression&gt;</span><br><span class="line">                 Example: match .+[-]\d&#123;5&#125;</span><br><span class="line"></span><br><span class="line">    Example:      -h &quot;&apos;tokens | 5&apos;;&apos;match .+[-].+&apos;&quot;</span><br></pre></td></tr></table></figure></p>
+<h5 id="Help-for-command-‘logs-analysis’"><a href="#Help-for-command-‘logs-analysis’" class="headerlink" title="Help for command ‘logs_analysis’:"></a>Help for command ‘logs_analysis’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 Analysis(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  Parsing the xml format blast log into a csv data file that use for venn diagram drawing.</span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe logs_analysis -d &lt;xml_logs_directory&gt; -export &lt;export_csv_file&gt;</span><br><span class="line">Example:      localblast logs_analysis logs_analysis -d ~/xml_logs -export ~/Desktop/result.csv</span><br></pre></td></tr></table></figure>
+<p>  Parameters information:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">    -d</span><br><span class="line">    Description:  The data directory which contains the xml format blast log file, those xml format log file were generated from the &apos;venn -&gt; blast&apos; command.</span><br><span class="line"></span><br><span class="line">    Example:      -d &quot;~/xml_logs&quot;</span><br><span class="line"></span><br><span class="line">-export</span><br><span class="line">    Description:  The save file path for the venn diagram drawing data csv file.</span><br><span class="line"></span><br><span class="line">    Example:      -export &quot;~/Documents/8004_venn.csv&quot;</span><br></pre></td></tr></table></figure></p>
+<h5 id="Help-for-command-‘merge’"><a href="#Help-for-command-‘merge’" class="headerlink" title="Help for command ‘merge’:"></a>Help for command ‘merge’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 Merge(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  This program can not use the blast parsing result for the venn diagram drawing operation, and this command is using for generate the drawing data for the venn diagram drawing command, this command merge the blast log parsing result and then using the parsing result for drawing a venn diagram.</span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe merge -d &lt;directory&gt; -o &lt;output_file&gt;</span><br><span class="line">Example:      localblast merge merge -d ~/blast_besthit/ -o ~/Desktop/compared.csv</span><br></pre></td></tr></table></figure>
+<p>  Parameters information:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">    -d</span><br><span class="line">    Description:  The directory that contains some blast log parsing csv data file.</span><br><span class="line"></span><br><span class="line">    Example:      -d &quot;~/Desktop/blast/result/&quot;</span><br><span class="line"></span><br><span class="line">-o</span><br><span class="line">    Description:  The save file name for the output result, the program willl save the merge result in the csv format</span><br><span class="line"></span><br><span class="line">    Example:      -o &quot;~/Desktop/8004_venn.csv&quot;</span><br></pre></td></tr></table></figure></p>
+<h5 id="Help-for-command-‘-merge-besthit’"><a href="#Help-for-command-‘-merge-besthit’" class="headerlink" title="Help for command ‘-merge_besthit’:"></a>Help for command ‘-merge_besthit’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 MergeBestHits(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe -merge_besthit -i &lt;input_file_list&gt; -o &lt;output_file&gt; -os &lt;original_idlist_sequence_file&gt; [-osidx &lt;id_column_index&gt; -os_skip_first &lt;T/F&gt;]</span><br><span class="line">Example:      localblast -merge_besthit</span><br></pre></td></tr></table></figure>
+<p>  Parameters information:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">-i</span><br><span class="line">Description:  Each file path in the filelist should be separated by a &quot;|&quot; character.</span><br><span class="line"></span><br><span class="line">Example:      -i &quot;&quot;</span><br></pre></td></tr></table></figure></p>
+<h5 id="Help-for-command-‘–Xml2Excel’"><a href="#Help-for-command-‘–Xml2Excel’" class="headerlink" title="Help for command ‘–Xml2Excel’:"></a>Help for command ‘–Xml2Excel’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 XmlToExcel(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe --Xml2Excel /in &lt;in.xml&gt; [/out &lt;out.csv&gt;]</span><br><span class="line">Example:      localblast --Xml2Excel</span><br></pre></td></tr></table></figure>
+<h5 id="Help-for-command-‘–Xml2Excel-Batch’"><a href="#Help-for-command-‘–Xml2Excel-Batch’" class="headerlink" title="Help for command ‘–Xml2Excel.Batch’:"></a>Help for command ‘–Xml2Excel.Batch’:</h5><p><strong>Prototype</strong>: LANS.SystemsBiology.NCBI.Extensions.CLI::Int32 XmlToExcelBatch(Microsoft.VisualBasic.CommandLine.CommandLine)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Information:  </span><br><span class="line">Usage:        F:\GCModeller\GCModeller-x64\localblast.exe --Xml2Excel.Batch /in &lt;inDIR&gt; [/out &lt;outDIR&gt; /Merge]</span><br><span class="line">Example:      localblast --Xml2Excel.Batch</span><br></pre></td></tr></table></figure>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/tools/localblast.html" class="article-date">
+  <time datetime="2016-06-12T16:26:38.000Z" itemprop="datePublished">2016-06-13</time>
+</a>
+              <a data-url="http://docs.gcmodeller.org/tools/localblast.html" data-id="cipct1uuh000i0ov4xkadn9xr" class="article-share-link">Share</a>
+              
+              
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/">undefined</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/">undefined</a></li></ul>
+
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 GCModeller docs library<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/SMRUCC/" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+
