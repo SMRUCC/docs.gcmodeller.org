@@ -1,0 +1,567 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CircosAPI | GCModeller docs library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="CircosAPInamespace: LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos
+Shoal shell interaction with circos perl program to draw a circle diagram of a bacteria genome.
+Methods__gene">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CircosAPI">
+<meta property="og:url" content="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.CircosAPI.html">
+<meta property="og:site_name" content="GCModeller docs library">
+<meta property="og:description" content="CircosAPInamespace: LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos
+Shoal shell interaction with circos perl program to draw a circle diagram of a bacteria genome.
+Methods__gene">
+<meta property="og:updated_time" content="2016-06-13T10:38:04.568Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CircosAPI">
+<meta name="twitter:description" content="CircosAPInamespace: LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos
+Shoal shell interaction with circos perl program to draw a circle diagram of a bacteria genome.
+Methods__gene">
+    
+      <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="/css/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tags">
+                  
+                  
+
+                
+                  Tags
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/archives">
+                  
+                  
+
+                
+                  Archives
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/SMRUCC/">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://docs.gcmodeller.org"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.CircosAPI.html">
+      <h1 class="article-title" itemprop="name">
+        CircosAPI
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.CircosAPI.html" class="article-date">
+  <time datetime="2016-06-13T10:38:04.568Z" itemprop="datePublished">2016-06-13</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.CircosAPI.html">
+      <h1 class="article-title" itemprop="name">
+        CircosAPI
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#CircosAPI"><span class="toc-number">1.</span> <span class="toc-text">CircosAPI</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#geneHighlights"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">__geneHighlights</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CreateDoc"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">CreateDoc</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#DoorOperon"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">DoorOperon</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GenerateBlastnAlignment"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">GenerateBlastnAlignment</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GenerateGeneCircle"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">GenerateGeneCircle</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GetIdeogram"><span class="toc-number">1.0.1.6.</span> <span class="toc-text">GetIdeogram</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#RNAVisualize"><span class="toc-number">1.0.1.7.</span> <span class="toc-text">RNAVisualize</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SetBasicProperty"><span class="toc-number">1.0.1.8.</span> <span class="toc-text">SetBasicProperty</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SetIdeogramRadius"><span class="toc-number">1.0.1.9.</span> <span class="toc-text">SetIdeogramRadius</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SetIdeogramWidth"><span class="toc-number">1.0.1.10.</span> <span class="toc-text">SetIdeogramWidth</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SetPlotElementOrientation"><span class="toc-number">1.0.1.11.</span> <span class="toc-text">SetPlotElementOrientation</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#setProperty"><span class="toc-number">1.0.1.12.</span> <span class="toc-text">setProperty</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SetRadius"><span class="toc-number">1.0.1.13.</span> <span class="toc-text">SetRadius</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#WriteData"><span class="toc-number">1.0.1.14.</span> <span class="toc-text">WriteData</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="CircosAPI"><a href="#CircosAPI" class="headerlink" title="CircosAPI"></a>CircosAPI</h1><p><em>namespace: <a href="N-LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.html">LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos</a></em></p>
+<p>Shoal shell interaction with circos perl program to draw a circle diagram of a bacteria genome.</p>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="geneHighlights"><a href="#geneHighlights" class="headerlink" title="__geneHighlights"></a>__geneHighlights</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.CircosAPI.__geneHighlights(System.Collections.Generic.IEnumerable&#123;LANS.SystemsBiology.Assembly.NCBI.GenBank.CsvExports.GeneDumpInfo&#125;,System.Collections.Generic.Dictionary&#123;System.String,System.String&#125;,LANS.SystemsBiology.ComponentModel.Loci.Strands)</span><br></pre></td></tr></table></figure>
+<p>生成基因组的基因片段</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>anno</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Colors</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Strands</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="CreateDoc"><a href="#CreateDoc" class="headerlink" title="CreateDoc"></a>CreateDoc</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.CircosAPI.CreateDoc</span><br></pre></td></tr></table></figure>
+<p>Creats a new circos plots configuration document.</p>
+<h4 id="DoorOperon"><a href="#DoorOperon" class="headerlink" title="DoorOperon"></a>DoorOperon</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.CircosAPI.DoorOperon(System.String)</span><br></pre></td></tr></table></figure>
+<p>Door之中的操纵子以heatmap的形式绘制</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DOOR</td>
+<td>Door文件的文件路径</td>
+</tr>
+</tbody>
+</table>
+<h4 id="GenerateBlastnAlignment"><a href="#GenerateBlastnAlignment" class="headerlink" title="GenerateBlastnAlignment"></a>GenerateBlastnAlignment</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.CircosAPI.GenerateBlastnAlignment(LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.Documents.Configurations.Circos,LANS.SystemsBiology.NCBI.Extensions.NCBIBlastResult.AlignmentTable,System.Double,System.Double,LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.Documents.Karyotype.Highlights.IdentityColors)</span><br></pre></td></tr></table></figure>
+<p>The blast result alignment will be mapping on the circos plot circle individual as the highlights element in the circos plot.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>doc</td>
+<td>-</td>
+</tr>
+<tr>
+<td>table</td>
+<td>-</td>
+</tr>
+<tr>
+<td>r1</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rInner</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="GenerateGeneCircle"><a href="#GenerateGeneCircle" class="headerlink" title="GenerateGeneCircle"></a>GenerateGeneCircle</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.CircosAPI.GenerateGeneCircle(LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.Documents.Configurations.Circos,System.Collections.Generic.IEnumerable&#123;LANS.SystemsBiology.Assembly.NCBI.GenBank.CsvExports.GeneDumpInfo&#125;,System.Boolean,System.String,System.Boolean,System.Boolean,System.Boolean)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>doc</td>
+<td>-</td>
+</tr>
+<tr>
+<td>anno</td>
+<td>-</td>
+</tr>
+<tr>
+<td>IDRegex</td>
+<td>基因的名称的正则表达式解析字符串。如果为空字符串，则默认输出全部的名称</td>
+</tr>
+<tr>
+<td>onlyGeneName</td>
+<td>当本参数为真的时候，<strong> IDRegex </strong>参数失效</td>
+</tr>
+</tbody>
+</table>
+<h4 id="GetIdeogram"><a href="#GetIdeogram" class="headerlink" title="GetIdeogram"></a>GetIdeogram</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.CircosAPI.GetIdeogram(LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.Documents.Configurations.Circos)</span><br></pre></td></tr></table></figure>
+<p>还没有ideogram文档的时候，则会返回一个新的文档</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>doc</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="RNAVisualize"><a href="#RNAVisualize" class="headerlink" title="RNAVisualize"></a>RNAVisualize</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.CircosAPI.RNAVisualize(LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.Documents.Configurations.Circos,LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.PTT)</span><br></pre></td></tr></table></figure>
+<p>使用Highlighs来显示RNA分子在基因组之上的位置</p>
+<h4 id="SetBasicProperty"><a href="#SetBasicProperty" class="headerlink" title="SetBasicProperty"></a>SetBasicProperty</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.CircosAPI.SetBasicProperty(LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.Documents.Configurations.Circos,LANS.SystemsBiology.SequenceModel.FASTA.FastaToken,System.Collections.Generic.IEnumerable&#123;Microsoft.VisualBasic.ComponentModel.TripleKeyValuesPair&#125;,System.Int32)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>doc</td>
+<td>-</td>
+</tr>
+<tr>
+<td>NT</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Bands</td>
+<td>-</td>
+</tr>
+<tr>
+<td>loophole</td>
+<td>默认为0，没有缺口</td>
+</tr>
+</tbody>
+</table>
+<h4 id="SetIdeogramRadius"><a href="#SetIdeogramRadius" class="headerlink" title="SetIdeogramRadius"></a>SetIdeogramRadius</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.CircosAPI.SetIdeogramRadius(LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.Documents.Configurations.Ideogram,System.Double)</span><br></pre></td></tr></table></figure>
+<p>其他的圆圈都会发生变化，则每一次修改之后都需要重新计算圆圈的位置</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>doc</td>
+<td>-</td>
+</tr>
+<tr>
+<td>r</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p> 圆圈的最大值只能够到达1.2了？？？<br> 相对的大小是和ideogram有关的<br> 1/ideogram.radius</p>
+</blockquote>
+<h4 id="SetIdeogramWidth"><a href="#SetIdeogramWidth" class="headerlink" title="SetIdeogramWidth"></a>SetIdeogramWidth</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.CircosAPI.SetIdeogramWidth(LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.Documents.Configurations.Ideogram,System.Int32)</span><br></pre></td></tr></table></figure>
+<p>Invoke set the ideogram width in the circos plot drawing, if the width value is set to ZERO,<br> then the ideogram circle will be empty on the drawing but this is different with the ideogram<br> configuration document was not included in the circos main configuration.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>doc</td>
+<td>-</td>
+</tr>
+<tr>
+<td>width</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="SetPlotElementOrientation"><a href="#SetPlotElementOrientation" class="headerlink" title="SetPlotElementOrientation"></a>SetPlotElementOrientation</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.CircosAPI.SetPlotElementOrientation(LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.Documents.Configurations.Nodes.Plots.Plot,System.String)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Element</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Orientation</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="setProperty"><a href="#setProperty" class="headerlink" title="setProperty"></a>setProperty</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.CircosAPI.setProperty(LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.Documents.Configurations.Circos,System.String,System.String)</span><br></pre></td></tr></table></figure>
+<p>Invoke set of the property value in the circos document object.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>doc</td>
+<td>-</td>
+</tr>
+<tr>
+<td>name</td>
+<td>-</td>
+</tr>
+<tr>
+<td>value</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="SetRadius"><a href="#SetRadius" class="headerlink" title="SetRadius"></a>SetRadius</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.CircosAPI.SetRadius(LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.Documents.Configurations.Circos,System.Collections.Generic.IEnumerable&#123;System.Double[]&#125;)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>doc</td>
+<td>-</td>
+</tr>
+<tr>
+<td>r</td>
+<td>从外圈到内圈的</td>
+</tr>
+</tbody>
+</table>
+<h4 id="WriteData"><a href="#WriteData" class="headerlink" title="WriteData"></a>WriteData</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.CircosAPI.WriteData(LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.Documents.Configurations.Circos,System.String,System.Boolean)</span><br></pre></td></tr></table></figure>
+<p>Save the circos plots configuration object as the default configuration file: circos.conf</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>doc</td>
+<td>-</td>
+</tr>
+<tr>
+<td>outDIR</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Debug</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.CircosAPI.html" class="article-date">
+  <time datetime="2016-06-13T10:38:04.568Z" itemprop="datePublished">2016-06-13</time>
+</a>
+              <a data-url="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.AnalysisTools.DataVisualization.Interaction.Circos.CircosAPI.html" data-id="cipdv31sm01j9bgv4z7rr5jjz" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 GCModeller docs library<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/SMRUCC/" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

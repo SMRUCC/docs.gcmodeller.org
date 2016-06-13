@@ -1,0 +1,500 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>HtseqCountMethod | GCModeller docs library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="HtseqCountMethod_namespace: LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM_
+Counting reads in features with htseq-count, Given a file with aligned sequencing reads and a list of genomic f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="HtseqCountMethod">
+<meta property="og:url" content="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.HtseqCountMethod.html">
+<meta property="og:site_name" content="GCModeller docs library">
+<meta property="og:description" content="HtseqCountMethod_namespace: LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM_
+Counting reads in features with htseq-count, Given a file with aligned sequencing reads and a list of genomic f">
+<meta property="og:updated_time" content="2016-06-13T10:38:12.929Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HtseqCountMethod">
+<meta name="twitter:description" content="HtseqCountMethod_namespace: LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM_
+Counting reads in features with htseq-count, Given a file with aligned sequencing reads and a list of genomic f">
+    
+      <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="/css/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tags">
+                  
+                  
+
+                
+                  Tags
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/archives">
+                  
+                  
+
+                
+                  Archives
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/SMRUCC/">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://docs.gcmodeller.org"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.HtseqCountMethod.html">
+      <h1 class="article-title" itemprop="name">
+        HtseqCountMethod
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.HtseqCountMethod.html" class="article-date">
+  <time datetime="2016-06-13T10:38:12.929Z" itemprop="datePublished">2016-06-13</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.HtseqCountMethod.html">
+      <h1 class="article-title" itemprop="name">
+        HtseqCountMethod
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HtseqCountMethod"><span class="toc-number">1.</span> <span class="toc-text">HtseqCountMethod</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#getFeatures"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">__getFeatures</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#htSeqCount"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">__htSeqCount</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#DataFrame"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">DataFrame</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SRR479052-bam-SRR479053-bam-SRR479054-bam"><span class="toc-number">1.1.</span> <span class="toc-text">SRR479052.bam SRR479053.bam SRR479054.bam</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ENSG00000000003-0-0-1"><span class="toc-number">1.2.</span> <span class="toc-text">ENSG00000000003      0             0              1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ENSG00000000005-0-0-0"><span class="toc-number">1.3.</span> <span class="toc-text">ENSG00000000005      0             0              0</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ENSG00000000419-0-0-0"><span class="toc-number">1.4.</span> <span class="toc-text">ENSG00000000419      0             0              0</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ENSG00000000457-0-1-0"><span class="toc-number">1.5.</span> <span class="toc-text">ENSG00000000457      0             1              0</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ENSG00000000460-0-0-0"><span class="toc-number">1.6.</span> <span class="toc-text">ENSG00000000460      0             0              0</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ENSG00000000938-0-0-0"><span class="toc-number">1.7.</span> <span class="toc-text">ENSG00000000938      0             0              0</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#HtseqCount"><span class="toc-number">1.7.0.1.</span> <span class="toc-text">HtseqCount</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#HtseqCountBatchParallel"><span class="toc-number">1.7.0.2.</span> <span class="toc-text">HtseqCountBatchParallel</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IntersectionNonempty"><span class="toc-number">1.7.0.3.</span> <span class="toc-text">IntersectionNonempty</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IntersectionStrict"><span class="toc-number">1.7.0.4.</span> <span class="toc-text">IntersectionStrict</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#RPKM"><span class="toc-number">1.7.0.5.</span> <span class="toc-text">RPKM</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#TrimGFF"><span class="toc-number">1.7.0.6.</span> <span class="toc-text">TrimGFF</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Union"><span class="toc-number">1.7.0.7.</span> <span class="toc-text">Union</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="HtseqCountMethod"><a href="#HtseqCountMethod" class="headerlink" title="HtseqCountMethod"></a>HtseqCountMethod</h1><p>_namespace: <a href="N-LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.html">LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM</a>_</p>
+<p>Counting reads in features with htseq-count, Given a file with aligned sequencing reads and a list of genomic features, a common task is to count how many reads map<br> to each feature.</p>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="getFeatures"><a href="#getFeatures" class="headerlink" title="__getFeatures"></a>__getFeatures</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.HtseqCountMethod.__getFeatures(LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.GFF,LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.Feature[]@,LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.Feature[]@,LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.FeatureKeys.Features)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gff</td>
+<td>-</td>
+</tr>
+<tr>
+<td>forwards</td>
+<td>-</td>
+</tr>
+<tr>
+<td>reversed</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="htSeqCount"><a href="#htSeqCount" class="headerlink" title="__htSeqCount"></a>__htSeqCount</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.HtseqCountMethod.__htSeqCount(System.Collections.Generic.IEnumerable&#123;LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.Feature[]&#125;,LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.Feature[],LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.Feature[])</span><br></pre></td></tr></table></figure>
+<p>[Feature][@”F:Microsoft.VisualBasic.Constants.vbTab”][Counts]</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>csource</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="DataFrame"><a href="#DataFrame" class="headerlink" title="DataFrame"></a>DataFrame</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.HtseqCountMethod.DataFrame(System.Collections.Generic.IEnumerable&#123;System.String&#125;,LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.PTT,System.Boolean)</span><br></pre></td></tr></table></figure>
+<p>包括重新排序，然后将基因名称重新换回基因号，并且在这里除以序列本身的长度，得到RPKM值</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FileList</td>
+<td>-</td>
+</tr>
+<tr>
+<td>PTT</td>
+<td>由于有些基因是不表达的，所以htseq-count计数的时候会少了一些基因，使用PTT文件的原因是补全这些基因</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<h2 id="SRR479052-bam-SRR479053-bam-SRR479054-bam"><a href="#SRR479052-bam-SRR479053-bam-SRR479054-bam" class="headerlink" title="SRR479052.bam SRR479053.bam SRR479054.bam"></a>SRR479052.bam SRR479053.bam SRR479054.bam</h2><h2 id="ENSG00000000003-0-0-1"><a href="#ENSG00000000003-0-0-1" class="headerlink" title="ENSG00000000003      0             0              1"></a>ENSG00000000003      0             0              1</h2><h2 id="ENSG00000000005-0-0-0"><a href="#ENSG00000000005-0-0-0" class="headerlink" title="ENSG00000000005      0             0              0"></a>ENSG00000000005      0             0              0</h2><h2 id="ENSG00000000419-0-0-0"><a href="#ENSG00000000419-0-0-0" class="headerlink" title="ENSG00000000419      0             0              0"></a>ENSG00000000419      0             0              0</h2><h2 id="ENSG00000000457-0-1-0"><a href="#ENSG00000000457-0-1-0" class="headerlink" title="ENSG00000000457      0             1              0"></a>ENSG00000000457      0             1              0</h2><h2 id="ENSG00000000460-0-0-0"><a href="#ENSG00000000460-0-0-0" class="headerlink" title="ENSG00000000460      0             0              0"></a>ENSG00000000460      0             0              0</h2><h2 id="ENSG00000000938-0-0-0"><a href="#ENSG00000000938-0-0-0" class="headerlink" title="ENSG00000000938      0             0              0"></a>ENSG00000000938      0             0              0</h2></blockquote>
+<h4 id="HtseqCount"><a href="#HtseqCount" class="headerlink" title="HtseqCount"></a>HtseqCount</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.HtseqCountMethod.HtseqCount(System.String,System.String,System.String,System.Boolean,LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.FeatureKeys.Features)</span><br></pre></td></tr></table></figure>
+<p>(函数只是得到了原始计数，还需要与序列的长度相除才可以得到RPKM)</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SAM</td>
+<td>-</td>
+</tr>
+<tr>
+<td>GFF</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Mode</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="HtseqCountBatchParallel"><a href="#HtseqCountBatchParallel" class="headerlink" title="HtseqCountBatchParallel"></a>HtseqCountBatchParallel</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.HtseqCountMethod.HtseqCountBatchParallel(System.String,System.String,System.String,System.String,System.Boolean,System.Boolean)</span><br></pre></td></tr></table></figure>
+<p>执行脚本调用本身进行批量计算(函数只是得到了原始计数，还需要与序列的长度相除才可以得到RPKM)</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GFF</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Mode</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Parallel</td>
+<td>内存足够大的时候可以使用这个参数，要不然计算会非常的缓慢</td>
+</tr>
+</tbody>
+</table>
+<h4 id="IntersectionNonempty"><a href="#IntersectionNonempty" class="headerlink" title="IntersectionNonempty"></a>IntersectionNonempty</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.HtseqCountMethod.IntersectionNonempty(LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.DocumentElements.AlignmentReads,LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.Feature[],LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.Feature[])</span><br></pre></td></tr></table></figure>
+<p>当Feature重叠在一起的时候，在内部的都计数，没有重叠的时候，可以计数</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Read</td>
+<td>-</td>
+</tr>
+<tr>
+<td>GFF_Forwards</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="IntersectionStrict"><a href="#IntersectionStrict" class="headerlink" title="IntersectionStrict"></a>IntersectionStrict</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.HtseqCountMethod.IntersectionStrict(LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.DocumentElements.AlignmentReads,LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.Feature[],LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.Feature[])</span><br></pre></td></tr></table></figure>
+<p>Read只可以出现在Feature的内部</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Read</td>
+<td>-</td>
+</tr>
+<tr>
+<td>GFF_Forwards</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="RPKM"><a href="#RPKM" class="headerlink" title="RPKM"></a>RPKM</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.HtseqCountMethod.RPKM(System.Collections.Generic.IEnumerable&#123;LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.HtseqCountMethod.CountResult&#125;,LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.GFF)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dataExpr0</td>
+<td>这里的表达量的计数全部都是原始计数</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>好像有问题？？？</p>
+</blockquote>
+<h4 id="TrimGFF"><a href="#TrimGFF" class="headerlink" title="TrimGFF"></a>TrimGFF</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.HtseqCountMethod.TrimGFF(LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.GFF,LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.PTT)</span><br></pre></td></tr></table></figure>
+<p>有时候假若不需要使用基因名称，而是想要使用基因编号来表示一个基因，则可以通过这个方法将gff文件之中的基因名转换为基因号</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gff</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ptt</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Union"><a href="#Union" class="headerlink" title="Union"></a>Union</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.HtseqCountMethod.Union(LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.DocumentElements.AlignmentReads,LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.Feature[],LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.Feature[])</span><br></pre></td></tr></table></figure>
+<p>只要有接触的都进行计数</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Read</td>
+<td>-</td>
+</tr>
+<tr>
+<td>GFF_Forwards</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.HtseqCountMethod.html" class="article-date">
+  <time datetime="2016-06-13T10:38:12.929Z" itemprop="datePublished">2016-06-13</time>
+</a>
+              <a data-url="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.HtseqCountMethod.html" data-id="cipdv3o2z01qobgv4jlwiq8j7" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 GCModeller docs library<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/SMRUCC/" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

@@ -1,0 +1,379 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>options | GCModeller docs library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="optionsnamespace: RDotNET.Extensions.VisualBasic.base
+Allow the user to set and examine a variety of global options which affect the way in which R computes and displays its results. (由于options函数会设置环境">
+<meta property="og:type" content="website">
+<meta property="og:title" content="options">
+<meta property="og:url" content="http://docs.gcmodeller.org/API/T-RDotNET.Extensions.VisualBasic.base.options.html">
+<meta property="og:site_name" content="GCModeller docs library">
+<meta property="og:description" content="optionsnamespace: RDotNET.Extensions.VisualBasic.base
+Allow the user to set and examine a variety of global options which affect the way in which R computes and displays its results. (由于options函数会设置环境">
+<meta property="og:updated_time" content="2016-06-13T10:38:23.718Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="options">
+<meta name="twitter:description" content="optionsnamespace: RDotNET.Extensions.VisualBasic.base
+Allow the user to set and examine a variety of global options which affect the way in which R computes and displays its results. (由于options函数会设置环境">
+    
+      <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="/css/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tags">
+                  
+                  
+
+                
+                  Tags
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/archives">
+                  
+                  
+
+                
+                  Archives
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/SMRUCC/">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://docs.gcmodeller.org"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-RDotNET.Extensions.VisualBasic.base.options.html">
+      <h1 class="article-title" itemprop="name">
+        options
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-RDotNET.Extensions.VisualBasic.base.options.html" class="article-date">
+  <time datetime="2016-06-13T10:38:23.718Z" itemprop="datePublished">2016-06-13</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-RDotNET.Extensions.VisualBasic.base.options.html">
+      <h1 class="article-title" itemprop="name">
+        options
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#options"><span class="toc-number">1.</span> <span class="toc-text">options</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties"><span class="toc-number">1.0.1.</span> <span class="toc-text">Properties</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#addSmooth"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">addSmooth</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#BioC-mirror"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">BioC_mirror</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#browser"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">browser</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#browserNLdisabled"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">browserNLdisabled</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CBoundsCheck"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">CBoundsCheck</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ccaddress"><span class="toc-number">1.0.1.6.</span> <span class="toc-text">ccaddress</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#checkBounds"><span class="toc-number">1.0.1.7.</span> <span class="toc-text">checkBounds</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#checkPackageLicense"><span class="toc-number">1.0.1.8.</span> <span class="toc-text">checkPackageLicense</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#citationBibtexMax"><span class="toc-number">1.0.1.9.</span> <span class="toc-text">citationBibtexMax</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#continue"><span class="toc-number">1.0.1.10.</span> <span class="toc-text">continue</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#contrasts"><span class="toc-number">1.0.1.11.</span> <span class="toc-text">contrasts</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#deCellwidth"><span class="toc-number">1.0.1.12.</span> <span class="toc-text">deCellwidth</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#defaultPackages"><span class="toc-number">1.0.1.13.</span> <span class="toc-text">defaultPackages</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#demoAsk"><span class="toc-number">1.0.1.14.</span> <span class="toc-text">demoAsk</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#deparseCutoff"><span class="toc-number">1.0.1.15.</span> <span class="toc-text">deparseCutoff</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#deparseMaxLines"><span class="toc-number">1.0.1.16.</span> <span class="toc-text">deparseMaxLines</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#device"><span class="toc-number">1.0.1.17.</span> <span class="toc-text">device</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#deviceAskDefault"><span class="toc-number">1.0.1.18.</span> <span class="toc-text">deviceAskDefault</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#digits"><span class="toc-number">1.0.1.19.</span> <span class="toc-text">digits</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#digitsSecs"><span class="toc-number">1.0.1.20.</span> <span class="toc-text">digitsSecs</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#downloadFileExtra"><span class="toc-number">1.0.1.21.</span> <span class="toc-text">downloadFileExtra</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#downloadFileMethod"><span class="toc-number">1.0.1.22.</span> <span class="toc-text">downloadFileMethod</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#dvipscmd"><span class="toc-number">1.0.1.23.</span> <span class="toc-text">dvipscmd</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#echo"><span class="toc-number">1.0.1.24.</span> <span class="toc-text">echo</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#editor"><span class="toc-number">1.0.1.25.</span> <span class="toc-text">editor</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#encoding"><span class="toc-number">1.0.1.26.</span> <span class="toc-text">encoding</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#error"><span class="toc-number">1.0.1.27.</span> <span class="toc-text">error</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#exampleAsk"><span class="toc-number">1.0.1.28.</span> <span class="toc-text">exampleAsk</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#expressions"><span class="toc-number">1.0.1.29.</span> <span class="toc-text">expressions</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#help-type"><span class="toc-number">1.0.1.30.</span> <span class="toc-text">help_type</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#helpPorts"><span class="toc-number">1.0.1.31.</span> <span class="toc-text">helpPorts</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#helpSearchTypes"><span class="toc-number">1.0.1.32.</span> <span class="toc-text">helpSearchTypes</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#helpTryAllPackages"><span class="toc-number">1.0.1.33.</span> <span class="toc-text">helpTryAllPackages</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#HTTPUserAgent"><span class="toc-number">1.0.1.34.</span> <span class="toc-text">HTTPUserAgent</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#installLock"><span class="toc-number">1.0.1.35.</span> <span class="toc-text">installLock</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#installPackagesCheckSource"><span class="toc-number">1.0.1.36.</span> <span class="toc-text">installPackagesCheckSource</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#installPackagesCompileFromSource"><span class="toc-number">1.0.1.37.</span> <span class="toc-text">installPackagesCompileFromSource</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#internetInfo"><span class="toc-number">1.0.1.38.</span> <span class="toc-text">internetInfo</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#keepSource"><span class="toc-number">1.0.1.39.</span> <span class="toc-text">keepSource</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#keepSourcePkgs"><span class="toc-number">1.0.1.40.</span> <span class="toc-text">keepSourcePkgs</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#locatorBell"><span class="toc-number">1.0.1.41.</span> <span class="toc-text">locatorBell</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mailer"><span class="toc-number">1.0.1.42.</span> <span class="toc-text">mailer</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#maxContourSegments"><span class="toc-number">1.0.1.43.</span> <span class="toc-text">maxContourSegments</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#maxPrint"><span class="toc-number">1.0.1.44.</span> <span class="toc-text">maxPrint</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mcCores"><span class="toc-number">1.0.1.45.</span> <span class="toc-text">mcCores</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#menuGraphics"><span class="toc-number">1.0.1.46.</span> <span class="toc-text">menuGraphics</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#NAaction"><span class="toc-number">1.0.1.47.</span> <span class="toc-text">NAaction</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#nwarnings"><span class="toc-number">1.0.1.48.</span> <span class="toc-text">nwarnings</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#OutDec"><span class="toc-number">1.0.1.49.</span> <span class="toc-text">OutDec</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#pager"><span class="toc-number">1.0.1.50.</span> <span class="toc-text">pager</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#papersize"><span class="toc-number">1.0.1.51.</span> <span class="toc-text">papersize</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#pdfviewer"><span class="toc-number">1.0.1.52.</span> <span class="toc-text">pdfviewer</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#pkgType"><span class="toc-number">1.0.1.53.</span> <span class="toc-text">pkgType</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#printcmd"><span class="toc-number">1.0.1.54.</span> <span class="toc-text">printcmd</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#prompt"><span class="toc-number">1.0.1.55.</span> <span class="toc-text">prompt</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#repos"><span class="toc-number">1.0.1.56.</span> <span class="toc-text">repos</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#scipen"><span class="toc-number">1.0.1.57.</span> <span class="toc-text">scipen</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#showCoefPvalues"><span class="toc-number">1.0.1.58.</span> <span class="toc-text">showCoefPvalues</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#showErrorLocations"><span class="toc-number">1.0.1.59.</span> <span class="toc-text">showErrorLocations</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#showErrorMessages"><span class="toc-number">1.0.1.60.</span> <span class="toc-text">showErrorMessages</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#showNCalls"><span class="toc-number">1.0.1.61.</span> <span class="toc-text">showNCalls</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#showNlsConvergence"><span class="toc-number">1.0.1.62.</span> <span class="toc-text">showNlsConvergence</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#showSignifStars"><span class="toc-number">1.0.1.63.</span> <span class="toc-text">showSignifStars</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#showWarnCalls"><span class="toc-number">1.0.1.64.</span> <span class="toc-text">showWarnCalls</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#stringsAsFactors"><span class="toc-number">1.0.1.65.</span> <span class="toc-text">stringsAsFactors</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#texi2dvi"><span class="toc-number">1.0.1.66.</span> <span class="toc-text">texi2dvi</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#timeout"><span class="toc-number">1.0.1.67.</span> <span class="toc-text">timeout</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#topLevelEnvironment"><span class="toc-number">1.0.1.68.</span> <span class="toc-text">topLevelEnvironment</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#tsEps"><span class="toc-number">1.0.1.69.</span> <span class="toc-text">tsEps</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#tsSCompat"><span class="toc-number">1.0.1.70.</span> <span class="toc-text">tsSCompat</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#unzip"><span class="toc-number">1.0.1.71.</span> <span class="toc-text">unzip</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#urlMethod"><span class="toc-number">1.0.1.72.</span> <span class="toc-text">urlMethod</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#useFancyQuotes"><span class="toc-number">1.0.1.73.</span> <span class="toc-text">useFancyQuotes</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#useHTTPS"><span class="toc-number">1.0.1.74.</span> <span class="toc-text">useHTTPS</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#verbose"><span class="toc-number">1.0.1.75.</span> <span class="toc-text">verbose</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#warn"><span class="toc-number">1.0.1.76.</span> <span class="toc-text">warn</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#warnFPU"><span class="toc-number">1.0.1.77.</span> <span class="toc-text">warnFPU</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#warningExpression"><span class="toc-number">1.0.1.78.</span> <span class="toc-text">warningExpression</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#warningLength"><span class="toc-number">1.0.1.79.</span> <span class="toc-text">warningLength</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#warnPartialMatchArgs"><span class="toc-number">1.0.1.80.</span> <span class="toc-text">warnPartialMatchArgs</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#warnPartialMatchAttr"><span class="toc-number">1.0.1.81.</span> <span class="toc-text">warnPartialMatchAttr</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#warnPartialMatchDollar"><span class="toc-number">1.0.1.82.</span> <span class="toc-text">warnPartialMatchDollar</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#width"><span class="toc-number">1.0.1.83.</span> <span class="toc-text">width</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#windowsTimeout"><span class="toc-number">1.0.1.84.</span> <span class="toc-text">windowsTimeout</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="options"><a href="#options" class="headerlink" title="options"></a>options</h1><p><em>namespace: <a href="N-RDotNET.Extensions.VisualBasic.base.html">RDotNET.Extensions.VisualBasic.base</a></em></p>
+<p>Allow the user to set and examine a variety of global options which affect the way in which R computes and displays its results.<br> (由于options函数会设置环境变量，由于设置的变量很少，但是大部分参数为逻辑值，所以在这里使用RExpression类型来防止默认为True的参数被误设置为False)</p>
+<h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="addSmooth"><a href="#addSmooth" class="headerlink" title="addSmooth"></a>addSmooth</h4><p>typically logical, defaulting To True. Could also be Set To an Integer For specifying how many (simulated) smooths should be added. This Is currently only used by plot.lm.</p>
+<h4 id="BioC-mirror"><a href="#BioC-mirror" class="headerlink" title="BioC_mirror"></a>BioC_mirror</h4><p>The URL Of a Bioconductor mirror For use by setRepositories, e.g. the Default “<a href="http://bioconductor.org" target="_blank" rel="external">http://bioconductor.org</a>“ Or the European mirror “<a href="http://bioconductor.statistik.tu-dortmund.de" target="_blank" rel="external">http://bioconductor.statistik.tu-dortmund.de</a>“.<br> Can be Set by chooseBioCmirror.</p>
+<h4 id="browser"><a href="#browser" class="headerlink" title="browser"></a>browser</h4><p>The HTML browser To be used by browseURL. This sets the Default browser On UNIX Or a non-Default browser On Windows.<br> Alternatively, an R Function that Is called With a URL As its argument. See browseURL For further details.</p>
+<h4 id="browserNLdisabled"><a href="#browserNLdisabled" class="headerlink" title="browserNLdisabled"></a>browserNLdisabled</h4><p>logical: whether newline Is disabled As a synonym For “n” In the browser.</p>
+<h4 id="CBoundsCheck"><a href="#CBoundsCheck" class="headerlink" title="CBoundsCheck"></a>CBoundsCheck</h4><p>logical, controlling whether .C And .Fortran make copies to check for array over-runs on the atomic vector arguments.<br> Initially set from value of the environment variable R_C_BOUNDS_CHECK (set to yes to enable).</p>
+<h4 id="ccaddress"><a href="#ccaddress" class="headerlink" title="ccaddress"></a>ccaddress</h4><p>Default Cc: address used by create.post (And hencebug.report And help.request). Can be False Or “”.</p>
+<h4 id="checkBounds"><a href="#checkBounds" class="headerlink" title="checkBounds"></a>checkBounds</h4><p>logical, defaulting to FALSE. If true, a warning Is produced whenever a vector (atomic Or list) Is extended, by something Like x &lt;- 13; x[5] &lt;- 6.</p>
+<h4 id="checkPackageLicense"><a href="#checkPackageLicense" class="headerlink" title="checkPackageLicense"></a>checkPackageLicense</h4><p>logical, Not set by default. If true, library asks a user to accept any non-standard license at first use.</p>
+<h4 id="citationBibtexMax"><a href="#citationBibtexMax" class="headerlink" title="citationBibtexMax"></a>citationBibtexMax</h4><p>Default 1; the maximal number of bibentries (bibentry) in a citation for which the bibtex version Is printed in addition to the text one.</p>
+<h4 id="continue"><a href="#continue" class="headerlink" title="continue"></a>continue</h4><p>a non-empty String setting the prompt used For lines which Continue over one line.</p>
+<h4 id="contrasts"><a href="#contrasts" class="headerlink" title="contrasts"></a>contrasts</h4><p>the Default contrasts used In model fitting such As With aov Or lm.<br> A character vector Of length two, the first giving the Function To be used With unordered factors And the second the Function To be used With ordered factors.<br> By Default the elements are named c(“unordered”, “ordered”), but the names are unused.</p>
+<h4 id="deCellwidth"><a href="#deCellwidth" class="headerlink" title="deCellwidth"></a>deCellwidth</h4><p>Integer: the cell widths (number Of characters) To be used In the data editor dataentry. If this Is unset (the Default), 0, negative Or NA, variable cell widths are used.</p>
+<h4 id="defaultPackages"><a href="#defaultPackages" class="headerlink" title="defaultPackages"></a>defaultPackages</h4><p>the packages that are attached by Default When R starts up.<br> Initially Set from value Of the environment variable R_DEFAULT_PACKAGES, Or If that Is unset To c(“datasets”, “utils”, “grDevices”, “graphics”, “stats”, “methods”). (Set R_DEFAULT_PACKAGES To NULL Or a comma-separated list Of package names.) It will Not work To Set this In a ‘.Rprofile’ file, as its value is consulted before that file is read.</p>
+<h4 id="demoAsk"><a href="#demoAsk" class="headerlink" title="demoAsk"></a>demoAsk</h4><p>Default For the ask argument Of demo.</p>
+<h4 id="deparseCutoff"><a href="#deparseCutoff" class="headerlink" title="deparseCutoff"></a>deparseCutoff</h4><p>Integer value controlling the printing of language constructs which are deparsed. Default 60.</p>
+<h4 id="deparseMaxLines"><a href="#deparseMaxLines" class="headerlink" title="deparseMaxLines"></a>deparseMaxLines</h4><p>controls the number Of lines used When deparsing In traceback, browser, And upon entry To a Function whose debugging flag Is Set.<br> Initially unset, And only used If Set To a positive Integer.</p>
+<h4 id="device"><a href="#device" class="headerlink" title="device"></a>device</h4><p>a character String giving the name Of a Function, Or the Function Object itself, which When called creates a New graphics device Of the Default type For that session.<br> The value Of this Option defaults To the normal screen device (e.g., X11, windows Or quartz) For an interactive session, And pdf In batch use Or If a screen Is Not available.<br> If Set To the name Of a device, the device Is looked For first from the Global environment (that Is down the usual search path) And Then In the grDevices Namespace.<br> The Default values In interactive And non-interactive sessions are configurable via environment variables R_INTERACTIVE_DEVICE And R_DEFAULT_DEVICE respectively.<br> The search logic For ‘the normal screen device’ is that this is windows on Windows, and quartz if available on OS X (running at the console, and compiled into the build).<br> Otherwise X11 is used if environment variable DISPLAY is set.</p>
+<h4 id="deviceAskDefault"><a href="#deviceAskDefault" class="headerlink" title="deviceAskDefault"></a>deviceAskDefault</h4><p>logical. The default for devAskNewPage(“ask”) when a device Is opened.</p>
+<h4 id="digits"><a href="#digits" class="headerlink" title="digits"></a>digits</h4><p>controls the number Of digits To print When printing numeric values. It Is a suggestion only. Valid values are 1…22 With Default 7.<br> See the note In print.Default about values greater than 15.</p>
+<h4 id="digitsSecs"><a href="#digitsSecs" class="headerlink" title="digitsSecs"></a>digitsSecs</h4><p>controls the maximum number Of digits To print When formatting time values In seconds. Valid values are 0…6 With Default 0. See strftime.</p>
+<h4 id="downloadFileExtra"><a href="#downloadFileExtra" class="headerlink" title="downloadFileExtra"></a>downloadFileExtra</h4><p>Extra command-line argument(s) For non-Default methods: see download.file.</p>
+<h4 id="downloadFileMethod"><a href="#downloadFileMethod" class="headerlink" title="downloadFileMethod"></a>downloadFileMethod</h4><p>Method to be used for download.file. Currently download methods “internal”, “wininet” (Windows only), “libcurl”, “wget” And “curl” are available. If Not set, method = “auto” Is chosen: see download.file.</p>
+<h4 id="dvipscmd"><a href="#dvipscmd" class="headerlink" title="dvipscmd"></a>dvipscmd</h4><p>character string giving a command to be used in the (deprecated) off-line printing of help pages via PostScript. Defaults to “dvips”.</p>
+<h4 id="echo"><a href="#echo" class="headerlink" title="echo"></a>echo</h4><p>logical. Only used in non-interactive mode, when it controls whether input Is echoed. Command-line option –slave sets this to FALSE, but otherwise it starts the session as TRUE.</p>
+<h4 id="editor"><a href="#editor" class="headerlink" title="editor"></a>editor</h4><p>a non-empty String Or a Function that sets the Default text editor, e.g., For edit. Set from the environment variable EDITOR On UNIX, Or If unset VISUAL Or vi.</p>
+<h4 id="encoding"><a href="#encoding" class="headerlink" title="encoding"></a>encoding</h4><p>The name Of an encoding, Default “native.enc”. See connections.</p>
+<h4 id="error"><a href="#error" class="headerlink" title="error"></a>error</h4><p>either a Function Or an expression governing the handling Of non-catastrophic errors such As those generated by Stop As well As by signals And internally detected errors.<br> If the Option Is a Function, a Call To that Function, With no arguments, Is generated As the expression.<br> The Default value Is NULL: see stop for the behaviour in that case. The functions dump.frames And recover provide alternatives that allow post-mortem debugging.<br> Note that these need to specified as e.g. options(error = utils:recover) in startup files such as ‘.Rprofile’.</p>
+<h4 id="exampleAsk"><a href="#exampleAsk" class="headerlink" title="exampleAsk"></a>exampleAsk</h4><p>Default For the ask argument Of example.</p>
+<h4 id="expressions"><a href="#expressions" class="headerlink" title="expressions"></a>expressions</h4><p>sets a limit On the number Of nested expressions that will be evaluated. Valid values are 25…500000 With Default 5000.<br> If you increase it, you may also want To start R With a larger protection stack; see –max-ppsize In Memory.<br> Note too that you may cause a segfault from overflow Of the C stack, And On OSes where it Is possible you may want To increase that.<br> Once the limit Is reached an Error Is thrown. The current number under evaluation can be found by calling Cstack_info.</p>
+<h4 id="help-type"><a href="#help-type" class="headerlink" title="help_type"></a>help_type</h4><p>Default For an argument Of help, used also As the help type by ?.</p>
+<h4 id="helpPorts"><a href="#helpPorts" class="headerlink" title="helpPorts"></a>helpPorts</h4><p>optional integer vector for setting ports of the internal HTTP server, see startDynamicHelp.</p>
+<h4 id="helpSearchTypes"><a href="#helpSearchTypes" class="headerlink" title="helpSearchTypes"></a>helpSearchTypes</h4><p>Default types Of documentation To be searched by help.search And ??.</p>
+<h4 id="helpTryAllPackages"><a href="#helpTryAllPackages" class="headerlink" title="helpTryAllPackages"></a>helpTryAllPackages</h4><p>Default For an argument Of help.</p>
+<h4 id="HTTPUserAgent"><a href="#HTTPUserAgent" class="headerlink" title="HTTPUserAgent"></a>HTTPUserAgent</h4><p>String used as the user agent in HTTP(S) requests. If NULL, requests will be made without a user agent header. The default Is R (<version> <platform> <arch> <os>) .</os></arch></platform></version></p>
+<h4 id="installLock"><a href="#installLock" class="headerlink" title="installLock"></a>installLock</h4><p>logical: should per-directory package locking be used by install.packages?<br> Most useful For binary installs On OS X And Windows, but can be used In a startup file For source installs via R CMD INSTALL.<br> For binary installs, can also be the character String “pkgloack”.</p>
+<h4 id="installPackagesCheckSource"><a href="#installPackagesCheckSource" class="headerlink" title="installPackagesCheckSource"></a>installPackagesCheckSource</h4><p>Used by install.packages (And indirectly update.packages) On platforms which support binary packages. Possible values “yes” And “no”, With unset being equivalent To “yes”.</p>
+<h4 id="installPackagesCompileFromSource"><a href="#installPackagesCompileFromSource" class="headerlink" title="installPackagesCompileFromSource"></a>installPackagesCompileFromSource</h4><p>Used by install.packages(type = “both”) (And indirectly update.packages) On platforms which support binary packages. Possible values are “never”, “interactive”<br> (which means ask In interactive use And “never” In batch use) And “always”.<br> The Default Is taken from environment variable R_COMPILE_AND_INSTALL_PACKAGES, With Default “interactive” If unset. However, install.packages uses “never” unless a make program Is found, consulting the environment variable MAKE.</p>
+<h4 id="internetInfo"><a href="#internetInfo" class="headerlink" title="internetInfo"></a>internetInfo</h4><p>The minimum level Of information To be printed On URL downloads etc, Using the “internal” And “libcurl” methods. Default Is 2, For failure causes.<br> Set To 1 Or 0 To Get more detailed information (For the “internal” method 0 provides more information than 1).</p>
+<h4 id="keepSource"><a href="#keepSource" class="headerlink" title="keepSource"></a>keepSource</h4><p>When TRUE, the source code for functions (newly defined Or loaded) Is stored internally allowing comments to be kept in the right places.<br> Retrieve the source by printing Or using deparse(fn, control = “useSource”).<br> The Default Is interactive(), i.e., True For interactive use.</p>
+<h4 id="keepSourcePkgs"><a href="#keepSourcePkgs" class="headerlink" title="keepSourcePkgs"></a>keepSourcePkgs</h4><p>As for keep.source, used only when packages are installed. Defaults to FALSE unless the environment variable R_KEEP_PKG_SOURCE Is set to yes.</p>
+<h4 id="locatorBell"><a href="#locatorBell" class="headerlink" title="locatorBell"></a>locatorBell</h4><p>logical. Should selection in locator And identify be confirmed by a bell? Default TRUE. Honoured at least on X11 And windows devices.</p>
+<h4 id="mailer"><a href="#mailer" class="headerlink" title="mailer"></a>mailer</h4><p>Default emailing method used by create.post And hence bug.report And help.request.</p>
+<h4 id="maxContourSegments"><a href="#maxContourSegments" class="headerlink" title="maxContourSegments"></a>maxContourSegments</h4><p>positive integer, defaulting to 25000 if Not set. A limit on the number of segments in a single contour line in contour Or contourLines.</p>
+<h4 id="maxPrint"><a href="#maxPrint" class="headerlink" title="maxPrint"></a>maxPrint</h4><p>Integer, defaulting To 99999. print Or show methods can make use Of this Option, to limit the amount of information that Is printed, to something in the order of (And typically slightly less than) max.print entries.</p>
+<h4 id="mcCores"><a href="#mcCores" class="headerlink" title="mcCores"></a>mcCores</h4><p>a integer giving the maximum allowed number of additional R processes allowed to be run in parallel to the current R process.<br> Defaults to the setting of the environment variable MC_CORES if set. Most applications which use this assume a limit of 2 if it Is unset.</p>
+<h4 id="menuGraphics"><a href="#menuGraphics" class="headerlink" title="menuGraphics"></a>menuGraphics</h4><p>Logical: should graphical menus be used If available?. Defaults To True. Currently applies To Select.list, chooseCRANmirror, setRepositories And To Select from multiple (text) help files In help.</p>
+<h4 id="NAaction"><a href="#NAaction" class="headerlink" title="NAaction"></a>NAaction</h4><p>the name Of a Function For treating missing values (NA’s) for certain situations.</p>
+<h4 id="nwarnings"><a href="#nwarnings" class="headerlink" title="nwarnings"></a>nwarnings</h4><p>the limit For the number Of warnings kept When warn = 0, Default 50. This will discard messages If called whilst they are being collected.</p>
+<h4 id="OutDec"><a href="#OutDec" class="headerlink" title="OutDec"></a>OutDec</h4><p>character string containing a single character. The preferred character to be used as the decimal point in output conversions, that Is in printing, plotting, format And as.character but Not when deparsing nor by sprintf nor formatC (which are sometimes used prior to printing.)<br> Only single-byte characters were supported prior to R 3.2.0. In R 3.2.1 And earlier, multi- (Or zero-) character OutDec were accepted, but always worked only partially.</p>
+<h4 id="pager"><a href="#pager" class="headerlink" title="pager"></a>pager</h4><p>the command used For displaying text files by file.show. Defaults To “internal”, which uses a pager similar To the GUI console. Another possibility Is “console” To use the console itself.<br> Can be a character String Or an R Function, In which Case it needs To accept the arguments (files, header, title, delete.file) corresponding To the first four arguments Of file.show.</p>
+<h4 id="papersize"><a href="#papersize" class="headerlink" title="papersize"></a>papersize</h4><p>the Default paper format used by postscript; Set by environment variable R_PAPERSIZE When R Is started: If that Is unset Or invalid it defaults To “a4”, Or “letter” In US And Canadian locales.</p>
+<h4 id="pdfviewer"><a href="#pdfviewer" class="headerlink" title="pdfviewer"></a>pdfviewer</h4><p>Default PDF viewer. The Default Is Set from the environment variable R_PDFVIEWER, which defaults To the full path To open.exe, a utility supplied With R.</p>
+<h4 id="pkgType"><a href="#pkgType" class="headerlink" title="pkgType"></a>pkgType</h4><p>The Default type Of packages To be downloaded And installed – see install.packages. Possible values are “win.binary”, “source” And “both” (the Default).<br> Some OS X builds use “mac.binary” And “mac.binary.mavericks”. Value “binary” Is a synonym For the native binary type (If there Is one); “both” Is used by install.packages To choose between source And binary installs.</p>
+<h4 id="printcmd"><a href="#printcmd" class="headerlink" title="printcmd"></a>printcmd</h4><p>the command used by postscript For printing; Set by environment variable R_PRINTCMD When R Is started.<br> This should be a command that expects either input To be piped To ‘stdin’ or to be given a single filename argument. Usually set to “lpr” on a Unix-alike.</p>
+<h4 id="prompt"><a href="#prompt" class="headerlink" title="prompt"></a>prompt</h4><p>a non-empty String To be used For R’s prompt; should usually end in a blank (“ “).</p>
+<h4 id="repos"><a href="#repos" class="headerlink" title="repos"></a>repos</h4><p>URLs of the repositories for use by update.packages. Defaults to c(CRAN=”@CRAN@”), a value that causes some utilities to prompt for a CRAN mirror.<br> To avoid this do set the CRAN mirror, by something Like local({r &lt;- getOption(“repos”); r[“CRAN”] &lt;- “<a href="http://my.local.cran" target="_blank" rel="external">http://my.local.cran</a>“; options(repos = r)}).<br> Note that you can add more repositories (Bioconductor And Omegahat, R-Forge, Rforge.net …) Using setRepositories.</p>
+<h4 id="scipen"><a href="#scipen" class="headerlink" title="scipen"></a>scipen</h4><p>Integer.A penalty to be applied when deciding to print numeric values in fixed Or exponential notation.<br> Positive values bias towards fixed And negative towards scientific notation: fixed notation will be preferred unless it Is more than scipen digits wider.</p>
+<h4 id="showCoefPvalues"><a href="#showCoefPvalues" class="headerlink" title="showCoefPvalues"></a>showCoefPvalues</h4><p>logical, affecting whether P values are printed in summary tables of coefficients. See printCoefmat.</p>
+<h4 id="showErrorLocations"><a href="#showErrorLocations" class="headerlink" title="showErrorLocations"></a>showErrorLocations</h4><p>Should source locations Of errors be printed? If Set To True Or “top”, the source location that Is highest On the stack (the most recent Call) will be printed.<br> “bottom” will print the location Of the earliest Call found On the stack.</p>
+<p> Integer values can select other entries. The value 0 corresponds to “top” And positive values count down the stack from there.<br> The value -1 corresponds to “bottom” And negative values count up from there.</p>
+<h4 id="showErrorMessages"><a href="#showErrorMessages" class="headerlink" title="showErrorMessages"></a>showErrorMessages</h4><p>a logical. Should Error messages be printed? Intended For use With Try Or a user-installed Error handler.</p>
+<h4 id="showNCalls"><a href="#showNCalls" class="headerlink" title="showNCalls"></a>showNCalls</h4><p>Integer.Controls how long the sequence of calls must be (in bytes) before ellipses are used. Defaults to 40 And should be at least 30 And no more than 500.</p>
+<h4 id="showNlsConvergence"><a href="#showNlsConvergence" class="headerlink" title="showNlsConvergence"></a>showNlsConvergence</h4><p>logical, should nls convergence messages be printed for successful fits?</p>
+<h4 id="showSignifStars"><a href="#showSignifStars" class="headerlink" title="showSignifStars"></a>showSignifStars</h4><p>logical, should stars be printed on summary tables of coefficients? See printCoefmat.</p>
+<h4 id="showWarnCalls"><a href="#showWarnCalls" class="headerlink" title="showWarnCalls"></a>showWarnCalls</h4><p>a logical. Should warning And Error messages show a summary Of the Call stack? By Default Error calls are shown In non-interactive sessions.</p>
+<h4 id="stringsAsFactors"><a href="#stringsAsFactors" class="headerlink" title="stringsAsFactors"></a>stringsAsFactors</h4><p>The Default setting For arguments Of data.frame And read.table.</p>
+<h4 id="texi2dvi"><a href="#texi2dvi" class="headerlink" title="texi2dvi"></a>texi2dvi</h4><p>used by functions texi2dvi And texi2pdf In package tools.</p>
+<h4 id="timeout"><a href="#timeout" class="headerlink" title="timeout"></a>timeout</h4><p>Integer.The timeout For some Internet operations, in seconds. Default 60 seconds. See download.file And connections.</p>
+<h4 id="topLevelEnvironment"><a href="#topLevelEnvironment" class="headerlink" title="topLevelEnvironment"></a>topLevelEnvironment</h4><p>see topenv And sys.source.</p>
+<h4 id="tsEps"><a href="#tsEps" class="headerlink" title="tsEps"></a>tsEps</h4><p>the relative tolerance For certain time series (ts) computations. Default 1E-05.</p>
+<h4 id="tsSCompat"><a href="#tsSCompat" class="headerlink" title="tsSCompat"></a>tsSCompat</h4><p>logical. Used to select S compatibility for plotting time-series spectra. See the description of argument log in plot.spec.</p>
+<h4 id="unzip"><a href="#unzip" class="headerlink" title="unzip"></a>unzip</h4><p>a character String used by unzip: the path Of the external program unzip Or “internal”. Defaults To “internal” When the internal unzip code Is used.</p>
+<h4 id="urlMethod"><a href="#urlMethod" class="headerlink" title="urlMethod"></a>urlMethod</h4><p>character string: the Default method For url. Normally unset, which Is equivalent To “default”, which Is “internal” except On Windows.</p>
+<h4 id="useFancyQuotes"><a href="#useFancyQuotes" class="headerlink" title="useFancyQuotes"></a>useFancyQuotes</h4><p>controls the use Of directional quotes In sQuote, dQuote And In rendering text help (see Rd2txt In package tools). Can be True, False, “TeX” Or “UTF-8”.</p>
+<h4 id="useHTTPS"><a href="#useHTTPS" class="headerlink" title="useHTTPS"></a>useHTTPS</h4><p>logical. Used by chooseCRANmirror: are secure mirrors preferred? If Not Set, True Is assumed.</p>
+<h4 id="verbose"><a href="#verbose" class="headerlink" title="verbose"></a>verbose</h4><p>logical. Should R report extra information on progress? Set to TRUE by the command-line option –verbose.</p>
+<h4 id="warn"><a href="#warn" class="headerlink" title="warn"></a>warn</h4><p>sets the handling Of warning messages. If warn Is negative all warnings are ignored. If warn Is zero (the Default) warnings are stored until the top–level Function returns.<br> If 10 Or fewer warnings were signalled they will be printed otherwise a message saying how many were signalled.<br> An Object called last.warning Is created And can be printed through the Function warnings. If warn Is one, warnings are printed As they occur.<br> If warn Is two Or larger all warnings are turned into errors.</p>
+<h4 id="warnFPU"><a href="#warnFPU" class="headerlink" title="warnFPU"></a>warnFPU</h4><p>logical, by default undefined. If true, a warning Is produced whenever dyn.load repairs the control word damaged by a buggy DLL.</p>
+<h4 id="warningExpression"><a href="#warningExpression" class="headerlink" title="warningExpression"></a>warningExpression</h4><p>an R code expression To be called If a warning Is generated, replacing the standard message. If non-null it Is called irrespective Of the value Of Option warn.</p>
+<h4 id="warningLength"><a href="#warningLength" class="headerlink" title="warningLength"></a>warningLength</h4><p>sets the truncation limit For Error And warning messages. A non-negative Integer, With allowed values 100…8170, Default 1000.</p>
+<h4 id="warnPartialMatchArgs"><a href="#warnPartialMatchArgs" class="headerlink" title="warnPartialMatchArgs"></a>warnPartialMatchArgs</h4><p>logical. If true, warns if partial matching Is used in argument matching.</p>
+<h4 id="warnPartialMatchAttr"><a href="#warnPartialMatchAttr" class="headerlink" title="warnPartialMatchAttr"></a>warnPartialMatchAttr</h4><p>logical. If true, warns if partial matching Is used in extracting attributes via attr.</p>
+<h4 id="warnPartialMatchDollar"><a href="#warnPartialMatchDollar" class="headerlink" title="warnPartialMatchDollar"></a>warnPartialMatchDollar</h4><p>logical. If true, warns if partial matching Is used for extraction by $.</p>
+<h4 id="width"><a href="#width" class="headerlink" title="width"></a>width</h4><p>controls the maximum number Of columns On a line used In printing vectors, matrices And arrays, And When filling by cat.<br> Columns are normally the same As characters except In East Asian languages.</p>
+<p> You may want To change this If you re-size the window that R Is running In. Valid values are 10…10000 With Default normally 80. (The limits On valid values are In file ‘Print.h’ and can be changed by re-compiling R.) Some R consoles automatically change the value when they are resized.<br> See the examples On Startup For one way To Set this automatically from the terminal width When R Is started.</p>
+<h4 id="windowsTimeout"><a href="#windowsTimeout" class="headerlink" title="windowsTimeout"></a>windowsTimeout</h4><p>(Windows-only) integer vector of length 2 representing two times in milliseconds.<br> These control the double-buffering of windows devices when that Is enabled: the first Is the delay after plotting finishes (Default 100) And the second Is the update interval during continuous plotting (Default 500). The values at the time the device Is opened are used.</p>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-RDotNET.Extensions.VisualBasic.base.options.html" class="article-date">
+  <time datetime="2016-06-13T10:38:23.718Z" itemprop="datePublished">2016-06-13</time>
+</a>
+              <a data-url="http://docs.gcmodeller.org/API/T-RDotNET.Extensions.VisualBasic.base.options.html" data-id="cipdv73nx06chbgv4y3fu0a9p" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 GCModeller docs library<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/SMRUCC/" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

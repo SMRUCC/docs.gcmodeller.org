@@ -1,0 +1,303 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>plot | GCModeller docs library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="plotnamespace: RDotNET.Extensions.VisualBasic.Graphics
+Generic function for plotting of R objects. For more details about the graphical parameter arguments, see par. For simple scatter plots, plot.def">
+<meta property="og:type" content="website">
+<meta property="og:title" content="plot">
+<meta property="og:url" content="http://docs.gcmodeller.org/API/T-RDotNET.Extensions.VisualBasic.Graphics.plot.html">
+<meta property="og:site_name" content="GCModeller docs library">
+<meta property="og:description" content="plotnamespace: RDotNET.Extensions.VisualBasic.Graphics
+Generic function for plotting of R objects. For more details about the graphical parameter arguments, see par. For simple scatter plots, plot.def">
+<meta property="og:updated_time" content="2016-06-13T10:38:23.812Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="plot">
+<meta name="twitter:description" content="plotnamespace: RDotNET.Extensions.VisualBasic.Graphics
+Generic function for plotting of R objects. For more details about the graphical parameter arguments, see par. For simple scatter plots, plot.def">
+    
+      <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="/css/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tags">
+                  
+                  
+
+                
+                  Tags
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/archives">
+                  
+                  
+
+                
+                  Archives
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/SMRUCC/">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://docs.gcmodeller.org"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-RDotNET.Extensions.VisualBasic.Graphics.plot.html">
+      <h1 class="article-title" itemprop="name">
+        plot
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-RDotNET.Extensions.VisualBasic.Graphics.plot.html" class="article-date">
+  <time datetime="2016-06-13T10:38:23.812Z" itemprop="datePublished">2016-06-13</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-RDotNET.Extensions.VisualBasic.Graphics.plot.html">
+      <h1 class="article-title" itemprop="name">
+        plot
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#plot"><span class="toc-number">1.</span> <span class="toc-text">plot</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties"><span class="toc-number">1.0.1.</span> <span class="toc-text">Properties</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#asp"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">asp</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#main"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">main</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#sub"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">sub</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#type"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">type</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#x"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">x</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#xlab"><span class="toc-number">1.0.1.6.</span> <span class="toc-text">xlab</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#y"><span class="toc-number">1.0.1.7.</span> <span class="toc-text">y</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ylab"><span class="toc-number">1.0.1.8.</span> <span class="toc-text">ylab</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="plot"><a href="#plot" class="headerlink" title="plot"></a>plot</h1><p><em>namespace: <a href="N-RDotNET.Extensions.VisualBasic.Graphics.html">RDotNET.Extensions.VisualBasic.Graphics</a></em></p>
+<p>Generic function for plotting of R objects. For more details about the graphical parameter arguments, see par.<br> For simple scatter plots, plot.default will be used.<br> However, there are plot methods for many R objects, including functions, data.frames, density objects, etc. Use methods(plot) And the documentation for these.</p>
+<h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="asp"><a href="#asp" class="headerlink" title="asp"></a>asp</h4><p>the y / x aspect ratio, see plot.window.</p>
+<h4 id="main"><a href="#main" class="headerlink" title="main"></a>main</h4><p>an overall title For the plot: see title.</p>
+<h4 id="sub"><a href="#sub" class="headerlink" title="sub"></a>sub</h4><p>A Sub() title for the plot: see title.</p>
+<h4 id="type"><a href="#type" class="headerlink" title="type"></a>type</h4><p>what type Of plot should be drawn. Possible types are</p>
+<p> “p” for points,<br> “l” for lines,<br> “b” for both,<br> “c” for the lines part alone of “b”,<br> “o” for both ‘overplotted’,<br> “h” for ‘histogram’ like (or ‘high-density’) vertical lines,<br> “s” for stair steps,<br> “S” for other steps, see ‘Details’ below,<br> “n” for no plotting.</p>
+<p> All other types give a warning Or an Error; Using, e.g., type = “punkte” being equivalent To type = “p” For S compatibility.<br> Note that some methods, e.g. plot.factor, Do Not accept this.</p>
+<h4 id="x"><a href="#x" class="headerlink" title="x"></a>x</h4><p>the coordinates Of points In the plot. Alternatively, a Single plotting Structure, Function Or any R Object With a plot method can be provided.</p>
+<h4 id="xlab"><a href="#xlab" class="headerlink" title="xlab"></a>xlab</h4><p>A title For the x axis: see title.</p>
+<h4 id="y"><a href="#y" class="headerlink" title="y"></a>y</h4><p>the y coordinates Of points In the plot, Optional If x Is an appropriate Structure.</p>
+<h4 id="ylab"><a href="#ylab" class="headerlink" title="ylab"></a>ylab</h4><p>A title For the y axis: see title.</p>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-RDotNET.Extensions.VisualBasic.Graphics.plot.html" class="article-date">
+  <time datetime="2016-06-13T10:38:23.812Z" itemprop="datePublished">2016-06-13</time>
+</a>
+              <a data-url="http://docs.gcmodeller.org/API/T-RDotNET.Extensions.VisualBasic.Graphics.plot.html" data-id="cipdv732f06bpbgv40hzt23a8" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 GCModeller docs library<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/SMRUCC/" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

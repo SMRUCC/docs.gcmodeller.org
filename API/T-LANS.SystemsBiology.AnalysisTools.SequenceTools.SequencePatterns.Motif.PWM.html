@@ -1,0 +1,358 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>PWM | GCModeller docs library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="PWMnamespace: LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Motif
+Build probability matrix from clustal multiple sequence alignment.
+Methods__hi1LANS.SystemsBiology.AnalysisTools.Se">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PWM">
+<meta property="og:url" content="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Motif.PWM.html">
+<meta property="og:site_name" content="GCModeller docs library">
+<meta property="og:description" content="PWMnamespace: LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Motif
+Build probability matrix from clustal multiple sequence alignment.
+Methods__hi1LANS.SystemsBiology.AnalysisTools.Se">
+<meta property="og:updated_time" content="2016-06-13T10:38:05.984Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="PWM">
+<meta name="twitter:description" content="PWMnamespace: LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Motif
+Build probability matrix from clustal multiple sequence alignment.
+Methods__hi1LANS.SystemsBiology.AnalysisTools.Se">
+    
+      <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="/css/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tags">
+                  
+                  
+
+                
+                  Tags
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/archives">
+                  
+                  
+
+                
+                  Archives
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/SMRUCC/">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://docs.gcmodeller.org"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Motif.PWM.html">
+      <h1 class="article-title" itemprop="name">
+        PWM
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Motif.PWM.html" class="article-date">
+  <time datetime="2016-06-13T10:38:05.984Z" itemprop="datePublished">2016-06-13</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Motif.PWM.html">
+      <h1 class="article-title" itemprop="name">
+        PWM
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#PWM"><span class="toc-number">1.</span> <span class="toc-text">PWM</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#hi"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">__hi</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#residue"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">__residue</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#FromMla"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">FromMla</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="PWM"><a href="#PWM" class="headerlink" title="PWM"></a>PWM</h1><p><em>namespace: <a href="N-LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Motif.html">LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Motif</a></em></p>
+<p>Build probability matrix from clustal multiple sequence alignment.</p>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="hi"><a href="#hi" class="headerlink" title="__hi"></a>__hi</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Motif.PWM.__hi(System.Collections.Generic.Dictionary&#123;System.Char,System.Double&#125;)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>f</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p> If n equals ZERO, then log2(0) is NaN, n <em> Math.Log(n, 2) could not be measure,<br> due to the reason of ZERO multiple any number is ZERO, so that if n is ZERO,<br> then set n </em> Math.Log(n, 2) its value to Zero directly.</p>
+</blockquote>
+<h4 id="residue"><a href="#residue" class="headerlink" title="__residue"></a>__residue</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Motif.PWM.__residue(System.Collections.Generic.Dictionary&#123;System.Char,System.Double&#125;,System.Double,System.Double,System.Int32,System.Int32)</span><br></pre></td></tr></table></figure>
+<p>Construct of the residue model in the PWM</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>f</td>
+<td>ATGC</td>
+</tr>
+<tr>
+<td>h</td>
+<td>-</td>
+</tr>
+<tr>
+<td>en</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="FromMla"><a href="#FromMla" class="headerlink" title="FromMla"></a>FromMla</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Motif.PWM.FromMla(LANS.SystemsBiology.SequenceModel.FASTA.FastaFile)</span><br></pre></td></tr></table></figure>
+<p>Build probability matrix from clustal multiple sequence alignment, this matrix model can be<br> used for the downstream sequence logo drawing visualization.<br> (从Clustal比对结果之中生成PWM用于SequenceLogo的绘制)</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fa</td>
+<td>A fasta sequence file from the clustal multiple sequence alignment.</td>
+</tr>
+</tbody>
+</table>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Motif.PWM.html" class="article-date">
+  <time datetime="2016-06-13T10:38:05.984Z" itemprop="datePublished">2016-06-13</time>
+</a>
+              <a data-url="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.AnalysisTools.SequenceTools.SequencePatterns.Motif.PWM.html" data-id="cipdv6uej04rtbgv4syccwhdy" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 GCModeller docs library<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/SMRUCC/" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

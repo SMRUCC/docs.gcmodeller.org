@@ -1,0 +1,341 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>blockwiseModules | GCModeller docs library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="blockwiseModulesnamespace: SMRUCC.R.CRAN.Bioconductor.WGCNA
+This function performs automatic network construction and module detection on large expression datasets in a block-wise manner.
+Propertiesbl">
+<meta property="og:type" content="website">
+<meta property="og:title" content="blockwiseModules">
+<meta property="og:url" content="http://docs.gcmodeller.org/API/T-SMRUCC.R.CRAN.Bioconductor.WGCNA.blockwiseModules.html">
+<meta property="og:site_name" content="GCModeller docs library">
+<meta property="og:description" content="blockwiseModulesnamespace: SMRUCC.R.CRAN.Bioconductor.WGCNA
+This function performs automatic network construction and module detection on large expression datasets in a block-wise manner.
+Propertiesbl">
+<meta property="og:updated_time" content="2016-06-13T10:38:03.931Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="blockwiseModules">
+<meta name="twitter:description" content="blockwiseModulesnamespace: SMRUCC.R.CRAN.Bioconductor.WGCNA
+This function performs automatic network construction and module detection on large expression datasets in a block-wise manner.
+Propertiesbl">
+    
+      <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="/css/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tags">
+                  
+                  
+
+                
+                  Tags
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/archives">
+                  
+                  
+
+                
+                  Archives
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/SMRUCC/">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://docs.gcmodeller.org"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-SMRUCC.R.CRAN.Bioconductor.WGCNA.blockwiseModules.html">
+      <h1 class="article-title" itemprop="name">
+        blockwiseModules
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-SMRUCC.R.CRAN.Bioconductor.WGCNA.blockwiseModules.html" class="article-date">
+  <time datetime="2016-06-13T10:38:03.931Z" itemprop="datePublished">2016-06-13</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-SMRUCC.R.CRAN.Bioconductor.WGCNA.blockwiseModules.html">
+      <h1 class="article-title" itemprop="name">
+        blockwiseModules
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#blockwiseModules"><span class="toc-number">1.</span> <span class="toc-text">blockwiseModules</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties"><span class="toc-number">1.0.1.</span> <span class="toc-text">Properties</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#blocks"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">blocks</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#blockSizePenaltyPower"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">blockSizePenaltyPower</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#checkMissingData"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">checkMissingData</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#corType"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">corType</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#cosineCorrelation"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">cosineCorrelation</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#datExpr"><span class="toc-number">1.0.1.6.</span> <span class="toc-text">datExpr</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#deepSplit"><span class="toc-number">1.0.1.7.</span> <span class="toc-text">deepSplit</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#detectCutHeight"><span class="toc-number">1.0.1.8.</span> <span class="toc-text">detectCutHeight</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#getTOMs"><span class="toc-number">1.0.1.9.</span> <span class="toc-text">getTOMs</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#impute"><span class="toc-number">1.0.1.10.</span> <span class="toc-text">impute</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#indent"><span class="toc-number">1.0.1.11.</span> <span class="toc-text">indent</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#loadTOM"><span class="toc-number">1.0.1.12.</span> <span class="toc-text">loadTOM</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#maxAbsCoreScatter"><span class="toc-number">1.0.1.13.</span> <span class="toc-text">maxAbsCoreScatter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#maxBlockSize"><span class="toc-number">1.0.1.14.</span> <span class="toc-text">maxBlockSize</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#maxCoreScatter"><span class="toc-number">1.0.1.15.</span> <span class="toc-text">maxCoreScatter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#maxPOutliers"><span class="toc-number">1.0.1.16.</span> <span class="toc-text">maxPOutliers</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mergeCutHeight"><span class="toc-number">1.0.1.17.</span> <span class="toc-text">mergeCutHeight</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#minAbsGap"><span class="toc-number">1.0.1.18.</span> <span class="toc-text">minAbsGap</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#minAbsSplitHeight"><span class="toc-number">1.0.1.19.</span> <span class="toc-text">minAbsSplitHeight</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#minBranchEigennodeDissim"><span class="toc-number">1.0.1.20.</span> <span class="toc-text">minBranchEigennodeDissim</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#minCoreKME"><span class="toc-number">1.0.1.21.</span> <span class="toc-text">minCoreKME</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#minCoreKMESize"><span class="toc-number">1.0.1.22.</span> <span class="toc-text">minCoreKMESize</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#minGap"><span class="toc-number">1.0.1.23.</span> <span class="toc-text">minGap</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#minKMEtoStay"><span class="toc-number">1.0.1.24.</span> <span class="toc-text">minKMEtoStay</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#minModuleSize"><span class="toc-number">1.0.1.25.</span> <span class="toc-text">minModuleSize</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#minSplitHeight"><span class="toc-number">1.0.1.26.</span> <span class="toc-text">minSplitHeight</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#minStabilityDissim"><span class="toc-number">1.0.1.27.</span> <span class="toc-text">minStabilityDissim</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#networkType"><span class="toc-number">1.0.1.28.</span> <span class="toc-text">networkType</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#nThreads"><span class="toc-number">1.0.1.29.</span> <span class="toc-text">nThreads</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#numericLabels"><span class="toc-number">1.0.1.30.</span> <span class="toc-text">numericLabels</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#pamRespectsDendro"><span class="toc-number">1.0.1.31.</span> <span class="toc-text">pamRespectsDendro</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#pamStage"><span class="toc-number">1.0.1.32.</span> <span class="toc-text">pamStage</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#pearsonFallback"><span class="toc-number">1.0.1.33.</span> <span class="toc-text">pearsonFallback</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#power"><span class="toc-number">1.0.1.34.</span> <span class="toc-text">power</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#quickCor"><span class="toc-number">1.0.1.35.</span> <span class="toc-text">quickCor</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#randomSeed"><span class="toc-number">1.0.1.36.</span> <span class="toc-text">randomSeed</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#reassignThreshold"><span class="toc-number">1.0.1.37.</span> <span class="toc-text">reassignThreshold</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#saveTOMFileBase"><span class="toc-number">1.0.1.38.</span> <span class="toc-text">saveTOMFileBase</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#saveTOMs"><span class="toc-number">1.0.1.39.</span> <span class="toc-text">saveTOMs</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#stabilityLabels"><span class="toc-number">1.0.1.40.</span> <span class="toc-text">stabilityLabels</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#TOMDenom"><span class="toc-number">1.0.1.41.</span> <span class="toc-text">TOMDenom</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#TOMType"><span class="toc-number">1.0.1.42.</span> <span class="toc-text">TOMType</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#trapErrors"><span class="toc-number">1.0.1.43.</span> <span class="toc-text">trapErrors</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#useBranchEigennodeDissim"><span class="toc-number">1.0.1.44.</span> <span class="toc-text">useBranchEigennodeDissim</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#verbose"><span class="toc-number">1.0.1.45.</span> <span class="toc-text">verbose</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="blockwiseModules"><a href="#blockwiseModules" class="headerlink" title="blockwiseModules"></a>blockwiseModules</h1><p><em>namespace: <a href="N-SMRUCC.R.CRAN.Bioconductor.WGCNA.html">SMRUCC.R.CRAN.Bioconductor.WGCNA</a></em></p>
+<p>This function performs automatic network construction and module detection on large expression datasets in a block-wise manner.</p>
+<h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="blocks"><a href="#blocks" class="headerlink" title="blocks"></a>blocks</h4><p>optional specification of blocks in which hierarchical clustering and module detection should be performed. If given, must be a numeric vector with one entry per column (gene) of exprData giving the number of the block to which the corresponding gene belongs.</p>
+<h4 id="blockSizePenaltyPower"><a href="#blockSizePenaltyPower" class="headerlink" title="blockSizePenaltyPower"></a>blockSizePenaltyPower</h4><p>number specifying how strongly blocks should be penalized for exceeding the maximum size. Set to a lrge number or Inf if not exceeding maximum block size is very important.</p>
+<h4 id="checkMissingData"><a href="#checkMissingData" class="headerlink" title="checkMissingData"></a>checkMissingData</h4><p>logical: should data be checked for excessive numbers of missing entries in genes and samples, and for genes with zero variance? See details.</p>
+<h4 id="corType"><a href="#corType" class="headerlink" title="corType"></a>corType</h4><p>character string specifying the correlation to be used. Allowed values are (unique abbreviations of) “pearson” and “bicor”, corresponding to Pearson and bidweight midcorrelation, respectively. Missing values are handled using the pairwise.complete.obs option.</p>
+<h4 id="cosineCorrelation"><a href="#cosineCorrelation" class="headerlink" title="cosineCorrelation"></a>cosineCorrelation</h4><p>logical: should the cosine version of the correlation calculation be used? The cosine calculation differs from the standard one in that it does not subtract the mean.</p>
+<h4 id="datExpr"><a href="#datExpr" class="headerlink" title="datExpr"></a>datExpr</h4><p>expression data. A data frame in which columns are genes and rows ar samples. NAs are allowed, but not too many.</p>
+<h4 id="deepSplit"><a href="#deepSplit" class="headerlink" title="deepSplit"></a>deepSplit</h4><p>integer value between 0 and 4. Provides a simplified control over how sensitive module detection should be to module splitting, with 0 least and 4 most sensitive. See cutreeDynamic for more details.</p>
+<h4 id="detectCutHeight"><a href="#detectCutHeight" class="headerlink" title="detectCutHeight"></a>detectCutHeight</h4><p>dendrogram cut height for module detection. See cutreeDynamic for more details.</p>
+<h4 id="getTOMs"><a href="#getTOMs" class="headerlink" title="getTOMs"></a>getTOMs</h4><p>deprecated, please use saveTOMs below.</p>
+<h4 id="impute"><a href="#impute" class="headerlink" title="impute"></a>impute</h4><p>logical: should imputation be used for module eigengene calculation? See moduleEigengenes for more details.</p>
+<h4 id="indent"><a href="#indent" class="headerlink" title="indent"></a>indent</h4><p>indentation for diagnostic messages. Zero means no indentation, each unit adds two spaces.</p>
+<h4 id="loadTOM"><a href="#loadTOM" class="headerlink" title="loadTOM"></a>loadTOM</h4><p>logical: should Topological Overlap Matrices be loaded from previously saved files (TRUE) or calculated (FALSE)? It may be useful to load previously saved TOM matrices if these have been calculated previously, since TOM calculation is often the most computationally expensive part of network construction and module identification. See saveTOMs and saveTOMFileBase below for when and how TOM files are saved, and what the file names are. If loadTOM is TRUE but the files cannot be found, or do not contain the correct TOM data, TOM will be recalculated.</p>
+<h4 id="maxAbsCoreScatter"><a href="#maxAbsCoreScatter" class="headerlink" title="maxAbsCoreScatter"></a>maxAbsCoreScatter</h4><p>maximum scatter of the core for a branch to be a cluster given as absolute heights. If given, overrides maxCoreScatter. See cutreeDynamic for more details.</p>
+<h4 id="maxBlockSize"><a href="#maxBlockSize" class="headerlink" title="maxBlockSize"></a>maxBlockSize</h4><p>integer giving maximum block size for module detection. Ignored if blocks above is non-NULL. Otherwise, if the number of genes in datExpr exceeds maxBlockSize, genes will be pre-clustered into blocks whose size should not exceed maxBlockSize.</p>
+<h4 id="maxCoreScatter"><a href="#maxCoreScatter" class="headerlink" title="maxCoreScatter"></a>maxCoreScatter</h4><p>maximum scatter of the core for a branch to be a cluster, given as the fraction of cutHeight relative to the 5th percentile of joining heights. See cutreeDynamic for more details.</p>
+<h4 id="maxPOutliers"><a href="#maxPOutliers" class="headerlink" title="maxPOutliers"></a>maxPOutliers</h4><p>only used for corType==”bicor”. Specifies the maximum percentile of data that can be considered outliers on either side of the median separately. For each side of the median, if higher percentile than maxPOutliers is considered an outlier by the weight function based on 9*mad(x), the width of the weight function is increased such that the percentile of outliers on that side of the median equals maxPOutliers. Using maxPOutliers=1 will effectively disable all weight function broadening; using maxPOutliers=0 will give results that are quite similar (but not equal to) Pearson correlation.</p>
+<h4 id="mergeCutHeight"><a href="#mergeCutHeight" class="headerlink" title="mergeCutHeight"></a>mergeCutHeight</h4><p>dendrogram cut height for module merging.</p>
+<h4 id="minAbsGap"><a href="#minAbsGap" class="headerlink" title="minAbsGap"></a>minAbsGap</h4><p>minimum cluster gap given as absolute height difference. If given, overrides minGap. See cutreeDynamic for more details.</p>
+<h4 id="minAbsSplitHeight"><a href="#minAbsSplitHeight" class="headerlink" title="minAbsSplitHeight"></a>minAbsSplitHeight</h4><p>Minimum split height given as an absolute height. Branches merging below this height will automatically be merged. If not given (default), will be determined from minSplitHeight above.</p>
+<h4 id="minBranchEigennodeDissim"><a href="#minBranchEigennodeDissim" class="headerlink" title="minBranchEigennodeDissim"></a>minBranchEigennodeDissim</h4><p>Minimum consensus branch eigennode (eigengene) dissimilarity for branches to be considerd separate. The branch eigennode dissimilarity in individual sets is simly 1-correlation of the eigennodes; the consensus is defined as quantile with probability consensusQuantile.</p>
+<h4 id="minCoreKME"><a href="#minCoreKME" class="headerlink" title="minCoreKME"></a>minCoreKME</h4><p>a number between 0 and 1. If a detected module does not have at least minModuleKMESize genes with eigengene connectivity at least minCoreKME, the module is disbanded (its genes are unlabeled and returned to the pool of genes waiting for mofule detection).</p>
+<h4 id="minCoreKMESize"><a href="#minCoreKMESize" class="headerlink" title="minCoreKMESize"></a>minCoreKMESize</h4><p>see minCoreKME above.</p>
+<h4 id="minGap"><a href="#minGap" class="headerlink" title="minGap"></a>minGap</h4><p>minimum cluster gap given as the fraction of the difference between cutHeight and the 5th percentile of joining heights. See cutreeDynamic for more details.</p>
+<h4 id="minKMEtoStay"><a href="#minKMEtoStay" class="headerlink" title="minKMEtoStay"></a>minKMEtoStay</h4><p>genes whose eigengene connectivity to their module eigengene is lower than minKMEtoStay are removed from the module.</p>
+<h4 id="minModuleSize"><a href="#minModuleSize" class="headerlink" title="minModuleSize"></a>minModuleSize</h4><p>minimum module size for module detection. See cutreeDynamic for more details.</p>
+<h4 id="minSplitHeight"><a href="#minSplitHeight" class="headerlink" title="minSplitHeight"></a>minSplitHeight</h4><p>Minimum split height given as the fraction of the difference between cutHeight and the 5th percentile of joining heights. Branches merging below this height will automatically be merged. Defaults to zero but is used only if minAbsSplitHeight below is NULL.</p>
+<h4 id="minStabilityDissim"><a href="#minStabilityDissim" class="headerlink" title="minStabilityDissim"></a>minStabilityDissim</h4><p>Minimum stability dissimilarity criterion for two branches to be considered separate. Should be a number between 0 (essentially no dissimilarity required) and 1 (perfect dissimilarity or distinguishability based on stabilityLabels). See branchSplitFromStabilityLabels for details.</p>
+<h4 id="networkType"><a href="#networkType" class="headerlink" title="networkType"></a>networkType</h4><p>network type. Allowed values are (unique abbreviations of) “unsigned”, “signed”, “signed hybrid”. See adjacency.</p>
+<h4 id="nThreads"><a href="#nThreads" class="headerlink" title="nThreads"></a>nThreads</h4><p>non-negative integer specifying the number of parallel threads to be used by certain parts of correlation calculations. This option only has an effect on systems on which a POSIX thread library is available (which currently includes Linux and Mac OSX, but excludes Windows). If zero, the number of online processors will be used if it can be determined dynamically, otherwise correlation calculations will use 2 threads.</p>
+<h4 id="numericLabels"><a href="#numericLabels" class="headerlink" title="numericLabels"></a>numericLabels</h4><p>logical: should the returned modules be labeled by colors (FALSE), or by numbers (TRUE)?</p>
+<h4 id="pamRespectsDendro"><a href="#pamRespectsDendro" class="headerlink" title="pamRespectsDendro"></a>pamRespectsDendro</h4><p>Logical, only used when pamStage is TRUE. If TRUE, the PAM stage will respect the dendrogram in the sense an object can be PAM-assigned only to clusters that lie below it on the branch that the object is merged into. See cutreeDynamic for more details.</p>
+<h4 id="pamStage"><a href="#pamStage" class="headerlink" title="pamStage"></a>pamStage</h4><p>logical. If TRUE, the second (PAM-like) stage of module detection will be performed. See cutreeDynamic for more details.</p>
+<h4 id="pearsonFallback"><a href="#pearsonFallback" class="headerlink" title="pearsonFallback"></a>pearsonFallback</h4><p>Specifies whether the bicor calculation, if used, should revert to Pearson when median absolute deviation (mad) is zero. Recongnized values are (abbreviations of) “none”, “individual”, “all”. If set to “none”, zero mad will result in NA for the corresponding correlation. If set to “individual”, Pearson calculation will be used only for columns that have zero mad. If set to “all”, the presence of a single zero mad will cause the whole variable to be treated in Pearson correlation manner (as if the corresponding robust option was set to FALSE). Has no effect for Pearson correlation. See bicor.</p>
+<h4 id="power"><a href="#power" class="headerlink" title="power"></a>power</h4><p>soft-thresholding power for network construction.</p>
+<h4 id="quickCor"><a href="#quickCor" class="headerlink" title="quickCor"></a>quickCor</h4><p>real number between 0 and 1 that controls the handling of missing data in the calculation of correlations. See details.</p>
+<h4 id="randomSeed"><a href="#randomSeed" class="headerlink" title="randomSeed"></a>randomSeed</h4><p>integer to be used as seed for the random number generator before the function starts. If a current seed exists, it is saved and restored upon exit. If NULL is given, the function will not save and restore the seed.</p>
+<h4 id="reassignThreshold"><a href="#reassignThreshold" class="headerlink" title="reassignThreshold"></a>reassignThreshold</h4><p>p-value ratio threshold for reassigning genes between modules. See Details.</p>
+<h4 id="saveTOMFileBase"><a href="#saveTOMFileBase" class="headerlink" title="saveTOMFileBase"></a>saveTOMFileBase</h4><p>character string containing the file name base for files containing the consensus topological overlaps. The full file names have “block.1.RData”, “block.2.RData” etc. appended. These files are standard R data files and can be loaded using the load function.</p>
+<h4 id="saveTOMs"><a href="#saveTOMs" class="headerlink" title="saveTOMs"></a>saveTOMs</h4><p>logical: should the consensus topological overlap matrices For Each block be saved And returned?</p>
+<h4 id="stabilityLabels"><a href="#stabilityLabels" class="headerlink" title="stabilityLabels"></a>stabilityLabels</h4><p>Optional matrix of cluster labels that are to be used for calculating branch dissimilarity based on split stability. The number of rows must equal the number of genes in multiExpr; the number of columns (clusterings) is arbitrary. See branchSplitFromStabilityLabels for details.</p>
+<h4 id="TOMDenom"><a href="#TOMDenom" class="headerlink" title="TOMDenom"></a>TOMDenom</h4><p>a character string specifying the TOM variant to be used. Recognized values are “min” giving the standard TOM described in Zhang and Horvath (2005), and “mean” in which the min function in the denominator is replaced by mean. The “mean” may produce better results but at this time should be considered experimental.</p>
+<h4 id="TOMType"><a href="#TOMType" class="headerlink" title="TOMType"></a>TOMType</h4><p>one of “none”, “unsigned”, “signed”. If “none”, adjacency will be used for clustering.<br> If “unsigned”, the standard TOM will be used (more generally, TOM function will receive the adjacency as input). If “signed”, TOM will keep track of the sign of correlations between neighbors.</p>
+<h4 id="trapErrors"><a href="#trapErrors" class="headerlink" title="trapErrors"></a>trapErrors</h4><p>logical: should errors in calculations be trapped?</p>
+<h4 id="useBranchEigennodeDissim"><a href="#useBranchEigennodeDissim" class="headerlink" title="useBranchEigennodeDissim"></a>useBranchEigennodeDissim</h4><p>Logical: should branch eigennode (eigengene) dissimilarity be considered when merging branches in Dynamic Tree Cut?</p>
+<h4 id="verbose"><a href="#verbose" class="headerlink" title="verbose"></a>verbose</h4><p>integer level of verbosity. Zero means silent, higher values make the output progressively more and more verbose.</p>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-SMRUCC.R.CRAN.Bioconductor.WGCNA.blockwiseModules.html" class="article-date">
+  <time datetime="2016-06-13T10:38:03.931Z" itemprop="datePublished">2016-06-13</time>
+</a>
+              <a data-url="http://docs.gcmodeller.org/API/T-SMRUCC.R.CRAN.Bioconductor.WGCNA.blockwiseModules.html" data-id="cipdv7j4a06habgv44g10g26w" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 GCModeller docs library<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/SMRUCC/" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

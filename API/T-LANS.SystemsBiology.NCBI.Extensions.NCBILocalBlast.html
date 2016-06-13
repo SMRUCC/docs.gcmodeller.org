@@ -1,0 +1,421 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>NCBILocalBlast | GCModeller docs library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="NCBILocalBlastnamespace: LANS.SystemsBiology.NCBI.Extensions
+ShoalShell API interface for ncbi localblast operations.
+MethodsBlastn1LANS.SystemsBiology.NCBI.Extensions.NCBILocalBlast.Blastn(LANS.Syste">
+<meta property="og:type" content="website">
+<meta property="og:title" content="NCBILocalBlast">
+<meta property="og:url" content="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.NCBI.Extensions.NCBILocalBlast.html">
+<meta property="og:site_name" content="GCModeller docs library">
+<meta property="og:description" content="NCBILocalBlastnamespace: LANS.SystemsBiology.NCBI.Extensions
+ShoalShell API interface for ncbi localblast operations.
+MethodsBlastn1LANS.SystemsBiology.NCBI.Extensions.NCBILocalBlast.Blastn(LANS.Syste">
+<meta property="og:updated_time" content="2016-06-13T10:38:12.847Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="NCBILocalBlast">
+<meta name="twitter:description" content="NCBILocalBlastnamespace: LANS.SystemsBiology.NCBI.Extensions
+ShoalShell API interface for ncbi localblast operations.
+MethodsBlastn1LANS.SystemsBiology.NCBI.Extensions.NCBILocalBlast.Blastn(LANS.Syste">
+    
+      <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="/css/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tags">
+                  
+                  
+
+                
+                  Tags
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/archives">
+                  
+                  
+
+                
+                  Archives
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/SMRUCC/">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://docs.gcmodeller.org"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-LANS.SystemsBiology.NCBI.Extensions.NCBILocalBlast.html">
+      <h1 class="article-title" itemprop="name">
+        NCBILocalBlast
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-LANS.SystemsBiology.NCBI.Extensions.NCBILocalBlast.html" class="article-date">
+  <time datetime="2016-06-13T10:38:12.847Z" itemprop="datePublished">2016-06-13</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-LANS.SystemsBiology.NCBI.Extensions.NCBILocalBlast.html">
+      <h1 class="article-title" itemprop="name">
+        NCBILocalBlast
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#NCBILocalBlast"><span class="toc-number">1.</span> <span class="toc-text">NCBILocalBlast</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Blastn"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">Blastn</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#BlastX"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">BlastX</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CreateSession"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">CreateSession</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#FastCheckIntegrityProvider"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">FastCheckIntegrityProvider</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#LoadUltraLargeSizeBlastOutput"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">LoadUltraLargeSizeBlastOutput</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="NCBILocalBlast"><a href="#NCBILocalBlast" class="headerlink" title="NCBILocalBlast"></a>NCBILocalBlast</h1><p><em>namespace: <a href="N-LANS.SystemsBiology.NCBI.Extensions.html">LANS.SystemsBiology.NCBI.Extensions</a></em></p>
+<p>ShoalShell API interface for ncbi localblast operations.</p>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="Blastn"><a href="#Blastn" class="headerlink" title="Blastn"></a>Blastn</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.NCBI.Extensions.NCBILocalBlast.Blastn(LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.InteropService.InteropService,System.String,System.Collections.Generic.IEnumerable&#123;System.String&#125;,System.String,System.String,System.Boolean,System.Int32,System.Int32)</span><br></pre></td></tr></table></figure>
+<p>Invoke the batch blastn operations for the target query nt sequence.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>handle</td>
+<td>-</td>
+</tr>
+<tr>
+<td>nt</td>
+<td>-</td>
+</tr>
+<tr>
+<td>GenomeSource</td>
+<td>The fasta sequence data file path collection.(Fasta序列文件的路径的集合)</td>
+</tr>
+<tr>
+<td>OutputDir</td>
+<td>-</td>
+</tr>
+<tr>
+<td>evalue</td>
+<td>-</td>
+</tr>
+<tr>
+<td>reversed</td>
+<td>假若这个参数为真，则<strong>nt</strong>参数所指向的fasta序列则会作为参考库</td>
+</tr>
+</tbody>
+</table>
+<h4 id="BlastX"><a href="#BlastX" class="headerlink" title="BlastX"></a>BlastX</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.NCBI.Extensions.NCBILocalBlast.BlastX(LANS.SystemsBiology.NCBI.Extensions.LocalBLAST.InteropService.InteropService,System.String,System.String,System.String,System.String)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>handle</td>
+<td>-</td>
+</tr>
+<tr>
+<td>nt</td>
+<td>核酸序列的fasta文件的文件路径</td>
+</tr>
+<tr>
+<td>proteins</td>
+<td>假若目标对象为一个文件，则只进行一个BlastX，假若为一个文件夹，并且其中包含有许多蛋白质序列的fasta文件，则进行批量blastx</td>
+</tr>
+<tr>
+<td>evalue</td>
+<td>-</td>
+</tr>
+<tr>
+<td>output</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="CreateSession"><a href="#CreateSession" class="headerlink" title="CreateSession"></a>CreateSession</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.NCBI.Extensions.NCBILocalBlast.CreateSession(System.String)</span><br></pre></td></tr></table></figure>
+<p>Initialize a local blast session handle for your program, you can specific the blast bin location on parameter <strong>blastbin</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>blastbin</td>
+</tr>
+</tbody>
+</table>
+<p> This parameter specific the blast bin location, if this parameter is empty then the function will try to search the blastbin automatically.<br> (假若本参数为空，则函数会尝试自动搜索出blast程序的文件夹)<br> |</p>
+<blockquote>
+<p>目前blast日志分析模块仅仅能够支持2.2.28版本的blast日志的解析</p>
+</blockquote>
+<h4 id="FastCheckIntegrityProvider"><a href="#FastCheckIntegrityProvider" class="headerlink" title="FastCheckIntegrityProvider"></a>FastCheckIntegrityProvider</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.NCBI.Extensions.NCBILocalBlast.FastCheckIntegrityProvider(LANS.SystemsBiology.SequenceModel.FASTA.FastaFile,System.String)</span><br></pre></td></tr></table></figure>
+<p>进行快速的字符串匹配</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>query</td>
+<td>-</td>
+</tr>
+<tr>
+<td>BlastOUTPUT</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="LoadUltraLargeSizeBlastOutput"><a href="#LoadUltraLargeSizeBlastOutput" class="headerlink" title="LoadUltraLargeSizeBlastOutput"></a>LoadUltraLargeSizeBlastOutput</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.NCBI.Extensions.NCBILocalBlast.LoadUltraLargeSizeBlastOutput(System.String,System.Int32)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>path</td>
+<td>-</td>
+</tr>
+<tr>
+<td>chunk_size</td>
+<td>是以1024*1024为基础的，本参数的值应该小于768，最大不应该超过800，否则程序会崩溃.对于1GB以内的日志文件，可以考虑100</td>
+</tr>
+</tbody>
+</table>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-LANS.SystemsBiology.NCBI.Extensions.NCBILocalBlast.html" class="article-date">
+  <time datetime="2016-06-13T10:38:12.847Z" itemprop="datePublished">2016-06-13</time>
+</a>
+              <a data-url="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.NCBI.Extensions.NCBILocalBlast.html" data-id="cipdv3o1101ohbgv4ng8b8lvp" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 GCModeller docs library<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/SMRUCC/" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

@@ -1,0 +1,430 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Samtools | GCModeller docs library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="Samtools_namespace: LANS.SystemsBiology.Toolkits.RNA_Seq.BOW_
+SAMtools is a set of utilities for interacting with and post-processing short DNA sequence read alignments in the SAM, BAM and CRAM format">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Samtools">
+<meta property="og:url" content="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.Samtools.html">
+<meta property="og:site_name" content="GCModeller docs library">
+<meta property="og:description" content="Samtools_namespace: LANS.SystemsBiology.Toolkits.RNA_Seq.BOW_
+SAMtools is a set of utilities for interacting with and post-processing short DNA sequence read alignments in the SAM, BAM and CRAM format">
+<meta property="og:updated_time" content="2016-06-13T10:38:12.888Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Samtools">
+<meta name="twitter:description" content="Samtools_namespace: LANS.SystemsBiology.Toolkits.RNA_Seq.BOW_
+SAMtools is a set of utilities for interacting with and post-processing short DNA sequence read alignments in the SAM, BAM and CRAM format">
+    
+      <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="/css/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tags">
+                  
+                  
+
+                
+                  Tags
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/archives">
+                  
+                  
+
+                
+                  Archives
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/SMRUCC/">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://docs.gcmodeller.org"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.Samtools.html">
+      <h1 class="article-title" itemprop="name">
+        Samtools
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.Samtools.html" class="article-date">
+  <time datetime="2016-06-13T10:38:12.888Z" itemprop="datePublished">2016-06-13</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.Samtools.html">
+      <h1 class="article-title" itemprop="name">
+        Samtools
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Samtools"><span class="toc-number">1.</span> <span class="toc-text">Samtools</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Assembly"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">Assembly</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Bam2Sam"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">Bam2Sam</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Import"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">Import</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Index"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">Index</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Indexing"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">Indexing</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Sam2Bam"><span class="toc-number">1.0.1.6.</span> <span class="toc-text">Sam2Bam</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Sort"><span class="toc-number">1.0.1.7.</span> <span class="toc-text">Sort</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Viewing"><span class="toc-number">1.0.1.8.</span> <span class="toc-text">Viewing</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="Samtools"><a href="#Samtools" class="headerlink" title="Samtools"></a>Samtools</h1><p>_namespace: <a href="N-LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.html">LANS.SystemsBiology.Toolkits.RNA_Seq.BOW</a>_</p>
+<p>SAMtools is a set of utilities for interacting with and post-processing short DNA sequence read alignments<br> in the SAM, BAM and CRAM formats, written by Heng Li. These files are generated as output by short read<br> aligners like BWA. Both simple and advanced tools are provided, supporting complex tasks like variant calling<br> and alignment viewing as well as sorting, indexing, data extraction and format conversion.[2] SAM files can<br> be very large (10s of Gigabytes is common), so compression is used to save space. SAM files are human-readable<br> text files, and BAM files are simply their binary equivalent, whilst CRAM files are a restructured column-oriented<br> binary container format. BAM files are typically compressed and more efficient for software to work with than SAM. </p>
+<p> SAMtools makes it possible to work directly with a compressed BAM file, without having to uncompress the whole file.<br> Additionally, since the format for a SAM/BAM file is somewhat complex - containing reads, references, alignments,<br> quality information, and user-specified annotations - SAMtools reduces the effort needed to use SAM/BAM files by<br> hiding low-level details.</p>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="Assembly"><a href="#Assembly" class="headerlink" title="Assembly"></a>Assembly</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.Samtools.Assembly(LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.SAM,System.Boolean,System.String)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SAM</td>
+<td>-</td>
+</tr>
+<tr>
+<td>TrimError</td>
+<td>-</td>
+</tr>
+<tr>
+<td>EXPORT</td>
+<td>The data export directory path</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Bam2Sam"><a href="#Bam2Sam" class="headerlink" title="Bam2Sam"></a>Bam2Sam</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.Samtools.Bam2Sam(System.String,System.String)</span><br></pre></td></tr></table></figure>
+<p>Convert the binary format Sam mapping file into the text format Sam mapping file.<br> The view command filters SAM or BAM formatted data. Using options and arguments it understands what data to select<br> (possibly all of it) and passes only that data through. Input is usually a sam or bam file specified as an argument,<br> but could be sam or bam data piped from any other command. Possible uses include extracting a subset of data into a<br> new file, converting between BAM and SAM formats, and just looking at the raw file contents.<br> The order of extracted reads is preserved.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bam</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Sam</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Import"><a href="#Import" class="headerlink" title="Import"></a>Import</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.Samtools.Import(System.String,System.String,System.String)</span><br></pre></td></tr></table></figure>
+<p>Next, we need to convert the SAM file into a BAM file. (A BAM file is just a binary version of a SAM file.)</p>
+<h4 id="Index"><a href="#Index" class="headerlink" title="Index"></a>Index</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.Samtools.Index(System.String,System.String)</span><br></pre></td></tr></table></figure>
+<p>And last, we need Samtools to index the BAM file. The index command creates a new index file that allows fast look-up of data in a<br> (sorted) SAM or BAM. Like an index on a database, the generated <em>.sam.sai or </em>.bam.bai file allows programs that can read it to<br> more efficiently work with the data in the associated files.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bam</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Indexing"><a href="#Indexing" class="headerlink" title="Indexing"></a>Indexing</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.Samtools.Indexing(System.String)</span><br></pre></td></tr></table></figure>
+<p>Like bwa, Samtools also requires us to go through several steps before we have our data in usable form.<br> First, we need to have Samtools generate its own index of the reference genome</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fasta</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Sam2Bam"><a href="#Sam2Bam" class="headerlink" title="Sam2Bam"></a>Sam2Bam</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.Samtools.Sam2Bam(System.String,System.String)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sam</td>
+<td>The input source file path of the sam file.</td>
+</tr>
+<tr>
+<td>Bam</td>
+<td>The save file path of the converted bam file.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Sort"><a href="#Sort" class="headerlink" title="Sort"></a>Sort</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.Samtools.Sort(System.String,System.String,System.Boolean)</span><br></pre></td></tr></table></figure>
+<p>Now, we need to sort the BAM file. The sort command sorts a BAM file based on its position in the reference,<br> as determined by its alignment. The element + coordinate in the reference that the first matched base in the<br> read aligns to is used as the key to order it by. [TODO: verify]. The sorted output is dumped to a new file<br> by default, although it can be directed to stdout (using the -o option). As sorting is memory intensive and<br> BAM files can be large, this command supports a sectioning mode (with the -m options) to use at most a given<br> amount of memory and generate multiple output file. These files can then be merged to produce a complete<br> sorted BAM file [TODO - investigate the details of this more carefully].<br> (请注意，本函数只能够对bam文件进行排序，假若需要对sam文件进行排序，请先转换为bam文件)</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bam</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Out</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Viewing"><a href="#Viewing" class="headerlink" title="Viewing"></a>Viewing</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.Samtools.Viewing(System.String,System.String)</span><br></pre></td></tr></table></figure>
+<p>Viewing the output with TView. Now that we’ve generated the files, we can view the output with TView.<br> The tview command starts an interactive ascii-based viewer that can be used to visualize how reads are aligned to specified<br> small regions of the reference genome. Compared to a graphics based viewer like IGV,[3] it has few features. Within the view,<br> it is possible to jumping to different positions along reference elements (using ‘g’) and display help information (‘?’).</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bam</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Fasta</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.Samtools.html" class="article-date">
+  <time datetime="2016-06-13T10:38:12.888Z" itemprop="datePublished">2016-06-13</time>
+</a>
+              <a data-url="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.Samtools.html" data-id="cipdv3o3b01qsbgv4nbzysgnl" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 GCModeller docs library<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/SMRUCC/" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

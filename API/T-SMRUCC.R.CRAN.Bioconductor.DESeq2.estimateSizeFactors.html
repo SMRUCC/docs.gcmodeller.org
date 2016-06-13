@@ -1,0 +1,303 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>estimateSizeFactors | GCModeller docs library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="estimateSizeFactorsnamespace: SMRUCC.R.CRAN.Bioconductor.DESeq2
+Estimate the size factors for a DESeqDataSet
+ This function estimates the size factors using the “median ratio method” described by Equa">
+<meta property="og:type" content="website">
+<meta property="og:title" content="estimateSizeFactors">
+<meta property="og:url" content="http://docs.gcmodeller.org/API/T-SMRUCC.R.CRAN.Bioconductor.DESeq2.estimateSizeFactors.html">
+<meta property="og:site_name" content="GCModeller docs library">
+<meta property="og:description" content="estimateSizeFactorsnamespace: SMRUCC.R.CRAN.Bioconductor.DESeq2
+Estimate the size factors for a DESeqDataSet
+ This function estimates the size factors using the “median ratio method” described by Equa">
+<meta property="og:updated_time" content="2016-06-13T10:38:03.905Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="estimateSizeFactors">
+<meta name="twitter:description" content="estimateSizeFactorsnamespace: SMRUCC.R.CRAN.Bioconductor.DESeq2
+Estimate the size factors for a DESeqDataSet
+ This function estimates the size factors using the “median ratio method” described by Equa">
+    
+      <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="/css/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tags">
+                  
+                  
+
+                
+                  Tags
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/archives">
+                  
+                  
+
+                
+                  Archives
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/SMRUCC/">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://docs.gcmodeller.org"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-SMRUCC.R.CRAN.Bioconductor.DESeq2.estimateSizeFactors.html">
+      <h1 class="article-title" itemprop="name">
+        estimateSizeFactors
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-SMRUCC.R.CRAN.Bioconductor.DESeq2.estimateSizeFactors.html" class="article-date">
+  <time datetime="2016-06-13T10:38:03.905Z" itemprop="datePublished">2016-06-13</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-SMRUCC.R.CRAN.Bioconductor.DESeq2.estimateSizeFactors.html">
+      <h1 class="article-title" itemprop="name">
+        estimateSizeFactors
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#estimateSizeFactors"><span class="toc-number">1.</span> <span class="toc-text">estimateSizeFactors</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties"><span class="toc-number">1.0.1.</span> <span class="toc-text">Properties</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#controlGenes"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">controlGenes</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#geoMeans"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">geoMeans</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#locfunc"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">locfunc</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#normMatrix"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">normMatrix</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#object"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">object</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#type"><span class="toc-number">1.0.1.6.</span> <span class="toc-text">type</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="estimateSizeFactors"><a href="#estimateSizeFactors" class="headerlink" title="estimateSizeFactors"></a>estimateSizeFactors</h1><p><em>namespace: <a href="N-SMRUCC.R.CRAN.Bioconductor.DESeq2.html">SMRUCC.R.CRAN.Bioconductor.DESeq2</a></em></p>
+<p>Estimate the size factors for a DESeqDataSet</p>
+<p> This function estimates the size factors using the “median ratio method” described by Equation 5 in Anders and Huber (2010).<br> The estimated size factors can be accessed using sizeFactors.<br> Alternative library size estimators can also be supplied using sizeFactors.</p>
+<h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="controlGenes"><a href="#controlGenes" class="headerlink" title="controlGenes"></a>controlGenes</h4><p>optional, numeric or logical index vector specifying those genes to use for size<br> factor estimation (e.g. housekeeping or spike-in genes)</p>
+<h4 id="geoMeans"><a href="#geoMeans" class="headerlink" title="geoMeans"></a>geoMeans</h4><p>by default this is not provided and the geometric means of the counts are calculated within the function.<br> A vector of geometric means from another count matrix can be provided for a “frozen” size factor calculation</p>
+<h4 id="locfunc"><a href="#locfunc" class="headerlink" title="locfunc"></a>locfunc</h4><p>a function to compute a location for a sample. By default, the median is used. However, especially for low counts,<br> the shorth function from the genefilter package may give better results.</p>
+<h4 id="normMatrix"><a href="#normMatrix" class="headerlink" title="normMatrix"></a>normMatrix</h4><p>optional, a matrix of normalization factors which do not control for library size<br> (e.g. average transcript length of genes for each sample).<br> Providing normMatrix will estimate size factors on the count matrix divided by normMatrix and store<br> the product of the size factors and normMatrix as normalizationFactors.</p>
+<h4 id="object"><a href="#object" class="headerlink" title="object"></a>object</h4><p>a DESeqDataSet</p>
+<h4 id="type"><a href="#type" class="headerlink" title="type"></a>type</h4><p>either “ratio” or “iterate”. “ratio” uses the standard median ratio method introduced in DESeq.<br> The size factor is the median ratio of the sample over a pseudosample:<br> for each gene, the geometric mean of all samples. “iterate” offers an alternative estimator,<br> which can be used even when all genes contain a sample with a zero. This estimator iterates<br> between estimating the dispersion with a design of ~1, and finding a size factor vector by<br> numerically optimizing the likelihood of the ~1 model.</p>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-SMRUCC.R.CRAN.Bioconductor.DESeq2.estimateSizeFactors.html" class="article-date">
+  <time datetime="2016-06-13T10:38:03.905Z" itemprop="datePublished">2016-06-13</time>
+</a>
+              <a data-url="http://docs.gcmodeller.org/API/T-SMRUCC.R.CRAN.Bioconductor.DESeq2.estimateSizeFactors.html" data-id="cipdv7j4206h2bgv4qfifi7qi" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 GCModeller docs library<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/SMRUCC/" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

@@ -1,0 +1,394 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>lpSolveRModel | GCModeller docs library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="lpSolveRModelnamespace: LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA
+Class object using for generate the R script for the R package lpSolveAPI.(用于生成lpSolverAPI所需的脚本的类型对象)
+Methods__add">
+<meta property="og:type" content="website">
+<meta property="og:title" content="lpSolveRModel">
+<meta property="og:url" content="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.lpSolveRModel.html">
+<meta property="og:site_name" content="GCModeller docs library">
+<meta property="og:description" content="lpSolveRModelnamespace: LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA
+Class object using for generate the R script for the R package lpSolveAPI.(用于生成lpSolverAPI所需的脚本的类型对象)
+Methods__add">
+<meta property="og:updated_time" content="2016-06-13T10:38:11.226Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="lpSolveRModel">
+<meta name="twitter:description" content="lpSolveRModelnamespace: LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA
+Class object using for generate the R script for the R package lpSolveAPI.(用于生成lpSolverAPI所需的脚本的类型对象)
+Methods__add">
+    
+      <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="/css/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tags">
+                  
+                  
+
+                
+                  Tags
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/archives">
+                  
+                  
+
+                
+                  Archives
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/SMRUCC/">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://docs.gcmodeller.org"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.lpSolveRModel.html">
+      <h1 class="article-title" itemprop="name">
+        lpSolveRModel
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.lpSolveRModel.html" class="article-date">
+  <time datetime="2016-06-13T10:38:11.226Z" itemprop="datePublished">2016-06-13</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.lpSolveRModel.html">
+      <h1 class="article-title" itemprop="name">
+        lpSolveRModel
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#lpSolveRModel"><span class="toc-number">1.</span> <span class="toc-text">lpSolveRModel</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#add-constraint"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">__add_constraint</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#getLowerbound"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">__getLowerbound</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#getUpbound"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">__getUpbound</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#set-objfn"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">__set_objfn</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CreateResultFile"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">CreateResultFile</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#getConstraint"><span class="toc-number">1.0.1.6.</span> <span class="toc-text">getConstraint</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#getMatrix"><span class="toc-number">1.0.1.7.</span> <span class="toc-text">getMatrix</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SetObjectiveFunc"><span class="toc-number">1.0.1.8.</span> <span class="toc-text">SetObjectiveFunc</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties"><span class="toc-number">1.0.2.</span> <span class="toc-text">Properties</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#fluxObjective"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">__fluxObjective</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#constraint"><span class="toc-number">1.0.2.2.</span> <span class="toc-text">_constraint</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CDirect"><span class="toc-number">1.0.2.3.</span> <span class="toc-text">CDirect</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#fluxColumns"><span class="toc-number">1.0.2.4.</span> <span class="toc-text">fluxColumns</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="lpSolveRModel"><a href="#lpSolveRModel" class="headerlink" title="lpSolveRModel"></a>lpSolveRModel</h1><p><em>namespace: <a href="N-LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.html">LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA</a></em></p>
+<p>Class object using for generate the R script for the R package lpSolveAPI.(用于生成lpSolverAPI所需的脚本的类型对象)</p>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="add-constraint"><a href="#add-constraint" class="headerlink" title="__add_constraint"></a>__add_constraint</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.lpSolveRModel.__add_constraint(System.Double[],System.String,System.Double)</span><br></pre></td></tr></table></figure>
+<p>Generate a S matrix line.(生成用于表示FBA模型中的S矩阵中的一行的R脚本)</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vectorData</td>
+<td>-</td>
+</tr>
+<tr>
+<td>direction</td>
+<td>-</td>
+</tr>
+<tr>
+<td>constraintValue</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: add.constraint(lprec, c(0.24, 0, 11.31, 0), “=”, 14.8)</em></p>
+<h4 id="getLowerbound"><a href="#getLowerbound" class="headerlink" title="__getLowerbound"></a>__getLowerbound</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.lpSolveRModel.__getLowerbound</span><br></pre></td></tr></table></figure>
+<p>获得每一个反应活动的流量下线</p>
+<h4 id="getUpbound"><a href="#getUpbound" class="headerlink" title="__getUpbound"></a>__getUpbound</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.lpSolveRModel.__getUpbound</span><br></pre></td></tr></table></figure>
+<p>获得每一个反应活动的流量上限</p>
+<h4 id="set-objfn"><a href="#set-objfn" class="headerlink" title="__set_objfn"></a>__set_objfn</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.lpSolveRModel.__set_objfn(System.Double[],System.String)</span><br></pre></td></tr></table></figure>
+<p>Generate objective function for FBA model in lpSolveAPI.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vectorData</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="CreateResultFile"><a href="#CreateResultFile" class="headerlink" title="CreateResultFile"></a>CreateResultFile</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.lpSolveRModel.CreateResultFile(System.Collections.Generic.KeyValuePair&#123;System.String,System.String[]&#125;)</span><br></pre></td></tr></table></figure>
+<p>将LpSolveAPI返回的结果生成数据文件以进行导出</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>resultData</td>
+<td>{ObjectiveFunctionValue, FluxDistributions}</td>
+</tr>
+</tbody>
+</table>
+<h4 id="getConstraint"><a href="#getConstraint" class="headerlink" title="getConstraint"></a>getConstraint</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.lpSolveRModel.getConstraint(System.String)</span><br></pre></td></tr></table></figure>
+<p>{direction, constraint}</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>metabolite</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="getMatrix"><a href="#getMatrix" class="headerlink" title="getMatrix"></a>getMatrix</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.lpSolveRModel.getMatrix</span><br></pre></td></tr></table></figure>
+<p>横行为代谢物，列为代谢过程，元素为化学计量数</p>
+<h4 id="SetObjectiveFunc"><a href="#SetObjectiveFunc" class="headerlink" title="SetObjectiveFunc"></a>SetObjectiveFunc</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.lpSolveRModel.SetObjectiveFunc(System.String[])</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>factors</td>
+<td>可以是基因号或者反应的编号，基因号需要在这个函数里面进行映射转换</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="fluxObjective"><a href="#fluxObjective" class="headerlink" title="__fluxObjective"></a>__fluxObjective</h4><p>@”M:LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.lpSolveRModel.SetObjectiveFunc(System.String[])” 转换映射得到的一个反应过程的集合</p>
+<h4 id="constraint"><a href="#constraint" class="headerlink" title="_constraint"></a>_constraint</h4><p>changes = 0;<br> 对于FBA模型而言，每一种代谢物的浓度都是被假设为稳定状态，即在平衡态之中没有浓度变化</p>
+<h4 id="CDirect"><a href="#CDirect" class="headerlink" title="CDirect"></a>CDirect</h4><p>Direction of Objective Function.(目标函数的约束方向)</p>
+<h4 id="fluxColumns"><a href="#fluxColumns" class="headerlink" title="fluxColumns"></a>fluxColumns</h4><p>得到每一个反应过程的标识符</p>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.lpSolveRModel.html" class="article-date">
+  <time datetime="2016-06-13T10:38:11.226Z" itemprop="datePublished">2016-06-13</time>
+</a>
+              <a data-url="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.GCModeller.AnalysisTools.ModelSolvers.FBA.lpSolveRModel.html" data-id="cipdv524z03d7bgv4be32u8w0" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 GCModeller docs library<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/SMRUCC/" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

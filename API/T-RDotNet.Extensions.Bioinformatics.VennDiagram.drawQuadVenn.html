@@ -1,0 +1,339 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>drawQuadVenn | GCModeller docs library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="drawQuadVennnamespace: RDotNet.Extensions.Bioinformatics.VennDiagram
+Creates a Venn diagram with four sets.
+PropertiesalphaA vector (length 4) giving the alpha transparency of the circles’ areas
+area1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="drawQuadVenn">
+<meta property="og:url" content="http://docs.gcmodeller.org/API/T-RDotNet.Extensions.Bioinformatics.VennDiagram.drawQuadVenn.html">
+<meta property="og:site_name" content="GCModeller docs library">
+<meta property="og:description" content="drawQuadVennnamespace: RDotNet.Extensions.Bioinformatics.VennDiagram
+Creates a Venn diagram with four sets.
+PropertiesalphaA vector (length 4) giving the alpha transparency of the circles’ areas
+area1">
+<meta property="og:updated_time" content="2016-06-13T10:38:23.570Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="drawQuadVenn">
+<meta name="twitter:description" content="drawQuadVennnamespace: RDotNet.Extensions.Bioinformatics.VennDiagram
+Creates a Venn diagram with four sets.
+PropertiesalphaA vector (length 4) giving the alpha transparency of the circles’ areas
+area1">
+    
+      <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="/css/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tags">
+                  
+                  
+
+                
+                  Tags
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/archives">
+                  
+                  
+
+                
+                  Archives
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/SMRUCC/">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://docs.gcmodeller.org"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-RDotNet.Extensions.Bioinformatics.VennDiagram.drawQuadVenn.html">
+      <h1 class="article-title" itemprop="name">
+        drawQuadVenn
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-RDotNet.Extensions.Bioinformatics.VennDiagram.drawQuadVenn.html" class="article-date">
+  <time datetime="2016-06-13T10:38:23.570Z" itemprop="datePublished">2016-06-13</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-RDotNet.Extensions.Bioinformatics.VennDiagram.drawQuadVenn.html">
+      <h1 class="article-title" itemprop="name">
+        drawQuadVenn
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#drawQuadVenn"><span class="toc-number">1.</span> <span class="toc-text">drawQuadVenn</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties"><span class="toc-number">1.0.1.</span> <span class="toc-text">Properties</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#alpha"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">alpha</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#area1"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">area1</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#area2"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">area2</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#area3"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">area3</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#area4"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">area4</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#areaVector"><span class="toc-number">1.0.1.6.</span> <span class="toc-text">areaVector</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#catCex"><span class="toc-number">1.0.1.7.</span> <span class="toc-text">catCex</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#catCol"><span class="toc-number">1.0.1.8.</span> <span class="toc-text">catCol</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#catDist"><span class="toc-number">1.0.1.9.</span> <span class="toc-text">catDist</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#category"><span class="toc-number">1.0.1.10.</span> <span class="toc-text">category</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#catFontface"><span class="toc-number">1.0.1.11.</span> <span class="toc-text">catFontface</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#catFontfamily"><span class="toc-number">1.0.1.12.</span> <span class="toc-text">catFontfamily</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#catJust"><span class="toc-number">1.0.1.13.</span> <span class="toc-text">catJust</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#catPos"><span class="toc-number">1.0.1.14.</span> <span class="toc-text">catPos</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#cex"><span class="toc-number">1.0.1.15.</span> <span class="toc-text">cex</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#cexProp"><span class="toc-number">1.0.1.16.</span> <span class="toc-text">cexProp</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#col"><span class="toc-number">1.0.1.17.</span> <span class="toc-text">col</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#directArea"><span class="toc-number">1.0.1.18.</span> <span class="toc-text">directArea</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#fill"><span class="toc-number">1.0.1.19.</span> <span class="toc-text">fill</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#fontface"><span class="toc-number">1.0.1.20.</span> <span class="toc-text">fontface</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#fontfamily"><span class="toc-number">1.0.1.21.</span> <span class="toc-text">fontfamily</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ind"><span class="toc-number">1.0.1.22.</span> <span class="toc-text">ind</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#labelCol"><span class="toc-number">1.0.1.23.</span> <span class="toc-text">labelCol</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#lty"><span class="toc-number">1.0.1.24.</span> <span class="toc-text">lty</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#lwd"><span class="toc-number">1.0.1.25.</span> <span class="toc-text">lwd</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#n12"><span class="toc-number">1.0.1.26.</span> <span class="toc-text">n12</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#n123"><span class="toc-number">1.0.1.27.</span> <span class="toc-text">n123</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#n1234"><span class="toc-number">1.0.1.28.</span> <span class="toc-text">n1234</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#n124"><span class="toc-number">1.0.1.29.</span> <span class="toc-text">n124</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#n13"><span class="toc-number">1.0.1.30.</span> <span class="toc-text">n13</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#n134"><span class="toc-number">1.0.1.31.</span> <span class="toc-text">n134</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#n14"><span class="toc-number">1.0.1.32.</span> <span class="toc-text">n14</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#n23"><span class="toc-number">1.0.1.33.</span> <span class="toc-text">n23</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#n234"><span class="toc-number">1.0.1.34.</span> <span class="toc-text">n234</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#n24"><span class="toc-number">1.0.1.35.</span> <span class="toc-text">n24</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#n34"><span class="toc-number">1.0.1.36.</span> <span class="toc-text">n34</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#printMode"><span class="toc-number">1.0.1.37.</span> <span class="toc-text">printMode</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#rotationCentre"><span class="toc-number">1.0.1.38.</span> <span class="toc-text">rotationCentre</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#rotationDegree"><span class="toc-number">1.0.1.39.</span> <span class="toc-text">rotationDegree</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#sigdigs"><span class="toc-number">1.0.1.40.</span> <span class="toc-text">sigdigs</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="drawQuadVenn"><a href="#drawQuadVenn" class="headerlink" title="drawQuadVenn"></a>drawQuadVenn</h1><p><em>namespace: <a href="N-RDotNet.Extensions.Bioinformatics.VennDiagram.html">RDotNet.Extensions.Bioinformatics.VennDiagram</a></em></p>
+<p>Creates a Venn diagram with four sets.</p>
+<h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="alpha"><a href="#alpha" class="headerlink" title="alpha"></a>alpha</h4><p>A vector (length 4) giving the alpha transparency of the circles’ areas</p>
+<h4 id="area1"><a href="#area1" class="headerlink" title="area1"></a>area1</h4><p>The size of the first set</p>
+<h4 id="area2"><a href="#area2" class="headerlink" title="area2"></a>area2</h4><p>The size of the second set</p>
+<h4 id="area3"><a href="#area3" class="headerlink" title="area3"></a>area3</h4><p>The size of the third set</p>
+<h4 id="area4"><a href="#area4" class="headerlink" title="area4"></a>area4</h4><p>The size of the fourth set</p>
+<h4 id="areaVector"><a href="#areaVector" class="headerlink" title="areaVector"></a>areaVector</h4><p>An argument to be used when direct.area is true. These are the areas of the corresponding<br> regions in the Venn Diagram</p>
+<h4 id="catCex"><a href="#catCex" class="headerlink" title="catCex"></a>catCex</h4><p>A vector (length 4) giving the colours of the category names</p>
+<h4 id="catCol"><a href="#catCol" class="headerlink" title="catCol"></a>catCol</h4><p>A vector (length 4) giving the size of the category names</p>
+<h4 id="catDist"><a href="#catDist" class="headerlink" title="catDist"></a>catDist</h4><p>A vector (length 4) giving the distances (in npc units) of the category names from the edges<br> of the circles (can be negative)</p>
+<h4 id="category"><a href="#category" class="headerlink" title="category"></a>category</h4><p>A vector (length 4) of strings giving the category names of the sets</p>
+<h4 id="catFontface"><a href="#catFontface" class="headerlink" title="catFontface"></a>catFontface</h4><p>A vector (length 4) giving the fontface of the category names</p>
+<h4 id="catFontfamily"><a href="#catFontfamily" class="headerlink" title="catFontfamily"></a>catFontfamily</h4><p>A vector (length 4) giving the fontfamily of the category names</p>
+<h4 id="catJust"><a href="#catJust" class="headerlink" title="catJust"></a>catJust</h4><p>List of 4 vectors of length 2 indicating horizontal and vertical justification of each category name</p>
+<h4 id="catPos"><a href="#catPos" class="headerlink" title="catPos"></a>catPos</h4><p>A vector (length 4) giving the positions (in degrees) of the category names along the circles,<br> with 0 (default) at 12 o’clock</p>
+<h4 id="cex"><a href="#cex" class="headerlink" title="cex"></a>cex</h4><p>A vector (length 15) giving the size of the areas’ labels</p>
+<h4 id="cexProp"><a href="#cexProp" class="headerlink" title="cexProp"></a>cexProp</h4><p>A function or string used to rescale areas</p>
+<h4 id="col"><a href="#col" class="headerlink" title="col"></a>col</h4><p>A vector (length 4) giving the colours of the circles’ circumferences</p>
+<h4 id="directArea"><a href="#directArea" class="headerlink" title="directArea"></a>directArea</h4><p>If this is equal to true, then the vector passed into area.vector will be directly assigned<br> to the areas of the corresponding regions. Only use this if you know which positions in the<br> vector correspond to which regions in the diagram</p>
+<h4 id="fill"><a href="#fill" class="headerlink" title="fill"></a>fill</h4><p>A vector (length 4) giving the colours of the circles’ areas</p>
+<h4 id="fontface"><a href="#fontface" class="headerlink" title="fontface"></a>fontface</h4><p>A vector (length 15) giving the fontface of the areas’ labels</p>
+<h4 id="fontfamily"><a href="#fontfamily" class="headerlink" title="fontfamily"></a>fontfamily</h4><p>A vector (length 15) giving the fontfamily of the areas’ labels</p>
+<h4 id="ind"><a href="#ind" class="headerlink" title="ind"></a>ind</h4><p>Boolean indicating whether the function is to automatically draw the diagram before returning<br> the gList object or not</p>
+<h4 id="labelCol"><a href="#labelCol" class="headerlink" title="labelCol"></a>labelCol</h4><p>A vector (length 15) giving the colours of the areas’ labels</p>
+<h4 id="lty"><a href="#lty" class="headerlink" title="lty"></a>lty</h4><p>A vector (length 4) giving the dash pattern of the circles’ circumferences</p>
+<h4 id="lwd"><a href="#lwd" class="headerlink" title="lwd"></a>lwd</h4><p>A vector (length 4) of numbers giving the line width of the circles’ circumferences</p>
+<h4 id="n12"><a href="#n12" class="headerlink" title="n12"></a>n12</h4><p>The size of the intersection between the first and the second set</p>
+<h4 id="n123"><a href="#n123" class="headerlink" title="n123"></a>n123</h4><p>The size of the intersection between the first, second and third sets</p>
+<h4 id="n1234"><a href="#n1234" class="headerlink" title="n1234"></a>n1234</h4><p>The size of the intersection between all four sets</p>
+<h4 id="n124"><a href="#n124" class="headerlink" title="n124"></a>n124</h4><p>The size of the intersection between the first, second and fourth sets</p>
+<h4 id="n13"><a href="#n13" class="headerlink" title="n13"></a>n13</h4><p>The size of the intersection between the first and the third set</p>
+<h4 id="n134"><a href="#n134" class="headerlink" title="n134"></a>n134</h4><p>The size of the intersection between the first, third and fourth sets</p>
+<h4 id="n14"><a href="#n14" class="headerlink" title="n14"></a>n14</h4><p>The size of the intersection between the first and the fourth set</p>
+<h4 id="n23"><a href="#n23" class="headerlink" title="n23"></a>n23</h4><p>The size of the intersection between the second and the third set</p>
+<h4 id="n234"><a href="#n234" class="headerlink" title="n234"></a>n234</h4><p>The size of the intersection between the second, third and fourth sets</p>
+<h4 id="n24"><a href="#n24" class="headerlink" title="n24"></a>n24</h4><p>The size of the intersection between the second and the fourth set</p>
+<h4 id="n34"><a href="#n34" class="headerlink" title="n34"></a>n34</h4><p>The size of the intersection between the third and the fourth set</p>
+<h4 id="printMode"><a href="#printMode" class="headerlink" title="printMode"></a>printMode</h4><p>Can be either ‘raw’ or ‘percent’. This is the format that the numbers will be printed in.<br> Can pass in a vector with the second element being printed under the first</p>
+<h4 id="rotationCentre"><a href="#rotationCentre" class="headerlink" title="rotationCentre"></a>rotationCentre</h4><p>A vector (length 2) indicating (x,y) of the rotation centre</p>
+<h4 id="rotationDegree"><a href="#rotationDegree" class="headerlink" title="rotationDegree"></a>rotationDegree</h4><p>Number of degrees to rotate the entire diagram</p>
+<h4 id="sigdigs"><a href="#sigdigs" class="headerlink" title="sigdigs"></a>sigdigs</h4><p>If one of the elements in print.mode is ‘percent’, then this is how many significant digits will be kept</p>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-RDotNet.Extensions.Bioinformatics.VennDiagram.drawQuadVenn.html" class="article-date">
+  <time datetime="2016-06-13T10:38:23.570Z" itemprop="datePublished">2016-06-13</time>
+</a>
+              <a data-url="http://docs.gcmodeller.org/API/T-RDotNet.Extensions.Bioinformatics.VennDiagram.drawQuadVenn.html" data-id="cipdv7j3006fwbgv4eoqs7fag" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 GCModeller docs library<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/SMRUCC/" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+
