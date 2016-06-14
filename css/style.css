@@ -310,12 +310,9 @@ header.hdpage {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 1920px;
   height: 100%;
-}
-#  background: url(banner-url) center #000,
-#  background-size: cover {
-  background: url("images/banner.jpg") #000 no-repeat left top;
+  background: url("images/banner.jpg") #000 repeat-x left top;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
   background-size: 100%;
