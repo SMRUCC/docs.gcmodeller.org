@@ -1,0 +1,351 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>NativeUtility | GCModeller docs library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="NativeUtilitynamespace: RDotNET.NativeLibrary
+Collection of utility methods for operating systems.
+MethodsExecCommand1RDotNET.NativeLibrary.NativeUtility.ExecCommand(System.String,System.String)
+Execu">
+<meta property="og:type" content="website">
+<meta property="og:title" content="NativeUtility">
+<meta property="og:url" content="http://docs.gcmodeller.org/API/T-RDotNET.NativeLibrary.NativeUtility.html">
+<meta property="og:site_name" content="GCModeller docs library">
+<meta property="og:description" content="NativeUtilitynamespace: RDotNET.NativeLibrary
+Collection of utility methods for operating systems.
+MethodsExecCommand1RDotNET.NativeLibrary.NativeUtility.ExecCommand(System.String,System.String)
+Execu">
+<meta property="og:updated_time" content="2016-06-15T20:57:02.640Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="NativeUtility">
+<meta name="twitter:description" content="NativeUtilitynamespace: RDotNET.NativeLibrary
+Collection of utility methods for operating systems.
+MethodsExecCommand1RDotNET.NativeLibrary.NativeUtility.ExecCommand(System.String,System.String)
+Execu">
+    
+      <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="http://gcmodeller.org/DNA.png">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/SMRUCC/">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://docs.gcmodeller.org"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-RDotNET.NativeLibrary.NativeUtility.html">
+      <h1 class="article-title" itemprop="name">
+        NativeUtility
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-RDotNET.NativeLibrary.NativeUtility.html" class="article-date">
+  <time datetime="2016-06-15T20:57:02.640Z" itemprop="datePublished">2016-06-16</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-RDotNET.NativeLibrary.NativeUtility.html">
+      <h1 class="article-title" itemprop="name">
+        NativeUtility
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#NativeUtility"><span class="toc-number">1.</span> <span class="toc-text">NativeUtility</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#ExecCommand"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">ExecCommand</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#FindRHome"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">FindRHome</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#FindRPath"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">FindRPath</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#FindRPathFromRegistry"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">FindRPathFromRegistry</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GetPlatform"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">GetPlatform</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GetRDllFileName"><span class="toc-number">1.0.1.6.</span> <span class="toc-text">GetRDllFileName</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GetRHomeEnvironmentVariable"><span class="toc-number">1.0.1.7.</span> <span class="toc-text">GetRHomeEnvironmentVariable</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SetEnvironmentVariables"><span class="toc-number">1.0.1.8.</span> <span class="toc-text">SetEnvironmentVariables</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties"><span class="toc-number">1.0.2.</span> <span class="toc-text">Properties</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#IsUnix"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">IsUnix</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="NativeUtility"><a href="#NativeUtility" class="headerlink" title="NativeUtility"></a>NativeUtility</h1><p><em>namespace: <a href="N-RDotNET.NativeLibrary.html">RDotNET.NativeLibrary</a></em></p>
+<p>Collection of utility methods for operating systems.</p>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="ExecCommand"><a href="#ExecCommand" class="headerlink" title="ExecCommand"></a>ExecCommand</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.NativeLibrary.NativeUtility.ExecCommand(System.String,System.String)</span><br></pre></td></tr></table></figure>
+<p>Execute a command in a new process</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>processName</td>
+<td>Process name e.g. “uname”</td>
+</tr>
+<tr>
+<td>arguments</td>
+<td>Arguments e.g. “-s”</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: The output of the command to the standard output stream</em></p>
+<h4 id="FindRHome"><a href="#FindRHome" class="headerlink" title="FindRHome"></a>FindRHome</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.NativeLibrary.NativeUtility.FindRHome(System.String)</span><br></pre></td></tr></table></figure>
+<p>Try to locate the directory path to use for the R_HOME environment variable. This is used by R.NET by default; users may want to use it to diagnose problematic behaviors.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rPath</td>
+<td>Optional path to the directory containing the R shared library. This is ignored unless on a Unix platform (i.e. ignored on Windows and MacOS)</td>
+</tr>
+</tbody>
+</table>
+<p>_returns: The path that R.NET found suitable as a candidate for the R<em>HOME environment</em></p>
+<h4 id="FindRPath"><a href="#FindRPath" class="headerlink" title="FindRPath"></a>FindRPath</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.NativeLibrary.NativeUtility.FindRPath</span><br></pre></td></tr></table></figure>
+<p>Attempt to find a suitable path to the R shared library. This is used by R.NET by default; users may want to use it to diagnose problematic behaviors.<br><em>returns: The path to the directory where the R shared library is expected to be</em></p>
+<h4 id="FindRPathFromRegistry"><a href="#FindRPathFromRegistry" class="headerlink" title="FindRPathFromRegistry"></a>FindRPathFromRegistry</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.NativeLibrary.NativeUtility.FindRPathFromRegistry</span><br></pre></td></tr></table></figure>
+<p>Windows-only function; finds in the Windows registry the path to the most recently installed R binaries.<br><em>returns: The path, such as</em></p>
+<h4 id="GetPlatform"><a href="#GetPlatform" class="headerlink" title="GetPlatform"></a>GetPlatform</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.NativeLibrary.NativeUtility.GetPlatform</span><br></pre></td></tr></table></figure>
+<p>Gets the platform on which the current process runs.<br><em>returns: The current platform.</em></p>
+<blockquote>
+<p> @”P:System.Environment.OSVersion”‘s platform is not @”F:System.PlatformID.MacOSX” even on Mac OS X.<br> This method returns @”F:System.PlatformID.MacOSX” when the current process runs on Mac OS X.<br> This method uses UNIX’s uname command to check the operating system,<br> so this method cannot check the OS correctly if the PATH environment variable is changed (will returns @”F:System.PlatformID.Unix”).</p>
+</blockquote>
+<h4 id="GetRDllFileName"><a href="#GetRDllFileName" class="headerlink" title="GetRDllFileName"></a>GetRDllFileName</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.NativeLibrary.NativeUtility.GetRDllFileName</span><br></pre></td></tr></table></figure>
+<p>Gets the default file name of the R library on the supported platforms.<br><em>returns: R dll file name</em></p>
+<h4 id="GetRHomeEnvironmentVariable"><a href="#GetRHomeEnvironmentVariable" class="headerlink" title="GetRHomeEnvironmentVariable"></a>GetRHomeEnvironmentVariable</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.NativeLibrary.NativeUtility.GetRHomeEnvironmentVariable</span><br></pre></td></tr></table></figure>
+<p>Gets the value, if any, of the R_HOME environment variable of the current process<br><em>returns: The value, or null if not set</em></p>
+<h4 id="SetEnvironmentVariables"><a href="#SetEnvironmentVariables" class="headerlink" title="SetEnvironmentVariables"></a>SetEnvironmentVariables</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.NativeLibrary.NativeUtility.SetEnvironmentVariables(System.String,System.String)</span><br></pre></td></tr></table></figure>
+<p>Sets the PATH and R_HOME environment variables if needed.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rPath</td>
+<td>The path of the directory containing the R native library. </td>
+</tr>
+</tbody>
+</table>
+<p> If null (default), this function tries to locate the path via the Windows registry, or commonly used locations on MacOS and Linux|<br>|rHome|The path for R_HOME. If null (default), the function checks the R_HOME environment variable. If none is set,<br> the function uses platform specific sensible default behaviors.|</p>
+<blockquote>
+<p> This function has been designed to limit the tedium for users, while allowing custom settings for unusual installations.</p>
+</blockquote>
+<h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="IsUnix"><a href="#IsUnix" class="headerlink" title="IsUnix"></a>IsUnix</h4><p>Is the platform a unix like (Unix or MacOX)</p>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-RDotNET.NativeLibrary.NativeUtility.html" class="article-date">
+  <time datetime="2016-06-15T20:57:02.640Z" itemprop="datePublished">2016-06-16</time>
+</a>
+              <a data-url="http://docs.gcmodeller.org/API/T-RDotNET.NativeLibrary.NativeUtility.html" data-id="ciphczym10026u0v4ls5fis94" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 GCModeller docs library<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/SMRUCC/" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

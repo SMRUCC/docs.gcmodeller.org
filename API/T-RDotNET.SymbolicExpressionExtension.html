@@ -1,0 +1,838 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SymbolicExpressionExtension | GCModeller docs library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="SymbolicExpressionExtensionnamespace: RDotNET
+Provides extension methods for @”T:RDotNET.SymbolicExpression”.
+MethodsAsCharacter1RDotNET.SymbolicExpressionExtension.AsCharacter(RDotNET.SymbolicExpress">
+<meta property="og:type" content="website">
+<meta property="og:title" content="SymbolicExpressionExtension">
+<meta property="og:url" content="http://docs.gcmodeller.org/API/T-RDotNET.SymbolicExpressionExtension.html">
+<meta property="og:site_name" content="GCModeller docs library">
+<meta property="og:description" content="SymbolicExpressionExtensionnamespace: RDotNET
+Provides extension methods for @”T:RDotNET.SymbolicExpression”.
+MethodsAsCharacter1RDotNET.SymbolicExpressionExtension.AsCharacter(RDotNET.SymbolicExpress">
+<meta property="og:updated_time" content="2016-06-15T20:57:02.718Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="SymbolicExpressionExtension">
+<meta name="twitter:description" content="SymbolicExpressionExtensionnamespace: RDotNET
+Provides extension methods for @”T:RDotNET.SymbolicExpression”.
+MethodsAsCharacter1RDotNET.SymbolicExpressionExtension.AsCharacter(RDotNET.SymbolicExpress">
+    
+      <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="http://gcmodeller.org/DNA.png">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/SMRUCC/">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://docs.gcmodeller.org"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-RDotNET.SymbolicExpressionExtension.html">
+      <h1 class="article-title" itemprop="name">
+        SymbolicExpressionExtension
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-RDotNET.SymbolicExpressionExtension.html" class="article-date">
+  <time datetime="2016-06-15T20:57:02.718Z" itemprop="datePublished">2016-06-16</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-RDotNET.SymbolicExpressionExtension.html">
+      <h1 class="article-title" itemprop="name">
+        SymbolicExpressionExtension
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#SymbolicExpressionExtension"><span class="toc-number">1.</span> <span class="toc-text">SymbolicExpressionExtension</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#AsCharacter"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">AsCharacter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AsCharacterMatrix"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">AsCharacterMatrix</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AsComplex"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">AsComplex</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AsComplexMatrix"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">AsComplexMatrix</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AsDataFrame"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">AsDataFrame</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AsEnvironment"><span class="toc-number">1.0.1.6.</span> <span class="toc-text">AsEnvironment</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AsExpression"><span class="toc-number">1.0.1.7.</span> <span class="toc-text">AsExpression</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AsFactor"><span class="toc-number">1.0.1.8.</span> <span class="toc-text">AsFactor</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AsFunction"><span class="toc-number">1.0.1.9.</span> <span class="toc-text">AsFunction</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AsInteger"><span class="toc-number">1.0.1.10.</span> <span class="toc-text">AsInteger</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AsIntegerMatrix"><span class="toc-number">1.0.1.11.</span> <span class="toc-text">AsIntegerMatrix</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AsLanguage"><span class="toc-number">1.0.1.12.</span> <span class="toc-text">AsLanguage</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AsList"><span class="toc-number">1.0.1.13.</span> <span class="toc-text">AsList</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AsLogical"><span class="toc-number">1.0.1.14.</span> <span class="toc-text">AsLogical</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AsLogicalMatrix"><span class="toc-number">1.0.1.15.</span> <span class="toc-text">AsLogicalMatrix</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AsNumeric"><span class="toc-number">1.0.1.16.</span> <span class="toc-text">AsNumeric</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AsNumericMatrix"><span class="toc-number">1.0.1.17.</span> <span class="toc-text">AsNumericMatrix</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AsRaw"><span class="toc-number">1.0.1.18.</span> <span class="toc-text">AsRaw</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AsRawMatrix"><span class="toc-number">1.0.1.19.</span> <span class="toc-text">AsRawMatrix</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AsS4"><span class="toc-number">1.0.1.20.</span> <span class="toc-text">AsS4</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AsSymbol"><span class="toc-number">1.0.1.21.</span> <span class="toc-text">AsSymbol</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AsVector"><span class="toc-number">1.0.1.22.</span> <span class="toc-text">AsVector</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IsDataFrame"><span class="toc-number">1.0.1.23.</span> <span class="toc-text">IsDataFrame</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IsEnvironment"><span class="toc-number">1.0.1.24.</span> <span class="toc-text">IsEnvironment</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IsExpression"><span class="toc-number">1.0.1.25.</span> <span class="toc-text">IsExpression</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IsFactor"><span class="toc-number">1.0.1.26.</span> <span class="toc-text">IsFactor</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IsFunction"><span class="toc-number">1.0.1.27.</span> <span class="toc-text">IsFunction</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IsLanguage"><span class="toc-number">1.0.1.28.</span> <span class="toc-text">IsLanguage</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IsList"><span class="toc-number">1.0.1.29.</span> <span class="toc-text">IsList</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IsMatrix"><span class="toc-number">1.0.1.30.</span> <span class="toc-text">IsMatrix</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IsS4"><span class="toc-number">1.0.1.31.</span> <span class="toc-text">IsS4</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IsSymbol"><span class="toc-number">1.0.1.32.</span> <span class="toc-text">IsSymbol</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IsVector"><span class="toc-number">1.0.1.33.</span> <span class="toc-text">IsVector</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties"><span class="toc-number">1.0.2.</span> <span class="toc-text">Properties</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#engine"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">engine</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="SymbolicExpressionExtension"><a href="#SymbolicExpressionExtension" class="headerlink" title="SymbolicExpressionExtension"></a>SymbolicExpressionExtension</h1><p><em>namespace: <a href="N-RDotNET.html">RDotNET</a></em></p>
+<p>Provides extension methods for @”T:RDotNET.SymbolicExpression”.</p>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="AsCharacter"><a href="#AsCharacter" class="headerlink" title="AsCharacter"></a>AsCharacter</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.AsCharacter(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Converts the specified expression to a CharacterVector.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: The LogicalVector. Returns null if the specified expression is not vector.</em></p>
+<h4 id="AsCharacterMatrix"><a href="#AsCharacterMatrix" class="headerlink" title="AsCharacterMatrix"></a>AsCharacterMatrix</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.AsCharacterMatrix(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Converts the specified expression to a CharacterMatrix.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: The CharacterMatrix. Returns null if the specified expression is not vector.</em></p>
+<h4 id="AsComplex"><a href="#AsComplex" class="headerlink" title="AsComplex"></a>AsComplex</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.AsComplex(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Converts the specified expression to a ComplexVector.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: The LogicalVector. Returns null if the specified expression is not vector.</em></p>
+<h4 id="AsComplexMatrix"><a href="#AsComplexMatrix" class="headerlink" title="AsComplexMatrix"></a>AsComplexMatrix</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.AsComplexMatrix(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Converts the specified expression to a ComplexMatrix.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: The ComplexMatrix. Returns null if the specified expression is not vector.</em></p>
+<h4 id="AsDataFrame"><a href="#AsDataFrame" class="headerlink" title="AsDataFrame"></a>AsDataFrame</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.AsDataFrame(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Converts the specified expression to a DataFrame.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: The DataFrame. Returns null if the specified expression is not vector.</em></p>
+<h4 id="AsEnvironment"><a href="#AsEnvironment" class="headerlink" title="AsEnvironment"></a>AsEnvironment</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.AsEnvironment(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Gets the expression as an @”T:RDotNET.REnvironment”.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The environment.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: The environment.</em></p>
+<h4 id="AsExpression"><a href="#AsExpression" class="headerlink" title="AsExpression"></a>AsExpression</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.AsExpression(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Gets the expression as an @”T:RDotNET.Expression”.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: The expression.</em></p>
+<h4 id="AsFactor"><a href="#AsFactor" class="headerlink" title="AsFactor"></a>AsFactor</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.AsFactor(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Gets the expression as a factor.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: The factor.</em></p>
+<h4 id="AsFunction"><a href="#AsFunction" class="headerlink" title="AsFunction"></a>AsFunction</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.AsFunction(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Gets the expression as a function.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: The function.</em></p>
+<h4 id="AsInteger"><a href="#AsInteger" class="headerlink" title="AsInteger"></a>AsInteger</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.AsInteger(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Converts the specified expression to an IntegerVector.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: The LogicalVector. Returns null if the specified expression is not vector.</em></p>
+<h4 id="AsIntegerMatrix"><a href="#AsIntegerMatrix" class="headerlink" title="AsIntegerMatrix"></a>AsIntegerMatrix</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.AsIntegerMatrix(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Converts the specified expression to an IntegerMatrix.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: The IntegerMatrix. Returns null if the specified expression is not vector.</em></p>
+<h4 id="AsLanguage"><a href="#AsLanguage" class="headerlink" title="AsLanguage"></a>AsLanguage</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.AsLanguage(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Gets the expression as a language.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: The language.</em></p>
+<h4 id="AsList"><a href="#AsList" class="headerlink" title="AsList"></a>AsList</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.AsList(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Converts the specified expression to a GenericVector.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: The GenericVector. Returns null if the specified expression is not vector.</em></p>
+<h4 id="AsLogical"><a href="#AsLogical" class="headerlink" title="AsLogical"></a>AsLogical</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.AsLogical(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Converts the specified expression to a LogicalVector.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: The LogicalVector. Returns null if the specified expression is not vector.</em></p>
+<h4 id="AsLogicalMatrix"><a href="#AsLogicalMatrix" class="headerlink" title="AsLogicalMatrix"></a>AsLogicalMatrix</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.AsLogicalMatrix(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Converts the specified expression to a LogicalMatrix.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: The LogicalMatrix. Returns null if the specified expression is not vector.</em></p>
+<h4 id="AsNumeric"><a href="#AsNumeric" class="headerlink" title="AsNumeric"></a>AsNumeric</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.AsNumeric(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Converts the specified expression to a NumericVector.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: The LogicalVector. Returns null if the specified expression is not vector.</em></p>
+<h4 id="AsNumericMatrix"><a href="#AsNumericMatrix" class="headerlink" title="AsNumericMatrix"></a>AsNumericMatrix</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.AsNumericMatrix(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Converts the specified expression to a NumericMatrix.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: The NumericMatrix. Returns null if the specified expression is not vector.</em></p>
+<h4 id="AsRaw"><a href="#AsRaw" class="headerlink" title="AsRaw"></a>AsRaw</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.AsRaw(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Converts the specified expression to a RawVector.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: The LogicalVector. Returns null if the specified expression is not vector.</em></p>
+<h4 id="AsRawMatrix"><a href="#AsRawMatrix" class="headerlink" title="AsRawMatrix"></a>AsRawMatrix</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.AsRawMatrix(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Converts the specified expression to a RawMatrix.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: The RawMatrix. Returns null if the specified expression is not vector.</em></p>
+<h4 id="AsS4"><a href="#AsS4" class="headerlink" title="AsS4"></a>AsS4</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.AsS4(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Coerce the specified expression to an S4 object.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: The DataFrame. Returns null if the specified expression is not vector.</em></p>
+<h4 id="AsSymbol"><a href="#AsSymbol" class="headerlink" title="AsSymbol"></a>AsSymbol</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.AsSymbol(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Gets the expression as a symbol.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: The symbol.</em></p>
+<h4 id="AsVector"><a href="#AsVector" class="headerlink" title="AsVector"></a>AsVector</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.AsVector(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Converts the specified expression to a DynamicVector.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: The DynamicVector. Returns null if the specified expression is not vector.</em></p>
+<h4 id="IsDataFrame"><a href="#IsDataFrame" class="headerlink" title="IsDataFrame"></a>IsDataFrame</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.IsDataFrame(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Gets whether the specified expression is data frame.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: True if the specified expression is data frame.</em></p>
+<h4 id="IsEnvironment"><a href="#IsEnvironment" class="headerlink" title="IsEnvironment"></a>IsEnvironment</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.IsEnvironment(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Specifies the expression is an @”T:RDotNET.REnvironment” object or not.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: True if it is an environment.</em></p>
+<h4 id="IsExpression"><a href="#IsExpression" class="headerlink" title="IsExpression"></a>IsExpression</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.IsExpression(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Specifies the expression is an @”T:RDotNET.Expression” object or not.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: True if it is an expression.</em></p>
+<h4 id="IsFactor"><a href="#IsFactor" class="headerlink" title="IsFactor"></a>IsFactor</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.IsFactor(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Gets whether the specified expression is factor.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: True if the specified expression is factor.</em></p>
+<h4 id="IsFunction"><a href="#IsFunction" class="headerlink" title="IsFunction"></a>IsFunction</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.IsFunction(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Specifies the expression is a function object or not.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: True if it is a function.</em></p>
+<h4 id="IsLanguage"><a href="#IsLanguage" class="headerlink" title="IsLanguage"></a>IsLanguage</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.IsLanguage(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Specifies the expression is a language object or not.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: True if it is a language.</em></p>
+<h4 id="IsList"><a href="#IsList" class="headerlink" title="IsList"></a>IsList</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.IsList(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Gets whether the specified expression is list.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: True if the specified expression is list.</em></p>
+<h4 id="IsMatrix"><a href="#IsMatrix" class="headerlink" title="IsMatrix"></a>IsMatrix</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.IsMatrix(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Gets whether the specified expression is matrix.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: True if the specified expression is matrix.</em></p>
+<h4 id="IsS4"><a href="#IsS4" class="headerlink" title="IsS4"></a>IsS4</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.IsS4(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Gets whether the specified expression is an S4 object.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: True if the specified expression is an S4 object.</em></p>
+<h4 id="IsSymbol"><a href="#IsSymbol" class="headerlink" title="IsSymbol"></a>IsSymbol</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.IsSymbol(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Specifies the expression is a symbol object or not.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: True if it is a symbol.</em></p>
+<h4 id="IsVector"><a href="#IsVector" class="headerlink" title="IsVector"></a>IsVector</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RDotNET.SymbolicExpressionExtension.IsVector(RDotNET.SymbolicExpression)</span><br></pre></td></tr></table></figure>
+<p>Gets whether the specified expression is vector.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expression</td>
+<td>The expression.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: True if the specified expression is vector.</em></p>
+<h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="engine"><a href="#engine" class="headerlink" title="engine"></a>engine</h4><p>A cache of the REngine - WARNING this assumes there can be only one per process, initialized once only.</p>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-RDotNET.SymbolicExpressionExtension.html" class="article-date">
+  <time datetime="2016-06-15T20:57:02.718Z" itemprop="datePublished">2016-06-16</time>
+</a>
+              <a data-url="http://docs.gcmodeller.org/API/T-RDotNET.SymbolicExpressionExtension.html" data-id="ciphd0ata002pu0v444twwvs0" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 GCModeller docs library<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/SMRUCC/" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+
