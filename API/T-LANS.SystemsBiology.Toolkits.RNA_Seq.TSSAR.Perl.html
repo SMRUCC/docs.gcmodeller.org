@@ -19,7 +19,7 @@ dRNA-seq
 dRNA-seq
  TSSAR Perl invoke module
  DESCRIPTION Transcription Start Sites Annotation Regime for dRNA-seq data, based on a Skellam distributi">
-<meta property="og:updated_time" content="2016-06-13T13:11:20.229Z">
+<meta property="og:updated_time" content="2016-06-19T03:14:51.660Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Perl">
 <meta name="twitter:description" content="Perl_namespace: LANS.SystemsBiology.Toolkits.RNA_Seq.TSSAR_
@@ -139,7 +139,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-LANS.SystemsBiology.Toolkits.RNA_Seq.TSSAR.Perl.html" class="article-date">
-  <time datetime="2016-06-13T13:11:20.229Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:51.660Z" itemprop="datePublished">2016-06-19</time>
 </a>-->
         <!--  -->
       </div>
@@ -169,6 +169,16 @@ var _hmt = _hmt || [];
 <p>dRNA-seq</p>
 <p> TSSAR Perl invoke module</p>
 <p> DESCRIPTION<br> <em>T</em>ranscription <em>S</em>tart <em>S</em>ites <em>A</em>nnotation <em>R</em>egime for dRNA-seq data,<br> based on a Skellam distribution with parameter estimation by<br> zero-inflated-poisson model regression analysis. The input are two<br> mapped sequencing files in SAM file formate (library[+] and library[-]),<br> the output is a *.BED file with an entry for each position which is<br> annotated as a TSS, writen to STDOUT. Addtionally, a file named Dump.bed<br> is created. It specifies regions where the applied regression model does<br> not converge. Hence, those regions are omitted from analysis.</p>
+<blockquote>
+<p> CONSIDERATIONS<br>  This is only a beta-version which was not thoroughly tested.</p>
+<p> VERSION<br>  Version 0.9.6 beta – Distribution is modeled locally, by assuming a<br>  mixed model between</p>
+<p>  Poisson-Part -&gt; Transcribed Region (sampling zeros)</p>
+<p>  Zero-Part -&gt; Not Transcribed Region (structural zeros)</p>
+<p>  The Poisson-Part is seperated from the Zero-Part by<br>  Zero-Inflated-Poisson-Model Regression Analysis. The Parameters for<br>  Skellam is the winzorized mean over the Poisson-Part.</p>
+<p> AUTHOR<br>  Fabian Amman, afabian@bioinf.uni-leipzig.de</p>
+<p> LICENCE<br>  TSSAR itself comes under GNU General Public License v2.0</p>
+<p>  Please note that TSSAR uses the R libraries Skellam and VGAM. Both<br>  libraries are not our property and might have altering licencing. Please<br>  cite independantly.</p>
+</blockquote>
 <h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="Invoke"><a href="#Invoke" class="headerlink" title="Invoke"></a>Invoke</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.Toolkits.RNA_Seq.TSSAR.Perl.Invoke(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Int32,System.Boolean)</span><br></pre></td></tr></table></figure>
 <p><em>T</em>ranscription <em>S</em>tart <em>S</em>ites <em>A</em>nnotation <em>R</em>egime for dRNA-seq data,<br> based on a Skellam distribution with parameter estimation by<br> zero-inflated-poisson model regression analysis. The input are two<br> mapped sequencing files in SAM file formate (library[+] and library[-]),<br> the output is a *.BED file with an entry for each position which is<br> annotated as a TSS, writen to STDOUT. Addtionally, a file named Dump.bed<br> is created. It specifies regions where the applied regression model does<br> not converge. Hence, those regions are omitted from analysis.</p>
 <table>
@@ -213,7 +223,7 @@ var _hmt = _hmt || [];
             </div>
             <footer class="article-footer">
               <a href="/API/T-LANS.SystemsBiology.Toolkits.RNA_Seq.TSSAR.Perl.html" class="article-date">
-  <time datetime="2016-06-13T13:11:20.229Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:51.660Z" itemprop="datePublished">2016-06-19</time>
 </a>
               <a data-url="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.Toolkits.RNA_Seq.TSSAR.Perl.html" data-id="cipe3iltp02k220v44czw13z2" class="article-share-link">Share</a>
               

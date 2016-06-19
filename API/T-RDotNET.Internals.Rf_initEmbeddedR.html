@@ -8,18 +8,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
     <meta name="description" content="Rf_initEmbeddedRnamespace: RDotNET.Internals
-Initialise R for embedding">
+Initialise R for embedding
+
+ ‘ int Rf_initEmbeddedR(int argc, char *argv){    Rf_initialize_R(argc, argv);   // R_Interactive is set to true in unix Rembed">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Rf_initEmbeddedR">
 <meta property="og:url" content="http://docs.gcmodeller.org/API/T-RDotNET.Internals.Rf_initEmbeddedR.html">
 <meta property="og:site_name" content="GCModeller docs library">
 <meta property="og:description" content="Rf_initEmbeddedRnamespace: RDotNET.Internals
-Initialise R for embedding">
-<meta property="og:updated_time" content="2016-06-15T20:57:02.750Z">
+Initialise R for embedding
+
+ ‘ int Rf_initEmbeddedR(int argc, char *argv){    Rf_initialize_R(argc, argv);   // R_Interactive is set to true in unix Rembed">
+<meta property="og:updated_time" content="2016-06-19T03:14:52.594Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Rf_initEmbeddedR">
 <meta name="twitter:description" content="Rf_initEmbeddedRnamespace: RDotNET.Internals
-Initialise R for embedding">
+Initialise R for embedding
+
+ ‘ int Rf_initEmbeddedR(int argc, char *argv){    Rf_initialize_R(argc, argv);   // R_Interactive is set to true in unix Rembed">
     
       <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
     
@@ -133,7 +139,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-RDotNET.Internals.Rf_initEmbeddedR.html" class="article-date">
-  <time datetime="2016-06-15T20:57:02.750Z" itemprop="datePublished">2016-06-16</time>
+  <time datetime="2016-06-19T03:14:52.594Z" itemprop="datePublished">2016-06-19</time>
 </a>-->
         <!--  -->
       </div>
@@ -161,12 +167,15 @@ var _hmt = _hmt || [];
               
                 <h1 id="Rf-initEmbeddedR"><a href="#Rf-initEmbeddedR" class="headerlink" title="Rf_initEmbeddedR"></a>Rf_initEmbeddedR</h1><p><em>namespace: <a href="N-RDotNET.Internals.html">RDotNET.Internals</a></em></p>
 <p>Initialise R for embedding</p>
+<blockquote>
+<p> ‘<br> int Rf_initEmbeddedR(int argc, char <em>*argv)<br>{<br>    Rf_initialize_R(argc, argv);<br>   // R_Interactive is set to true in unix Rembedded.c, not gnuwin<br>    R_Interactive = TRUE;  /</em> Rf_initialize_R set this based on isatty */<br>    setup_Rmainloop();<br>    return(1);<br>}<br> ‘</p>
+</blockquote>
 
               
             </div>
             <footer class="article-footer">
               <a href="/API/T-RDotNET.Internals.Rf_initEmbeddedR.html" class="article-date">
-  <time datetime="2016-06-15T20:57:02.750Z" itemprop="datePublished">2016-06-16</time>
+  <time datetime="2016-06-19T03:14:52.594Z" itemprop="datePublished">2016-06-19</time>
 </a>
               <a data-url="http://docs.gcmodeller.org/API/T-RDotNET.Internals.Rf_initEmbeddedR.html" data-id="ciphczyll001uu0v4hpsqsu3k" class="article-share-link">Share</a>
               

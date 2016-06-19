@@ -17,7 +17,7 @@ Low-level function to estimate size factors with robust regression.
 <meta property="og:description" content="estimateSizeFactorsForMatrixnamespace: SMRUCC.R.CRAN.Bioconductor.DESeq2
 Low-level function to estimate size factors with robust regression.
  Given a matrix or data frame of count data, this function">
-<meta property="og:updated_time" content="2016-06-13T13:11:10.954Z">
+<meta property="og:updated_time" content="2016-06-19T03:14:43.653Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="estimateSizeFactorsForMatrix">
 <meta name="twitter:description" content="estimateSizeFactorsForMatrixnamespace: SMRUCC.R.CRAN.Bioconductor.DESeq2
@@ -136,7 +136,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-SMRUCC.R.CRAN.Bioconductor.DESeq2.estimateSizeFactorsForMatrix.html" class="article-date">
-  <time datetime="2016-06-13T13:11:10.954Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:43.653Z" itemprop="datePublished">2016-06-19</time>
 </a>-->
         <!--  -->
       </div>
@@ -165,6 +165,9 @@ var _hmt = _hmt || [];
                 <h1 id="estimateSizeFactorsForMatrix"><a href="#estimateSizeFactorsForMatrix" class="headerlink" title="estimateSizeFactorsForMatrix"></a>estimateSizeFactorsForMatrix</h1><p><em>namespace: <a href="N-SMRUCC.R.CRAN.Bioconductor.DESeq2.html">SMRUCC.R.CRAN.Bioconductor.DESeq2</a></em></p>
 <p>Low-level function to estimate size factors with robust regression.</p>
 <p> Given a matrix or data frame of count data, this function estimates the size factors as follows:<br> Each column is divided by the geometric means of the rows. The median (or, if requested,<br> another location estimator) of these ratios (skipping the genes with a geometric mean of zero)<br> is used as the size factor for this column. Typically, one will not call this function directly,<br> but use estimateSizeFactors.</p>
+<blockquote>
+<p> a vector with the estimates size factors, one element per column</p>
+</blockquote>
 <h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="controlGenes"><a href="#controlGenes" class="headerlink" title="controlGenes"></a>controlGenes</h4><p>optional, numeric or logical index vector specifying those genes to use for size factor estimation<br> (e.g. housekeeping or spike-in genes)</p>
 <h4 id="counts"><a href="#counts" class="headerlink" title="counts"></a>counts</h4><p>a matrix or data frame of counts, i.e., non-negative integer values</p>
 <h4 id="geoMeans"><a href="#geoMeans" class="headerlink" title="geoMeans"></a>geoMeans</h4><p>by default this is not provided, and the geometric means of the counts are calculated within the function.<br> A vector of geometric means from another count matrix can be provided for a “frozen” size factor calculation</p>
@@ -174,7 +177,7 @@ var _hmt = _hmt || [];
             </div>
             <footer class="article-footer">
               <a href="/API/T-SMRUCC.R.CRAN.Bioconductor.DESeq2.estimateSizeFactorsForMatrix.html" class="article-date">
-  <time datetime="2016-06-13T13:11:10.954Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:43.653Z" itemprop="datePublished">2016-06-19</time>
 </a>
               <a data-url="http://docs.gcmodeller.org/API/T-SMRUCC.R.CRAN.Bioconductor.DESeq2.estimateSizeFactorsForMatrix.html" data-id="cipe3ilxr02op20v4kszf5rrq" class="article-share-link">Share</a>
               

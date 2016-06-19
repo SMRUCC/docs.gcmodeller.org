@@ -9,23 +9,23 @@
     <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
     <meta name="description" content="helicesnamespace: LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects
 helices - determine secondary structure
-PropertiesGuidhelix_guid
-pos_from1pos_from1, pos_to1, pos_from2, pos_to2 :">
+
+ CREATE TABLE helices (   helix_guid int(11) NOT NULL DEFAULT ‘0’,   pkg_g">
 <meta property="og:type" content="website">
 <meta property="og:title" content="helices">
 <meta property="og:url" content="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects.helices.html">
 <meta property="og:site_name" content="GCModeller docs library">
 <meta property="og:description" content="helicesnamespace: LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects
 helices - determine secondary structure
-PropertiesGuidhelix_guid
-pos_from1pos_from1, pos_to1, pos_from2, pos_to2 :">
-<meta property="og:updated_time" content="2016-06-13T13:11:16.382Z">
+
+ CREATE TABLE helices (   helix_guid int(11) NOT NULL DEFAULT ‘0’,   pkg_g">
+<meta property="og:updated_time" content="2016-06-19T03:14:48.865Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="helices">
 <meta name="twitter:description" content="helicesnamespace: LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects
 helices - determine secondary structure
-PropertiesGuidhelix_guid
-pos_from1pos_from1, pos_to1, pos_from2, pos_to2 :">
+
+ CREATE TABLE helices (   helix_guid int(11) NOT NULL DEFAULT ‘0’,   pkg_g">
     
       <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
     
@@ -139,7 +139,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects.helices.html" class="article-date">
-  <time datetime="2016-06-13T13:11:16.382Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:48.865Z" itemprop="datePublished">2016-06-19</time>
 </a>-->
         <!--  -->
       </div>
@@ -167,6 +167,9 @@ var _hmt = _hmt || [];
               
                 <h1 id="helices"><a href="#helices" class="headerlink" title="helices"></a>helices</h1><p><em>namespace: <a href="N-LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects.html">LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects</a></em></p>
 <p>helices - determine secondary structure</p>
+<blockquote>
+<p> CREATE TABLE <code>helices</code> (<br>   <code>helix_guid</code> int(11) NOT NULL DEFAULT ‘0’,<br>   <code>pkg_guid</code> int(11) NOT NULL DEFAULT ‘0’,<br>   <code>art_guid</code> int(11) NOT NULL DEFAULT ‘0’,<br>   <code>name</code> varchar(50) DEFAULT NULL,<br>   <code>fl_real_name</code> int(1) DEFAULT NULL,<br>   <code>genome_guid</code> int(11) DEFAULT NULL,<br>   <code>sec_struct_guid</code> int(11) DEFAULT NULL,<br>   <code>pos_from1</code> int(11) DEFAULT NULL,<br>   <code>pos_to1</code> int(11) DEFAULT NULL,<br>   <code>pos_from2</code> int(11) DEFAULT NULL,<br>   <code>pos_to2</code> int(11) DEFAULT NULL,<br>   <code>descript</code> blob,<br>   PRIMARY KEY (<code>helix_guid</code>),<br>   KEY <code>FK_helices-pkg_guid</code> (<code>pkg_guid</code>),<br>   KEY <code>FK_helices-art_guid</code> (<code>art_guid</code>),<br>   KEY <code>FK_helices-genome_guid</code> (<code>genome_guid</code>),<br>   KEY <code>FK_helices-sec_struct_guid</code> (<code>sec_struct_guid</code>),<br>   CONSTRAINT <code>FK_helices-art_guid</code> FOREIGN KEY (<code>art_guid</code>) REFERENCES <code>articles</code> (<code>art_guid</code>),<br>   CONSTRAINT <code>FK_helices-genome_guid</code> FOREIGN KEY (<code>genome_guid</code>) REFERENCES <code>dict_genomes</code> (<code>genome_guid</code>),<br>   CONSTRAINT <code>FK_helices-pkg_guid</code> FOREIGN KEY (<code>pkg_guid</code>) REFERENCES <code>packages</code> (<code>pkg_guid</code>),<br>   CONSTRAINT <code>FK_helices-sec_struct_guid</code> FOREIGN KEY (<code>sec_struct_guid</code>) REFERENCES <code>sec_structures</code> (<code>sec_struct_guid</code>),<br>   CONSTRAINT <code>helices_ibfk_1</code> FOREIGN KEY (<code>sec_struct_guid</code>) REFERENCES <code>obj_name_genomes</code> (<code>obj_guid</code>)<br> ) ENGINE=InnoDB DEFAULT CHARSET=latin1;</p>
+</blockquote>
 <h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="Guid"><a href="#Guid" class="headerlink" title="Guid"></a>Guid</h4><p>helix_guid</p>
 <h4 id="pos-from1"><a href="#pos-from1" class="headerlink" title="pos_from1"></a>pos_from1</h4><p>pos_from1, pos_to1, pos_from2, pos_to2 : helix coordinates relative to start of RNA secondary structure</p>
 <h4 id="sec-struc-guid"><a href="#sec-struc-guid" class="headerlink" title="sec_struc_guid"></a>sec_struc_guid</h4><p>sec_struc_guid: id of the RNA secondary structure containing the helix</p>
@@ -175,7 +178,7 @@ var _hmt = _hmt || [];
             </div>
             <footer class="article-footer">
               <a href="/API/T-LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects.helices.html" class="article-date">
-  <time datetime="2016-06-13T13:11:16.382Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:48.865Z" itemprop="datePublished">2016-06-19</time>
 </a>
               <a data-url="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects.helices.html" data-id="cipe3iire01x220v4wcl7wsc8" class="article-share-link">Share</a>
               

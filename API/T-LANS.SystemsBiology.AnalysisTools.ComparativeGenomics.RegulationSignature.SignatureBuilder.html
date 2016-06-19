@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="GCModeller docs library">
 <meta property="og:description" content="SignatureBuildernamespace: LANS.SystemsBiology.AnalysisTools.ComparativeGenomics.RegulationSignature
 本模块将Regprecise注释结果上面的每一个位点数据转换为一段简并的DNA序列数据用来抽象整个基因组的调控网络特征 由于位点和下游基因构成了一条边，所以可以从整个Regprecise注释数据之中">
-<meta property="og:updated_time" content="2016-06-13T13:11:11.689Z">
+<meta property="og:updated_time" content="2016-06-19T03:14:44.564Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SignatureBuilder">
 <meta name="twitter:description" content="SignatureBuildernamespace: LANS.SystemsBiology.AnalysisTools.ComparativeGenomics.RegulationSignature
@@ -133,7 +133,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-LANS.SystemsBiology.AnalysisTools.ComparativeGenomics.RegulationSignature.SignatureBuilder.html" class="article-date">
-  <time datetime="2016-06-13T13:11:11.689Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:44.564Z" itemprop="datePublished">2016-06-19</time>
 </a>-->
         <!--  -->
       </div>
@@ -161,6 +161,9 @@ var _hmt = _hmt || [];
               
                 <h1 id="SignatureBuilder"><a href="#SignatureBuilder" class="headerlink" title="SignatureBuilder"></a>SignatureBuilder</h1><p><em>namespace: <a href="N-LANS.SystemsBiology.AnalysisTools.ComparativeGenomics.RegulationSignature.html">LANS.SystemsBiology.AnalysisTools.ComparativeGenomics.RegulationSignature</a></em></p>
 <p>本模块将Regprecise注释结果上面的每一个位点数据转换为一段简并的DNA序列数据用来抽象整个基因组的调控网络特征<br> 由于位点和下游基因构成了一条边，所以可以从整个Regprecise注释数据之中得到一个网络<br> 由于本全基因组调控特征可以用于表示整个基因组的调控网络，所以使用本方法将原有的三维的网络数据降维至二维DNA序列，可以很方便的使用blastn程序进行调控网络的相似度的比对工作</p>
+<blockquote>
+<p> 采用冗余的形式来构建序列特征，这样通过blastn就可以同时比对调控网络和代谢网络，将两个三维网络降维至两个二维序列所形成的网络来进行相互比较</p>
+</blockquote>
 <h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="ctor"><a href="#ctor" class="headerlink" title="#ctor"></a>#ctor</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.AnalysisTools.ComparativeGenomics.RegulationSignature.SignatureBuilder.<span class="meta">#ctor(System.Collections.Generic.IEnumerable&#123;LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Analysis.GenomeMotifFootPrints.PredictedRegulationFootprint&#125;,LANS.SystemsBiology.Assembly.NCBI.GenBank.TabularFormat.PTT,System.Collections.Generic.IEnumerable&#123;LANS.SystemsBiology.Assembly.KEGG.DBGET.bGetObject.Pathway&#125;,System.Collections.Generic.IEnumerable&#123;LANS.SystemsBiology.ComponentModel.ICOGDigest&#125;)</span></span><br></pre></td></tr></table></figure>
 <table>
 <thead>
@@ -196,7 +199,7 @@ var _hmt = _hmt || [];
             </div>
             <footer class="article-footer">
               <a href="/API/T-LANS.SystemsBiology.AnalysisTools.ComparativeGenomics.RegulationSignature.SignatureBuilder.html" class="article-date">
-  <time datetime="2016-06-13T13:11:11.689Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:44.564Z" itemprop="datePublished">2016-06-19</time>
 </a>
               <a data-url="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.AnalysisTools.ComparativeGenomics.RegulationSignature.SignatureBuilder.html" data-id="cipe3i3pr00q220v4zz197dis" class="article-share-link">Share</a>
               

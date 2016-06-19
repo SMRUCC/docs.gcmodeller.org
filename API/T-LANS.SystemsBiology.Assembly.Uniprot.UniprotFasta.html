@@ -17,7 +17,7 @@ A fasta object which is specific for the uniprot fasta title parsing.(专门用�
 <meta property="og:description" content="UniprotFastanamespace: LANS.SystemsBiology.Assembly.Uniprot
 A fasta object which is specific for the uniprot fasta title parsing.(专门用于解析Uniprot蛋白质序列记录的Fasta对象)
  The following is a description of FASTA">
-<meta property="og:updated_time" content="2016-06-13T13:11:13.644Z">
+<meta property="og:updated_time" content="2016-06-19T03:14:46.617Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="UniprotFasta">
 <meta name="twitter:description" content="UniprotFastanamespace: LANS.SystemsBiology.Assembly.Uniprot
@@ -136,7 +136,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-LANS.SystemsBiology.Assembly.Uniprot.UniprotFasta.html" class="article-date">
-  <time datetime="2016-06-13T13:11:13.644Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:46.617Z" itemprop="datePublished">2016-06-19</time>
 </a>-->
         <!--  -->
       </div>
@@ -170,6 +170,9 @@ var _hmt = _hmt || [];
 <p>db|UniqueIdentifier|EntryName ProteinName OS=OrganismName[ GN=GeneName]PE=ProteinExistence SV=SequenceVersion</p>
 </blockquote>
 <p> Where:<br> db Is ‘sp’ for UniProtKB/Swiss-Prot and ‘tr’ for UniProtKB/TrEMBL.<br> UniqueIdentifier Is the primary accession number of the UniProtKB entry.<br> EntryName Is the entry name of the UniProtKB entry.<br> ProteinName Is the recommended name of the UniProtKB entry as annotated in the RecName field. For UniProtKB/TrEMBL entries without a RecName field, the SubName field Is used.<br> In case of multiple SubNames, the first one Is used. The ‘precursor’ attribute is excluded, ‘Fragment’ is included with the name if applicable.<br> OrganismName Is the scientific name of the organism of the UniProtKB entry.<br> GeneName Is the first gene name of the UniProtKB entry. If there Is no gene name, OrderedLocusName Or ORFname, the GN field Is Not listed.<br> ProteinExistence Is the numerical value describing the evidence for the existence of the protein.<br> SequenceVersion Is the version number of the sequence.</p>
+<blockquote>
+<p><a href="http://www.uniprot.org/help/fasta-headers" target="_blank" rel="external">http://www.uniprot.org/help/fasta-headers</a></p>
+</blockquote>
 <h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="CreateObject"><a href="#CreateObject" class="headerlink" title="CreateObject"></a>CreateObject</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.Assembly.Uniprot.UniprotFasta.CreateObject(LANS.SystemsBiology.SequenceModel.FASTA.FastaToken)</span><br></pre></td></tr></table></figure>
 <p>从读取的文件数据之中创建一个Uniprot序列对象</p>
 <table>
@@ -219,7 +222,7 @@ var _hmt = _hmt || [];
             </div>
             <footer class="article-footer">
               <a href="/API/T-LANS.SystemsBiology.Assembly.Uniprot.UniprotFasta.html" class="article-date">
-  <time datetime="2016-06-13T13:11:13.644Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:46.617Z" itemprop="datePublished">2016-06-19</time>
 </a>
               <a data-url="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.Assembly.Uniprot.UniprotFasta.html" data-id="cipe3i4cx018f20v42j8hcnuz" class="article-share-link">Share</a>
               

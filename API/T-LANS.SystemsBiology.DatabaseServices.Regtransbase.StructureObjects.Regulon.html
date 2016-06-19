@@ -8,18 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
     <meta name="description" content="Regulonnamespace: LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects
-PropertiesGuidregulon_guid: id of the regulator for the regulon">
+
+ CREATE TABLE regulons (   regulon_guid int(11) NOT NULL DEFAULT ‘0’,   pkg_guid int(11) NOT NULL DEFAULT ‘0’,   a">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Regulon">
 <meta property="og:url" content="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects.Regulon.html">
 <meta property="og:site_name" content="GCModeller docs library">
 <meta property="og:description" content="Regulonnamespace: LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects
-PropertiesGuidregulon_guid: id of the regulator for the regulon">
-<meta property="og:updated_time" content="2016-06-13T13:11:16.373Z">
+
+ CREATE TABLE regulons (   regulon_guid int(11) NOT NULL DEFAULT ‘0’,   pkg_guid int(11) NOT NULL DEFAULT ‘0’,   a">
+<meta property="og:updated_time" content="2016-06-19T03:14:48.861Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Regulon">
 <meta name="twitter:description" content="Regulonnamespace: LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects
-PropertiesGuidregulon_guid: id of the regulator for the regulon">
+
+ CREATE TABLE regulons (   regulon_guid int(11) NOT NULL DEFAULT ‘0’,   pkg_guid int(11) NOT NULL DEFAULT ‘0’,   a">
     
       <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
     
@@ -133,7 +136,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects.Regulon.html" class="article-date">
-  <time datetime="2016-06-13T13:11:16.373Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:48.861Z" itemprop="datePublished">2016-06-19</time>
 </a>-->
         <!--  -->
       </div>
@@ -160,13 +163,16 @@ var _hmt = _hmt || [];
               </div>
               
                 <h1 id="Regulon"><a href="#Regulon" class="headerlink" title="Regulon"></a>Regulon</h1><p><em>namespace: <a href="N-LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects.html">LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects</a></em></p>
+<blockquote>
+<p> CREATE TABLE <code>regulons</code> (<br>   <code>regulon_guid</code> int(11) NOT NULL DEFAULT ‘0’,<br>   <code>pkg_guid</code> int(11) NOT NULL DEFAULT ‘0’,<br>   <code>art_guid</code> int(11) NOT NULL DEFAULT ‘0’,<br>   <code>name</code> varchar(50) DEFAULT NULL,<br>   <code>fl_real_name</code> int(1) DEFAULT NULL,<br>   <code>genome_guid</code> int(11) DEFAULT NULL,<br>   <code>regulator_guid</code> int(11) DEFAULT NULL,<br>   <code>descript</code> blob,<br>   <code>last_update</code> timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,<br>   PRIMARY KEY (<code>regulon_guid</code>),<br>   KEY <code>FK_regulons-pkg_guid</code> (<code>pkg_guid</code>),<br>   KEY <code>FK_regulons-art_guid</code> (<code>art_guid</code>),<br>   KEY <code>FK_regulons-genome_guid</code> (<code>genome_guid</code>),<br>   KEY <code>FK_regulons-regulator_guid</code> (<code>regulator_guid</code>),<br>   CONSTRAINT <code>FK_regulons-art_guid</code> FOREIGN KEY (<code>art_guid</code>) REFERENCES <code>articles</code> (<code>art_guid</code>),<br>   CONSTRAINT <code>FK_regulons-genome_guid</code> FOREIGN KEY (<code>genome_guid</code>) REFERENCES <code>dict_genomes</code> (<code>genome_guid</code>),<br>   CONSTRAINT <code>FK_regulons-pkg_guid</code> FOREIGN KEY (<code>pkg_guid</code>) REFERENCES <code>packages</code> (<code>pkg_guid</code>),<br>   CONSTRAINT <code>regulons_ibfk_1</code> FOREIGN KEY (<code>regulator_guid</code>) REFERENCES <code>obj_name_genomes</code> (<code>obj_guid</code>)<br> ) ENGINE=InnoDB DEFAULT CHARSET=latin1;<br> SELECT * FROM dbregulation_update.sites;</p>
+</blockquote>
 <h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="Guid"><a href="#Guid" class="headerlink" title="Guid"></a>Guid</h4><p>regulon_guid: id of the regulator for the regulon</p>
 
               
             </div>
             <footer class="article-footer">
               <a href="/API/T-LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects.Regulon.html" class="article-date">
-  <time datetime="2016-06-13T13:11:16.373Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:48.861Z" itemprop="datePublished">2016-06-19</time>
 </a>
               <a data-url="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects.Regulon.html" data-id="cipe3iira01wx20v4opewg8y6" class="article-share-link">Share</a>
               

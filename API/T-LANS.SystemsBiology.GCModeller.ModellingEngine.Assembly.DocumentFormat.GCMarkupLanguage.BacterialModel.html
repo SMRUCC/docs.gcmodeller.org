@@ -15,7 +15,7 @@ LansSystemsBiologyModel, this model file contains all of the required data for t
 <meta property="og:site_name" content="GCModeller docs library">
 <meta property="og:description" content="BacterialModelnamespace: LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.GCMarkupLanguage
 LansSystemsBiologyModel, this model file contains all of the required data for the GCMo">
-<meta property="og:updated_time" content="2016-06-13T13:11:19.056Z">
+<meta property="og:updated_time" content="2016-06-19T03:14:50.631Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BacterialModel">
 <meta name="twitter:description" content="BacterialModelnamespace: LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.GCMarkupLanguage
@@ -133,7 +133,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.GCMarkupLanguage.BacterialModel.html" class="article-date">
-  <time datetime="2016-06-13T13:11:19.056Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:50.631Z" itemprop="datePublished">2016-06-19</time>
 </a>-->
         <!--  -->
       </div>
@@ -161,6 +161,15 @@ var _hmt = _hmt || [];
               
                 <h1 id="BacterialModel"><a href="#BacterialModel" class="headerlink" title="BacterialModel"></a>BacterialModel</h1><p><em>namespace: <a href="N-LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.GCMarkupLanguage.html">LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.GCMarkupLanguage</a></em></p>
 <p>LansSystemsBiologyModel, this model file contains all of the required data for the GCModeller virtual cell simulation.<br> (细菌细胞的计算模型文件，在本模型文件之中包含了所有的GCModeller进行模拟计算所需要的信息)</p>
+<blockquote>
+<p> 一次基本的计算包括下面的步骤：</p>
+<ol>
+<li>FBA模型求解代谢物的浓度分布</li>
+<li>根据代谢物的浓度分布计算出每一个基因的表达水平（转录水平）</li>
+<li>根据调控关系计算出每一种酶分子和调控因子的浓度分布</li>
+<li>下一个迭代循环直到到达最终的结束时间(RUN 命令行)</li>
+</ol>
+</blockquote>
 <h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="Load"><a href="#Load" class="headerlink" title="Load"></a>Load</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.GCMarkupLanguage.BacterialModel.Load(System.String)</span><br></pre></td></tr></table></figure>
 <p>Read the compiled model file that in the xml format.(读取已经编译好的保存为XML格式的模型文件)</p>
 <table>
@@ -210,7 +219,7 @@ var _hmt = _hmt || [];
             </div>
             <footer class="article-footer">
               <a href="/API/T-LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.GCMarkupLanguage.BacterialModel.html" class="article-date">
-  <time datetime="2016-06-13T13:11:19.056Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:50.631Z" itemprop="datePublished">2016-06-19</time>
 </a>
               <a data-url="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.GCModeller.ModellingEngine.Assembly.DocumentFormat.GCMarkupLanguage.BacterialModel.html" data-id="cipe3ij0q027320v4ltuwj3wo" class="article-share-link">Share</a>
               

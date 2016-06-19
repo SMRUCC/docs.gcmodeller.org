@@ -17,7 +17,7 @@
 <meta property="og:description" content="IntergenicSigma70_namespace: LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Workflows.PromoterParser_
 应用于Sigma70的预测分析的序列片段的解析模块
  只解析出在基因间隔区的，ORF上游100bp的序列片段，假若片段和其他的ORF发生了重叠，就缩短片段，但是不得短于">
-<meta property="og:updated_time" content="2016-06-13T13:11:12.078Z">
+<meta property="og:updated_time" content="2016-06-19T03:14:45.353Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="IntergenicSigma70">
 <meta name="twitter:description" content="IntergenicSigma70_namespace: LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Workflows.PromoterParser_
@@ -136,7 +136,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Workflows.PromoterParser.IntergenicSigma70.html" class="article-date">
-  <time datetime="2016-06-13T13:11:12.078Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:45.353Z" itemprop="datePublished">2016-06-19</time>
 </a>-->
         <!--  -->
       </div>
@@ -165,6 +165,16 @@ var _hmt = _hmt || [];
                 <h1 id="IntergenicSigma70"><a href="#IntergenicSigma70" class="headerlink" title="IntergenicSigma70"></a>IntergenicSigma70</h1><p>_namespace: <a href="N-LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Workflows.PromoterParser.html">LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Workflows.PromoterParser</a>_</p>
 <p>应用于Sigma70的预测分析的序列片段的解析模块</p>
 <p> 只解析出在基因间隔区的，ORF上游100bp的序列片段，假若片段和其他的ORF发生了重叠，就缩短片段，但是不得短于25bp</p>
+<blockquote>
+<p> Initially, all 100 nt regions upstream of all protein encoding genes were selected from the genome. </p>
+<p> Subsequently, these sequences were evaluated for their potential overlap With a preceding gene,<br> And In such cases, only the intergenic sequence was used For analysis, provided they<br> were 25 nt Or longer.</p>
+<p> The resulting Set Of selected intergenic sequences was searched For conserved motifs using MEME, applying standard DNA<br> parameter settings. </p>
+<p> Only motifs reported by MEME With E-values below 10-4 were considered relevant for further analysis.</p>
+<p> Additional parameters used For selection Of candidate sequences were: </p>
+<p> 1) Zero Or One Occurrence Per Sequence (ZOOPS mode),<br> 2) a maximum of ten different motifs per sequence, And<br> 3) each motif should be found In at least thirty-five different sequences.</p>
+<p> PWM models were constructed For the most abundantly encountered motifs, including those resembling the canonical 235 And<br> 210 elements known from general s70-dependent promoters.</p>
+<p> 黄单胞菌应该长一点150bp，非严格重叠？？？？</p>
+</blockquote>
 <h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="DIPAssociation"><a href="#DIPAssociation" class="headerlink" title="DIPAssociation"></a>DIPAssociation</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Workflows.PromoterParser.IntergenicSigma70.DIPAssociation(System.String,System.String)</span><br></pre></td></tr></table></figure>
 <p>The canonical sigma factor sigma70 is commonly involved in transcription of the cell’s housekeeping genes, which is mediated by the conserved sigma70 promoter sequence motifs</p>
 <table>
@@ -345,7 +355,7 @@ var _hmt = _hmt || [];
             </div>
             <footer class="article-footer">
               <a href="/API/T-LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Workflows.PromoterParser.IntergenicSigma70.html" class="article-date">
-  <time datetime="2016-06-13T13:11:12.078Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:45.353Z" itemprop="datePublished">2016-06-19</time>
 </a>
               <a data-url="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.AnalysisTools.NBCR.Extensions.MEME_Suite.Workflows.PromoterParser.IntergenicSigma70.html" data-id="cipe3i3xh00wg20v4wh9dp3og" class="article-share-link">Share</a>
               

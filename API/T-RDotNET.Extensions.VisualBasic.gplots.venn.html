@@ -9,20 +9,23 @@
     <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
     <meta name="description" content="vennnamespace: RDotNET.Extensions.VisualBasic.gplots
 Plot a Venn diagrams for up to 5 sets
-PropertiesdataEither a list list containing vectors of names or indices of group intersections, or a data fra">
+
+ data should be either a named list of vectors containing character string names (“GeneAABBB”, “GeneBBBCY”,">
 <meta property="og:type" content="website">
 <meta property="og:title" content="venn">
 <meta property="og:url" content="http://docs.gcmodeller.org/API/T-RDotNET.Extensions.VisualBasic.gplots.venn.html">
 <meta property="og:site_name" content="GCModeller docs library">
 <meta property="og:description" content="vennnamespace: RDotNET.Extensions.VisualBasic.gplots
 Plot a Venn diagrams for up to 5 sets
-PropertiesdataEither a list list containing vectors of names or indices of group intersections, or a data fra">
-<meta property="og:updated_time" content="2016-06-13T13:11:20.856Z">
+
+ data should be either a named list of vectors containing character string names (“GeneAABBB”, “GeneBBBCY”,">
+<meta property="og:updated_time" content="2016-06-19T03:14:52.305Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="venn">
 <meta name="twitter:description" content="vennnamespace: RDotNET.Extensions.VisualBasic.gplots
 Plot a Venn diagrams for up to 5 sets
-PropertiesdataEither a list list containing vectors of names or indices of group intersections, or a data fra">
+
+ data should be either a named list of vectors containing character string names (“GeneAABBB”, “GeneBBBCY”,">
     
       <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
     
@@ -136,7 +139,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-RDotNET.Extensions.VisualBasic.gplots.venn.html" class="article-date">
-  <time datetime="2016-06-13T13:11:20.856Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:52.305Z" itemprop="datePublished">2016-06-19</time>
 </a>-->
         <!--  -->
       </div>
@@ -164,6 +167,10 @@ var _hmt = _hmt || [];
               
                 <h1 id="venn"><a href="#venn" class="headerlink" title="venn"></a>venn</h1><p><em>namespace: <a href="N-RDotNET.Extensions.VisualBasic.gplots.html">RDotNET.Extensions.VisualBasic.gplots</a></em></p>
 <p>Plot a Venn diagrams for up to 5 sets</p>
+<blockquote>
+<p> data should be either a named list of vectors containing character string names (“GeneAABBB”, “GeneBBBCY”, .., “GeneXXZZ”)<br> or indexes of group intersections (1, 2, .., N), or a data frame containing indicator variables (TRUE, FALSE, TRUE, ..)<br> for group intersectionship. Group names will be taken from the component list element or column names.</p>
+<p> Invisibly returns an object of class “venn”, containing a matrix of all possible sets of groups, and the observed count of<br> items belonging to each The fist column contains observed counts, subsequent columns contain 0-1 indicators of group<br> intersectionship.</p>
+</blockquote>
 <h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="data"><a href="#data" class="headerlink" title="data"></a>data</h4><p>Either a list list containing vectors of names or indices of group intersections,<br> or a data frame containing boolean indicators of group intersectionship (see below)</p>
 <h4 id="intersections"><a href="#intersections" class="headerlink" title="intersections"></a>intersections</h4><p>Logical flag indicating if the returned object should have the attribute “individuals.in.intersections”<br> featuring for every set a list of individuals that are assigned to it.</p>
 <h4 id="showPlot"><a href="#showPlot" class="headerlink" title="showPlot"></a>showPlot</h4><p>Logical flag indicating whether the plot should be displayed. If false, simply returns the group count matrix.</p>
@@ -176,7 +183,7 @@ var _hmt = _hmt || [];
             </div>
             <footer class="article-footer">
               <a href="/API/T-RDotNET.Extensions.VisualBasic.gplots.venn.html" class="article-date">
-  <time datetime="2016-06-13T13:11:20.856Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:52.305Z" itemprop="datePublished">2016-06-19</time>
 </a>
               <a data-url="http://docs.gcmodeller.org/API/T-RDotNET.Extensions.VisualBasic.gplots.venn.html" data-id="cipe3ilvt02mk20v4gbieye81" class="article-share-link">Share</a>
               

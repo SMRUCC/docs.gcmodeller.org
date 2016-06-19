@@ -17,7 +17,7 @@ Differential expression analysis based on the Negative Binomial (a.k.a. Gamma-Po
 <meta property="og:description" content="DESeqnamespace: SMRUCC.R.CRAN.Bioconductor.DESeq2
 Differential expression analysis based on the Negative Binomial (a.k.a. Gamma-Poisson) distribution
  This function performs a default analysis through">
-<meta property="og:updated_time" content="2016-06-13T13:11:10.958Z">
+<meta property="og:updated_time" content="2016-06-19T03:14:43.655Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DESeq">
 <meta name="twitter:description" content="DESeqnamespace: SMRUCC.R.CRAN.Bioconductor.DESeq2
@@ -136,7 +136,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-SMRUCC.R.CRAN.Bioconductor.DESeq2.DESeq.html" class="article-date">
-  <time datetime="2016-06-13T13:11:10.958Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:43.655Z" itemprop="datePublished">2016-06-19</time>
 </a>-->
         <!--  -->
       </div>
@@ -172,6 +172,9 @@ var _hmt = _hmt || [];
 <p>For complete details on each step, see the manual pages of the respective functions.<br>After the DESeq function returns a DESeqDataSet object, results tables (log2 fold changes And p-values) can be<br>generated using the results function. See the manual page for results for information on independent filtering<br>And p-value adjustment for multiple test correction.</p>
 </li>
 </ol>
+<blockquote>
+<p> a DESeqDataSet object with results stored as metadata columns. These results should accessed by calling the results function.<br> By default this will return the log2 fold changes and p-values for the last variable in the design formula.<br> See results for how to access results for other variables.</p>
+</blockquote>
 <h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="betaPrior"><a href="#betaPrior" class="headerlink" title="betaPrior"></a>betaPrior</h4><p>whether or not to put a zero-mean normal prior on the non-intercept coefficients See nbinomWaldTest<br> for description of the calculation of the beta prior.<br> By default, the beta prior is used only for the Wald test, but can also be specified for the likelihood ratio test.</p>
 <h4 id="BPPARAM"><a href="#BPPARAM" class="headerlink" title="BPPARAM"></a>BPPARAM</h4><p>an optional parameter object passed internally to bplapply when parallel=TRUE.<br> If not specified, the parameters last registered with register will be used.</p>
 <h4 id="fitType"><a href="#fitType" class="headerlink" title="fitType"></a>fitType</h4><p>either “parametric”, “local”, or “mean” for the type of fitting of dispersions to the mean intensity.<br> See estimateDispersions for description.</p>
@@ -188,7 +191,7 @@ var _hmt = _hmt || [];
             </div>
             <footer class="article-footer">
               <a href="/API/T-SMRUCC.R.CRAN.Bioconductor.DESeq2.DESeq.html" class="article-date">
-  <time datetime="2016-06-13T13:11:10.958Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:43.655Z" itemprop="datePublished">2016-06-19</time>
 </a>
               <a data-url="http://docs.gcmodeller.org/API/T-SMRUCC.R.CRAN.Bioconductor.DESeq2.DESeq.html" data-id="cipe3ilxp02om20v4cbhlwgbe" class="article-share-link">Share</a>
               

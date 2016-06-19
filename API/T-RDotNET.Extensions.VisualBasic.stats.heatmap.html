@@ -15,7 +15,7 @@ A heat map is a false color image (basically image(t(x))) with a dendrogram adde
 <meta property="og:site_name" content="GCModeller docs library">
 <meta property="og:description" content="heatmapnamespace: RDotNET.Extensions.VisualBasic.stats
 A heat map is a false color image (basically image(t(x))) with a dendrogram added to the left side and to the top. Typically, reordering of the r">
-<meta property="og:updated_time" content="2016-06-13T13:11:20.897Z">
+<meta property="og:updated_time" content="2016-06-19T03:14:52.371Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="heatmap">
 <meta name="twitter:description" content="heatmapnamespace: RDotNET.Extensions.VisualBasic.stats
@@ -133,7 +133,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-RDotNET.Extensions.VisualBasic.stats.heatmap.html" class="article-date">
-  <time datetime="2016-06-13T13:11:20.897Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:52.371Z" itemprop="datePublished">2016-06-19</time>
 </a>-->
         <!--  -->
       </div>
@@ -161,6 +161,9 @@ var _hmt = _hmt || [];
               
                 <h1 id="heatmap"><a href="#heatmap" class="headerlink" title="heatmap"></a>heatmap</h1><p><em>namespace: <a href="N-RDotNET.Extensions.VisualBasic.stats.html">RDotNET.Extensions.VisualBasic.stats</a></em></p>
 <p>A heat map is a false color image (basically image(t(x))) with a dendrogram added to the left side and to the top. Typically, reordering of the rows and columns according to some set of values (row or column means) within the restrictions imposed by the dendrogram is carried out.</p>
+<blockquote>
+<p> If either Rowv or Colv are dendrograms they are honored (and not reordered). Otherwise, dendrograms are computed as dd &lt;- as.dendrogram(hclustfun(distfun(X))) where X is either x or t(x).<br> If either Is a vector (Of ‘weights’) then the appropriate dendrogram is reordered according to the supplied values subject to the constraints imposed by the dendrogram, by reorder(dd, Rowv), in the row case. If either is missing, as by default, then the ordering of the corresponding dendrogram is by the mean value of the rows/columns, i.e., in the case of rows, Rowv &lt;- rowMeans(x, na.rm = na.rm). If either is NA, no reordering will be done for the corresponding side.<br> By Default (scale = “row”) the rows are scaled to have mean zero And standard deviation one. There Is some empirical evidence from genomic plotting that this Is useful.<br> The Default colors are Not pretty. Consider Using enhancements such As the RColorBrewer package.</p>
+</blockquote>
 <h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="Colv"><a href="#Colv" class="headerlink" title="Colv"></a>Colv</h4><p>determines if and how the column dendrogram should be reordered. Has the same options as the Rowv argument above and additionally when x is a square matrix, Colv = “Rowv” means that columns should be treated identically to the rows (and so if there is to be no row dendrogram there will not be a column one either).</p>
 <h4 id="Rowv"><a href="#Rowv" class="headerlink" title="Rowv"></a>Rowv</h4><p>determines if and how the row dendrogram should be computed and reordered. Either a dendrogram or a vector of values used to reorder the row dendrogram or NA to suppress any row dendrogram (and reordering) or by default, NULL, see ‘Details’ below.</p>
 
@@ -168,7 +171,7 @@ var _hmt = _hmt || [];
             </div>
             <footer class="article-footer">
               <a href="/API/T-RDotNET.Extensions.VisualBasic.stats.heatmap.html" class="article-date">
-  <time datetime="2016-06-13T13:11:20.897Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:52.371Z" itemprop="datePublished">2016-06-19</time>
 </a>
               <a data-url="http://docs.gcmodeller.org/API/T-RDotNET.Extensions.VisualBasic.stats.heatmap.html" data-id="cipe3ilw102mu20v4e6wq5wgn" class="article-share-link">Share</a>
               

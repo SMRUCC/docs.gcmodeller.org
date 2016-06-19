@@ -15,7 +15,7 @@ Allow the user to set and examine a variety of global options which affect the w
 <meta property="og:site_name" content="GCModeller docs library">
 <meta property="og:description" content="optionsnamespace: RDotNET.Extensions.VisualBasic.base
 Allow the user to set and examine a variety of global options which affect the way in which R computes and displays its results. (由于options函数会设置环境">
-<meta property="og:updated_time" content="2016-06-13T13:11:20.838Z">
+<meta property="og:updated_time" content="2016-06-19T03:14:52.286Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="options">
 <meta name="twitter:description" content="optionsnamespace: RDotNET.Extensions.VisualBasic.base
@@ -133,7 +133,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-RDotNET.Extensions.VisualBasic.base.options.html" class="article-date">
-  <time datetime="2016-06-13T13:11:20.838Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:52.286Z" itemprop="datePublished">2016-06-19</time>
 </a>-->
         <!--  -->
       </div>
@@ -161,6 +161,9 @@ var _hmt = _hmt || [];
               
                 <h1 id="options"><a href="#options" class="headerlink" title="options"></a>options</h1><p><em>namespace: <a href="N-RDotNET.Extensions.VisualBasic.base.html">RDotNET.Extensions.VisualBasic.base</a></em></p>
 <p>Allow the user to set and examine a variety of global options which affect the way in which R computes and displays its results.<br> (由于options函数会设置环境变量，由于设置的变量很少，但是大部分参数为逻辑值，所以在这里使用RExpression类型来防止默认为True的参数被误设置为False)</p>
+<blockquote>
+<p> Invoking options() with no arguments returns a list with the current values of the options. Note that not all options listed below are set initially. To access the value of a single option, one should use, e.g., getOption(“width”) rather than options(“width”) which is a list of length one.<br> For options(), a list of all set options sorted by name. For options(name), a list of length one containing the set value, or NULL if it is unset. For uses setting one or more options, a list with the previous values of the options changed (returned invisibly).</p>
+</blockquote>
 <h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="addSmooth"><a href="#addSmooth" class="headerlink" title="addSmooth"></a>addSmooth</h4><p>typically logical, defaulting To True. Could also be Set To an Integer For specifying how many (simulated) smooths should be added. This Is currently only used by plot.lm.</p>
 <h4 id="BioC-mirror"><a href="#BioC-mirror" class="headerlink" title="BioC_mirror"></a>BioC_mirror</h4><p>The URL Of a Bioconductor mirror For use by setRepositories, e.g. the Default “<a href="http://bioconductor.org" target="_blank" rel="external">http://bioconductor.org</a>“ Or the European mirror “<a href="http://bioconductor.statistik.tu-dortmund.de" target="_blank" rel="external">http://bioconductor.statistik.tu-dortmund.de</a>“.<br> Can be Set by chooseBioCmirror.</p>
 <h4 id="browser"><a href="#browser" class="headerlink" title="browser"></a>browser</h4><p>The HTML browser To be used by browseURL. This sets the Default browser On UNIX Or a non-Default browser On Windows.<br> Alternatively, an R Function that Is called With a URL As its argument. See browseURL For further details.</p>
@@ -252,7 +255,7 @@ var _hmt = _hmt || [];
             </div>
             <footer class="article-footer">
               <a href="/API/T-RDotNET.Extensions.VisualBasic.base.options.html" class="article-date">
-  <time datetime="2016-06-13T13:11:20.838Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:52.286Z" itemprop="datePublished">2016-06-19</time>
 </a>
               <a data-url="http://docs.gcmodeller.org/API/T-RDotNET.Extensions.VisualBasic.base.options.html" data-id="cipe3ilvn02mc20v4ui063ebc" class="article-share-link">Share</a>
               

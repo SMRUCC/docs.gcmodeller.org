@@ -8,24 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
     <meta name="description" content="Regulatornamespace: LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects
-PropertiesConsensusconsensus: binding site consensus for the regulator
-Familyfamily: regulator family
-flag_prot_r">
+
+ CREATE TABLE regulators (   regulator_guid int(11) NOT NULL DEFAULT ‘0’,   pkg_guid int(11) NOT NULL DEFAULT ‘0">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Regulator">
 <meta property="og:url" content="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects.Regulator.html">
 <meta property="og:site_name" content="GCModeller docs library">
 <meta property="og:description" content="Regulatornamespace: LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects
-PropertiesConsensusconsensus: binding site consensus for the regulator
-Familyfamily: regulator family
-flag_prot_r">
-<meta property="og:updated_time" content="2016-06-13T13:11:16.357Z">
+
+ CREATE TABLE regulators (   regulator_guid int(11) NOT NULL DEFAULT ‘0’,   pkg_guid int(11) NOT NULL DEFAULT ‘0">
+<meta property="og:updated_time" content="2016-06-19T03:14:48.851Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Regulator">
 <meta name="twitter:description" content="Regulatornamespace: LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects
-PropertiesConsensusconsensus: binding site consensus for the regulator
-Familyfamily: regulator family
-flag_prot_r">
+
+ CREATE TABLE regulators (   regulator_guid int(11) NOT NULL DEFAULT ‘0’,   pkg_guid int(11) NOT NULL DEFAULT ‘0">
     
       <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
     
@@ -139,7 +136,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects.Regulator.html" class="article-date">
-  <time datetime="2016-06-13T13:11:16.357Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:48.851Z" itemprop="datePublished">2016-06-19</time>
 </a>-->
         <!--  -->
       </div>
@@ -166,6 +163,9 @@ var _hmt = _hmt || [];
               </div>
               
                 <h1 id="Regulator"><a href="#Regulator" class="headerlink" title="Regulator"></a>Regulator</h1><p><em>namespace: <a href="N-LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects.html">LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects</a></em></p>
+<blockquote>
+<p> CREATE TABLE <code>regulators</code> (<br>   <code>regulator_guid</code> int(11) NOT NULL DEFAULT ‘0’,<br>   <code>pkg_guid</code> int(11) NOT NULL DEFAULT ‘0’,<br>   <code>art_guid</code> int(11) NOT NULL DEFAULT ‘0’,<br>   <code>name</code> varchar(50) DEFAULT NULL,<br>   <code>fl_real_name</code> int(1) DEFAULT NULL,<br>   <code>genome_guid</code> int(11) DEFAULT NULL,<br>   <code>fl_prot_rna</code> int(1) DEFAULT NULL,<br>   <code>regulator_type_guid</code> int(11) DEFAULT ‘0’,<br>   <code>gene_guid</code> int(11) DEFAULT NULL,<br>   <code>ref_bank1</code> varchar(255) DEFAULT NULL,<br>   <code>ref_bank2</code> varchar(255) DEFAULT NULL,<br>   <code>ref_bank3</code> varchar(255) DEFAULT NULL,<br>   <code>ref_bank4</code> varchar(255) DEFAULT NULL,<br>   <code>consensus</code> varchar(50) DEFAULT NULL,<br>   <code>family</code> varchar(20) DEFAULT NULL,<br>   <code>descript</code> blob,<br>   <code>last_update</code> timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,<br>   PRIMARY KEY (<code>regulator_guid</code>),<br>   KEY <code>FK_regulators-pkg_guid</code> (<code>pkg_guid</code>),<br>   KEY <code>FK_regulators-art_guid</code> (<code>art_guid</code>),<br>   KEY <code>FK_regulators-genome_guid</code> (<code>genome_guid</code>),<br>   KEY <code>FK_regulators-regulator_type_guid</code> (<code>regulator_type_guid</code>),<br>   KEY <code>FK_regulators-gene_guid</code> (<code>gene_guid</code>),<br>   CONSTRAINT <code>FK_regulators-art_guid</code> FOREIGN KEY (<code>art_guid</code>) REFERENCES <code>articles</code> (<code>art_guid</code>),<br>   CONSTRAINT <code>FK_regulators-genome_guid</code> FOREIGN KEY (<code>genome_guid</code>) REFERENCES <code>dict_genomes</code> (<code>genome_guid</code>),<br>   CONSTRAINT <code>FK_regulators-pkg_guid</code> FOREIGN KEY (<code>pkg_guid</code>) REFERENCES <code>packages</code> (<code>pkg_guid</code>),<br>   CONSTRAINT <code>FK_regulators-regulator_type_guid</code> FOREIGN KEY (<code>regulator_type_guid</code>) REFERENCES <code>dict_regulator_types</code> (<code>regulator_type_guid</code>),<br>   CONSTRAINT <code>regulators_ibfk_1</code> FOREIGN KEY (<code>gene_guid</code>) REFERENCES <code>obj_name_genomes</code> (<code>obj_guid</code>)<br> ) ENGINE=InnoDB DEFAULT CHARSET=latin1;</p>
+</blockquote>
 <h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="Consensus"><a href="#Consensus" class="headerlink" title="Consensus"></a>Consensus</h4><p>consensus: binding site consensus for the regulator</p>
 <h4 id="Family"><a href="#Family" class="headerlink" title="Family"></a>Family</h4><p>family: regulator family</p>
 <h4 id="flag-prot-rna"><a href="#flag-prot-rna" class="headerlink" title="flag_prot_rna"></a>flag_prot_rna</h4><p>flag_prot_rna: Protein/RNA flag</p>
@@ -177,7 +177,7 @@ var _hmt = _hmt || [];
             </div>
             <footer class="article-footer">
               <a href="/API/T-LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects.Regulator.html" class="article-date">
-  <time datetime="2016-06-13T13:11:16.357Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:48.851Z" itemprop="datePublished">2016-06-19</time>
 </a>
               <a data-url="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects.Regulator.html" data-id="cipe3iir901ww20v461jn7byw" class="article-share-link">Share</a>
               

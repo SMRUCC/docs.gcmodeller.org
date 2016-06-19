@@ -9,20 +9,29 @@
     <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
     <meta name="description" content="BinaryNetworknamespace: LANS.SystemsBiology.AnalysisTools.CellPhenotype.Simulation.ExpressionRegulationNetwork
 使用逻辑值来模拟计算基因表达调控网络
-Methods__innerTicks1LANS.SystemsBiology.AnalysisTools.CellPhenotype.Si">
+
+ 这里是现实之中的约束条件：
+
+合成速度：假设对于每一个碱基而言，其合成的速度是一样的，那么很显然单位时间内，越长的核酸链其合成速度越慢，">
 <meta property="og:type" content="website">
 <meta property="og:title" content="BinaryNetwork">
 <meta property="og:url" content="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.AnalysisTools.CellPhenotype.Simulation.ExpressionRegulationNetwork.BinaryNetwork.html">
 <meta property="og:site_name" content="GCModeller docs library">
 <meta property="og:description" content="BinaryNetworknamespace: LANS.SystemsBiology.AnalysisTools.CellPhenotype.Simulation.ExpressionRegulationNetwork
 使用逻辑值来模拟计算基因表达调控网络
-Methods__innerTicks1LANS.SystemsBiology.AnalysisTools.CellPhenotype.Si">
-<meta property="og:updated_time" content="2016-06-13T13:11:11.562Z">
+
+ 这里是现实之中的约束条件：
+
+合成速度：假设对于每一个碱基而言，其合成的速度是一样的，那么很显然单位时间内，越长的核酸链其合成速度越慢，">
+<meta property="og:updated_time" content="2016-06-19T03:14:44.389Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BinaryNetwork">
 <meta name="twitter:description" content="BinaryNetworknamespace: LANS.SystemsBiology.AnalysisTools.CellPhenotype.Simulation.ExpressionRegulationNetwork
 使用逻辑值来模拟计算基因表达调控网络
-Methods__innerTicks1LANS.SystemsBiology.AnalysisTools.CellPhenotype.Si">
+
+ 这里是现实之中的约束条件：
+
+合成速度：假设对于每一个碱基而言，其合成的速度是一样的，那么很显然单位时间内，越长的核酸链其合成速度越慢，">
     
       <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
     
@@ -136,7 +145,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-LANS.SystemsBiology.AnalysisTools.CellPhenotype.Simulation.ExpressionRegulationNetwork.BinaryNetwork.html" class="article-date">
-  <time datetime="2016-06-13T13:11:11.562Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:44.389Z" itemprop="datePublished">2016-06-19</time>
 </a>-->
         <!--  -->
       </div>
@@ -164,6 +173,13 @@ var _hmt = _hmt || [];
               
                 <h1 id="BinaryNetwork"><a href="#BinaryNetwork" class="headerlink" title="BinaryNetwork"></a>BinaryNetwork</h1><p><em>namespace: <a href="N-LANS.SystemsBiology.AnalysisTools.CellPhenotype.Simulation.ExpressionRegulationNetwork.html">LANS.SystemsBiology.AnalysisTools.CellPhenotype.Simulation.ExpressionRegulationNetwork</a></em></p>
 <p>使用逻辑值来模拟计算基因表达调控网络</p>
+<blockquote>
+<p> 这里是现实之中的约束条件：</p>
+<ol>
+<li>合成速度：<br>假设对于每一个碱基而言，其合成的速度是一样的，那么很显然单位时间内，越长的核酸链其合成速度越慢，即每一次迭代循环过程之中，假若该基因的长度越长，则相较于较短的核酸链产生的分子数目越少</li>
+<li>降解速度：<br>假设酶水解下一个碱基都是以相同的速度，那么水解完一条较长的核酸链很显然相较于较短的核酸链会需要更加长的时间。但是当水解掉最开始的一个碱基之后，我们假设原有的有活性的核酸链将无法再被用于翻译，故而在降解速度方面，较长的核酸链和较短的核酸链都是相同的失活速度的</li>
+</ol>
+</blockquote>
 <h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="innerTicks"><a href="#innerTicks" class="headerlink" title="__innerTicks"></a>__innerTicks</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.AnalysisTools.CellPhenotype.Simulation.ExpressionRegulationNetwork.BinaryNetwork.__innerTicks(System.Int32)</span><br></pre></td></tr></table></figure>
 <p>返回调控网络之中处于表达状态的基因的数目</p>
 <h4 id="AllRegulatorInputs"><a href="#AllRegulatorInputs" class="headerlink" title="AllRegulatorInputs"></a>AllRegulatorInputs</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.AnalysisTools.CellPhenotype.Simulation.ExpressionRegulationNetwork.BinaryNetwork.AllRegulatorInputs(System.Collections.Generic.IEnumerable&#123;LANS.SystemsBiology.AnalysisTools.CellPhenotype.DocumentFormat.RegulatesFootprints&#125;)</span><br></pre></td></tr></table></figure>
@@ -253,7 +269,7 @@ var _hmt = _hmt || [];
             </div>
             <footer class="article-footer">
               <a href="/API/T-LANS.SystemsBiology.AnalysisTools.CellPhenotype.Simulation.ExpressionRegulationNetwork.BinaryNetwork.html" class="article-date">
-  <time datetime="2016-06-13T13:11:11.562Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:44.389Z" itemprop="datePublished">2016-06-19</time>
 </a>
               <a data-url="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.AnalysisTools.CellPhenotype.Simulation.ExpressionRegulationNetwork.BinaryNetwork.html" data-id="cipe3i3nh00os20v4g6k2modz" class="article-share-link">Share</a>
               

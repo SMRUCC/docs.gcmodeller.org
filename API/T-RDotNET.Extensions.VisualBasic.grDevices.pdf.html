@@ -9,20 +9,23 @@
     <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
     <meta name="description" content="pdfnamespace: RDotNET.Extensions.VisualBasic.grDevices
 pdf starts the graphics device driver for producing PDF graphics.
-Propertiescolormodela character string describing the color model: currently al">
+
+ All arguments except file default to values given by pdf.options(). The ultim">
 <meta property="og:type" content="website">
 <meta property="og:title" content="pdf">
 <meta property="og:url" content="http://docs.gcmodeller.org/API/T-RDotNET.Extensions.VisualBasic.grDevices.pdf.html">
 <meta property="og:site_name" content="GCModeller docs library">
 <meta property="og:description" content="pdfnamespace: RDotNET.Extensions.VisualBasic.grDevices
 pdf starts the graphics device driver for producing PDF graphics.
-Propertiescolormodela character string describing the color model: currently al">
-<meta property="og:updated_time" content="2016-06-13T13:11:20.879Z">
+
+ All arguments except file default to values given by pdf.options(). The ultim">
+<meta property="og:updated_time" content="2016-06-19T03:14:52.341Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="pdf">
 <meta name="twitter:description" content="pdfnamespace: RDotNET.Extensions.VisualBasic.grDevices
 pdf starts the graphics device driver for producing PDF graphics.
-Propertiescolormodela character string describing the color model: currently al">
+
+ All arguments except file default to values given by pdf.options(). The ultim">
     
       <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
     
@@ -136,7 +139,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-RDotNET.Extensions.VisualBasic.grDevices.pdf.html" class="article-date">
-  <time datetime="2016-06-13T13:11:20.879Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:52.341Z" itemprop="datePublished">2016-06-19</time>
 </a>-->
         <!--  -->
       </div>
@@ -164,6 +167,9 @@ var _hmt = _hmt || [];
               
                 <h1 id="pdf"><a href="#pdf" class="headerlink" title="pdf"></a>pdf</h1><p><em>namespace: <a href="N-RDotNET.Extensions.VisualBasic.grDevices.html">RDotNET.Extensions.VisualBasic.grDevices</a></em></p>
 <p>pdf starts the graphics device driver for producing PDF graphics.</p>
+<blockquote>
+<p> All arguments except file default to values given by pdf.options(). The ultimate defaults are quoted in the arguments section.<br> pdf() opens the file file And the PDF commands needed to plot any graphics requested are sent to that file.<br> The file argument Is interpreted As a C Integer format As used by sprintf, With Integer argument the page number. The Default gives files ‘Rplot001.pdf’, …, ‘Rplot999.pdf’, ‘Rplot1000.pdf’, ….<br> The family argument can be used To specify a PDF-specific font family As the initial/Default font For the device. If additional font families are To be used they should be included In the fonts argument.<br> If a device-independent R graphics font family Is specified (e.g., via par(family = ) In the graphics package), the PDF device makes use Of the PostScript font mappings To convert the R graphics font family To a PDF-specific font family description. (See the documentation For pdfFonts.)<br> This device does Not embed fonts In the PDF file, so it Is only straightforward To use mappings To the font families that can be assumed To be available In any PDF viewer: “Times” (equivalently “serif”), “Helvetica” (equivalently “sans”) And “Courier” (equivalently “mono”). Other families may be specified, but it Is the user’s responsibility to ensure that these fonts are available on the system and third-party software (e.g., Ghostscript) may be required to embed the fonts so that the PDF can be included in other documents (e.g., LaTeX): see embedFonts. The URW-based families described for postscript can be used with viewers such as GSView which utilise URW fonts. Since embedFonts makes use of Ghostscript, it should be able to embed the URW-based families for use with other viewers.<br> See postscript For details Of encodings, As the internal code Is Shared between the drivers. The native PDF encoding Is given In file ‘PDFDoc.enc’.<br> The PDF produced Is fairly simple, With Each page being represented As a Single stream (by Default compressed And possibly With references To raster images). The R graphics model does Not distinguish graphics objects at the level Of the driver Interface.<br> The version argument declares the version Of PDF that gets produced. The version must be at least 1.2 When compression Is used, 1.4 For semi-transparent output To be understood, And at least 1.3 If CID fonts are To be used: If any Of these features are used the version number will be increased (With a warning). (PDF 1.4 was first supported by Acrobat 5 In 2001; it Is very unlikely Not To be supported In a current viewer.)<br> Line widths As controlled by par(lwd = ) are In multiples Of 1/96 inch. Multiples less than 1 are allowed. pch = “.” With cex = 1 corresponds To a square Of side 1/72 inch, which Is also the ‘pixel’ size assumed for graphics parameters such as “cra”.<br> The paper argument sets the /MediaBox entry In the file, which defaults To width by height. If it Is Set To something other than “special”, a device region Of the specified size Is (by Default) centred On the rectangle given by the paper size: If either width Or height Is less than 0.1 Or too large To give a total margin Of 0.5 inch, it Is reset To the corresponding paper dimension minus 0.5. Thus If you want the Default behaviour Of postscript use pdf(paper = “a4r”, width = 0, height = 0) To centre the device region On a landscape A4 page With 0.25 inch margins.<br> When the background colour Is fully transparent (as Is the initial default value), the PDF produced does Not paint the background. Most PDF viewers will use a white canvas so the visual effect Is if the background were white. This will Not be the case when printing onto coloured paper, though.</p>
+</blockquote>
 <h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="colormodel"><a href="#colormodel" class="headerlink" title="colormodel"></a>colormodel</h4><p>a character string describing the color model: currently allowed values are “srgb”, “gray” (or “grey”) and “cmyk”. Defaults to “srgb”. See section ‘Color models’.</p>
 <h4 id="compress"><a href="#compress" class="headerlink" title="compress"></a>compress</h4><p>logical. Should PDF streams be generated with Flate compression? Defaults to TRUE.</p>
 <h4 id="encoding"><a href="#encoding" class="headerlink" title="encoding"></a>encoding</h4><p>the name of an encoding file. See postscript for details. Defaults to “default”.</p>
@@ -184,7 +190,7 @@ var _hmt = _hmt || [];
             </div>
             <footer class="article-footer">
               <a href="/API/T-RDotNET.Extensions.VisualBasic.grDevices.pdf.html" class="article-date">
-  <time datetime="2016-06-13T13:11:20.879Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:52.341Z" itemprop="datePublished">2016-06-19</time>
 </a>
               <a data-url="http://docs.gcmodeller.org/API/T-RDotNET.Extensions.VisualBasic.grDevices.pdf.html" data-id="cipe3ilvw02mo20v4533uwl2r" class="article-share-link">Share</a>
               

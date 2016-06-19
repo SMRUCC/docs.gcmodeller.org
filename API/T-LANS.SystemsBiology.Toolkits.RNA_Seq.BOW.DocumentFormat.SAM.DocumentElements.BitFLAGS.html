@@ -9,20 +9,23 @@
     <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
     <meta name="description" content="BitFLAGS_namespace: LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.DocumentElements_
 Bitwise flags in .bam/.sam files
-PropertiesBit0x1template having multiple segments in sequencing If 0x">
+
+ Concept: Bitwise flags in .bam/.sam files(如何理解 Bitwise flags 的含义)">
 <meta property="og:type" content="website">
 <meta property="og:title" content="BitFLAGS">
 <meta property="og:url" content="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.DocumentElements.BitFLAGS.html">
 <meta property="og:site_name" content="GCModeller docs library">
 <meta property="og:description" content="BitFLAGS_namespace: LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.DocumentElements_
 Bitwise flags in .bam/.sam files
-PropertiesBit0x1template having multiple segments in sequencing If 0x">
-<meta property="og:updated_time" content="2016-06-13T13:11:20.065Z">
+
+ Concept: Bitwise flags in .bam/.sam files(如何理解 Bitwise flags 的含义)">
+<meta property="og:updated_time" content="2016-06-19T03:14:51.510Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BitFLAGS">
 <meta name="twitter:description" content="BitFLAGS_namespace: LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.DocumentElements_
 Bitwise flags in .bam/.sam files
-PropertiesBit0x1template having multiple segments in sequencing If 0x">
+
+ Concept: Bitwise flags in .bam/.sam files(如何理解 Bitwise flags 的含义)">
     
       <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
     
@@ -136,7 +139,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.DocumentElements.BitFLAGS.html" class="article-date">
-  <time datetime="2016-06-13T13:11:20.065Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:51.510Z" itemprop="datePublished">2016-06-19</time>
 </a>-->
         <!--  -->
       </div>
@@ -164,6 +167,40 @@ var _hmt = _hmt || [];
               
                 <h1 id="BitFLAGS"><a href="#BitFLAGS" class="headerlink" title="BitFLAGS"></a>BitFLAGS</h1><p>_namespace: <a href="N-LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.DocumentElements.html">LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.DocumentElements</a>_</p>
 <p>Bitwise flags in .bam/.sam files</p>
+<blockquote>
+<p> Concept: Bitwise flags in .bam/.sam files(如何理解 Bitwise flags 的含义)</p>
+<p> Anyone who deals with .sam mapping files has seen the bitwise flag column. It is a single number that can somehow<br> indicate settings for a bunch of different parameters. As per the sam file specifications:</p>
+<p>  Bit    Description<br>  0x1    template having multiple segments in sequencing<br>  0x2    each segment properly aligned according to the aligner<br>  0x4    segment unmapped<br>  0x8    next segment in the template unmapped<br>  0x10   SEQ being reverse complemented<br>  0x20   SEQ of the next segment in the template being reversed<br>  0x40   the first segment in the template<br>  0x80   the last segment in the template<br>  0x100  secondary alignment<br>  0x200  Not passing quality controls<br>  0x400  PCR Or optical duplicate</p>
+<p> What does all that mean And how does bitwise flags work? This post will probably go into more detail than you need To For understand bitwise flags.</p>
+<p> Radix And numeral systems</p>
+<p> Most of the maths we’ve learned in school are in the decimal system or a base 10 system. In the decimal system,<br> the number 1,324 is equal to: </p>
+<p> 1324 = 1 <em> 103 + 3 </em> 102 + 2 <em> 101 + 4 </em> 100</p>
+<p> *remember from your old math classes that 101 = 10 And 100= 1</p>
+<p> The base Of a numeral system Is also called a radix. A Decimal system has a radix Of 10.</p>
+<p> One of the reasons for a numeral system Is to reduce the amount of unique symbols we have to come up with to represent numbers.<br> It Is important to realize the difference between numbers as an abstract idea And numbers as a physical symbol.</p>
+<p> In the decimal system, we have symbols (0-9) representing the numbers zero through nine. Using these ten number symbols (0-9),<br> we can represent any other number, ie the number ten Is the symbol ‘1’ and the symbol ‘0’ together. If we didn’t<br> use a number system, we would need a unique symbol for 10, 11, 12, 13.. and so on, resulting in an unmanagable amount of symbols. </p>
+<p> However, there Is an advantage for having more unique symbols to represent numbers; And that Is less amount of symbols<br> would be needed for larger numbers. Imagine if we have a unique symbol for every number up to 100. Instead of writing two<br> symbols in the decimal system for ‘10’, we would only have to write the one unique symbol for ten.</p>
+<p> Binary</p>
+<p> To understand bitwise flags, we must first understand what binary encoding Is And how it applies to computing.<br> Binary Is a number system with a radix of 2. Only two symbols, 0 And 1 are used to represent numbers. The decimal number, 1324 in<br> binary would be 10100101100</p>
+<p> 1324 = 1 <em> 210 + 0 </em> 29 + 1 <em> 28 + 0 </em> 27 + 0 <em> 26 + 1 </em> 25 + 0 <em> 24 + 1 </em> 23 + 1 <em> 22 + 0 </em> 21 + 0 * 20</p>
+<p> With only two symbols describing numbers, binary requires a longer String Of symbols To represent larger numbers.<br> So why Do we use only two symbols? Because computers operate Using two states based On the physical hardware.<br> A high voltage state And a low voltage state In Each Of the transistors On a computer processer represents the binary system.</p>
+<p> Since computers only work In a binary system, all data would need To be encoded In binary For operations To be performed On it.<br> Each fundamental binary data Of 0 Or 1 Is called a ‘bit’. The number 1324 would contain 11 bits.</p>
+<p> Bitwise flag</p>
+<p> Notice how Each flag In the .sam specification has a yes Or no setting. Each flag Is a bit, containg a 0 Or a 1,<br> representing no And yes respectively. If the 5th bit (0x10) Is 1 Then the sequence Is reverse complemented; If it Is 0 than it Is<br> Not reverse complemented. A bitwise flag where only the 5th bit Is Set would have a binary String Of:</p>
+<p> binary 10000 = 1 <em> 24 + 0 </em> 23 + 0 <em> 22 + 0 </em> 21 + 0 * 20 = decimal 16</p>
+<p> The ‘0x10’ in the .sam specification flag table is the convention for writing hexadecimal, which has a radix of 16.<br> Hexadecimal of 10 would be decimal 16:</p>
+<p> hexadecimal 10 = 1 <em> 161 + 0 </em> 160 = decimal 16</p>
+<p> Summary</p>
+<p> The number that you see In the bitwise flag column Of your .sam files can be converted To binary encoding which consists<br> Of series Of 0S And 1S. These 0S And 1S indicate whether the flag In the position Is Set (1), meaning True Or Not Set (0),<br> meaning False. The smallest number possible would be a 0, indicating every flag Not Set. The largest number would be 2047,<br> With a binary String Of ‘11111111111’ indicating every flag set. </p>
+<p> For example, the number 528 in binary would be 1000010000</p>
+<p> 528 = 1 <em> 29 + 0 </em> 28 + 0 <em> 27 + 0 </em> 26 + 0 <em> 25 + 1 </em> 24 + 0 <em> 23 + 0 </em> 22 + 0 <em> 21 + 0 </em> 20</p>
+<p> The 5th bit (1 <em> 24) Is set as 1, meaning the read Is reverse complemented. The 10th bit (1 </em> 29) Is set as 1, meaning the read does Not pass quality controls.</p>
+<p> Decoding bitwise flag</p>
+<p> To decode the bitwise flags in .sam files, you can use this online tool at the picard tools website.<br> Alternatively, to decode in python Or perl, you can use bitwise opeartors. To see whether a bit Is set,<br> you do a ‘bitwise AND’ operation with the ‘&amp;’ operator. </p>
+<p> For example To check If the 5th bit Is Set, you would check If the flag has a bitwise And With 16 (2^4 power,<br> 5th bit Is actually 4th power because numeral systems start With 0th power)</p>
+<p> #In python<br>     If flag &amp; 16<br>         Return ‘negative strand’<br>     Else<br>         Return ‘positive strand’</p>
+<p> #In perl<br>     If ($flag &amp; 16) {<br>         Return ‘negative strand’;<br>     } else {<br>         Return ‘positive strand’;<br>     } </p>
+</blockquote>
 <h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="Bit0x1"><a href="#Bit0x1" class="headerlink" title="Bit0x1"></a>Bit0x1</h4><p>template having multiple segments in sequencing<br> If 0x1 is unset, no assumptions can be made about 0x2, 0x8, 0x20, 0x40 and 0x80.<br> (假若1标注没有被设置，则不会进行对2,8,32,64,128的标注进行假设???????)</p>
 <h4 id="Bit0x10"><a href="#Bit0x10" class="headerlink" title="Bit0x10"></a>Bit0x10</h4><p>SEQ being reverse complemented</p>
 <h4 id="Bit0x100"><a href="#Bit0x100" class="headerlink" title="Bit0x100"></a>Bit0x100</h4><p>secondary alignment</p>
@@ -182,7 +219,7 @@ var _hmt = _hmt || [];
             </div>
             <footer class="article-footer">
               <a href="/API/T-LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.DocumentElements.BitFLAGS.html" class="article-date">
-  <time datetime="2016-06-13T13:11:20.065Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:51.510Z" itemprop="datePublished">2016-06-19</time>
 </a>
               <a data-url="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.Toolkits.RNA_Seq.BOW.DocumentFormat.SAM.DocumentElements.BitFLAGS.html" data-id="cipe3ilry02i120v4feenr1ce" class="article-share-link">Share</a>
               

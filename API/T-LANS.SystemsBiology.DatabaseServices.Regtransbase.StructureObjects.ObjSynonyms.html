@@ -15,7 +15,7 @@ All regulatory elements except Inductor (Effector) can have name synonyms. Name 
 <meta property="og:site_name" content="GCModeller docs library">
 <meta property="og:description" content="ObjSynonymsnamespace: LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects
 All regulatory elements except Inductor (Effector) can have name synonyms. Name synonyms are stored in ObjSynon">
-<meta property="og:updated_time" content="2016-06-13T13:11:16.423Z">
+<meta property="og:updated_time" content="2016-06-19T03:14:48.866Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ObjSynonyms">
 <meta name="twitter:description" content="ObjSynonymsnamespace: LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects
@@ -133,7 +133,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects.ObjSynonyms.html" class="article-date">
-  <time datetime="2016-06-13T13:11:16.423Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:48.866Z" itemprop="datePublished">2016-06-19</time>
 </a>-->
         <!--  -->
       </div>
@@ -161,6 +161,9 @@ var _hmt = _hmt || [];
               
                 <h1 id="ObjSynonyms"><a href="#ObjSynonyms" class="headerlink" title="ObjSynonyms"></a>ObjSynonyms</h1><p><em>namespace: <a href="N-LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects.html">LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects</a></em></p>
 <p>All regulatory elements except Inductor (Effector) can have name synonyms. Name synonyms are stored<br> in ObjSynonym table.</p>
+<blockquote>
+<p> CREATE TABLE <code>obj_synonyms</code> (<br>   <code>pkg_guid</code> int(11) NOT NULL DEFAULT ‘0’,<br>   <code>art_guid</code> int(11) NOT NULL DEFAULT ‘0’,<br>   <code>obj_guid</code> int(11) NOT NULL DEFAULT ‘0’,<br>   <code>syn_name</code> varchar(50) NOT NULL DEFAULT ‘’,<br>   <code>fl_real_name</code> int(1) DEFAULT NULL,<br>   PRIMARY KEY (<code>obj_guid</code>,<code>syn_name</code>),<br>   KEY <code>pkg_guid</code> (<code>pkg_guid</code>),<br>   KEY <code>art_guid</code> (<code>art_guid</code>),<br>   CONSTRAINT <code>obj_synonyms_ibfk_1</code> FOREIGN KEY (<code>pkg_guid</code>) REFERENCES <code>packages</code> (<code>pkg_guid</code>),<br>   CONSTRAINT <code>obj_synonyms_ibfk_2</code> FOREIGN KEY (<code>art_guid</code>) REFERENCES <code>articles</code> (<code>art_guid</code>),<br>   CONSTRAINT <code>obj_synonyms_ibfk_3</code> FOREIGN KEY (<code>obj_guid</code>) REFERENCES <code>obj_name_genomes</code> (<code>obj_guid</code>)<br> ) ENGINE=InnoDB DEFAULT CHARSET=latin1;</p>
+</blockquote>
 <h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="obj-guid"><a href="#obj-guid" class="headerlink" title="obj_guid"></a>obj_guid</h4><p>obj_guid: id of object, for which the synonym is used</p>
 <h4 id="syn-name"><a href="#syn-name" class="headerlink" title="syn_name"></a>syn_name</h4><p>syn_name: name synonym</p>
 
@@ -168,7 +171,7 @@ var _hmt = _hmt || [];
             </div>
             <footer class="article-footer">
               <a href="/API/T-LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects.ObjSynonyms.html" class="article-date">
-  <time datetime="2016-06-13T13:11:16.423Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:48.866Z" itemprop="datePublished">2016-06-19</time>
 </a>
               <a data-url="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects.ObjSynonyms.html" data-id="cipe3iir801wv20v4n7ab2h0j" class="article-share-link">Share</a>
               

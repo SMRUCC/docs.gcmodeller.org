@@ -15,7 +15,7 @@ write.table prints its required argument x (after converting it to a data frame 
 <meta property="og:site_name" content="GCModeller docs library">
 <meta property="og:description" content="writeTableAPInamespace: RDotNET.Extensions.VisualBasic.utils.read.table
 write.table prints its required argument x (after converting it to a data frame if it is not one nor a matrix) to a file or conn">
-<meta property="og:updated_time" content="2016-06-13T13:11:20.905Z">
+<meta property="og:updated_time" content="2016-06-19T03:14:52.377Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="writeTableAPI">
 <meta name="twitter:description" content="writeTableAPInamespace: RDotNET.Extensions.VisualBasic.utils.read.table
@@ -133,7 +133,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-RDotNET.Extensions.VisualBasic.utils.read.table.writeTableAPI.html" class="article-date">
-  <time datetime="2016-06-13T13:11:20.905Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:52.377Z" itemprop="datePublished">2016-06-19</time>
 </a>-->
         <!--  -->
       </div>
@@ -161,6 +161,9 @@ var _hmt = _hmt || [];
               
                 <h1 id="writeTableAPI"><a href="#writeTableAPI" class="headerlink" title="writeTableAPI"></a>writeTableAPI</h1><p><em>namespace: <a href="N-RDotNET.Extensions.VisualBasic.utils.read.table.html">RDotNET.Extensions.VisualBasic.utils.read.table</a></em></p>
 <p>write.table prints its required argument x (after converting it to a data frame if it is not one nor a matrix) to a file or connection.</p>
+<blockquote>
+<p> If the table has no columns the rownames will be written only if row.names = TRUE, and vice versa.<br> Real And complex numbers are written to the maximal possible precision.<br> If a data frame has matrix-Like columns these will be converted To multiple columns In the result (via As.matrix) And so a character col.names Or a numeric quote should refer To the columns In the result, Not the input. Such matrix-Like columns are unquoted by Default.<br> Any columns In a data frame which are lists Or have a Class (e.g., dates) will be converted by the appropriate As.character method: such columns are unquoted by Default.<br> On the other hand, any Class information For a matrix Is discarded And non-atomic (e.g., list) matrices are coerced To character.<br> Only columns which have been converted To character will be quoted If specified by quote.<br> The dec argument only applies To columns that are Not subject To conversion To character because they have a Class Or are part Of a matrix-Like column (Or matrix), In particular To columns Protected by I(). Use options(“OutDec”) To control such conversions.<br> In almost all cases the conversion of numeric quantities Is governed by the option “scipen” (see options), but with the internal equivalent of digits = 15.<br> For finer control, use format to make a character matrix/data frame, And call write.table on that.<br> These functions check For a user interrupt every 1000 lines Of output.<br> If file Is a non-open connection, an attempt Is made To open it And Then close it after use.<br> To write a Unix-style file on Windows, use a binary connection e.g. file = file(“filename”, “wb”).</p>
+</blockquote>
 <h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="append"><a href="#append" class="headerlink" title="append"></a>append</h4><p>logical. Only relevant if file Is a character string. If TRUE, the output Is appended to the file. If FALSE, any existing file of the name Is destroyed.</p>
 <h4 id="colNames"><a href="#colNames" class="headerlink" title="colNames"></a>colNames</h4><p>either a logical value indicating whether the column names of x are to be written along with x, or a character vector of column names to be written. See the section on ‘CSV files’ for the meaning of col.names = NA.</p>
 <h4 id="dec"><a href="#dec" class="headerlink" title="dec"></a>dec</h4><p>the string to use for decimal points in numeric or complex columns: must be a single character.</p>
@@ -178,7 +181,7 @@ var _hmt = _hmt || [];
             </div>
             <footer class="article-footer">
               <a href="/API/T-RDotNET.Extensions.VisualBasic.utils.read.table.writeTableAPI.html" class="article-date">
-  <time datetime="2016-06-13T13:11:20.905Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:52.377Z" itemprop="datePublished">2016-06-19</time>
 </a>
               <a data-url="http://docs.gcmodeller.org/API/T-RDotNET.Extensions.VisualBasic.utils.read.table.writeTableAPI.html" data-id="cipe3ilwc02n720v4vseas1y6" class="article-share-link">Share</a>
               

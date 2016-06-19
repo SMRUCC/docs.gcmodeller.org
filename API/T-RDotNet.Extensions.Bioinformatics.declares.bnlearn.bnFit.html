@@ -17,7 +17,7 @@ Fit the parameters of a Bayesian network conditional on its structure.
 <meta property="og:description" content="bnFitnamespace: RDotNet.Extensions.Bioinformatics.declares.bnlearn
 Fit the parameters of a Bayesian network conditional on its structure.
  bn.fit fits the parameters of a Bayesian network given its st">
-<meta property="og:updated_time" content="2016-06-13T13:11:20.705Z">
+<meta property="og:updated_time" content="2016-06-19T03:14:52.141Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="bnFit">
 <meta name="twitter:description" content="bnFitnamespace: RDotNet.Extensions.Bioinformatics.declares.bnlearn
@@ -136,7 +136,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-RDotNet.Extensions.Bioinformatics.declares.bnlearn.bnFit.html" class="article-date">
-  <time datetime="2016-06-13T13:11:20.705Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:52.141Z" itemprop="datePublished">2016-06-19</time>
 </a>-->
         <!--  -->
       </div>
@@ -165,6 +165,9 @@ var _hmt = _hmt || [];
                 <h1 id="bnFit"><a href="#bnFit" class="headerlink" title="bnFit"></a>bnFit</h1><p><em>namespace: <a href="N-RDotNet.Extensions.Bioinformatics.declares.bnlearn.html">RDotNet.Extensions.Bioinformatics.declares.bnlearn</a></em></p>
 <p>Fit the parameters of a Bayesian network conditional on its structure.</p>
 <p> bn.fit fits the parameters of a Bayesian network given its structure and a data set; bn.net returns the structure underlying a fitted Bayesian network.<br> An in-place replacement method Is available to change the parameters of each node in a bn.fit object; see the examples for discrete, continuous And hybrid networks below. For a discrete node (class bn.fit.dnode Or bn.fit.onode), the New parameters must be in a table object. For a Gaussian node (class bn.fit.gnode), the New parameters can be defined either by an lm, glm Or pensim object (the latter Is from the penalized package) Or in a list with elements named coef, sd And optionally fitted And resid. For a conditional Gaussian node (class bn.fit.cgnode), the New parameters can be defined by a list with elements named coef, sd And optionally fitted, resid And configs. In both cases coef should contain the New regression coefficients, sd the standard deviation of the residuals, fitted the fitted values And resid the residuals. configs should contain the configurations if the discrete parents of the conditional Gaussian node, stored as a factor.</p>
+<blockquote>
+<p> bn.fit returns an object of class bn.fit, bn.net an object of class bn. See bn class and bn.fit class for details.</p>
+</blockquote>
 <h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="data"><a href="#data" class="headerlink" title="data"></a>data</h4><p>a data frame containing the variables In the model.</p>
 <h4 id="debug"><a href="#debug" class="headerlink" title="debug"></a>debug</h4><p>a boolean value. If TRUE a lot of debugging output is printed; otherwise the function is completely silent.</p>
 <h4 id="method"><a href="#method" class="headerlink" title="method"></a>method</h4><p>a character string, either mle for Maximum Likelihood parameter estimation or bayes for Bayesian parameter estimation (currently implemented only for discrete data).</p>
@@ -174,7 +177,7 @@ var _hmt = _hmt || [];
             </div>
             <footer class="article-footer">
               <a href="/API/T-RDotNet.Extensions.Bioinformatics.declares.bnlearn.bnFit.html" class="article-date">
-  <time datetime="2016-06-13T13:11:20.705Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:52.141Z" itemprop="datePublished">2016-06-19</time>
 </a>
               <a data-url="http://docs.gcmodeller.org/API/T-RDotNet.Extensions.Bioinformatics.declares.bnlearn.bnFit.html" data-id="cipe3ilwt02no20v4vekwd9rl" class="article-share-link">Share</a>
               

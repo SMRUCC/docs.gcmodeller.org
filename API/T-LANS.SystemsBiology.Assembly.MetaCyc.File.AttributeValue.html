@@ -15,7 +15,7 @@ Attribute-Value: Each attribute-value file contains data for one class of object
 <meta property="og:site_name" content="GCModeller docs library">
 <meta property="og:description" content="AttributeValuenamespace: LANS.SystemsBiology.Assembly.MetaCyc.File
 Attribute-Value: Each attribute-value file contains data for one class of objects, such as genes or proteins. A file is divided into">
-<meta property="og:updated_time" content="2016-06-13T13:11:12.947Z">
+<meta property="og:updated_time" content="2016-06-19T03:14:46.231Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AttributeValue">
 <meta name="twitter:description" content="AttributeValuenamespace: LANS.SystemsBiology.Assembly.MetaCyc.File
@@ -133,7 +133,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-LANS.SystemsBiology.Assembly.MetaCyc.File.AttributeValue.html" class="article-date">
-  <time datetime="2016-06-13T13:11:12.947Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:46.231Z" itemprop="datePublished">2016-06-19</time>
 </a>-->
         <!--  -->
       </div>
@@ -161,6 +161,14 @@ var _hmt = _hmt || [];
               
                 <h1 id="AttributeValue"><a href="#AttributeValue" class="headerlink" title="AttributeValue"></a>AttributeValue</h1><p><em>namespace: <a href="N-LANS.SystemsBiology.Assembly.MetaCyc.File.html">LANS.SystemsBiology.Assembly.MetaCyc.File</a></em></p>
 <p>Attribute-Value: Each attribute-value file contains data for one class of objects,<br> such as genes or proteins. A file is divided into entries, where one entry describes<br> one database object.</p>
+<blockquote>
+<p> An entry consists of a set of attribute-value pairs, •which describe properties of<br> the object, and relationships of the object to other object. Each attribute-value<br> pair typically resides on a single line of the file, although in some cases for<br> values that are long strings, the value will reside on multiple lines. An attribute-<br> value pair consists of an attribute name, followed by the string “ - “ and a value,<br> for example:</p>
+<p> LEFT - NADP</p>
+<p> A value that requires more than one line is continued by a newline followed by a /.<br> Thus, literal slashes at the beginning of a line must be escaped as //. A line that<br> contains only // separates objects. Comment lines can be anywhere in the file and<br> must begin with the following symbol:</p>
+<p> #</p>
+<p> Starting in version 6.5 of Pathway Tools, attribute-value files can also contain<br> annotation-value pairs. Annotations are a mechanism for attaching labeled values<br> to specific attribute values. For example, we might want to specify a coefficient<br> for a reactant in a chemical reaction. An annotations refers to the attribute value<br> that immediately precedes the annotation.<br> An annotation-value pair consists of a caret symbol “^” that points upward to indicate<br> that the annotation annotates the preceding attribute value, followed by the annotation<br> label, followed by the string “ - “, followed by a value. The same attribute name or<br> annotation label with different values can appear any number of times in an object.<br> An example annotation-value pair that refers to the preceding attribute-value pair is:</p>
+<p> LEFT - NADP<br> ^COEFFICIENT - 1</p>
+</blockquote>
 <h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="DbProperty"><a href="#DbProperty" class="headerlink" title="DbProperty"></a>DbProperty</h4><p>The database property in the head section.</p>
 <h4 id="Objects"><a href="#Objects" class="headerlink" title="Objects"></a>Objects</h4><p>Slots objects reader model.</p>
 
@@ -168,7 +176,7 @@ var _hmt = _hmt || [];
             </div>
             <footer class="article-footer">
               <a href="/API/T-LANS.SystemsBiology.Assembly.MetaCyc.File.AttributeValue.html" class="article-date">
-  <time datetime="2016-06-13T13:11:12.947Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:46.231Z" itemprop="datePublished">2016-06-19</time>
 </a>
               <a data-url="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.Assembly.MetaCyc.File.AttributeValue.html" data-id="cipe3i47k014520v47mnesm2k" class="article-share-link">Share</a>
               

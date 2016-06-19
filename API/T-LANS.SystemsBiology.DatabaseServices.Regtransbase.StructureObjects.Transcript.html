@@ -8,21 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
     <meta name="description" content="Transcriptnamespace: LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects
-PropertiesGuidtranscript_guid
-pfo_side_guidpfo_side_guid - location in this regulatory element to which start is">
+
+ CREATE TABLE transcripts (   transcript_guid int(11) NOT NULL DEFAULT ‘0’,   pkg_guid int(11) NOT NULL DEFAULT">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Transcript">
 <meta property="og:url" content="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects.Transcript.html">
 <meta property="og:site_name" content="GCModeller docs library">
 <meta property="og:description" content="Transcriptnamespace: LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects
-PropertiesGuidtranscript_guid
-pfo_side_guidpfo_side_guid - location in this regulatory element to which start is">
-<meta property="og:updated_time" content="2016-06-13T13:11:16.372Z">
+
+ CREATE TABLE transcripts (   transcript_guid int(11) NOT NULL DEFAULT ‘0’,   pkg_guid int(11) NOT NULL DEFAULT">
+<meta property="og:updated_time" content="2016-06-19T03:14:48.859Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Transcript">
 <meta name="twitter:description" content="Transcriptnamespace: LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects
-PropertiesGuidtranscript_guid
-pfo_side_guidpfo_side_guid - location in this regulatory element to which start is">
+
+ CREATE TABLE transcripts (   transcript_guid int(11) NOT NULL DEFAULT ‘0’,   pkg_guid int(11) NOT NULL DEFAULT">
     
       <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
     
@@ -136,7 +136,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects.Transcript.html" class="article-date">
-  <time datetime="2016-06-13T13:11:16.372Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:48.859Z" itemprop="datePublished">2016-06-19</time>
 </a>-->
         <!--  -->
       </div>
@@ -163,6 +163,9 @@ var _hmt = _hmt || [];
               </div>
               
                 <h1 id="Transcript"><a href="#Transcript" class="headerlink" title="Transcript"></a>Transcript</h1><p><em>namespace: <a href="N-LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects.html">LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects</a></em></p>
+<blockquote>
+<p> CREATE TABLE <code>transcripts</code> (<br>   <code>transcript_guid</code> int(11) NOT NULL DEFAULT ‘0’,<br>   <code>pkg_guid</code> int(11) NOT NULL DEFAULT ‘0’,<br>   <code>art_guid</code> int(11) NOT NULL DEFAULT ‘0’,<br>   <code>name</code> varchar(50) DEFAULT NULL,<br>   <code>fl_real_name</code> int(1) DEFAULT NULL,<br>   <code>genome_guid</code> int(11) DEFAULT NULL,<br>   <code>pos_from</code> int(11) DEFAULT NULL,<br>   <code>pos_from_guid</code> int(11) DEFAULT NULL,<br>   <code>pfo_type_id</code> int(11) DEFAULT NULL,<br>   <code>pfo_side_guid</code> int(11) DEFAULT NULL,<br>   <code>pos_to</code> int(11) DEFAULT NULL,<br>   <code>pos_to_guid</code> int(11) DEFAULT NULL,<br>   <code>pto_type_id</code> int(11) DEFAULT NULL,<br>   <code>pto_side_guid</code> int(11) DEFAULT NULL,<br>   <code>tr_len</code> int(11) DEFAULT NULL,<br>   <code>descript</code> blob,<br>   <code>last_update</code> timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,<br>   PRIMARY KEY (<code>transcript_guid</code>),<br>   KEY <code>FK_transcripts-pkg_guid</code> (<code>pkg_guid</code>),<br>   KEY <code>FK_transcripts-art_guid</code> (<code>art_guid</code>),<br>   KEY <code>FK_transcripts-genome_guid</code> (<code>genome_guid</code>),<br>   CONSTRAINT <code>FK_transcripts-art_guid</code> FOREIGN KEY (<code>art_guid</code>) REFERENCES <code>articles</code> (<code>art_guid</code>),<br>   CONSTRAINT <code>FK_transcripts-genome_guid</code> FOREIGN KEY (<code>genome_guid</code>) REFERENCES <code>dict_genomes</code> (<code>genome_guid</code>),<br>   CONSTRAINT <code>FK_transcripts-pkg_guid</code> FOREIGN KEY (<code>pkg_guid</code>) REFERENCES <code>packages</code> (<code>pkg_guid</code>)<br> ) ENGINE=InnoDB DEFAULT CHARSET=latin1;</p>
+</blockquote>
 <h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="Guid"><a href="#Guid" class="headerlink" title="Guid"></a>Guid</h4><p>transcript_guid</p>
 <h4 id="pfo-side-guid"><a href="#pfo-side-guid" class="headerlink" title="pfo_side_guid"></a>pfo_side_guid</h4><p>pfo_side_guid - location in this regulatory element to which start is binded (e.g. start,<br> end, transcription start, translation start etc.; link to dict_obj_side_types)</p>
 <h4 id="pfo-type-id"><a href="#pfo-type-id" class="headerlink" title="pfo_type_id"></a>pfo_type_id</h4><p>pfo_type_id - type of this regulatory element (link to obj_types)</p>
@@ -178,7 +181,7 @@ var _hmt = _hmt || [];
             </div>
             <footer class="article-footer">
               <a href="/API/T-LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects.Transcript.html" class="article-date">
-  <time datetime="2016-06-13T13:11:16.372Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:48.859Z" itemprop="datePublished">2016-06-19</time>
 </a>
               <a data-url="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.DatabaseServices.Regtransbase.StructureObjects.Transcript.html" data-id="cipe3iird01x120v4zpefx0o5" class="article-share-link">Share</a>
               

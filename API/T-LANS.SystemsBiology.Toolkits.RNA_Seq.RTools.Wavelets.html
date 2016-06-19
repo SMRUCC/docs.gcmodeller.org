@@ -15,7 +15,7 @@ wavelets: A package of functions for computing wavelet filters, wavelet transfor
 <meta property="og:site_name" content="GCModeller docs library">
 <meta property="og:description" content="Wavelets_namespace: LANS.SystemsBiology.Toolkits.RNA_Seq.RTools_
 wavelets: A package of functions for computing wavelet filters, wavelet transforms and multiresolution analyses. This package contains">
-<meta property="og:updated_time" content="2016-06-13T13:11:20.170Z">
+<meta property="og:updated_time" content="2016-06-19T03:14:51.588Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Wavelets">
 <meta name="twitter:description" content="Wavelets_namespace: LANS.SystemsBiology.Toolkits.RNA_Seq.RTools_
@@ -133,7 +133,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.Wavelets.html" class="article-date">
-  <time datetime="2016-06-13T13:11:20.170Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:51.588Z" itemprop="datePublished">2016-06-19</time>
 </a>-->
         <!--  -->
       </div>
@@ -161,6 +161,9 @@ var _hmt = _hmt || [];
               
                 <h1 id="Wavelets"><a href="#Wavelets" class="headerlink" title="Wavelets"></a>Wavelets</h1><p>_namespace: <a href="N-LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.html">LANS.SystemsBiology.Toolkits.RNA_Seq.RTools</a>_</p>
 <p>wavelets: A package of functions for computing wavelet filters, wavelet transforms and multiresolution analyses.<br> This package contains functions for computing and plotting discrete wavelet transforms (DWT) and maximal overlap<br> discrete wavelet transforms (MODWT), as well as their inverses. Additionally, it contains functionality for<br> computing and plotting wavelet transform filters that are used in the above decompositions as well as<br> multiresolution analyses.</p>
+<blockquote>
+<p> 信号的奇异性检测<br> 信号的突变点和奇异点等不规则部分通常包含重要信息。一般信号的奇异性分为两种情况：<br> （1）信号在某一时刻其幅值发生突变，引起信号的非连续，这种类型的突变称为第一类型的间断点；<br> （2）信号在外观上很光滑，幅值没有发生突变，但是信号的一阶微分有突变发生且一阶微分不连续，这种类型的突变称为第二类型的间断点。</p>
+</blockquote>
 <h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="DWT"><a href="#DWT" class="headerlink" title="DWT"></a>DWT</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.Wavelets.DWT(System.Double[],System.String,System.Int32,System.String,System.Boolean)</span><br></pre></td></tr></table></figure>
 <p>Discrete Wavelet Transform<br> Computes the discrete wavelet transform coefficients for a univariate or multivariate time series.</p>
 <p> The discrete wavelet transform is computed via the pyramid algorithm, using pseudocode written by Percival and Walden (2000), pp. 100-101.<br> When boundary=”periodic” the resulting wavelet and scaling coefficients are computed without making changes to the original series -<br> the pyramid algorithm treats X as if it is circular. However, when boundary=”reflection” a call is made to extend.series, resulting in<br> a new series which is reflected to twice the length of the original series. The wavelet and scaling coefficients are then computed by using<br> a periodic boundary condition on the reflected sereis, resulting in twice as many wavelet and scaling coefficients at each level.</p>
@@ -225,7 +228,7 @@ var _hmt = _hmt || [];
             </div>
             <footer class="article-footer">
               <a href="/API/T-LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.Wavelets.html" class="article-date">
-  <time datetime="2016-06-13T13:11:20.170Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:51.588Z" itemprop="datePublished">2016-06-19</time>
 </a>
               <a data-url="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.Toolkits.RNA_Seq.RTools.Wavelets.html" data-id="cipe3ilti02jv20v4ri0fnfjc" class="article-share-link">Share</a>
               

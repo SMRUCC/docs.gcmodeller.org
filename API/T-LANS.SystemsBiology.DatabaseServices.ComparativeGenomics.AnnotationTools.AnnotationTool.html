@@ -9,20 +9,23 @@
     <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
     <meta name="description" content="AnnotationToolnamespace: LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.AnnotationTools
 注释的流程为： 以此比对数据库，通过BBH得到直系同源
-MethodsGetAnnotationSourceMeta1LANS.SystemsBiology.DatabaseServices.Compar">
+
+ 对于BBH获取直系同源的基因的过程一般是这样的： 当所比对的注释源较小的时候，可以直接使用BBH进行比对，之后再根据数据库之中的物种数据分组获取">
 <meta property="og:type" content="website">
 <meta property="og:title" content="AnnotationTool">
 <meta property="og:url" content="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.AnnotationTools.AnnotationTool.html">
 <meta property="og:site_name" content="GCModeller docs library">
 <meta property="og:description" content="AnnotationToolnamespace: LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.AnnotationTools
 注释的流程为： 以此比对数据库，通过BBH得到直系同源
-MethodsGetAnnotationSourceMeta1LANS.SystemsBiology.DatabaseServices.Compar">
-<meta property="og:updated_time" content="2016-06-13T13:11:14.257Z">
+
+ 对于BBH获取直系同源的基因的过程一般是这样的： 当所比对的注释源较小的时候，可以直接使用BBH进行比对，之后再根据数据库之中的物种数据分组获取">
+<meta property="og:updated_time" content="2016-06-19T03:14:47.098Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AnnotationTool">
 <meta name="twitter:description" content="AnnotationToolnamespace: LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.AnnotationTools
 注释的流程为： 以此比对数据库，通过BBH得到直系同源
-MethodsGetAnnotationSourceMeta1LANS.SystemsBiology.DatabaseServices.Compar">
+
+ 对于BBH获取直系同源的基因的过程一般是这样的： 当所比对的注释源较小的时候，可以直接使用BBH进行比对，之后再根据数据库之中的物种数据分组获取">
     
       <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
     
@@ -136,7 +139,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.AnnotationTools.AnnotationTool.html" class="article-date">
-  <time datetime="2016-06-13T13:11:14.257Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:47.098Z" itemprop="datePublished">2016-06-19</time>
 </a>-->
         <!--  -->
       </div>
@@ -164,6 +167,9 @@ var _hmt = _hmt || [];
               
                 <h1 id="AnnotationTool"><a href="#AnnotationTool" class="headerlink" title="AnnotationTool"></a>AnnotationTool</h1><p><em>namespace: <a href="N-LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.AnnotationTools.html">LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.AnnotationTools</a></em></p>
 <p>注释的流程为：<br> 以此比对数据库，通过BBH得到直系同源</p>
+<blockquote>
+<p> 对于BBH获取直系同源的基因的过程一般是这样的：<br> 当所比对的注释源较小的时候，可以直接使用BBH进行比对，之后再根据数据库之中的物种数据分组获取BBH结果即可，故而，对于较小的fasta数据库，注释工具的初始化参数new.db为fasta文件的路径<br> 当所比对的注释源很大的时候，进行BBH会非常慢，故而这个时候需要将数据库分割为不同的模块进行BBH操作，当BBH操作结束的时候，在合并为一个数据源按照数据库之中的物种信息进行分组获取BBH数据</p>
+</blockquote>
 <h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="GetAnnotationSourceMeta"><a href="#GetAnnotationSourceMeta" class="headerlink" title="GetAnnotationSourceMeta"></a>GetAnnotationSourceMeta</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.AnnotationTools.AnnotationTool.GetAnnotationSourceMeta</span><br></pre></td></tr></table></figure>
 <p>获取所比对的蛋白质的信息的物种来源的信息</p>
 <h4 id="InvokeAnnotation"><a href="#InvokeAnnotation" class="headerlink" title="InvokeAnnotation"></a>InvokeAnnotation</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.AnnotationTools.AnnotationTool.InvokeAnnotation(System.String,System.String,System.Boolean,System.String)</span><br></pre></td></tr></table></figure>
@@ -194,7 +200,7 @@ var _hmt = _hmt || [];
             </div>
             <footer class="article-footer">
               <a href="/API/T-LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.AnnotationTools.AnnotationTool.html" class="article-date">
-  <time datetime="2016-06-13T13:11:14.257Z" itemprop="datePublished">2016-06-13</time>
+  <time datetime="2016-06-19T03:14:47.098Z" itemprop="datePublished">2016-06-19</time>
 </a>
               <a data-url="http://docs.gcmodeller.org/API/T-LANS.SystemsBiology.DatabaseServices.ComparativeGenomics.AnnotationTools.AnnotationTool.html" data-id="cipe3i4e2019p20v4jpwafg7c" class="article-share-link">Share</a>
               
