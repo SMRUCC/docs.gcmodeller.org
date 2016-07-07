@@ -1,0 +1,279 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>HeatMap | GCModeller docs library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="HeatMapnamespace: SMRUCC.genomics.Visualize.Circos.Configurations.Nodes.Plots
+Heat maps are used for data types which associate a value with a genomic position, Or region. As such, this track uses the">
+<meta property="og:type" content="website">
+<meta property="og:title" content="HeatMap">
+<meta property="og:url" content="http://docs.gcmodeller.org/API/T-SMRUCC.genomics.Visualize.Circos.Configurations.Nodes.Plots.HeatMap.html">
+<meta property="og:site_name" content="GCModeller docs library">
+<meta property="og:description" content="HeatMapnamespace: SMRUCC.genomics.Visualize.Circos.Configurations.Nodes.Plots
+Heat maps are used for data types which associate a value with a genomic position, Or region. As such, this track uses the">
+<meta property="og:updated_time" content="2016-07-07T09:43:34.515Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HeatMap">
+<meta name="twitter:description" content="HeatMapnamespace: SMRUCC.genomics.Visualize.Circos.Configurations.Nodes.Plots
+Heat maps are used for data types which associate a value with a genomic position, Or region. As such, this track uses the">
+    
+      <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="http://gcmodeller.org/DNA.png">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/SMRUCC/">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://docs.gcmodeller.org"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-SMRUCC.genomics.Visualize.Circos.Configurations.Nodes.Plots.HeatMap.html">
+      <h1 class="article-title" itemprop="name">
+        HeatMap
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-SMRUCC.genomics.Visualize.Circos.Configurations.Nodes.Plots.HeatMap.html" class="article-date">
+  <time datetime="2016-07-07T09:43:34.515Z" itemprop="datePublished">2016-07-07</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-SMRUCC.genomics.Visualize.Circos.Configurations.Nodes.Plots.HeatMap.html">
+      <h1 class="article-title" itemprop="name">
+        HeatMap
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HeatMap"><span class="toc-number">1.</span> <span class="toc-text">HeatMap</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties"><span class="toc-number">1.0.1.</span> <span class="toc-text">Properties</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#color"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">color</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#scale-log-base"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">scale_log_base</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="HeatMap"><a href="#HeatMap" class="headerlink" title="HeatMap"></a>HeatMap</h1><p><em>namespace: <a href="N-SMRUCC.genomics.Visualize.Circos.Configurations.Nodes.Plots.html">SMRUCC.genomics.Visualize.Circos.Configurations.Nodes.Plots</a></em></p>
+<p>Heat maps are used for data types which associate a value with a genomic position, Or region.<br> As such, this track uses the same data format As histograms.</p>
+<p> The track linearly maps a range Of values [min,max] onto a list Of colors c[n], i=0..N.</p>
+<p> f = (value - min) / ( max - min )<br> n = N * f</p>
+<h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="color"><a href="#color" class="headerlink" title="color"></a>color</h4><p>Colors are defined by a combination of lists or CSV. Color lists<br> exist For all Brewer palletes (see etc/colors.brewer.lists.conf) As<br> well As For N-Step hue (hue-sN, e.g. hue-s5 =<br> hue000,hue005,hue010,…) And N-color hue (hue-sN, e.g. hue-3 =<br> hue000,hue120,hue140).</p>
+<h4 id="scale-log-base"><a href="#scale-log-base" class="headerlink" title="scale_log_base"></a>scale_log_base</h4><p>If scale_log_base is used, the mapping is not linear, but a power law </p>
+<p> n = N <em> f*</em>(1/scale_log_base)</p>
+<p> When scale_log_base &gt; 1 the dynamic range For values close To min Is expanded.<br> When scale_log_base &lt; 1 the dynamic range For values close To max Is expanded.</p>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-SMRUCC.genomics.Visualize.Circos.Configurations.Nodes.Plots.HeatMap.html" class="article-date">
+  <time datetime="2016-07-07T09:43:34.515Z" itemprop="datePublished">2016-07-07</time>
+</a>
+              <a data-url="http://docs.gcmodeller.org/API/T-SMRUCC.genomics.Visualize.Circos.Configurations.Nodes.Plots.HeatMap.html" data-id="ciqc7e7vi028sigv47p33rhqc" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 GCModeller docs library<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/SMRUCC/" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

@@ -1,0 +1,335 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Wavelets | GCModeller docs library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="Wavelets_namespace: SMRUCC.genomics.Analysis.RNA_Seq.RTools_
+wavelets: A package of functions for computing wavelet filters, wavelet transforms and multiresolution analyses. This package contains func">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wavelets">
+<meta property="og:url" content="http://docs.gcmodeller.org/API/T-SMRUCC.genomics.Analysis.RNA_Seq.RTools.Wavelets.html">
+<meta property="og:site_name" content="GCModeller docs library">
+<meta property="og:description" content="Wavelets_namespace: SMRUCC.genomics.Analysis.RNA_Seq.RTools_
+wavelets: A package of functions for computing wavelet filters, wavelet transforms and multiresolution analyses. This package contains func">
+<meta property="og:updated_time" content="2016-07-07T09:40:55.533Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Wavelets">
+<meta name="twitter:description" content="Wavelets_namespace: SMRUCC.genomics.Analysis.RNA_Seq.RTools_
+wavelets: A package of functions for computing wavelet filters, wavelet transforms and multiresolution analyses. This package contains func">
+    
+      <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="http://gcmodeller.org/DNA.png">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/SMRUCC/">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://docs.gcmodeller.org"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-SMRUCC.genomics.Analysis.RNA_Seq.RTools.Wavelets.html">
+      <h1 class="article-title" itemprop="name">
+        Wavelets
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-SMRUCC.genomics.Analysis.RNA_Seq.RTools.Wavelets.html" class="article-date">
+  <time datetime="2016-07-07T09:40:55.533Z" itemprop="datePublished">2016-07-07</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-SMRUCC.genomics.Analysis.RNA_Seq.RTools.Wavelets.html">
+      <h1 class="article-title" itemprop="name">
+        Wavelets
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Wavelets"><span class="toc-number">1.</span> <span class="toc-text">Wavelets</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#DWT"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">DWT</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#MODWT"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">MODWT</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="Wavelets"><a href="#Wavelets" class="headerlink" title="Wavelets"></a>Wavelets</h1><p>_namespace: <a href="N-SMRUCC.genomics.Analysis.RNA_Seq.RTools.html">SMRUCC.genomics.Analysis.RNA_Seq.RTools</a>_</p>
+<p>wavelets: A package of functions for computing wavelet filters, wavelet transforms and multiresolution analyses.<br> This package contains functions for computing and plotting discrete wavelet transforms (DWT) and maximal overlap<br> discrete wavelet transforms (MODWT), as well as their inverses. Additionally, it contains functionality for<br> computing and plotting wavelet transform filters that are used in the above decompositions as well as<br> multiresolution analyses.</p>
+<blockquote>
+<p> 信号的奇异性检测<br> 信号的突变点和奇异点等不规则部分通常包含重要信息。一般信号的奇异性分为两种情况：<br> （1）信号在某一时刻其幅值发生突变，引起信号的非连续，这种类型的突变称为第一类型的间断点；<br> （2）信号在外观上很光滑，幅值没有发生突变，但是信号的一阶微分有突变发生且一阶微分不连续，这种类型的突变称为第二类型的间断点。</p>
+</blockquote>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="DWT"><a href="#DWT" class="headerlink" title="DWT"></a>DWT</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.RNA_Seq.RTools.Wavelets.DWT(System.Double[],System.String,System.Int32,System.String,System.Boolean)</span><br></pre></td></tr></table></figure>
+<p>Discrete Wavelet Transform<br> Computes the discrete wavelet transform coefficients for a univariate or multivariate time series.</p>
+<p> The discrete wavelet transform is computed via the pyramid algorithm, using pseudocode written by Percival and Walden (2000), pp. 100-101.<br> When boundary=”periodic” the resulting wavelet and scaling coefficients are computed without making changes to the original series -<br> the pyramid algorithm treats X as if it is circular. However, when boundary=”reflection” a call is made to extend.series, resulting in<br> a new series which is reflected to twice the length of the original series. The wavelet and scaling coefficients are then computed by using<br> a periodic boundary condition on the reflected sereis, resulting in twice as many wavelet and scaling coefficients at each level.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>X</td>
+<td>A univariate or multivariate time series. Numeric vectors, matrices and data frames are also accepted.</td>
+</tr>
+<tr>
+<td>filter</td>
+<td>Either a wt.filter object, a character string indicating which wavelet filter to use in the </td>
+</tr>
+</tbody>
+</table>
+<p> decomposition, or a numeric vector of wavelet coefficients (not scaling coefficients). See help(wt.filter) for acceptable filter names.|<br>|nlevels|An integer specifying the level of the decomposition. By default this is the value J such that the length of X<br> is at least as great as the length of the level J wavelet filter, but less than the length of the level J+1 wavelet filter.<br> Thus, j &lt;= log((N-1)/(L-1)+1), where N is the length of X.|<br>|boundary|A character string indicating which boundary method to use. boundary = “periodic” and boundary = “reflection”<br> are the only supported methods at this time.|<br>|fast|A logical flag which, if true, indicates that the pyramid algorithm is computed with an internal C function.<br> Otherwise, only R code is used in all computations.|</p>
+<p><em>returns: Returns an object of class dwt, which is an S4 object with slots</em></p>
+<h4 id="MODWT"><a href="#MODWT" class="headerlink" title="MODWT"></a>MODWT</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.RNA_Seq.RTools.Wavelets.MODWT(System.Double[],System.String,System.Int32,System.String,System.Boolean)</span><br></pre></td></tr></table></figure>
+<p>Maximal Overlap Discrete Wavelet Transform.<br> Computes the maximal overlap discrete wavelet transform coefficients for a univariate or multivariate time series.</p>
+<p> The maximal overlap discrete wavelet transform is computed via the pyramid algorithm, using pseudocode written<br> by Percival and Walden (2000), p. 178. When boundary=”periodic” the resulting wavelet and scaling coefficients<br> are computed without making changes to the original series - the pyramid algorithm treats X as if it is circular.<br> However, when boundary=”reflection” a call is made to extend.series, resulting in a new series which is reflected<br> to twice the length of the original series. The wavelet and scaling coefficients are then computed by using a<br> periodic boundary condition on the reflected sereis, resulting in twice as many wavelet and scaling coefficients<br> at each level.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>X</td>
+<td>A univariate or multivariate time series. Numeric vectors, matrices and data frames are also accepted.</td>
+</tr>
+<tr>
+<td>boundary</td>
+<td>A character string indicating which boundary method to use. boundary = “periodic” and boundary = “reflection” are the only supported methods at this time.</td>
+</tr>
+<tr>
+<td>fast</td>
+<td>A logical flag which, if true, indicates that the pyramid algorithm is computed with an internal C function. Otherwise, only R code is used in all computations.</td>
+</tr>
+<tr>
+<td>filter</td>
+<td>Either a wt.filter object, a character string indicating which wavelet filter to use in the decomposition, or a numeric vector of wavelet coefficients (not scaling coefficients). See help(wt.filter) for acceptable filter names.</td>
+</tr>
+<tr>
+<td>nlevels</td>
+<td>An integer specifying the level of the decomposition. By default this is the value J such that the length of X is at least as great as the length of the level J wavelet filter, but less than the length of the level J+1 wavelet filter. Thus, j &lt;= log((N-1)/(L-1)+1), where N is the length of X.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Returns an object of class modwt, which is an S4 object with slots</p>
+</blockquote>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-SMRUCC.genomics.Analysis.RNA_Seq.RTools.Wavelets.html" class="article-date">
+  <time datetime="2016-07-07T09:40:55.533Z" itemprop="datePublished">2016-07-07</time>
+</a>
+              <a data-url="http://docs.gcmodeller.org/API/T-SMRUCC.genomics.Analysis.RNA_Seq.RTools.Wavelets.html" data-id="ciqc7cxb200pjigv43cxq7nq0" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 GCModeller docs library<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/SMRUCC/" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

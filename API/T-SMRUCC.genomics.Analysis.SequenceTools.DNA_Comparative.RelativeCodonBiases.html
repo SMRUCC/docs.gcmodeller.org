@@ -1,0 +1,333 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>RelativeCodonBiases | GCModeller docs library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="RelativeCodonBiases_namespace: SMRUCC.genomics.Analysis.SequenceTools.DNA_Comparative_
+Measures of Relative Codon Biases
+ CAI: codon adaptation index
+ This specifies a reference set of genes, almost i">
+<meta property="og:type" content="website">
+<meta property="og:title" content="RelativeCodonBiases">
+<meta property="og:url" content="http://docs.gcmodeller.org/API/T-SMRUCC.genomics.Analysis.SequenceTools.DNA_Comparative.RelativeCodonBiases.html">
+<meta property="og:site_name" content="GCModeller docs library">
+<meta property="og:description" content="RelativeCodonBiases_namespace: SMRUCC.genomics.Analysis.SequenceTools.DNA_Comparative_
+Measures of Relative Codon Biases
+ CAI: codon adaptation index
+ This specifies a reference set of genes, almost i">
+<meta property="og:updated_time" content="2016-07-07T09:40:59.584Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="RelativeCodonBiases">
+<meta name="twitter:description" content="RelativeCodonBiases_namespace: SMRUCC.genomics.Analysis.SequenceTools.DNA_Comparative_
+Measures of Relative Codon Biases
+ CAI: codon adaptation index
+ This specifies a reference set of genes, almost i">
+    
+      <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="http://gcmodeller.org/DNA.png">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/SMRUCC/">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://docs.gcmodeller.org"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-SMRUCC.genomics.Analysis.SequenceTools.DNA_Comparative.RelativeCodonBiases.html">
+      <h1 class="article-title" itemprop="name">
+        RelativeCodonBiases
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-SMRUCC.genomics.Analysis.SequenceTools.DNA_Comparative.RelativeCodonBiases.html" class="article-date">
+  <time datetime="2016-07-07T09:40:59.584Z" itemprop="datePublished">2016-07-07</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-SMRUCC.genomics.Analysis.SequenceTools.DNA_Comparative.RelativeCodonBiases.html">
+      <h1 class="article-title" itemprop="name">
+        RelativeCodonBiases
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#RelativeCodonBiases"><span class="toc-number">1.</span> <span class="toc-text">RelativeCodonBiases</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#ctor"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">#ctor</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#staticsOfMaxFrequencyCodon"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">__staticsOfMaxFrequencyCodon</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Normalization"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">Normalization</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#W"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">W</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="RelativeCodonBiases"><a href="#RelativeCodonBiases" class="headerlink" title="RelativeCodonBiases"></a>RelativeCodonBiases</h1><p>_namespace: <a href="N-SMRUCC.genomics.Analysis.SequenceTools.DNA_Comparative.html">SMRUCC.genomics.Analysis.SequenceTools.DNA_Comparative</a>_</p>
+<p>Measures of Relative Codon Biases</p>
+<p> CAI: codon adaptation index</p>
+<p> This specifies a reference set of genes, almost invariably, H, chosen from among “highly expressed genes.”</p>
+<p> Defining W(xyz) = f(xyz)/max(xyz[a])*f(xyz,H) as the ratio of the frequency of the codon (xyz) to the<br> maximal codon frequency in H for the same amino acid a ,the CAI of a gene of length L is taken as PI(Wi)^(1/L) (the log average),<br> where i refers to the ith codon of the gene and w is calculated as above. </p>
+<p> H 集合是所选择的高表达量的参考基因</p>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="ctor"><a href="#ctor" class="headerlink" title="#ctor"></a>#ctor</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.SequenceTools.DNA_Comparative.RelativeCodonBiases.<span class="meta">#ctor(SMRUCC.genomics.SequenceModel.FASTA.FastaToken)</span></span><br></pre></td></tr></table></figure>
+<p>ORF的核酸序列之中构建出密码子偏好属性</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sequence</td>
+<td>ATG -&gt; TGA这一段之间的ORF的核酸序列</td>
+</tr>
+</tbody>
+</table>
+<h4 id="staticsOfMaxFrequencyCodon"><a href="#staticsOfMaxFrequencyCodon" class="headerlink" title="__staticsOfMaxFrequencyCodon"></a>__staticsOfMaxFrequencyCodon</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.SequenceTools.DNA_Comparative.RelativeCodonBiases.__staticsOfMaxFrequencyCodon(System.Char)</span><br></pre></td></tr></table></figure>
+<p>统计某一中氨基酸的编码偏好性</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AminoAcid</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Normalization"><a href="#Normalization" class="headerlink" title="Normalization"></a>Normalization</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.SequenceTools.DNA_Comparative.RelativeCodonBiases.Normalization(Microsoft.VisualBasic.ComponentModel.TripleKeyValuesPair&#123;System.Double&#125;)</span><br></pre></td></tr></table></figure>
+<p>对Profile进行归一化处理</p>
+<h4 id="W"><a href="#W" class="headerlink" title="W"></a>W</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.SequenceTools.DNA_Comparative.RelativeCodonBiases.W(SMRUCC.genomics.SequenceModel.NucleotideModels.Translation.Codon)</span><br></pre></td></tr></table></figure>
+<p>计算 W(Codon)<br> 即计算当前的密码子与编码相同氨基酸的最高频率的密码子的商(<br> Defining W(xyz) = f(xyz)/max(xyz[a])*f(xyz,H) as the ratio of the frequency of the codon (xyz) to the maximal codon frequency in H for the same amino acid a)</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Codon</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-SMRUCC.genomics.Analysis.SequenceTools.DNA_Comparative.RelativeCodonBiases.html" class="article-date">
+  <time datetime="2016-07-07T09:40:59.584Z" itemprop="datePublished">2016-07-07</time>
+</a>
+              <a data-url="http://docs.gcmodeller.org/API/T-SMRUCC.genomics.Analysis.SequenceTools.DNA_Comparative.RelativeCodonBiases.html" data-id="ciqc7cxep00rbigv4ea1hasc1" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 GCModeller docs library<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/SMRUCC/" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

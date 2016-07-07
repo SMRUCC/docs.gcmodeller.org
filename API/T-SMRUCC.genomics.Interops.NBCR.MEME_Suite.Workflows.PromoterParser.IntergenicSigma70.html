@@ -1,0 +1,468 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>IntergenicSigma70 | GCModeller docs library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="IntergenicSigma70_namespace: SMRUCC.genomics.Interops.NBCR.MEME_Suite.Workflows.PromoterParser_
+应用于Sigma70的预测分析的序列片段的解析模块
+ 只解析出在基因间隔区的，ORF上游100bp的序列片段，假若片段和其他的ORF发生了重叠，就缩短片段，但是不得短于25bp
+
+ Initially, al">
+<meta property="og:type" content="website">
+<meta property="og:title" content="IntergenicSigma70">
+<meta property="og:url" content="http://docs.gcmodeller.org/API/T-SMRUCC.genomics.Interops.NBCR.MEME_Suite.Workflows.PromoterParser.IntergenicSigma70.html">
+<meta property="og:site_name" content="GCModeller docs library">
+<meta property="og:description" content="IntergenicSigma70_namespace: SMRUCC.genomics.Interops.NBCR.MEME_Suite.Workflows.PromoterParser_
+应用于Sigma70的预测分析的序列片段的解析模块
+ 只解析出在基因间隔区的，ORF上游100bp的序列片段，假若片段和其他的ORF发生了重叠，就缩短片段，但是不得短于25bp
+
+ Initially, al">
+<meta property="og:updated_time" content="2016-07-07T09:43:05.731Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="IntergenicSigma70">
+<meta name="twitter:description" content="IntergenicSigma70_namespace: SMRUCC.genomics.Interops.NBCR.MEME_Suite.Workflows.PromoterParser_
+应用于Sigma70的预测分析的序列片段的解析模块
+ 只解析出在基因间隔区的，ORF上游100bp的序列片段，假若片段和其他的ORF发生了重叠，就缩短片段，但是不得短于25bp
+
+ Initially, al">
+    
+      <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="http://gcmodeller.org/DNA.png">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/SMRUCC/">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://docs.gcmodeller.org"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-SMRUCC.genomics.Interops.NBCR.MEME_Suite.Workflows.PromoterParser.IntergenicSigma70.html">
+      <h1 class="article-title" itemprop="name">
+        IntergenicSigma70
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-SMRUCC.genomics.Interops.NBCR.MEME_Suite.Workflows.PromoterParser.IntergenicSigma70.html" class="article-date">
+  <time datetime="2016-07-07T09:43:05.731Z" itemprop="datePublished">2016-07-07</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-SMRUCC.genomics.Interops.NBCR.MEME_Suite.Workflows.PromoterParser.IntergenicSigma70.html">
+      <h1 class="article-title" itemprop="name">
+        IntergenicSigma70
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#IntergenicSigma70"><span class="toc-number">1.</span> <span class="toc-text">IntergenicSigma70</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#DIPAssociation"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">DIPAssociation</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#MEMEPredictedTSSsAssociations"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">MEMEPredictedTSSsAssociations</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#OverlapCommon"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">OverlapCommon</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Sigma70Parser"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">Sigma70Parser</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#TrimNotStrictOverlap"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">TrimNotStrictOverlap</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#TrimStrictOverlap"><span class="toc-number">1.0.1.6.</span> <span class="toc-text">TrimStrictOverlap</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#VirtualFootprintDIP"><span class="toc-number">1.0.1.7.</span> <span class="toc-text">VirtualFootprintDIP</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="IntergenicSigma70"><a href="#IntergenicSigma70" class="headerlink" title="IntergenicSigma70"></a>IntergenicSigma70</h1><p>_namespace: <a href="N-SMRUCC.genomics.Interops.NBCR.MEME_Suite.Workflows.PromoterParser.html">SMRUCC.genomics.Interops.NBCR.MEME_Suite.Workflows.PromoterParser</a>_</p>
+<p>应用于Sigma70的预测分析的序列片段的解析模块</p>
+<p> 只解析出在基因间隔区的，ORF上游100bp的序列片段，假若片段和其他的ORF发生了重叠，就缩短片段，但是不得短于25bp</p>
+<blockquote>
+<p> Initially, all 100 nt regions upstream of all protein encoding genes were selected from the genome. </p>
+<p> Subsequently, these sequences were evaluated for their potential overlap With a preceding gene,<br> And In such cases, only the intergenic sequence was used For analysis, provided they<br> were 25 nt Or longer.</p>
+<p> The resulting Set Of selected intergenic sequences was searched For conserved motifs using MEME, applying standard DNA<br> parameter settings. </p>
+<p> Only motifs reported by MEME With E-values below 10-4 were considered relevant for further analysis.</p>
+<p> Additional parameters used For selection Of candidate sequences were: </p>
+<p> 1) Zero Or One Occurrence Per Sequence (ZOOPS mode),<br> 2) a maximum of ten different motifs per sequence, And<br> 3) each motif should be found In at least thirty-five different sequences.</p>
+<p> PWM models were constructed For the most abundantly encountered motifs, including those resembling the canonical 235 And<br> 210 elements known from general s70-dependent promoters.</p>
+<p> 黄单胞菌应该长一点150bp，非严格重叠？？？？</p>
+</blockquote>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="DIPAssociation"><a href="#DIPAssociation" class="headerlink" title="DIPAssociation"></a>DIPAssociation</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Interops.NBCR.MEME_Suite.Workflows.PromoterParser.IntergenicSigma70.DIPAssociation(System.String,System.String)</span><br></pre></td></tr></table></figure>
+<p>The canonical sigma factor sigma70 is commonly involved in transcription of the cell’s housekeeping genes, which is mediated by the conserved sigma70 promoter sequence motifs</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MEMECSV</td>
+<td>-</td>
+</tr>
+<tr>
+<td>DIPCsv</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="MEMEPredictedTSSsAssociations"><a href="#MEMEPredictedTSSsAssociations" class="headerlink" title="MEMEPredictedTSSsAssociations"></a>MEMEPredictedTSSsAssociations</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Interops.NBCR.MEME_Suite.Workflows.PromoterParser.IntergenicSigma70.MEMEPredictedTSSsAssociations(System.Collections.Generic.IEnumerable&#123;SMRUCC.genomics.Interops.NBCR.MEME_Suite.Workflows.PromoterParser.IntergenicSigma70.Transcript&#125;,SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.PTT,System.Collections.Generic.IEnumerable&#123;SMRUCC.genomics.Interops.NBCR.MEME_Suite.DocumentFormat.MEME.LDM.Motif&#125;,System.Int32)</span><br></pre></td></tr></table></figure>
+<p>将MEME的-10区预测结果和转录组装配所得到的结果进行整合以了解二者的分析结果的一致性如何</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Transcripts</td>
+<td>-</td>
+</tr>
+<tr>
+<td>PTT</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Length</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>函数只关联在MEME之中出现的基因，其他的都会留下空值</p>
+</blockquote>
+<h4 id="OverlapCommon"><a href="#OverlapCommon" class="headerlink" title="OverlapCommon"></a>OverlapCommon</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Interops.NBCR.MEME_Suite.Workflows.PromoterParser.IntergenicSigma70.OverlapCommon(SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.ComponentModels.GeneBrief[],SMRUCC.genomics.SequenceModel.NucleotideModels.SegmentReader,SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.ComponentModels.GeneBrief,System.Int32)</span><br></pre></td></tr></table></figure>
+<p>严格或者非严格实际上就只是数据源不同：<br> 严格的灰同时检查两条链，所以数据是整个PTT文件<br> 非严格的则是与目标基因相同链的基因数据</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Genes</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Reader</td>
+<td>-</td>
+</tr>
+<tr>
+<td>GeneObject</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Sigma70Parser"><a href="#Sigma70Parser" class="headerlink" title="Sigma70Parser"></a>Sigma70Parser</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Interops.NBCR.MEME_Suite.Workflows.PromoterParser.IntergenicSigma70.Sigma70Parser(SMRUCC.genomics.SequenceModel.FASTA.FastaToken,SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.PTT,System.Collections.Generic.IEnumerable&#123;SMRUCC.genomics.Interops.NBCR.MEME_Suite.DocumentFormat.MEME.LDM.Motif&#125;,System.Boolean,System.Int32,System.String)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>genomeOS</td>
+<td>The genome origin sequence.</td>
+</tr>
+<tr>
+<td>PTT</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Motifs</td>
+<td>-</td>
+</tr>
+<tr>
+<td>StrictOverlap</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Length</td>
+<td>-</td>
+</tr>
+<tr>
+<td>EXPORT</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="TrimNotStrictOverlap"><a href="#TrimNotStrictOverlap" class="headerlink" title="TrimNotStrictOverlap"></a>TrimNotStrictOverlap</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Interops.NBCR.MEME_Suite.Workflows.PromoterParser.IntergenicSigma70.TrimNotStrictOverlap(SMRUCC.genomics.SequenceModel.NucleotideModels.SegmentReader,SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.PTT,SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.ComponentModels.GeneBrief,System.Int32)</span><br></pre></td></tr></table></figure>
+<p>只要目标位点和基因不在同一条链之上，就不算是重叠</p>
+<p> 这个函数只需要对同一条链之上的基因进行计算就可以了</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reader</td>
+<td>-</td>
+</tr>
+<tr>
+<td>PTT</td>
+<td>-</td>
+</tr>
+<tr>
+<td>GeneObject</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="TrimStrictOverlap"><a href="#TrimStrictOverlap" class="headerlink" title="TrimStrictOverlap"></a>TrimStrictOverlap</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Interops.NBCR.MEME_Suite.Workflows.PromoterParser.IntergenicSigma70.TrimStrictOverlap(SMRUCC.genomics.SequenceModel.NucleotideModels.SegmentReader,SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.PTT,SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.ComponentModels.GeneBrief,System.Int32)</span><br></pre></td></tr></table></figure>
+<p>不管链的方向，只要发生了重叠就必须要剪裁</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reader</td>
+<td>-</td>
+</tr>
+<tr>
+<td>PTT</td>
+<td>-</td>
+</tr>
+<tr>
+<td>GeneObject</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="VirtualFootprintDIP"><a href="#VirtualFootprintDIP" class="headerlink" title="VirtualFootprintDIP"></a>VirtualFootprintDIP</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Interops.NBCR.MEME_Suite.Workflows.PromoterParser.IntergenicSigma70.VirtualFootprintDIP(System.String,System.String)</span><br></pre></td></tr></table></figure>
+<p>为什么解释器就是找不到这个函数的入口点？？？？？</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Csv</td>
+<td>-</td>
+</tr>
+<tr>
+<td>DIPCsv</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-SMRUCC.genomics.Interops.NBCR.MEME_Suite.Workflows.PromoterParser.IntergenicSigma70.html" class="article-date">
+  <time datetime="2016-07-07T09:43:05.731Z" itemprop="datePublished">2016-07-07</time>
+</a>
+              <a data-url="http://docs.gcmodeller.org/API/T-SMRUCC.genomics.Interops.NBCR.MEME_Suite.Workflows.PromoterParser.IntergenicSigma70.html" data-id="ciqc7dwl4022migv4bcm9k2m1" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 GCModeller docs library<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/SMRUCC/" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

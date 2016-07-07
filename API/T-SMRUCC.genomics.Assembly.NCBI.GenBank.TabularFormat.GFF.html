@@ -1,0 +1,376 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>GFF | GCModeller docs library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="GFFnamespace: SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat
+GFF (General Feature Format) specifications document
+Methods#ctor1SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.GFF.#ctor(SMRUCC">
+<meta property="og:type" content="website">
+<meta property="og:title" content="GFF">
+<meta property="og:url" content="http://docs.gcmodeller.org/API/T-SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.GFF.html">
+<meta property="og:site_name" content="GCModeller docs library">
+<meta property="og:description" content="GFFnamespace: SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat
+GFF (General Feature Format) specifications document
+Methods#ctor1SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.GFF.#ctor(SMRUCC">
+<meta property="og:updated_time" content="2016-07-07T09:41:19.461Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="GFF">
+<meta name="twitter:description" content="GFFnamespace: SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat
+GFF (General Feature Format) specifications document
+Methods#ctor1SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.GFF.#ctor(SMRUCC">
+    
+      <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="http://gcmodeller.org/DNA.png">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/SMRUCC/">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://docs.gcmodeller.org"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.GFF.html">
+      <h1 class="article-title" itemprop="name">
+        GFF
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.GFF.html" class="article-date">
+  <time datetime="2016-07-07T09:41:19.461Z" itemprop="datePublished">2016-07-07</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.GFF.html">
+      <h1 class="article-title" itemprop="name">
+        GFF
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#GFF"><span class="toc-number">1.</span> <span class="toc-text">GFF</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#ctor"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">#ctor</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GetByName"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">GetByName</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#LoadDocument"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">LoadDocument</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#TryGetValue"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">TryGetValue</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties"><span class="toc-number">1.0.2.</span> <span class="toc-text">Properties</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Date"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">Date</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#DNA"><span class="toc-number">1.0.2.2.</span> <span class="toc-text">DNA</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Features"><span class="toc-number">1.0.2.3.</span> <span class="toc-text">Features</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GffVersion"><span class="toc-number">1.0.2.4.</span> <span class="toc-text">GffVersion</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Protein"><span class="toc-number">1.0.2.5.</span> <span class="toc-text">Protein</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#RNA"><span class="toc-number">1.0.2.6.</span> <span class="toc-text">RNA</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SeqRegion"><span class="toc-number">1.0.2.7.</span> <span class="toc-text">SeqRegion</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Size"><span class="toc-number">1.0.2.8.</span> <span class="toc-text">Size</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SrcVersion"><span class="toc-number">1.0.2.9.</span> <span class="toc-text">SrcVersion</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Type"><span class="toc-number">1.0.2.10.</span> <span class="toc-text">Type</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="GFF"><a href="#GFF" class="headerlink" title="GFF"></a>GFF</h1><p><em>namespace: <a href="N-SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.html">SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat</a></em></p>
+<p>GFF (General Feature Format) specifications document</p>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="ctor"><a href="#ctor" class="headerlink" title="#ctor"></a>#ctor</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.GFF.<span class="meta">#ctor(SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.GFF,SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.FeatureKeys.Features)</span></span><br></pre></td></tr></table></figure>
+<p>Copy specific type</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gff</td>
+<td>-</td>
+</tr>
+<tr>
+<td>type</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="GetByName"><a href="#GetByName" class="headerlink" title="GetByName"></a>GetByName</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.GFF.GetByName(System.String)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>@”P:SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.Feature.attributes” -&gt; name</td>
+</tr>
+</tbody>
+</table>
+<h4 id="LoadDocument"><a href="#LoadDocument" class="headerlink" title="LoadDocument"></a>LoadDocument</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.GFF.LoadDocument(System.String)</span><br></pre></td></tr></table></figure>
+<p>Load a GFF (General Feature Format) specifications document file from a plant text file.<br> (从一个指定的文本文件之中加载基因组特性片段的数据)</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Path</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="TryGetValue"><a href="#TryGetValue" class="headerlink" title="TryGetValue"></a>TryGetValue</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.GFF.TryGetValue(System.Collections.Generic.Dictionary&#123;System.String,System.String&#125;,System.String)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hash</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Key</td>
+<td>全部是小写字符</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="Date"><a href="#Date" class="headerlink" title="Date"></a>Date</h4><p>date (##date <date>)</date></p>
+<p> The date the file was made, Or perhaps that the prediction programs were run. We suggest to use<br> astronomical format 1997-11-08 for 8th November 1997, first because these sort properly, And<br> second to avoid any US/European bias.</p>
+<h4 id="DNA"><a href="#DNA" class="headerlink" title="DNA"></a>DNA</h4><p>DNA </p>
+<p> (##DNA <seqname></seqname></p>
+<p> ##acggctcggattggcgctggatgatagatcagacgac</p>
+<p> ##…</p>
+<p> ##End-DNA)</p>
+<p> To give a DNA sequence. Several people have pointed out that it may be convenient to include the sequence in the file.<br> It should Not become mandatory to do so, And in our experience this has been very little used. Often the seqname will<br> be a well-known identifier, And the sequence can easily be retrieved from a database, Or an accompanying file.</p>
+<h4 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h4><p>基因组上面的特性位点</p>
+<h4 id="GffVersion"><a href="#GffVersion" class="headerlink" title="GffVersion"></a>GffVersion</h4><p>gff-version (##gff-version 2)</p>
+<p> GFF version - In Case it Is a real success And we want To change it. The current Default version Is 2,<br> so If this line Is Not present version 2 Is assumed.</p>
+<h4 id="Protein"><a href="#Protein" class="headerlink" title="Protein"></a>Protein</h4><p>Protein</p>
+<p> (##Protein <seqname></seqname></p>
+<p> ##MVLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSF</p>
+<p> ##…</p>
+<p> ##End-Protein)</p>
+<p> Similar to DNA. Creates an implicit ##Type Protein <seqname> directive.</seqname></p>
+<h4 id="RNA"><a href="#RNA" class="headerlink" title="RNA"></a>RNA</h4><p>RNA </p>
+<p> (##RNA <seqname></seqname></p>
+<p> ##acggcucggauuggcgcuggaugauagaucagacgac</p>
+<p> ##…</p>
+<p> ##End-RNA)</p>
+<p> Similar to DNA. Creates an implicit ##Type RNA <seqname> directive.</seqname></p>
+<h4 id="SeqRegion"><a href="#SeqRegion" class="headerlink" title="SeqRegion"></a>SeqRegion</h4><p>sequence-region (##sequence-region <seqname> <start> <end>)</end></start></seqname></p>
+<p> To indicate that this file only contains entries for the specified subregion of a sequence.</p>
+<h4 id="Size"><a href="#Size" class="headerlink" title="Size"></a>Size</h4><p>Genome size</p>
+<h4 id="SrcVersion"><a href="#SrcVersion" class="headerlink" title="SrcVersion"></a>SrcVersion</h4><p>source-version (##source-version <source> <version text="">)</version></p>
+<p> So that people can record what version Of a program Or package was used To make the data In this file.<br> I suggest the version Is text without whitespace. That allows things Like 1.3, 4a etc. There should be<br> at most one source-version line per source.</p>
+<h4 id="Type"><a href="#Type" class="headerlink" title="Type"></a>Type</h4><p>type (##Type <type> [<seqname>])</seqname></type></p>
+<p> The type Of host sequence described by the features. Standard types are ‘DNA’, ‘Protein’ and ‘RNA’.<br> The optional <seqname> allows multiple ##Type definitions describing multiple GFF sets in one file,<br> each of which have a distinct type. If the name is not provided, then all the features in the file<br> are of the given type. Thus, with this meta-comment, a single file could contain DNA, RNA and<br> Protein features, for example, representing a single genomic locus or ‘gene’, alongside type-specific<br> features of its transcribed mRNA and translated protein sequences. If no ##Type meta-comment is<br> provided for a given GFF file, then the type is assumed to be DNA.</seqname></p>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.GFF.html" class="article-date">
+  <time datetime="2016-07-07T09:41:19.461Z" itemprop="datePublished">2016-07-07</time>
+</a>
+              <a data-url="http://docs.gcmodeller.org/API/T-SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.GFF.html" data-id="ciqc7drbr00yuigv4d516stux" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 GCModeller docs library<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/SMRUCC/" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

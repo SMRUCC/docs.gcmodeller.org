@@ -1,0 +1,488 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>PhenotypeRegulations | GCModeller docs library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="PhenotypeRegulationsnamespace: SMRUCC.genomics.Analysis.CellPhenotype
+将MEME所分析出来的调控信息附加到代谢途径的网络图之中
+Methods__levelMapping1SMRUCC.genomics.Analysis.CellPhenotype.PhenotypeRegulations.__levelMapping(SMRU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PhenotypeRegulations">
+<meta property="og:url" content="http://docs.gcmodeller.org/API/T-SMRUCC.genomics.Analysis.CellPhenotype.PhenotypeRegulations.html">
+<meta property="og:site_name" content="GCModeller docs library">
+<meta property="og:description" content="PhenotypeRegulationsnamespace: SMRUCC.genomics.Analysis.CellPhenotype
+将MEME所分析出来的调控信息附加到代谢途径的网络图之中
+Methods__levelMapping1SMRUCC.genomics.Analysis.CellPhenotype.PhenotypeRegulations.__levelMapping(SMRU">
+<meta property="og:updated_time" content="2016-07-07T09:40:45.159Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="PhenotypeRegulations">
+<meta name="twitter:description" content="PhenotypeRegulationsnamespace: SMRUCC.genomics.Analysis.CellPhenotype
+将MEME所分析出来的调控信息附加到代谢途径的网络图之中
+Methods__levelMapping1SMRUCC.genomics.Analysis.CellPhenotype.PhenotypeRegulations.__levelMapping(SMRU">
+    
+      <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="http://gcmodeller.org/DNA.png">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/SMRUCC/">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://docs.gcmodeller.org"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-SMRUCC.genomics.Analysis.CellPhenotype.PhenotypeRegulations.html">
+      <h1 class="article-title" itemprop="name">
+        PhenotypeRegulations
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-SMRUCC.genomics.Analysis.CellPhenotype.PhenotypeRegulations.html" class="article-date">
+  <time datetime="2016-07-07T09:40:45.159Z" itemprop="datePublished">2016-07-07</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-SMRUCC.genomics.Analysis.CellPhenotype.PhenotypeRegulations.html">
+      <h1 class="article-title" itemprop="name">
+        PhenotypeRegulations
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#PhenotypeRegulations"><span class="toc-number">1.</span> <span class="toc-text">PhenotypeRegulations</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#levelMapping"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">__levelMapping</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ranking"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">__ranking</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AssignPhenotype"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">AssignPhenotype</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AssignPhenotype2"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">AssignPhenotype2</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CommandLineTools"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">CommandLineTools</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CreateDynamicNetwork"><span class="toc-number">1.0.1.6.</span> <span class="toc-text">CreateDynamicNetwork</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CreateEmptyInput"><span class="toc-number">1.0.1.7.</span> <span class="toc-text">CreateEmptyInput</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CreateExpressionMatrix"><span class="toc-number">1.0.1.8.</span> <span class="toc-text">CreateExpressionMatrix</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CreateMutationInit"><span class="toc-number">1.0.1.9.</span> <span class="toc-text">CreateMutationInit</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ExportTCSCrossTalksCytoscape"><span class="toc-number">1.0.1.10.</span> <span class="toc-text">ExportTCSCrossTalksCytoscape</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#MonteCarloExperiment"><span class="toc-number">1.0.1.11.</span> <span class="toc-text">MonteCarloExperiment</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="PhenotypeRegulations"><a href="#PhenotypeRegulations" class="headerlink" title="PhenotypeRegulations"></a>PhenotypeRegulations</h1><p><em>namespace: <a href="N-SMRUCC.genomics.Analysis.CellPhenotype.html">SMRUCC.genomics.Analysis.CellPhenotype</a></em></p>
+<p>将MEME所分析出来的调控信息附加到代谢途径的网络图之中</p>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="levelMapping"><a href="#levelMapping" class="headerlink" title="__levelMapping"></a>__levelMapping</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.CellPhenotype.PhenotypeRegulations.__levelMapping(SMRUCC.genomics.GCModeller.Framework.Kernel_Driver.DataStorage.FileModel.DataSerials&#123;System.Double&#125;[],System.Double)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DataChunk</td>
+<td>都是对同一个基因的分组数据</td>
+</tr>
+</tbody>
+</table>
+<h4 id="ranking"><a href="#ranking" class="headerlink" title="__ranking"></a>__ranking</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.CellPhenotype.PhenotypeRegulations.__ranking(Microsoft.VisualBasic.DocumentFormat.Csv.DocumentStream.File,System.Int32)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Matrix</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Level</td>
+<td>映射的等级数目</td>
+</tr>
+</tbody>
+</table>
+<h4 id="AssignPhenotype"><a href="#AssignPhenotype" class="headerlink" title="AssignPhenotype"></a>AssignPhenotype</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.CellPhenotype.PhenotypeRegulations.AssignPhenotype(System.Collections.Generic.IEnumerable&#123;SMRUCC.genomics.InteractionModel.Regulon.IRegulatorRegulation&#125;,System.Collections.Generic.IEnumerable&#123;SMRUCC.genomics.Assembly.KEGG.Archives.Csv.Pathway&#125;)</span><br></pre></td></tr></table></figure>
+<p>仅仅只是根据调控数据将表型调控赋值给指定的调控因子,没有计算得分的过程</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Regulations</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Pathways</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="AssignPhenotype2"><a href="#AssignPhenotype2" class="headerlink" title="AssignPhenotype2"></a>AssignPhenotype2</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.CellPhenotype.PhenotypeRegulations.AssignPhenotype2(System.Collections.Generic.IEnumerable&#123;SMRUCC.genomics.InteractionModel.Regulon.IRegulatorRegulation&#125;,System.Collections.Generic.IEnumerable&#123;SMRUCC.genomics.Assembly.KEGG.Archives.Csv.Pathway&#125;,System.String)</span><br></pre></td></tr></table></figure>
+<p>仅仅只是根据调控数据将表型调控赋值给指定的调控因子,没有计算得分的过程</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Regulations</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Pathways</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="CommandLineTools"><a href="#CommandLineTools" class="headerlink" title="CommandLineTools"></a>CommandLineTools</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.CellPhenotype.PhenotypeRegulations.CommandLineTools(System.String,System.String,System.String,System.String,System.String)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dir</td>
+<td>计算数据的Export文件夹</td>
+</tr>
+</tbody>
+</table>
+<h4 id="CreateDynamicNetwork"><a href="#CreateDynamicNetwork" class="headerlink" title="CreateDynamicNetwork"></a>CreateDynamicNetwork</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.CellPhenotype.PhenotypeRegulations.CreateDynamicNetwork(System.Collections.Generic.IEnumerable&#123;SMRUCC.genomics.Model.Network.VirtualFootprint.DocumentFormat.RegulatesFootprints&#125;,System.Collections.Generic.IEnumerable&#123;SMRUCC.genomics.Analysis.CellPhenotype.Simulation.ExpressionRegulationNetwork.NetworkInput&#125;)</span><br></pre></td></tr></table></figure>
+<p>简要版本是没有长度映射的</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>footprints</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Inits</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="CreateEmptyInput"><a href="#CreateEmptyInput" class="headerlink" title="CreateEmptyInput"></a>CreateEmptyInput</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.CellPhenotype.PhenotypeRegulations.CreateEmptyInput(System.Collections.Generic.IEnumerable&#123;SMRUCC.genomics.Model.Network.VirtualFootprint.DocumentFormat.RegulatesFootprints&#125;,System.String)</span><br></pre></td></tr></table></figure>
+<p>生成网络计算模型的状态输入数据</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NetworkModel</td>
+<td>-</td>
+</tr>
+<tr>
+<td>SaveToPath</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="CreateExpressionMatrix"><a href="#CreateExpressionMatrix" class="headerlink" title="CreateExpressionMatrix"></a>CreateExpressionMatrix</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.CellPhenotype.PhenotypeRegulations.CreateExpressionMatrix(System.String,System.Double)</span><br></pre></td></tr></table></figure>
+<p>从蒙特卡洛实验的计算数据之中生成实验样本，即将多个计算样本合并为一个矩阵（数据预处理阶段），最后生成的数据都是没有时间标签的</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dir</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="CreateMutationInit"><a href="#CreateMutationInit" class="headerlink" title="CreateMutationInit"></a>CreateMutationInit</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.CellPhenotype.PhenotypeRegulations.CreateMutationInit(System.Collections.Generic.IEnumerable&#123;SMRUCC.genomics.Analysis.CellPhenotype.Simulation.ExpressionRegulationNetwork.NetworkInput&#125;,Microsoft.VisualBasic.DocumentFormat.Csv.DocumentStream.File,System.Int32)</span><br></pre></td></tr></table></figure>
+<p>将野生型的蒙特卡洛实验数据之中的后半部分的稳定状态的数据转换为网络输入</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>inits</td>
+<td>在本参数之中，仅含有<strong>MAT</strong>之中的一部分数据</td>
+</tr>
+<tr>
+<td>MAT</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="ExportTCSCrossTalksCytoscape"><a href="#ExportTCSCrossTalksCytoscape" class="headerlink" title="ExportTCSCrossTalksCytoscape"></a>ExportTCSCrossTalksCytoscape</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.CellPhenotype.PhenotypeRegulations.ExportTCSCrossTalksCytoscape(SMRUCC.genomics.GCModeller.ModellingEngine.Assembly.GCTabular.FileStream.IO.XmlresxLoader,Microsoft.VisualBasic.DocumentFormat.Csv.DocumentStream.File,System.String)</span><br></pre></td></tr></table></figure>
+<p>将计算得到的矩阵数据之中导出TCS的CrossTalk的Cytoscape的网络XML文件，并分别保存至<strong>Export_to</strong>所指定的文件夹之下</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Model</td>
+<td>-</td>
+</tr>
+<tr>
+<td>MAT</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Export_to</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="MonteCarloExperiment"><a href="#MonteCarloExperiment" class="headerlink" title="MonteCarloExperiment"></a>MonteCarloExperiment</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.CellPhenotype.PhenotypeRegulations.MonteCarloExperiment(SMRUCC.genomics.Analysis.CellPhenotype.Simulation.ExpressionRegulationNetwork.BinaryNetwork,System.Int32,System.String)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>network</td>
+<td>-</td>
+</tr>
+<tr>
+<td>counts</td>
+<td>实验的重复次数，建议至少1000次以上</td>
+</tr>
+<tr>
+<td>export</td>
+<td>实验数据的导出位置</td>
+</tr>
+</tbody>
+</table>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-SMRUCC.genomics.Analysis.CellPhenotype.PhenotypeRegulations.html" class="article-date">
+  <time datetime="2016-07-07T09:40:45.159Z" itemprop="datePublished">2016-07-07</time>
+</a>
+              <a data-url="http://docs.gcmodeller.org/API/T-SMRUCC.genomics.Analysis.CellPhenotype.PhenotypeRegulations.html" data-id="ciqc7cvd000l9igv46ibvcaf1" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 GCModeller docs library<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/SMRUCC/" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

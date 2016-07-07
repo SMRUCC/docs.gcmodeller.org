@@ -1,0 +1,348 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SR | GCModeller docs library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="SRnamespace: SMRUCC.genomics.SequenceModel.Patterns.Clustal
+Semi-Residue(半残基，出现概率不是百分之百的)
+Methods__allocBlock1SMRUCC.genomics.SequenceModel.Patterns.Clustal.SR.__allocBlock(SMRUCC.genomics.SequenceMod">
+<meta property="og:type" content="website">
+<meta property="og:title" content="SR">
+<meta property="og:url" content="http://docs.gcmodeller.org/API/T-SMRUCC.genomics.SequenceModel.Patterns.Clustal.SR.html">
+<meta property="og:site_name" content="GCModeller docs library">
+<meta property="og:description" content="SRnamespace: SMRUCC.genomics.SequenceModel.Patterns.Clustal
+Semi-Residue(半残基，出现概率不是百分之百的)
+Methods__allocBlock1SMRUCC.genomics.SequenceModel.Patterns.Clustal.SR.__allocBlock(SMRUCC.genomics.SequenceMod">
+<meta property="og:updated_time" content="2016-07-07T09:41:26.855Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="SR">
+<meta name="twitter:description" content="SRnamespace: SMRUCC.genomics.SequenceModel.Patterns.Clustal
+Semi-Residue(半残基，出现概率不是百分之百的)
+Methods__allocBlock1SMRUCC.genomics.SequenceModel.Patterns.Clustal.SR.__allocBlock(SMRUCC.genomics.SequenceMod">
+    
+      <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="http://gcmodeller.org/DNA.png">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/SMRUCC/">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://docs.gcmodeller.org"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-SMRUCC.genomics.SequenceModel.Patterns.Clustal.SR.html">
+      <h1 class="article-title" itemprop="name">
+        SR
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-SMRUCC.genomics.SequenceModel.Patterns.Clustal.SR.html" class="article-date">
+  <time datetime="2016-07-07T09:41:26.855Z" itemprop="datePublished">2016-07-07</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-SMRUCC.genomics.SequenceModel.Patterns.Clustal.SR.html">
+      <h1 class="article-title" itemprop="name">
+        SR
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#SR"><span class="toc-number">1.</span> <span class="toc-text">SR</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#allocBlock"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">__allocBlock</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#getSite"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">__getSite</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#FromAlign"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">FromAlign</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties"><span class="toc-number">1.0.2.</span> <span class="toc-text">Properties</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Block"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">Block</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Frq"><span class="toc-number">1.0.2.2.</span> <span class="toc-text">Frq</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Index"><span class="toc-number">1.0.2.3.</span> <span class="toc-text">Index</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Residue"><span class="toc-number">1.0.2.4.</span> <span class="toc-text">Residue</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="SR"><a href="#SR" class="headerlink" title="SR"></a>SR</h1><p><em>namespace: <a href="N-SMRUCC.genomics.SequenceModel.Patterns.Clustal.html">SMRUCC.genomics.SequenceModel.Patterns.Clustal</a></em></p>
+<p>Semi-Residue(半残基，出现概率不是百分之百的)</p>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="allocBlock"><a href="#allocBlock" class="headerlink" title="__allocBlock"></a>__allocBlock</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.SequenceModel.Patterns.Clustal.SR.__allocBlock(SMRUCC.genomics.SequenceModel.Patterns.Clustal.SR[][],System.Double)</span><br></pre></td></tr></table></figure>
+<p>做了一次矩阵转置</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>source</td>
+<td>-</td>
+</tr>
+<tr>
+<td>cutoff</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="getSite"><a href="#getSite" class="headerlink" title="__getSite"></a>__getSite</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.SequenceModel.Patterns.Clustal.SR.__getSite(System.Char[][],System.Int32,System.Int32,System.Int32)</span><br></pre></td></tr></table></figure>
+<p>返回前10的位点<br> 位点不足的话会使用最后一个位点进行补充</p>
+<p> 这里是构建特征序列的核心算法部分</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chMAT</td>
+<td>频率矩阵</td>
+</tr>
+<tr>
+<td>index</td>
+<td>-</td>
+</tr>
+<tr>
+<td>width</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="FromAlign"><a href="#FromAlign" class="headerlink" title="FromAlign"></a>FromAlign</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.SequenceModel.Patterns.Clustal.SR.FromAlign(System.Collections.Generic.IEnumerable&#123;SMRUCC.genomics.SequenceModel.FASTA.FastaToken&#125;,System.Double,System.Int32)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>aln</td>
+<td>-</td>
+</tr>
+<tr>
+<td>block</td>
+<td>生成类似于domain的参数所需求的，假若这个值太低，则计算MPAlignment的时候会得分很低，除非特别应用请不要修改这个数值</td>
+</tr>
+<tr>
+<td>levels</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="Block"><a href="#Block" class="headerlink" title="Block"></a>Block</h4><p>区块的序列号</p>
+<h4 id="Frq"><a href="#Frq" class="headerlink" title="Frq"></a>Frq</h4><p>出现的频率</p>
+<h4 id="Index"><a href="#Index" class="headerlink" title="Index"></a>Index</h4><p>在多重比对之中的序列上面的位置</p>
+<h4 id="Residue"><a href="#Residue" class="headerlink" title="Residue"></a>Residue</h4><p>残基符号</p>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-SMRUCC.genomics.SequenceModel.Patterns.Clustal.SR.html" class="article-date">
+  <time datetime="2016-07-07T09:41:26.855Z" itemprop="datePublished">2016-07-07</time>
+</a>
+              <a data-url="http://docs.gcmodeller.org/API/T-SMRUCC.genomics.SequenceModel.Patterns.Clustal.SR.html" data-id="ciqc7dxl90273igv42t039e7v" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 GCModeller docs library<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/SMRUCC/" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

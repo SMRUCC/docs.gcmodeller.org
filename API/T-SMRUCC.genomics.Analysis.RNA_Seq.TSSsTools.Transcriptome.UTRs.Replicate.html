@@ -1,0 +1,304 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Replicate | GCModeller docs library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="Replicate_namespace: SMRUCC.genomics.Analysis.RNA_Seq.TSSsTools.Transcriptome.UTRs_
+A Replicate object represents information about a single RNA-seq experiment, including information about all reads f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Replicate">
+<meta property="og:url" content="http://docs.gcmodeller.org/API/T-SMRUCC.genomics.Analysis.RNA_Seq.TSSsTools.Transcriptome.UTRs.Replicate.html">
+<meta property="og:site_name" content="GCModeller docs library">
+<meta property="og:description" content="Replicate_namespace: SMRUCC.genomics.Analysis.RNA_Seq.TSSsTools.Transcriptome.UTRs_
+A Replicate object represents information about a single RNA-seq experiment, including information about all reads f">
+<meta property="og:updated_time" content="2016-07-07T09:40:57.126Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Replicate">
+<meta name="twitter:description" content="Replicate_namespace: SMRUCC.genomics.Analysis.RNA_Seq.TSSsTools.Transcriptome.UTRs_
+A Replicate object represents information about a single RNA-seq experiment, including information about all reads f">
+    
+      <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="http://gcmodeller.org/DNA.png">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/SMRUCC/">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://docs.gcmodeller.org"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-SMRUCC.genomics.Analysis.RNA_Seq.TSSsTools.Transcriptome.UTRs.Replicate.html">
+      <h1 class="article-title" itemprop="name">
+        Replicate
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-SMRUCC.genomics.Analysis.RNA_Seq.TSSsTools.Transcriptome.UTRs.Replicate.html" class="article-date">
+  <time datetime="2016-07-07T09:40:57.126Z" itemprop="datePublished">2016-07-07</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-SMRUCC.genomics.Analysis.RNA_Seq.TSSsTools.Transcriptome.UTRs.Replicate.html">
+      <h1 class="article-title" itemprop="name">
+        Replicate
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Replicate"><span class="toc-number">1.</span> <span class="toc-text">Replicate</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#ctor"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">#ctor</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#readInAlignmentFile"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">__readInAlignmentFile</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#transformation"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">__transformation</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#getBackgroundProb"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">getBackgroundProb</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#getMeanOfRange"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">getMeanOfRange</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#getReads"><span class="toc-number">1.0.1.6.</span> <span class="toc-text">getReads</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#getReadsInRange"><span class="toc-number">1.0.1.7.</span> <span class="toc-text">getReadsInRange</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#getStdevOfRange"><span class="toc-number">1.0.1.8.</span> <span class="toc-text">getStdevOfRange</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ToString"><span class="toc-number">1.0.1.9.</span> <span class="toc-text">ToString</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties"><span class="toc-number">1.0.2.</span> <span class="toc-text">Properties</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#avgLengthReads"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">avgLengthReads</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#avgReads"><span class="toc-number">1.0.2.2.</span> <span class="toc-text">avgReads</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#background"><span class="toc-number">1.0.2.3.</span> <span class="toc-text">background</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#backgroundParameter"><span class="toc-number">1.0.2.4.</span> <span class="toc-text">backgroundParameter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#fileName"><span class="toc-number">1.0.2.5.</span> <span class="toc-text">fileName</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#minExpression"><span class="toc-number">1.0.2.6.</span> <span class="toc-text">minExpression</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#minExpressionRNA"><span class="toc-number">1.0.2.7.</span> <span class="toc-text">minExpressionRNA</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#minExpressionUTR"><span class="toc-number">1.0.2.8.</span> <span class="toc-text">minExpressionUTR</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#minusReads"><span class="toc-number">1.0.2.9.</span> <span class="toc-text">minusReads</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#name"><span class="toc-number">1.0.2.10.</span> <span class="toc-text">name</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#plusReads"><span class="toc-number">1.0.2.11.</span> <span class="toc-text">plusReads</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#totalReads"><span class="toc-number">1.0.2.12.</span> <span class="toc-text">totalReads</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#upperQuartile"><span class="toc-number">1.0.2.13.</span> <span class="toc-text">upperQuartile</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="Replicate"><a href="#Replicate" class="headerlink" title="Replicate"></a>Replicate</h1><p>_namespace: <a href="N-SMRUCC.genomics.Analysis.RNA_Seq.TSSsTools.Transcriptome.UTRs.html">SMRUCC.genomics.Analysis.RNA_Seq.TSSsTools.Transcriptome.UTRs</a>_</p>
+<p>A Replicate object represents information about a single RNA-seq experiment, including information about all reads from the experiment.</p>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="ctor"><a href="#ctor" class="headerlink" title="#ctor"></a>#ctor</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.RNA_Seq.TSSsTools.Transcriptome.UTRs.Replicate.<span class="meta">#ctor(System.Int64,System.Boolean,System.String)</span></span><br></pre></td></tr></table></figure>
+<p>Constructs a new Replicate object based on compressed sequencing reads files.</p>
+<h4 id="readInAlignmentFile"><a href="#readInAlignmentFile" class="headerlink" title="__readInAlignmentFile"></a>__readInAlignmentFile</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.RNA_Seq.TSSsTools.Transcriptome.UTRs.Replicate.__readInAlignmentFile(System.String,System.Boolean,System.Int64)</span><br></pre></td></tr></table></figure>
+<p>Reads in a compressed alignment file for a genome with the specified index z. Stores the<br> RNA-seq data in two lists, one for the plus strand<br> and one for the minus strand. Also computes the<br> total reads in the file.</p>
+<h4 id="transformation"><a href="#transformation" class="headerlink" title="__transformation"></a>__transformation</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.RNA_Seq.TSSsTools.Transcriptome.UTRs.Replicate.__transformation(System.Double)</span><br></pre></td></tr></table></figure>
+<p>Helper method for setting the minimum expression level for UTRs and ncRNAs.</p>
+<h4 id="getBackgroundProb"><a href="#getBackgroundProb" class="headerlink" title="getBackgroundProb"></a>getBackgroundProb</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.RNA_Seq.TSSsTools.Transcriptome.UTRs.Replicate.getBackgroundProb(System.Int32)</span><br></pre></td></tr></table></figure>
+<p>Returns the probability that the given number of reads<br> at some nucleotide corresponds to the background, i.e.,<br> a non-transcript.</p>
+<h4 id="getMeanOfRange"><a href="#getMeanOfRange" class="headerlink" title="getMeanOfRange"></a>getMeanOfRange</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.RNA_Seq.TSSsTools.Transcriptome.UTRs.Replicate.getMeanOfRange(System.Int32,System.Int32,System.Char)</span><br></pre></td></tr></table></figure>
+<p>Return the mean number of reads on the given strand mapping<br> to the given range of genomic coordinates in the specified<br> genome at index z.</p>
+<h4 id="getReads"><a href="#getReads" class="headerlink" title="getReads"></a>getReads</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.RNA_Seq.TSSsTools.Transcriptome.UTRs.Replicate.getReads(System.Int32,System.Char)</span><br></pre></td></tr></table></figure>
+<p>Return the number of reads mapping to the specified coordinate<br> on the specified strand for the specified genome at index z.</p>
+<h4 id="getReadsInRange"><a href="#getReadsInRange" class="headerlink" title="getReadsInRange"></a>getReadsInRange</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.RNA_Seq.TSSsTools.Transcriptome.UTRs.Replicate.getReadsInRange(System.Int32,System.Int32,System.Char)</span><br></pre></td></tr></table></figure>
+<p>Return the number of reads on the given strand mapping<br> to the given range of genomic coordinates for the specified<br> genome at index z.</p>
+<h4 id="getStdevOfRange"><a href="#getStdevOfRange" class="headerlink" title="getStdevOfRange"></a>getStdevOfRange</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.RNA_Seq.TSSsTools.Transcriptome.UTRs.Replicate.getStdevOfRange(System.Int32,System.Int32,System.Char,System.Double)</span><br></pre></td></tr></table></figure>
+<p>Return the standard deviation of reads on the given strand mapping<br> to the given range of genomic coordinates in the specified genome<br> at index z.</p>
+<h4 id="ToString"><a href="#ToString" class="headerlink" title="ToString"></a>ToString</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.RNA_Seq.TSSsTools.Transcriptome.UTRs.Replicate.ToString</span><br></pre></td></tr></table></figure>
+<p>Returns a String representation of this object.</p>
+<h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="avgLengthReads"><a href="#avgLengthReads" class="headerlink" title="avgLengthReads"></a>avgLengthReads</h4><p>Return average length of sequencing reads in this Replicate.</p>
+<h4 id="avgReads"><a href="#avgReads" class="headerlink" title="avgReads"></a>avgReads</h4><p>Return average number of reads in this Replicate.</p>
+<h4 id="background"><a href="#background" class="headerlink" title="background"></a>background</h4><p>Number of nucleotides with few or no reads</p>
+<h4 id="backgroundParameter"><a href="#backgroundParameter" class="headerlink" title="backgroundParameter"></a>backgroundParameter</h4><p>Parameter of geometric distribution of background reads</p>
+<h4 id="fileName"><a href="#fileName" class="headerlink" title="fileName"></a>fileName</h4><p>Path to sequencing reads file</p>
+<h4 id="minExpression"><a href="#minExpression" class="headerlink" title="minExpression"></a>minExpression</h4><p>Sets the minimum level of expression (for a UTR region and<br> ncRNA to be considered expressed) in this Replicate based on<br> the average number of reads per nucleotide in this Replicate<br> and the specified transcript sensitivity between 0.0 and 1.0,<br> inclusive.</p>
+<h4 id="minExpressionRNA"><a href="#minExpressionRNA" class="headerlink" title="minExpressionRNA"></a>minExpressionRNA</h4><p>Return the minimum level of expression for a ncRNA to be<br> considered expressed in this Replicate.</p>
+<h4 id="minExpressionUTR"><a href="#minExpressionUTR" class="headerlink" title="minExpressionUTR"></a>minExpressionUTR</h4><p>Return the minimum level of expression for a UTR region to be<br> considered expressed in this Replicate.</p>
+<h4 id="minusReads"><a href="#minusReads" class="headerlink" title="minusReads"></a>minusReads</h4><p>Reads on the minus strand for each genome</p>
+<h4 id="name"><a href="#name" class="headerlink" title="name"></a>name</h4><p>Return the name of this Replicate.</p>
+<h4 id="plusReads"><a href="#plusReads" class="headerlink" title="plusReads"></a>plusReads</h4><p>Reads on the plus strand for each genome</p>
+<h4 id="totalReads"><a href="#totalReads" class="headerlink" title="totalReads"></a>totalReads</h4><p>Return total number of reads in this Replicate.</p>
+<h4 id="upperQuartile"><a href="#upperQuartile" class="headerlink" title="upperQuartile"></a>upperQuartile</h4><p>Return the upper quartile for this Replicate.</p>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-SMRUCC.genomics.Analysis.RNA_Seq.TSSsTools.Transcriptome.UTRs.Replicate.html" class="article-date">
+  <time datetime="2016-07-07T09:40:57.126Z" itemprop="datePublished">2016-07-07</time>
+</a>
+              <a data-url="http://docs.gcmodeller.org/API/T-SMRUCC.genomics.Analysis.RNA_Seq.TSSsTools.Transcriptome.UTRs.Replicate.html" data-id="ciqc7cxdy00qvigv4fjj627f7" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 GCModeller docs library<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/SMRUCC/" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

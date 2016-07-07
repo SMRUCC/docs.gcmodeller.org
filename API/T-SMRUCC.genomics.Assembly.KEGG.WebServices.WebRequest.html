@@ -1,0 +1,427 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>WebRequest | GCModeller docs library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="WebRequestnamespace: SMRUCC.genomics.Assembly.KEGG.WebServices
+KEGG web query request handler.(KEGG数据库web查询处理模块)
+MethodsBatchQuery1SMRUCC.genomics.Assembly.KEGG.WebServices.WebRequest.BatchQuery(Syste">
+<meta property="og:type" content="website">
+<meta property="og:title" content="WebRequest">
+<meta property="og:url" content="http://docs.gcmodeller.org/API/T-SMRUCC.genomics.Assembly.KEGG.WebServices.WebRequest.html">
+<meta property="og:site_name" content="GCModeller docs library">
+<meta property="og:description" content="WebRequestnamespace: SMRUCC.genomics.Assembly.KEGG.WebServices
+KEGG web query request handler.(KEGG数据库web查询处理模块)
+MethodsBatchQuery1SMRUCC.genomics.Assembly.KEGG.WebServices.WebRequest.BatchQuery(Syste">
+<meta property="og:updated_time" content="2016-07-07T09:41:10.772Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="WebRequest">
+<meta name="twitter:description" content="WebRequestnamespace: SMRUCC.genomics.Assembly.KEGG.WebServices
+KEGG web query request handler.(KEGG数据库web查询处理模块)
+MethodsBatchQuery1SMRUCC.genomics.Assembly.KEGG.WebServices.WebRequest.BatchQuery(Syste">
+    
+      <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="http://gcmodeller.org/DNA.png">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/SMRUCC/">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://docs.gcmodeller.org"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-SMRUCC.genomics.Assembly.KEGG.WebServices.WebRequest.html">
+      <h1 class="article-title" itemprop="name">
+        WebRequest
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-SMRUCC.genomics.Assembly.KEGG.WebServices.WebRequest.html" class="article-date">
+  <time datetime="2016-07-07T09:41:10.772Z" itemprop="datePublished">2016-07-07</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-SMRUCC.genomics.Assembly.KEGG.WebServices.WebRequest.html">
+      <h1 class="article-title" itemprop="name">
+        WebRequest
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#WebRequest"><span class="toc-number">1.</span> <span class="toc-text">WebRequest</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#BatchQuery"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">BatchQuery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Download16S-rRNA"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">Download16S_rRNA</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#DownloadsBatch"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">DownloadsBatch</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#DownloadSequence"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">DownloadSequence</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#FetchNt"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">FetchNt</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#FetchSeq"><span class="toc-number">1.0.1.6.</span> <span class="toc-text">FetchSeq</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GetPageContent"><span class="toc-number">1.0.1.7.</span> <span class="toc-text">GetPageContent</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GetQueryEntry"><span class="toc-number">1.0.1.8.</span> <span class="toc-text">GetQueryEntry</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GetSpCode"><span class="toc-number">1.0.1.9.</span> <span class="toc-text">GetSpCode</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#HandleQuery"><span class="toc-number">1.0.1.10.</span> <span class="toc-text">HandleQuery</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties"><span class="toc-number">1.0.2.</span> <span class="toc-text">Properties</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#16S-rRNA"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">_16S_rRNA</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="WebRequest"><a href="#WebRequest" class="headerlink" title="WebRequest"></a>WebRequest</h1><p><em>namespace: <a href="N-SMRUCC.genomics.Assembly.KEGG.WebServices.html">SMRUCC.genomics.Assembly.KEGG.WebServices</a></em></p>
+<p>KEGG web query request handler.(KEGG数据库web查询处理模块)</p>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="BatchQuery"><a href="#BatchQuery" class="headerlink" title="BatchQuery"></a>BatchQuery</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Assembly.KEGG.WebServices.WebRequest.BatchQuery(System.String,System.UInt32)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>keyword</td>
+<td>-</td>
+</tr>
+<tr>
+<td>LimitCount</td>
+<td>大批量的数据查询会不会被KEGG封IP？，可以使用本参数来控制数据的返回量</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Download16S-rRNA"><a href="#Download16S-rRNA" class="headerlink" title="Download16S_rRNA"></a>Download16S_rRNA</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Assembly.KEGG.WebServices.WebRequest.Download16S_rRNA(System.String)</span><br></pre></td></tr></table></figure>
+<p><a href="http://www.genome.jp/dbget-bin/www_bget?ko:K01977" target="_blank" rel="external">http://www.genome.jp/dbget-bin/www_bget?ko:K01977</a></p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>outDIR</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="DownloadsBatch"><a href="#DownloadsBatch" class="headerlink" title="DownloadsBatch"></a>DownloadsBatch</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Assembly.KEGG.WebServices.WebRequest.DownloadsBatch(System.String,System.Collections.Generic.IEnumerable&#123;System.String&#125;)</span><br></pre></td></tr></table></figure>
+<p>同一个基因组内的蛋白质的序列下载推荐使用这个方法来完成，这个方法KEGG服务器的负担会比较轻</p>
+<h4 id="DownloadSequence"><a href="#DownloadSequence" class="headerlink" title="DownloadSequence"></a>DownloadSequence</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Assembly.KEGG.WebServices.WebRequest.DownloadSequence(System.String)</span><br></pre></td></tr></table></figure>
+<p>Download fasta sequence data from KEGG database, this function will automatically handles the species brief code.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Id</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="FetchNt"><a href="#FetchNt" class="headerlink" title="FetchNt"></a>FetchNt</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Assembly.KEGG.WebServices.WebRequest.FetchNt(SMRUCC.genomics.Assembly.KEGG.WebServices.QueryEntry)</span><br></pre></td></tr></table></figure>
+<p>Fetch the nucleotide sequence fasta data from the kegg database.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Entry</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="FetchSeq"><a href="#FetchSeq" class="headerlink" title="FetchSeq"></a>FetchSeq</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Assembly.KEGG.WebServices.WebRequest.FetchSeq(SMRUCC.genomics.Assembly.KEGG.WebServices.QueryEntry)</span><br></pre></td></tr></table></figure>
+<p>Download a protein sequence data from the KEGG database.(从KEGG数据库之中下载一条蛋白质分子序列)</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Entry</td>
+<td>KEGG sequence query entry.(KEGG数据库的分子序列查询入口点)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="GetPageContent"><a href="#GetPageContent" class="headerlink" title="GetPageContent"></a>GetPageContent</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Assembly.KEGG.WebServices.WebRequest.GetPageContent(System.String)</span><br></pre></td></tr></table></figure>
+<p>好像因为没有窗体所以这段代码不能够正常的工作</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>url</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="GetQueryEntry"><a href="#GetQueryEntry" class="headerlink" title="GetQueryEntry"></a>GetQueryEntry</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Assembly.KEGG.WebServices.WebRequest.GetQueryEntry(System.String)</span><br></pre></td></tr></table></figure>
+<p>Handle query for a gene locus from KEGG</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>locusId</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="GetSpCode"><a href="#GetSpCode" class="headerlink" title="GetSpCode"></a>GetSpCode</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Assembly.KEGG.WebServices.WebRequest.GetSpCode(System.String)</span><br></pre></td></tr></table></figure>
+<p>从KEGG服务器上面得到基因组的摘要代码</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>locusId</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="HandleQuery"><a href="#HandleQuery" class="headerlink" title="HandleQuery"></a>HandleQuery</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Assembly.KEGG.WebServices.WebRequest.HandleQuery(System.String,System.Int32)</span><br></pre></td></tr></table></figure>
+<p>Get an entry list from a keyword throught the KEGG database web request.{(speciesId:AccessionId), entry_description}</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>keyword</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: 如果没有任何结果则返回一个空列表</em></p>
+<h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="16S-rRNA"><a href="#16S-rRNA" class="headerlink" title="_16S_rRNA"></a>_16S_rRNA</h4><p>都定义在这个地方了。。。。</p>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-SMRUCC.genomics.Assembly.KEGG.WebServices.WebRequest.html" class="article-date">
+  <time datetime="2016-07-07T09:41:10.772Z" itemprop="datePublished">2016-07-07</time>
+</a>
+              <a data-url="http://docs.gcmodeller.org/API/T-SMRUCC.genomics.Assembly.KEGG.WebServices.WebRequest.html" data-id="ciqc7dqsk00vdigv41i35dmgx" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 GCModeller docs library<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/SMRUCC/" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

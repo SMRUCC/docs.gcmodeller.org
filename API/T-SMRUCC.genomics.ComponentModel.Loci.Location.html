@@ -1,0 +1,368 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Location | GCModeller docs library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="Locationnamespace: SMRUCC.genomics.ComponentModel.Loci
+A location property on a sequence data. Please notice that if the loci value its left value greater than right value then this object will swap t">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Location">
+<meta property="og:url" content="http://docs.gcmodeller.org/API/T-SMRUCC.genomics.ComponentModel.Loci.Location.html">
+<meta property="og:site_name" content="GCModeller docs library">
+<meta property="og:description" content="Locationnamespace: SMRUCC.genomics.ComponentModel.Loci
+A location property on a sequence data. Please notice that if the loci value its left value greater than right value then this object will swap t">
+<meta property="og:updated_time" content="2016-07-07T09:41:24.198Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Location">
+<meta name="twitter:description" content="Locationnamespace: SMRUCC.genomics.ComponentModel.Loci
+A location property on a sequence data. Please notice that if the loci value its left value greater than right value then this object will swap t">
+    
+      <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="http://gcmodeller.org/DNA.png">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/SMRUCC/">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://docs.gcmodeller.org"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-SMRUCC.genomics.ComponentModel.Loci.Location.html">
+      <h1 class="article-title" itemprop="name">
+        Location
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-SMRUCC.genomics.ComponentModel.Loci.Location.html" class="article-date">
+  <time datetime="2016-07-07T09:41:24.198Z" itemprop="datePublished">2016-07-07</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-SMRUCC.genomics.ComponentModel.Loci.Location.html">
+      <h1 class="article-title" itemprop="name">
+        Location
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Location"><span class="toc-number">1.</span> <span class="toc-text">Location</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#ContainSite"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">ContainSite</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CreateObject"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">CreateObject</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GetResiduesLoci"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">GetResiduesLoci</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Inside"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">Inside</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#InsideOrOverlapWith"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">InsideOrOverlapWith</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Normalization"><span class="toc-number">1.0.1.6.</span> <span class="toc-text">Normalization</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#op-Equality"><span class="toc-number">1.0.1.7.</span> <span class="toc-text">op_Equality</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties"><span class="toc-number">1.0.2.</span> <span class="toc-text">Properties</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#FragmentSize"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">FragmentSize</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IsNormalized"><span class="toc-number">1.0.2.2.</span> <span class="toc-text">IsNormalized</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Left"><span class="toc-number">1.0.2.3.</span> <span class="toc-text">Left</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Right"><span class="toc-number">1.0.2.4.</span> <span class="toc-text">Right</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="Location"><a href="#Location" class="headerlink" title="Location"></a>Location</h1><p><em>namespace: <a href="N-SMRUCC.genomics.ComponentModel.Loci.html">SMRUCC.genomics.ComponentModel.Loci</a></em></p>
+<p>A location property on a sequence data. Please notice that if the loci value its left value greater than right value then this object will swap the value automaticaly.<br> (一个序列片段区域的位置，请注意，当Left的大小大于Right的时候，模块会自动纠正为Left小于Right的状态，这个对象可以同时用来表示核酸序列或者蛋白质序列上面的位置)</p>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="ContainSite"><a href="#ContainSite" class="headerlink" title="ContainSite"></a>ContainSite</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.ComponentModel.Loci.Location.ContainSite(System.Int32)</span><br></pre></td></tr></table></figure>
+<p>Is the target site is on this location region?(目标位点是否被包含在当前的位置区域之中)</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>p</td>
+<td>这个点是没有指定链的方向的</td>
+</tr>
+</tbody>
+</table>
+<h4 id="CreateObject"><a href="#CreateObject" class="headerlink" title="CreateObject"></a>CreateObject</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.ComponentModel.Loci.Location.CreateObject(System.String,System.String)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>strData</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Delimiter</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="GetResiduesLoci"><a href="#GetResiduesLoci" class="headerlink" title="GetResiduesLoci"></a>GetResiduesLoci</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.ComponentModel.Loci.Location.GetResiduesLoci</span><br></pre></td></tr></table></figure>
+<p>将这个位点对象转换为每一个残基位点的位置对象，可能有些无聊</p>
+<h4 id="Inside"><a href="#Inside" class="headerlink" title="Inside"></a>Inside</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.ComponentModel.Loci.Location.Inside(SMRUCC.genomics.ComponentModel.Loci.Location,System.Int32)</span><br></pre></td></tr></table></figure>
+<p><strong>loci</strong> inside Me.(目标位点在当前的这个位点之中)</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>loci</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="InsideOrOverlapWith"><a href="#InsideOrOverlapWith" class="headerlink" title="InsideOrOverlapWith"></a>InsideOrOverlapWith</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.ComponentModel.Loci.Location.InsideOrOverlapWith(SMRUCC.genomics.ComponentModel.Loci.Location,System.Int32)</span><br></pre></td></tr></table></figure>
+<p><strong>b</strong>在当前对象之中或者与当前对象重叠</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>b</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Normalization"><a href="#Normalization" class="headerlink" title="Normalization"></a>Normalization</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.ComponentModel.Loci.Location.Normalization</span><br></pre></td></tr></table></figure>
+<p>使用这个方法更正数据，使位置数据始终是右大于左，(Return Me: 修改自身之后返回自身)</p>
+<h4 id="op-Equality"><a href="#op-Equality" class="headerlink" title="op_Equality"></a>op_Equality</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.ComponentModel.Loci.Location.op_Equality(SMRUCC.genomics.ComponentModel.Loci.Location,SMRUCC.genomics.ComponentModel.Loci.Location)</span><br></pre></td></tr></table></figure>
+<p>Position equals</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a</td>
+<td>-</td>
+</tr>
+<tr>
+<td>b</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="FragmentSize"><a href="#FragmentSize" class="headerlink" title="FragmentSize"></a>FragmentSize</h4><p>The segment length of this location object.(目标序列片段区域的片段长度)</p>
+<h4 id="IsNormalized"><a href="#IsNormalized" class="headerlink" title="IsNormalized"></a>IsNormalized</h4><p>当前的这个位置数据是否为左边小于右边的正常状态</p>
+<h4 id="Left"><a href="#Left" class="headerlink" title="Left"></a>Left</h4><p>@”T:SMRUCC.genomics.ComponentModel.Loci.Location”: Gets or set the left start value of the segment on the target sequence.(目标片段的左端起始区域，与链的方向无关)</p>
+<h4 id="Right"><a href="#Right" class="headerlink" title="Right"></a>Right</h4><p>@”T:SMRUCC.genomics.ComponentModel.Loci.Location”: Gets or set the right ends value of the segment on the target sequence.(目标片段的右端结束区域，与链的方向无关)</p>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-SMRUCC.genomics.ComponentModel.Loci.Location.html" class="article-date">
+  <time datetime="2016-07-07T09:41:24.198Z" itemprop="datePublished">2016-07-07</time>
+</a>
+              <a data-url="http://docs.gcmodeller.org/API/T-SMRUCC.genomics.ComponentModel.Loci.Location.html" data-id="ciqc7drfk00zkigv454x60isj" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 GCModeller docs library<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/SMRUCC/" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

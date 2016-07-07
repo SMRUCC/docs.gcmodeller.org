@@ -1,0 +1,331 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>MetabolismBuilder | GCModeller docs library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="MetabolismBuildernamespace: SMRUCC.genomics.GCModeller.Assembly.GCMarkupLanguage.Builder
+MethodsBuildPathwayMap1SMRUCC.genomics.GCModeller.Assembly.GCMarkupLanguage.Builder.MetabolismBuilder.BuildPath">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MetabolismBuilder">
+<meta property="og:url" content="http://docs.gcmodeller.org/API/T-SMRUCC.genomics.GCModeller.Assembly.GCMarkupLanguage.Builder.MetabolismBuilder.html">
+<meta property="og:site_name" content="GCModeller docs library">
+<meta property="og:description" content="MetabolismBuildernamespace: SMRUCC.genomics.GCModeller.Assembly.GCMarkupLanguage.Builder
+MethodsBuildPathwayMap1SMRUCC.genomics.GCModeller.Assembly.GCMarkupLanguage.Builder.MetabolismBuilder.BuildPath">
+<meta property="og:updated_time" content="2016-07-07T09:42:34.938Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MetabolismBuilder">
+<meta name="twitter:description" content="MetabolismBuildernamespace: SMRUCC.genomics.GCModeller.Assembly.GCMarkupLanguage.Builder
+MethodsBuildPathwayMap1SMRUCC.genomics.GCModeller.Assembly.GCMarkupLanguage.Builder.MetabolismBuilder.BuildPath">
+    
+      <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="http://gcmodeller.org/DNA.png">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/SMRUCC/">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://docs.gcmodeller.org"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-SMRUCC.genomics.GCModeller.Assembly.GCMarkupLanguage.Builder.MetabolismBuilder.html">
+      <h1 class="article-title" itemprop="name">
+        MetabolismBuilder
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-SMRUCC.genomics.GCModeller.Assembly.GCMarkupLanguage.Builder.MetabolismBuilder.html" class="article-date">
+  <time datetime="2016-07-07T09:42:34.938Z" itemprop="datePublished">2016-07-07</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-SMRUCC.genomics.GCModeller.Assembly.GCMarkupLanguage.Builder.MetabolismBuilder.html">
+      <h1 class="article-title" itemprop="name">
+        MetabolismBuilder
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#MetabolismBuilder"><span class="toc-number">1.</span> <span class="toc-text">MetabolismBuilder</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#BuildPathwayMap"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">BuildPathwayMap</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GetReactionHandles"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">GetReactionHandles</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#InsertReaction"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">InsertReaction</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IsChemicalReaction"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">IsChemicalReaction</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Link"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">Link</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#TrimMetabolites"><span class="toc-number">1.0.1.6.</span> <span class="toc-text">TrimMetabolites</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="MetabolismBuilder"><a href="#MetabolismBuilder" class="headerlink" title="MetabolismBuilder"></a>MetabolismBuilder</h1><p><em>namespace: <a href="N-SMRUCC.genomics.GCModeller.Assembly.GCMarkupLanguage.Builder.html">SMRUCC.genomics.GCModeller.Assembly.GCMarkupLanguage.Builder</a></em></p>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="BuildPathwayMap"><a href="#BuildPathwayMap" class="headerlink" title="BuildPathwayMap"></a>BuildPathwayMap</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.GCModeller.Assembly.GCMarkupLanguage.Builder.MetabolismBuilder.BuildPathwayMap(SMRUCC.genomics.Assembly.MetaCyc.File.FileSystem.DatabaseLoadder,SMRUCC.genomics.GCModeller.Assembly.GCMarkupLanguage.BacterialModel)</span><br></pre></td></tr></table></figure>
+<p>依照MetaCyc数据库中的代谢途径对象的定义将相对应的反应对象加入到相对应的代谢途径对象中</p>
+<h4 id="GetReactionHandles"><a href="#GetReactionHandles" class="headerlink" title="GetReactionHandles"></a>GetReactionHandles</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.GCModeller.Assembly.GCMarkupLanguage.Builder.MetabolismBuilder.GetReactionHandles(SMRUCC.genomics.GCModeller.Assembly.GCMarkupLanguage.GCML_Documents.XmlElements.Metabolism.Pathway,SMRUCC.genomics.Assembly.MetaCyc.File.FileSystem.DatabaseLoadder,SMRUCC.genomics.GCModeller.Assembly.GCMarkupLanguage.BacterialModel)</span><br></pre></td></tr></table></figure>
+<p>递归的获取某一个代谢途径对象中的所有的生化反应对象的句柄值</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pathway</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="InsertReaction"><a href="#InsertReaction" class="headerlink" title="InsertReaction"></a>InsertReaction</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.GCModeller.Assembly.GCMarkupLanguage.Builder.MetabolismBuilder.InsertReaction(SMRUCC.genomics.Assembly.MetaCyc.File.DataFiles.Slots.Reaction,SMRUCC.genomics.GCModeller.Assembly.GCMarkupLanguage.BacterialModel)</span><br></pre></td></tr></table></figure>
+<p>将MetaCyc数据库中相对应的反应对象添加进入模型之中并返回模型的代谢组网络在执行添加操作之后的节点数目</p>
+<h4 id="IsChemicalReaction"><a href="#IsChemicalReaction" class="headerlink" title="IsChemicalReaction"></a>IsChemicalReaction</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.GCModeller.Assembly.GCMarkupLanguage.Builder.MetabolismBuilder.IsChemicalReaction(SMRUCC.genomics.Assembly.MetaCyc.File.DataFiles.Slots.Reaction)</span><br></pre></td></tr></table></figure>
+<p>目标对象不是蛋白质反应，不是转运反应，不是Protein-Ligand-Binding-Reactions，不是Protein-Modification-Reactions则进行添加</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rxn</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Link"><a href="#Link" class="headerlink" title="Link"></a>Link</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.GCModeller.Assembly.GCMarkupLanguage.Builder.MetabolismBuilder.Link(SMRUCC.genomics.Assembly.MetaCyc.File.DataFiles.Reactions,SMRUCC.genomics.Assembly.MetaCyc.File.DataFiles.Enzrxns,SMRUCC.genomics.GCModeller.Assembly.GCMarkupLanguage.BacterialModel)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RxnCollections</td>
+<td>reactions.dat</td>
+</tr>
+<tr>
+<td>EnzRxn</td>
+<td>enzrxns.dat</td>
+</tr>
+</tbody>
+</table>
+<h4 id="TrimMetabolites"><a href="#TrimMetabolites" class="headerlink" title="TrimMetabolites"></a>TrimMetabolites</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.GCModeller.Assembly.GCMarkupLanguage.Builder.MetabolismBuilder.TrimMetabolites(SMRUCC.genomics.Assembly.MetaCyc.File.FileSystem.DatabaseLoadder,SMRUCC.genomics.GCModeller.Assembly.GCMarkupLanguage.BacterialModel)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p> 在Model.PreLoad方法之中，程序已经将SBML模型文件之中所列举的代谢物都加载进入模型之中了，<br> 在本过程中则是将MetaCyc数据库之中的RNA，蛋白质单体，蛋白质复合物对象都加载进入模型之中</p>
+</blockquote>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-SMRUCC.genomics.GCModeller.Assembly.GCMarkupLanguage.Builder.MetabolismBuilder.html" class="article-date">
+  <time datetime="2016-07-07T09:42:34.938Z" itemprop="datePublished">2016-07-07</time>
+</a>
+              <a data-url="http://docs.gcmodeller.org/API/T-SMRUCC.genomics.GCModeller.Assembly.GCMarkupLanguage.Builder.MetabolismBuilder.html" data-id="ciqc7dv9b01sligv4dkd6yzpw" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 GCModeller docs library<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/SMRUCC/" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

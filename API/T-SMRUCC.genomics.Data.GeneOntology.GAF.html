@@ -1,0 +1,293 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>GAF | GCModeller docs library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="GAFnamespace: SMRUCC.genomics.Data.GeneOntology
+GO Annotation File (GAF) Format 2.0
+PropertiesAnnotationExtensionone of: DB:gene_id DB:sequence_id CHEBI:CHEBI_id Cell Type Ontology:CL_id GO:GO_id Cont">
+<meta property="og:type" content="website">
+<meta property="og:title" content="GAF">
+<meta property="og:url" content="http://docs.gcmodeller.org/API/T-SMRUCC.genomics.Data.GeneOntology.GAF.html">
+<meta property="og:site_name" content="GCModeller docs library">
+<meta property="og:description" content="GAFnamespace: SMRUCC.genomics.Data.GeneOntology
+GO Annotation File (GAF) Format 2.0
+PropertiesAnnotationExtensionone of: DB:gene_id DB:sequence_id CHEBI:CHEBI_id Cell Type Ontology:CL_id GO:GO_id Cont">
+<meta property="og:updated_time" content="2016-07-07T09:41:27.716Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="GAF">
+<meta name="twitter:description" content="GAFnamespace: SMRUCC.genomics.Data.GeneOntology
+GO Annotation File (GAF) Format 2.0
+PropertiesAnnotationExtensionone of: DB:gene_id DB:sequence_id CHEBI:CHEBI_id Cell Type Ontology:CL_id GO:GO_id Cont">
+    
+      <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="http://gcmodeller.org/DNA.png">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/SMRUCC/">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://docs.gcmodeller.org"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-SMRUCC.genomics.Data.GeneOntology.GAF.html">
+      <h1 class="article-title" itemprop="name">
+        GAF
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-SMRUCC.genomics.Data.GeneOntology.GAF.html" class="article-date">
+  <time datetime="2016-07-07T09:41:27.716Z" itemprop="datePublished">2016-07-07</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-SMRUCC.genomics.Data.GeneOntology.GAF.html">
+      <h1 class="article-title" itemprop="name">
+        GAF
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#GAF"><span class="toc-number">1.</span> <span class="toc-text">GAF</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties"><span class="toc-number">1.0.1.</span> <span class="toc-text">Properties</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#AnnotationExtension"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">AnnotationExtension</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Aspect"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">Aspect</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AssignedBy"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">AssignedBy</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Date"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">Date</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#DB"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">DB</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#DBObjectID"><span class="toc-number">1.0.1.6.</span> <span class="toc-text">DBObjectID</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#DBObjectName"><span class="toc-number">1.0.1.7.</span> <span class="toc-text">DBObjectName</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#DBObjectSymbol"><span class="toc-number">1.0.1.8.</span> <span class="toc-text">DBObjectSymbol</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#DBObjectSynonym"><span class="toc-number">1.0.1.9.</span> <span class="toc-text">DBObjectSynonym</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#DBObjectType"><span class="toc-number">1.0.1.10.</span> <span class="toc-text">DBObjectType</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#DBReference"><span class="toc-number">1.0.1.11.</span> <span class="toc-text">DBReference</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#EvidenceCode"><span class="toc-number">1.0.1.12.</span> <span class="toc-text">EvidenceCode</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GeneProductFormID"><span class="toc-number">1.0.1.13.</span> <span class="toc-text">GeneProductFormID</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GOID"><span class="toc-number">1.0.1.14.</span> <span class="toc-text">GOID</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Qualifier"><span class="toc-number">1.0.1.15.</span> <span class="toc-text">Qualifier</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Taxon"><span class="toc-number">1.0.1.16.</span> <span class="toc-text">Taxon</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#WithOrFrom"><span class="toc-number">1.0.1.17.</span> <span class="toc-text">WithOrFrom</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="GAF"><a href="#GAF" class="headerlink" title="GAF"></a>GAF</h1><p><em>namespace: <a href="N-SMRUCC.genomics.Data.GeneOntology.html">SMRUCC.genomics.Data.GeneOntology</a></em></p>
+<p>GO Annotation File (GAF) Format 2.0</p>
+<h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="AnnotationExtension"><a href="#AnnotationExtension" class="headerlink" title="AnnotationExtension"></a>AnnotationExtension</h4><p>one of:<br> DB:gene_id<br> DB:sequence_id<br> CHEBI:CHEBI_id<br> Cell Type Ontology:CL_id<br> GO:GO_id<br> Contains cross references to other ontologies that can be used to qualify or enhance the annotation. The cross-reference<br> is prefaced by an appropriate GO relationship; references to multiple ontologies can be entered. For example, if a gene<br> product is localized to the mitochondria of lymphocytes, the GO ID (column 5) would be mitochondrion ; GO:0005439,<br> and the annotation extension column would contain a cross-reference to the term lymphocyte from the Cell Type Ontology.<br> Targets of certain processes or functions can also be included in this field to indicate the gene, gene product, or chemical<br> involved; for example, if a gene product is annotated to protein kinase activity, the annotation extension column would<br> contain the UniProtKB protein ID for the protein phosphorylated in the reaction.<br> See the documentation on using the annotation extension column for details of practical usage; a wider discussion of the<br> annotation extension column can be found on the GO wiki.<br> this field is optional, cardinality 0 or greater</p>
+<h4 id="Aspect"><a href="#Aspect" class="headerlink" title="Aspect"></a>Aspect</h4><p>refers to the namespace or ontology to which the GO ID (column 5) belongs; one of P (biological process), F (molecular function) or C (cellular component)<br> this field is mandatory; cardinality 1</p>
+<h4 id="AssignedBy"><a href="#AssignedBy" class="headerlink" title="AssignedBy"></a>AssignedBy</h4><p>The database which made the annotation<br> one of the values from the set of GO database cross-references<br> Used for tracking the source of an individual annotation. Default value is value entered as the DB (column 1).<br> Value will differ from column 1 for any annotation that is made by one database and incorporated into another.<br> this field is mandatory, cardinality 1</p>
+<h4 id="Date"><a href="#Date" class="headerlink" title="Date"></a>Date</h4><p>Date on which the annotation was made; format is YYYYMMDD<br> this field is mandatory, cardinality 1</p>
+<h4 id="DB"><a href="#DB" class="headerlink" title="DB"></a>DB</h4><p>refers to the database from which the identifier in DB object ID (column 2) is drawn. This is not necessarily the<br> group submitting the file. If a UniProtKB ID is the DB object ID (column 2), DB (column 1) should be UniProtKB.<br> must be one of the values from the set of GO database cross-references<br> this field is mandatory, cardinality 1</p>
+<h4 id="DBObjectID"><a href="#DBObjectID" class="headerlink" title="DBObjectID"></a>DBObjectID</h4><p>a unique identifier from the database in DB (column 1) for the item being annotated<br> this field is mandatory, cardinality 1<br> In GAF 2.0 format, the identifier must reference a top-level primary gene or gene product identifier: either a gene,<br> or a protein that has a 1:1 correspondence to a gene. Identifiers referring to particular protein isoforms or<br> post-translationally cleaved or modified proteins are not legal values in this field.<br> The DB object ID (column 2) is the identifier for the database object, which may or may not correspond exactly to<br> what is described in a paper. For example, a paper describing a protein may support annotations to the gene encoding<br> the protein (gene ID in DB object ID field) or annotations to a protein object (protein ID in DB object ID field).</p>
+<h4 id="DBObjectName"><a href="#DBObjectName" class="headerlink" title="DBObjectName"></a>DBObjectName</h4><p>name of gene or gene product<br> this field is not mandatory, cardinality 0, 1 [white space allowed]</p>
+<h4 id="DBObjectSymbol"><a href="#DBObjectSymbol" class="headerlink" title="DBObjectSymbol"></a>DBObjectSymbol</h4><p>a (unique and valid) symbol to which DB object ID is matched<br> can use ORF name for otherwise unnamed gene or protein<br> if gene products are annotated, can use gene product symbol if available, or many gene product annotation entries<br> can share a gene symbol this field is mandatory, cardinality 1<br> The DB Object Symbol field should be a symbol that means something to a biologist wherever possible (a gene symbol,<br> for example). It is not an ID or an accession number (DB object ID [column 2] provides the unique identifier),<br> although IDs can be used as a DB object symbol if there is no more biologically meaningful symbol available (e.g.,<br> when an unnamed gene is annotated).</p>
+<h4 id="DBObjectSynonym"><a href="#DBObjectSynonym" class="headerlink" title="DBObjectSynonym"></a>DBObjectSynonym</h4><p>Gene symbol [or other text] Note that we strongly recommend that gene synonyms are included in the gene association<br> file, as this aids the searching of GO.<br> this field is not mandatory, cardinality 0, 1, &gt;1 [white space allowed]; for cardinality &gt;1 use a pipe to separate<br> entries (e.g. YFL039C|ABY1|END7|actin gene)</p>
+<h4 id="DBObjectType"><a href="#DBObjectType" class="headerlink" title="DBObjectType"></a>DBObjectType</h4><p>A description of the type of gene product being annotated. If a gene product form ID (column 17) is supplied, the DB<br> object type will refer to that entity; if no gene product form ID is present, it will refer to the entity that the DB<br> object symbol (column 2) is believed to produce and which actively carries out the function or localization described.<br> one of the following: protein_complex; protein; transcript; ncRNA; rRNA; tRNA; snRNA; snoRNA; any subtype of ncRNA<br> in the Sequence Ontology. If the precise product type is unknown, gene_product should be used. this field is mandatory,<br> cardinality 1<br> The object type (gene_product, transcript, protein, protein_complex, etc.) listed in the DB object type field must<br> match the database entry identified by the gene product form ID, or, if this is absent, the expected product of the<br> DB object ID. Note that DB object type refers to the database entry (i.e. it represents a protein, functional RNA, etc.);<br> this column does not reflect anything about the GO term or the evidence on which the annotation is based. For example,<br> if your database entry represents a protein-encoding gene, then protein goes in the DB object type column. The text<br> entered in the DB object name and DB object symbol should refer to the entity in DB object ID. For example, several<br> alternative transcripts from one gene may be annotated separately, each with the same gene ID in DB object ID, and<br> specific gene product identifiers in gene product form ID, but list the same gene symbol in the DB object symbol column.</p>
+<h4 id="DBReference"><a href="#DBReference" class="headerlink" title="DBReference"></a>DBReference</h4><p>one or more unique identifiers for a single source cited as an authority for the attribution of the GO ID to the DB<br> object ID. This may be a literature reference or a database record. The syntax is DB:accession_number.<br> Note that only one reference can be cited on a single line in the gene association file. If a reference has identifiers<br> in more than one database, multiple identifiers for that reference can be included on a single line. For example,<br> if the reference is a published paper that has a PubMed ID, we strongly recommend that the PubMed ID be included,<br> as well as an identifier within a model organism database. Note that if the model organism database has an identifier<br> for the reference, that identifier should always be included, even if a PubMed ID is also used.<br> this field is mandatory, cardinality 1, &gt;1; for cardinality &gt;1 use a pipe to separate entries<br> (e.g. SGD_REF:S000047763|PMID:2676709).</p>
+<h4 id="EvidenceCode"><a href="#EvidenceCode" class="headerlink" title="EvidenceCode"></a>EvidenceCode</h4><p>see the GO evidence code guide for the list of valid evidence codes for GO annotations<br> this field is mandatory, cardinality 1</p>
+<h4 id="GeneProductFormID"><a href="#GeneProductFormID" class="headerlink" title="GeneProductFormID"></a>GeneProductFormID</h4><p>As the DB Object ID (column 2) entry must be a canonical entity—a gene OR an abstract protein that has a 1:1<br> correspondence to a gene—this field allows the annotation of specific variants of that gene or gene product.<br> Contents will frequently include protein sequence identifiers: for example, identifiers that specify distinct<br> proteins produced by to differential splicing, alternative translational starts, post-translational cleavage or<br> post-translational modification. Identifiers for functional RNAs can also be included in this column.<br> The identifier used must be a standard 2-part global identifier, e.g. UniProtKB:OK0206-2<br> When the gene product form ID (column 17) is filled with a protein identifier, the value in DB object type (column 12)<br> must be protein. Protein identifiers can include UniProtKB accession numbers, NCBI NP identifiers or Protein Ontology<br> (PRO) identifiers.<br> When the gene product form ID (column 17) is filled with a functional RNA identifier, the DB object type (column 12)<br> must be either ncRNA, rRNA, tRNA, snRNA, or snoRNA.<br> This column may be left blank; if so, the value in DB object type (column 12) will provide a description of the<br> expected gene product.<br> More information and examples are available from the GO wiki page on column 17.<br> Note that several fields contain database cross-reference (dbxrefs) in the format dbname:dbaccession.<br> The fields are: GO ID [column 5], where dbname is always GO; DB:Reference (column 6); With or From (column 8); and<br> Taxon (column 13), where dbname is always taxon. For GO IDs, do not repeat the ‘GO:’ prefix (i.e. always use GO:0000000,<br> not GO:GO:0000000)</p>
+<h4 id="GOID"><a href="#GOID" class="headerlink" title="GOID"></a>GOID</h4><p>the GO identifier for the term attributed to the DB object ID<br> this field is mandatory, cardinality 1</p>
+<h4 id="Qualifier"><a href="#Qualifier" class="headerlink" title="Qualifier"></a>Qualifier</h4><p>flags that modify the interpretation of an annotation<br> one (or more) of NOT, contributes_to, colocalizes_with<br> this field is not mandatory; cardinality 0, 1, &gt;1; for cardinality &gt;1 use a pipe to separate entries (e.g. NOT|contributes_to)<br> See also the documentation on qualifiers in the GO annotation guide</p>
+<h4 id="Taxon"><a href="#Taxon" class="headerlink" title="Taxon"></a>Taxon</h4><p>taxonomic identifier(s) For cardinality 1, the ID of the species encoding the gene product. For cardinality 2, to be<br> used only in conjunction with terms that have the biological process term multi-organism process or the cellular component<br> term host cell as an ancestor. The first taxon ID should be that of the organism encoding the gene or gene product, and<br> the taxon ID after the pipe should be that of the other organism in the interaction. this field is mandatory,<br> cardinality 1, 2; for cardinality 2 use a pipe to separate entries (e.g. taxon:1|taxon:1000) See the GO annotation<br> conventions for more information on multi-organism terms.</p>
+<h4 id="WithOrFrom"><a href="#WithOrFrom" class="headerlink" title="WithOrFrom"></a>WithOrFrom</h4><p>Also referred to as with, from or the with/from column<br> one of:<br> DB:gene_symbol<br> DB:gene_symbol[allele_symbol]<br> DB:gene_id<br> DB:protein_name<br> DB:sequence_id<br> GO:GO_id<br> CHEBI:CHEBI_id<br> this field is not mandatory overall, but is required for some evidence codes (see below and the evidence code<br> documentation for details); cardinality 0, 1, &gt;1; for cardinality &gt;1 use a pipe to separate entries<br> (e.g. CGSC:pabA|CGSC:pabB)<br> Note: This field is used to hold an additional identifier for annotations using certain evidence codes<br> (IC, IEA, IGI, IPI, ISS). For example, it can identify another gene product to which the annotated gene product<br> is similar (ISS) or interacts with (IPI). More information on the meaning of with or from column entries is<br> available in the evidence code documentation entries for the relevant codes.<br> Cardinality = 0 is not recommended, but is permitted because cases can be found in literature where no database<br> identifier can be found (e.g. physical interaction or sequence similarity to a protein, but no ID provided).<br> Cardinality = 0 is not allowed for ISS annotations made after October 1, 2006. Annotations where evidence is IGI,<br> IPI, or ISS and with cardinality = 0 should link to an explanation of why there is no entry in with. Cardinality<br> may be &gt;1 for any of the evidence codes that use with; for IPI and IGI cardinality &gt;1 has a special meaning (see<br> evidence documentation for more information). For cardinality &gt;1 use a pipe to separate entries<br> (e.g. FB:FBgn1111111|FB:FBgn2222222).<br> Note that a gene ID may be used in the with column for a IPI annotation, or for an ISS annotation based on amino<br> acid sequence or protein structure similarity, if the database does not have identifiers for individual gene<br> products. A gene ID may also be used if the cited reference provides enough information to determine which gene ID<br> should be used, but not enough to establish which protein ID is correct.<br> ‘GO:GO_id’ is used only when the evidence code is IC, and refers to the GO term(s) used as the basis of a curator<br> inference. In these cases the entry in the ‘DB:Reference’ column will be that used to assign the GO term(s) from<br> which the inference is made. This field is mandatory for evidence code IC.<br> The ID is usually an identifier for an individual entry in a database (such as a sequence ID, gene ID, GO ID, etc.).<br> Identifiers from the Center for Biological Sequence Analysis (CBS), however, represent tools used to find homology<br> or sequence similarity; these identifiers can be used in the with column for ISS annotations.<br> The with column may not be used with the evidence codes IDA, TAS, NAS, or ND.</p>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-SMRUCC.genomics.Data.GeneOntology.GAF.html" class="article-date">
+  <time datetime="2016-07-07T09:41:27.716Z" itemprop="datePublished">2016-07-07</time>
+</a>
+              <a data-url="http://docs.gcmodeller.org/API/T-SMRUCC.genomics.Data.GeneOntology.GAF.html" data-id="ciqc7drp0010yigv4vel7ws36" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 GCModeller docs library<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/SMRUCC/" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+
