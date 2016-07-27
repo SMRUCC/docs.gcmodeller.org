@@ -17,7 +17,7 @@ MethodsCreateList1SMRUCC.genomics.Analysis.RNA_Seq.RTools.PfsNET.Pf">
 <meta property="og:description" content="PfsNETModuleAPI_namespace: SMRUCC.genomics.Analysis.RNA_Seq.RTools.PfsNET_
 文件1,2之中所放着的基因是自身所感兴趣的基因突变体的转录组表达值，文件三则是文件1,2之中的两两组合的基因的关系
 MethodsCreateList1SMRUCC.genomics.Analysis.RNA_Seq.RTools.PfsNET.Pf">
-<meta property="og:updated_time" content="2016-07-07T09:40:55.242Z">
+<meta property="og:updated_time" content="2016-07-27T11:12:32.496Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PfsNETModuleAPI">
 <meta name="twitter:description" content="PfsNETModuleAPI_namespace: SMRUCC.genomics.Analysis.RNA_Seq.RTools.PfsNET_
@@ -136,7 +136,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-SMRUCC.genomics.Analysis.RNA_Seq.RTools.PfsNET.PfsNETModuleAPI.html" class="article-date">
-  <time datetime="2016-07-07T09:40:55.242Z" itemprop="datePublished">2016-07-07</time>
+  <time datetime="2016-07-27T11:12:32.496Z" itemprop="datePublished">2016-07-27</time>
 </a>-->
         <!--  -->
       </div>
@@ -164,7 +164,7 @@ var _hmt = _hmt || [];
               
                 <h1 id="PfsNETModuleAPI"><a href="#PfsNETModuleAPI" class="headerlink" title="PfsNETModuleAPI"></a>PfsNETModuleAPI</h1><p>_namespace: <a href="N-SMRUCC.genomics.Analysis.RNA_Seq.RTools.PfsNET.html">SMRUCC.genomics.Analysis.RNA_Seq.RTools.PfsNET</a>_</p>
 <p>文件1,2之中所放着的基因是自身所感兴趣的基因突变体的转录组表达值，文件三则是文件1,2之中的两两组合的基因的关系</p>
-<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="CreateList"><a href="#CreateList" class="headerlink" title="CreateList"></a>CreateList</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.RNA_Seq.RTools.PfsNET.PfsNETModuleAPI.CreateList(System.Collections.Generic.IEnumerable&#123;SMRUCC.genomics.ComponentModel.PathwayBrief&#125;,System.Object[])</span><br></pre></td></tr></table></figure>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="CreateList"><a href="#CreateList" class="headerlink" title="CreateList"></a>CreateList</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.RNA_Seq.RTools.PfsNET.PfsNETModuleAPI.CreateList(System.Collections.Generic.IEnumerable&#123;SMRUCC.genomics.ComponentModel.PathwayBrief&#125;,System.Collections.Generic.IEnumerable&#123;System.String&#125;)</span><br></pre></td></tr></table></figure>
 <p>生成与特定表型相关的代谢途径中的所有的基因列表，生成文件1,2所需要的</p>
 <h4 id="CreateMatrix"><a href="#CreateMatrix" class="headerlink" title="CreateMatrix"></a>CreateMatrix</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.RNA_Seq.RTools.PfsNET.PfsNETModuleAPI.CreateMatrix(SMRUCC.genomics.Analysis.RNA_Seq.dataExprMAT.MatrixFrame,System.Collections.Generic.IEnumerable&#123;System.String&#125;,System.Collections.Generic.IEnumerable&#123;System.String&#125;,System.String,System.Boolean)</span><br></pre></td></tr></table></figure>
 <p>创建文件1和文件2</p>
@@ -234,7 +234,8 @@ var _hmt = _hmt || [];
 </tr>
 </tbody>
 </table>
-<h4 id="KEGGPathwaysPhenotypeAnalysis"><a href="#KEGGPathwaysPhenotypeAnalysis" class="headerlink" title="KEGGPathwaysPhenotypeAnalysis"></a>KEGGPathwaysPhenotypeAnalysis</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.RNA_Seq.RTools.PfsNET.PfsNETModuleAPI.KEGGPathwaysPhenotypeAnalysis(System.Collections.Generic.IEnumerable&#123;SMRUCC.genomics.Analysis.RNA_Seq.RTools.PfsNET.TabularArchives.SubNETCsvObject&#125;,System.Collections.Generic.IEnumerable&#123;SMRUCC.genomics.Assembly.KEGG.Archives.Csv.Pathway&#125;)</span><br></pre></td></tr></table></figure>
+<h4 id="KEGGPathwaysPhenotypeAnalysis"><a href="#KEGGPathwaysPhenotypeAnalysis" class="headerlink" title="KEGGPathwaysPhenotypeAnalysis"></a>KEGGPathwaysPhenotypeAnalysis</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.RNA_Seq.RTools.PfsNET.PfsNETModuleAPI.KEGGPathwaysPhenotypeAnalysis(System.Collections.Generic.IEnumerable&#123;SMRUCC.genomics.Analysis.RNA_Seq.RTools.PfsNET.TabularArchives.SubNetTable&#125;,System.Collections.Generic.IEnumerable&#123;SMRUCC.genomics.Assembly.KEGG.Archives.Csv.Pathway&#125;)</span><br></pre></td></tr></table></figure>
+<p>Associate the kegg pathways pfsnet calculation result with the kegg pathways phenotypes to see which route that the mutated gene can affected the specific phenotype.</p>
 <table>
 <thead>
 <tr>
@@ -290,7 +291,7 @@ var _hmt = _hmt || [];
 </tbody>
 </table>
 <h4 id="PathwayGeneRelationship"><a href="#PathwayGeneRelationship" class="headerlink" title="PathwayGeneRelationship"></a>PathwayGeneRelationship</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.RNA_Seq.RTools.PfsNET.PfsNETModuleAPI.PathwayGeneRelationship(System.Collections.Generic.IEnumerable&#123;SMRUCC.genomics.ComponentModel.PathwayBrief&#125;,System.Collections.Generic.IEnumerable&#123;System.String&#125;,System.String)</span><br></pre></td></tr></table></figure>
-<p>生成文件3</p>
+<p>生成文件3<br><em>returns: 返回所保存的文件的路径</em></p>
 <h4 id="SavePfsNET"><a href="#SavePfsNET" class="headerlink" title="SavePfsNET"></a>SavePfsNET</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.RNA_Seq.RTools.PfsNET.PfsNETModuleAPI.SavePfsNET(SMRUCC.genomics.Analysis.RNA_Seq.RTools.PfsNET.PFSNetResultOut,System.String)</span><br></pre></td></tr></table></figure>
 <p>生成用于启动pfsnet批量分析所使用的批处理脚本</p>
 <table>
@@ -317,7 +318,7 @@ var _hmt = _hmt || [];
             </div>
             <footer class="article-footer">
               <a href="/API/T-SMRUCC.genomics.Analysis.RNA_Seq.RTools.PfsNET.PfsNETModuleAPI.html" class="article-date">
-  <time datetime="2016-07-07T09:40:55.242Z" itemprop="datePublished">2016-07-07</time>
+  <time datetime="2016-07-27T11:12:32.496Z" itemprop="datePublished">2016-07-27</time>
 </a>
               <a data-url="http://docs.gcmodeller.org/API/T-SMRUCC.genomics.Analysis.RNA_Seq.RTools.PfsNET.PfsNETModuleAPI.html" data-id="ciqc7cxa400p2igv4m0ov74i6" class="article-share-link">Share</a>
               

@@ -1,0 +1,380 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Regprecise | GCModeller docs library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="Regprecisenamespace: SMRUCC.genomics.Analysis.Annotations.RegpreciseRegulations
+Annotation for the genome wide regulation network using regprecise database.
+MethodsInstall1SMRUCC.genomics.Analysis.Ann">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Regprecise">
+<meta property="og:url" content="http://docs.gcmodeller.org/API/T-SMRUCC.genomics.Analysis.Annotations.RegpreciseRegulations.Regprecise.html">
+<meta property="og:site_name" content="GCModeller docs library">
+<meta property="og:description" content="Regprecisenamespace: SMRUCC.genomics.Analysis.Annotations.RegpreciseRegulations
+Annotation for the genome wide regulation network using regprecise database.
+MethodsInstall1SMRUCC.genomics.Analysis.Ann">
+<meta property="og:updated_time" content="2016-07-27T11:12:30.993Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Regprecise">
+<meta name="twitter:description" content="Regprecisenamespace: SMRUCC.genomics.Analysis.Annotations.RegpreciseRegulations
+Annotation for the genome wide regulation network using regprecise database.
+MethodsInstall1SMRUCC.genomics.Analysis.Ann">
+    
+      <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="http://gcmodeller.org/DNA.png">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/SMRUCC/">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://docs.gcmodeller.org"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-SMRUCC.genomics.Analysis.Annotations.RegpreciseRegulations.Regprecise.html">
+      <h1 class="article-title" itemprop="name">
+        Regprecise
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-SMRUCC.genomics.Analysis.Annotations.RegpreciseRegulations.Regprecise.html" class="article-date">
+  <time datetime="2016-07-27T11:12:30.993Z" itemprop="datePublished">2016-07-27</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-SMRUCC.genomics.Analysis.Annotations.RegpreciseRegulations.Regprecise.html">
+      <h1 class="article-title" itemprop="name">
+        Regprecise
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Regprecise"><span class="toc-number">1.</span> <span class="toc-text">Regprecise</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Install"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">Install</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#InternalCreateBBH"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">InternalCreateBBH</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#InvokeAnnotation"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">InvokeAnnotation</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Orthologous"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">Orthologous</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#WriteDatabase"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">WriteDatabase</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties"><span class="toc-number">1.0.2.</span> <span class="toc-text">Properties</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#MetaDataTable"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">_MetaDataTable</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="Regprecise"><a href="#Regprecise" class="headerlink" title="Regprecise"></a>Regprecise</h1><p><em>namespace: <a href="N-SMRUCC.genomics.Analysis.Annotations.RegpreciseRegulations.html">SMRUCC.genomics.Analysis.Annotations.RegpreciseRegulations</a></em></p>
+<p>Annotation for the genome wide regulation network using regprecise database.</p>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.Annotations.RegpreciseRegulations.Regprecise.Install(System.String,System.String)</span><br></pre></td></tr></table></figure>
+<p>Install the regprecise database into the GCModeller repository database.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DbFile</td>
+<td>The regulator protein fasta file path</td>
+</tr>
+<tr>
+<td>RepositoryRoot</td>
+<td>The database directory root of the GCModeller repository</td>
+</tr>
+</tbody>
+</table>
+<h4 id="InternalCreateBBH"><a href="#InternalCreateBBH" class="headerlink" title="InternalCreateBBH"></a>InternalCreateBBH</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.Annotations.RegpreciseRegulations.Regprecise.InternalCreateBBH(System.String,SMRUCC.genomics.Interops.NCBI.Extensions.LocalBLAST.Application.BBH.BestHit[],System.Collections.Generic.Dictionary&#123;System.String,SMRUCC.genomics.Interops.NCBI.Extensions.LocalBLAST.Application.BBH.BestHit[]&#125;)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sp_code</td>
+<td>The KEGG brief species code.</td>
+</tr>
+<tr>
+<td>Qvs</td>
+<td>-</td>
+</tr>
+<tr>
+<td>SvqDict</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="InvokeAnnotation"><a href="#InvokeAnnotation" class="headerlink" title="InvokeAnnotation"></a>InvokeAnnotation</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.Annotations.RegpreciseRegulations.Regprecise.InvokeAnnotation(SMRUCC.genomics.Interops.NCBI.Extensions.LocalBLAST.Application.BBH.BiDirectionalBesthit[],SMRUCC.genomics.Interops.NCBI.Extensions.LocalBLAST.Application.BBH.BestHit[],System.String)</span><br></pre></td></tr></table></figure>
+<p>Invoke the regprecise annotation from the overview cache data.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Orthologous</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Paralogs</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ProteinsFasta</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Orthologous"><a href="#Orthologous" class="headerlink" title="Orthologous"></a>Orthologous</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.Annotations.RegpreciseRegulations.Regprecise.Orthologous(System.String,System.String)</span><br></pre></td></tr></table></figure>
+<p>从blastp日志数据之中导出regprecise数据库的注释结果</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>qvsPath</td>
+<td>-</td>
+</tr>
+<tr>
+<td>svqPath</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="WriteDatabase"><a href="#WriteDatabase" class="headerlink" title="WriteDatabase"></a>WriteDatabase</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Analysis.Annotations.RegpreciseRegulations.Regprecise.WriteDatabase(SMRUCC.genomics.Data.Model_Repository.Regprecise[])</span><br></pre></td></tr></table></figure>
+<p>Update tje database information of the regprecise repository</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data</td>
+<td>The data will be write into or updates the regprecise repository source.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="MetaDataTable"><a href="#MetaDataTable" class="headerlink" title="_MetaDataTable"></a>_MetaDataTable</h4><p>The meta data of the regprecise regulators.(Regprecise数据库的元数据)</p>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-SMRUCC.genomics.Analysis.Annotations.RegpreciseRegulations.Regprecise.html" class="article-date">
+  <time datetime="2016-07-27T11:12:30.993Z" itemprop="datePublished">2016-07-27</time>
+</a>
+              <a data-url="http://docs.gcmodeller.org/API/T-SMRUCC.genomics.Analysis.Annotations.RegpreciseRegulations.Regprecise.html" data-id="cir4v15fp003n5wv440lvl8tl" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 GCModeller docs library<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/SMRUCC/" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

@@ -15,7 +15,7 @@ Counting reads in features with htseq-count, Given a file with aligned sequencin
 <meta property="og:site_name" content="GCModeller docs library">
 <meta property="og:description" content="HtseqCountMethod_namespace: SMRUCC.genomics.Interops.RNA_Seq.BOW_
 Counting reads in features with htseq-count, Given a file with aligned sequencing reads and a list of genomic features, a common task">
-<meta property="og:updated_time" content="2016-07-07T09:43:19.800Z">
+<meta property="og:updated_time" content="2016-07-27T11:12:45.840Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HtseqCountMethod">
 <meta name="twitter:description" content="HtseqCountMethod_namespace: SMRUCC.genomics.Interops.RNA_Seq.BOW_
@@ -133,7 +133,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-SMRUCC.genomics.Interops.RNA_Seq.BOW.HtseqCountMethod.html" class="article-date">
-  <time datetime="2016-07-07T09:43:19.800Z" itemprop="datePublished">2016-07-07</time>
+  <time datetime="2016-07-27T11:12:45.840Z" itemprop="datePublished">2016-07-27</time>
 </a>-->
         <!--  -->
       </div>
@@ -273,7 +273,7 @@ var _hmt = _hmt || [];
 </tr>
 </tbody>
 </table>
-<h4 id="IntersectionNonempty"><a href="#IntersectionNonempty" class="headerlink" title="IntersectionNonempty"></a>IntersectionNonempty</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Interops.RNA_Seq.BOW.HtseqCountMethod.IntersectionNonempty(SMRUCC.genomics.SequenceModel.SAM.DocumentElements.AlignmentReads,SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.Feature[],SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.Feature[])</span><br></pre></td></tr></table></figure>
+<h4 id="IntersectionNonempty"><a href="#IntersectionNonempty" class="headerlink" title="IntersectionNonempty"></a>IntersectionNonempty</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Interops.RNA_Seq.BOW.HtseqCountMethod.IntersectionNonempty(SMRUCC.genomics.SequenceModel.SAM.AlignmentReads,SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.Feature[],SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.Feature[])</span><br></pre></td></tr></table></figure>
 <p>当Feature重叠在一起的时候，在内部的都计数，没有重叠的时候，可以计数</p>
 <table>
 <thead>
@@ -293,7 +293,7 @@ var _hmt = _hmt || [];
 </tr>
 </tbody>
 </table>
-<h4 id="IntersectionStrict"><a href="#IntersectionStrict" class="headerlink" title="IntersectionStrict"></a>IntersectionStrict</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Interops.RNA_Seq.BOW.HtseqCountMethod.IntersectionStrict(SMRUCC.genomics.SequenceModel.SAM.DocumentElements.AlignmentReads,SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.Feature[],SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.Feature[])</span><br></pre></td></tr></table></figure>
+<h4 id="IntersectionStrict"><a href="#IntersectionStrict" class="headerlink" title="IntersectionStrict"></a>IntersectionStrict</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Interops.RNA_Seq.BOW.HtseqCountMethod.IntersectionStrict(SMRUCC.genomics.SequenceModel.SAM.AlignmentReads,SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.Feature[],SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.Feature[])</span><br></pre></td></tr></table></figure>
 <p>Read只可以出现在Feature的内部</p>
 <table>
 <thead>
@@ -351,7 +351,7 @@ var _hmt = _hmt || [];
 </tr>
 </tbody>
 </table>
-<h4 id="Union"><a href="#Union" class="headerlink" title="Union"></a>Union</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Interops.RNA_Seq.BOW.HtseqCountMethod.Union(SMRUCC.genomics.SequenceModel.SAM.DocumentElements.AlignmentReads,SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.Feature[],SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.Feature[])</span><br></pre></td></tr></table></figure>
+<h4 id="Union"><a href="#Union" class="headerlink" title="Union"></a>Union</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Interops.RNA_Seq.BOW.HtseqCountMethod.Union(SMRUCC.genomics.SequenceModel.SAM.AlignmentReads,SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.Feature[],SMRUCC.genomics.Assembly.NCBI.GenBank.TabularFormat.Feature[])</span><br></pre></td></tr></table></figure>
 <p>只要有接触的都进行计数</p>
 <table>
 <thead>
@@ -376,7 +376,7 @@ var _hmt = _hmt || [];
             </div>
             <footer class="article-footer">
               <a href="/API/T-SMRUCC.genomics.Interops.RNA_Seq.BOW.HtseqCountMethod.html" class="article-date">
-  <time datetime="2016-07-07T09:43:19.800Z" itemprop="datePublished">2016-07-07</time>
+  <time datetime="2016-07-27T11:12:45.840Z" itemprop="datePublished">2016-07-27</time>
 </a>
               <a data-url="http://docs.gcmodeller.org/API/T-SMRUCC.genomics.Interops.RNA_Seq.BOW.HtseqCountMethod.html" data-id="ciqc7dwya024migv4lfzbya3m" class="article-share-link">Share</a>
               

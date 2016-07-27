@@ -1,0 +1,478 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>NcbiTaxonomyTree | GCModeller docs library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="NcbiTaxonomyTreenamespace: SMRUCC.genomics.Assembly.NCBI
+Builds the following dictionnary from NCBI taxonomy nodes.dmp and names.dmp files 
+ 1&amp;#123; Taxid : namedtuple(&apos;Node&apos;, [&apos;name&apos;, &apos;rank&apos;, &apos;parent">
+<meta property="og:type" content="website">
+<meta property="og:title" content="NcbiTaxonomyTree">
+<meta property="og:url" content="http://docs.gcmodeller.org/API/T-SMRUCC.genomics.Assembly.NCBI.NcbiTaxonomyTree.html">
+<meta property="og:site_name" content="GCModeller docs library">
+<meta property="og:description" content="NcbiTaxonomyTreenamespace: SMRUCC.genomics.Assembly.NCBI
+Builds the following dictionnary from NCBI taxonomy nodes.dmp and names.dmp files 
+ 1&amp;#123; Taxid : namedtuple(&apos;Node&apos;, [&apos;name&apos;, &apos;rank&apos;, &apos;parent">
+<meta property="og:updated_time" content="2016-07-27T11:12:34.892Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="NcbiTaxonomyTree">
+<meta name="twitter:description" content="NcbiTaxonomyTreenamespace: SMRUCC.genomics.Assembly.NCBI
+Builds the following dictionnary from NCBI taxonomy nodes.dmp and names.dmp files 
+ 1&amp;#123; Taxid : namedtuple(&apos;Node&apos;, [&apos;name&apos;, &apos;rank&apos;, &apos;parent">
+    
+      <link rel="alternative" href="/atom.xml" title="GCModeller docs library" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="http://gcmodeller.org/DNA.png">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/SMRUCC/">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://docs.gcmodeller.org"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-SMRUCC.genomics.Assembly.NCBI.NcbiTaxonomyTree.html">
+      <h1 class="article-title" itemprop="name">
+        NcbiTaxonomyTree
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-SMRUCC.genomics.Assembly.NCBI.NcbiTaxonomyTree.html" class="article-date">
+  <time datetime="2016-07-27T11:12:34.892Z" itemprop="datePublished">2016-07-27</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-SMRUCC.genomics.Assembly.NCBI.NcbiTaxonomyTree.html">
+      <h1 class="article-title" itemprop="name">
+        NcbiTaxonomyTree
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#NcbiTaxonomyTree"><span class="toc-number">1.</span> <span class="toc-text">NcbiTaxonomyTree</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#NCBI-taxonomy-tree"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">NCBI_taxonomy_tree</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#ctor"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">#ctor</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#flatten"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">flatten</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GetAscendantsWithRanksAndNames"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">GetAscendantsWithRanksAndNames</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GetDescendants"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">GetDescendants</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GetDescendantsWithRanksAndNames"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">GetDescendantsWithRanksAndNames</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GetLeaves"><span class="toc-number">1.0.1.6.</span> <span class="toc-text">GetLeaves</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GetLeavesWithRanksAndNames"><span class="toc-number">1.0.1.7.</span> <span class="toc-text">GetLeavesWithRanksAndNames</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GetParent"><span class="toc-number">1.0.1.8.</span> <span class="toc-text">GetParent</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GetTaxidsAtRank"><span class="toc-number">1.0.1.9.</span> <span class="toc-text">GetTaxidsAtRank</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#preorderTraversal"><span class="toc-number">1.0.1.10.</span> <span class="toc-text">preorderTraversal</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties"><span class="toc-number">1.0.2.</span> <span class="toc-text">Properties</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#stdranks"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">stdranks</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="NcbiTaxonomyTree"><a href="#NcbiTaxonomyTree" class="headerlink" title="NcbiTaxonomyTree"></a>NcbiTaxonomyTree</h1><p><em>namespace: <a href="N-SMRUCC.genomics.Assembly.NCBI.html">SMRUCC.genomics.Assembly.NCBI</a></em></p>
+<p>Builds the following dictionnary from NCBI taxonomy <code>nodes.dmp</code> and<br> <code>names.dmp</code> files </p>
+ <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123; Taxid : namedtuple('Node', ['name', 'rank', 'parent', 'children'] &#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><a href="https://www.biostars.org/p/13452/" target="_blank" rel="external">https://www.biostars.org/p/13452/</a></li>
+<li><a href="https://pythonhosted.org/ete2/tutorial/tutorial_ncbitaxonomy.html" target="_blank" rel="external">https://pythonhosted.org/ete2/tutorial/tutorial_ncbitaxonomy.html</a></li>
+</ul>
+<blockquote>
+<p> <a href="https://github.com/frallain/NCBI_taxonomy_tree" target="_blank" rel="external">https://github.com/frallain/NCBI_taxonomy_tree</a></p>
+<h4 id="NCBI-taxonomy-tree"><a href="#NCBI-taxonomy-tree" class="headerlink" title="NCBI_taxonomy_tree"></a>NCBI_taxonomy_tree</h4><p> The NCBI Taxonomy database Is a curated Set Of names And classifications For all Of the organisms that are<br> represented In GenBank (<a href="http://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/" target="_blank" rel="external">http://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/</a>). It can be accessed<br> via <a href="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi" target="_blank" rel="external">http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi</a> Or it can be downloaded from<br> ftp://ftp.ncbi.nih.gov/pub/taxonomy/ in the form of 2 files : <code>nodes.dmp</code> for the structure of the tree<br> And <code>names.dmp</code> for the names of the different nodes.</p>
+<p> Here I make available my In-memory mapping Of the NCBI taxonomy : a Python 2.7 Class that maps the <code>names.dmp</code><br> And <code>nodes.dmp</code> files In a Python dictionnary which can be used To retrieve lineages, descendants, etc …</p>
+</blockquote>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="ctor"><a href="#ctor" class="headerlink" title="#ctor"></a>#ctor</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Assembly.NCBI.NcbiTaxonomyTree.<span class="meta">#ctor(System.String,System.String)</span></span><br></pre></td></tr></table></figure>
+<p>Builds the following dictionnary from NCBI taxonomy <code>nodes.dmp</code> and<br> <code>names.dmp</code> files </p>
+ <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123; Taxid namedtuple('Node', ['name', 'rank', 'parent', 'children'] &#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><a href="https://www.biostars.org/p/13452/" target="_blank" rel="external">https://www.biostars.org/p/13452/</a></li>
+<li><a href="https://pythonhosted.org/ete2/tutorial/tutorial_ncbitaxonomy.html" target="_blank" rel="external">https://pythonhosted.org/ete2/tutorial/tutorial_ncbitaxonomy.html</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nodes_filename</td>
+<td>-</td>
+</tr>
+<tr>
+<td>names_filename</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="flatten"><a href="#flatten" class="headerlink" title="flatten"></a>flatten</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Assembly.NCBI.NcbiTaxonomyTree.flatten(System.Collections.IEnumerable)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; flatten([1 , [2, 2], [2, [3, 3, 3]]]) </span><br><span class="line">[1, 2, 2, 2, 3, 3, 3]</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>seq</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="GetAscendantsWithRanksAndNames"><a href="#GetAscendantsWithRanksAndNames" class="headerlink" title="GetAscendantsWithRanksAndNames"></a>GetAscendantsWithRanksAndNames</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Assembly.NCBI.NcbiTaxonomyTree.GetAscendantsWithRanksAndNames(System.Collections.Generic.IEnumerable&#123;System.Int32&#125;,System.Boolean)</span><br></pre></td></tr></table></figure>
+<p>使用这个函数得到物种的具体分类，返回来的数据是从小到大排列的</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>taxids</td>
+<td>-</td>
+</tr>
+<tr>
+<td>only_std_ranks</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="GetDescendants"><a href="#GetDescendants" class="headerlink" title="GetDescendants"></a>GetDescendants</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Assembly.NCBI.NcbiTaxonomyTree.GetDescendants(System.Int32[])</span><br></pre></td></tr></table></figure>
+<p>Returns all the descendant taxids from a branch/clade<br> of a list of taxids : all nodes (leaves or not) of the<br> tree are returned including the original one.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>taxids</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="GetDescendantsWithRanksAndNames"><a href="#GetDescendantsWithRanksAndNames" class="headerlink" title="GetDescendantsWithRanksAndNames"></a>GetDescendantsWithRanksAndNames</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Assembly.NCBI.NcbiTaxonomyTree.GetDescendantsWithRanksAndNames(System.Int32[])</span><br></pre></td></tr></table></figure>
+<p>Returns the ordered list of the descendants with their respective ranks and names for a LIST of taxids.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>taxids</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="GetLeaves"><a href="#GetLeaves" class="headerlink" title="GetLeaves"></a>GetLeaves</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Assembly.NCBI.NcbiTaxonomyTree.GetLeaves(System.Int32)</span><br></pre></td></tr></table></figure>
+<p>Returns all the descendant taxids that are leaves of the tree from<br> a branch/clade determined by ONE taxid.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>taxid</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="GetLeavesWithRanksAndNames"><a href="#GetLeavesWithRanksAndNames" class="headerlink" title="GetLeavesWithRanksAndNames"></a>GetLeavesWithRanksAndNames</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Assembly.NCBI.NcbiTaxonomyTree.GetLeavesWithRanksAndNames(System.Int32)</span><br></pre></td></tr></table></figure>
+<p>Returns all the descendant taxids that are leaves of the tree from<br> a branch/clade determined by ONE taxid.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>taxid</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="GetParent"><a href="#GetParent" class="headerlink" title="GetParent"></a>GetParent</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Assembly.NCBI.NcbiTaxonomyTree.GetParent(System.Int32[])</span><br></pre></td></tr></table></figure>
+<p>Returns parent id</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>taxids</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="GetTaxidsAtRank"><a href="#GetTaxidsAtRank" class="headerlink" title="GetTaxidsAtRank"></a>GetTaxidsAtRank</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Assembly.NCBI.NcbiTaxonomyTree.GetTaxidsAtRank(System.String)</span><br></pre></td></tr></table></figure>
+<p>Returns all the taxids that are at a specified rank: </p>
+<ul>
+<li>standard ranks:<br><code>species, genus, family, order, class, phylum, superkingdom.</code></li>
+<li>non-standard ranks:<br><code>forma, varietas, subspecies, species group, subtribe, tribe, subclass, kingdom.</code></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rank</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="preorderTraversal"><a href="#preorderTraversal" class="headerlink" title="preorderTraversal"></a>preorderTraversal</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.genomics.Assembly.NCBI.NcbiTaxonomyTree.preorderTraversal(System.Int32,System.Boolean)</span><br></pre></td></tr></table></figure>
+<p>Prefix (Preorder) visit of the tree: <a href="https://en.wikipedia.org/wiki/Tree_traversal" target="_blank" rel="external">https://en.wikipedia.org/wiki/Tree_traversal</a></p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>taxid</td>
+<td>-</td>
+</tr>
+<tr>
+<td>only_leaves</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="stdranks"><a href="#stdranks" class="headerlink" title="stdranks"></a>stdranks</h4><ul>
+<li>species<ul>
+<li>genus</li>
+<li>family</li>
+<li>order</li>
+<li>class</li>
+<li>phylum</li>
+<li>superkingdom</li>
+</ul>
+</li>
+</ul>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-SMRUCC.genomics.Assembly.NCBI.NcbiTaxonomyTree.html" class="article-date">
+  <time datetime="2016-07-27T11:12:34.892Z" itemprop="datePublished">2016-07-27</time>
+</a>
+              <a data-url="http://docs.gcmodeller.org/API/T-SMRUCC.genomics.Assembly.NCBI.NcbiTaxonomyTree.html" data-id="cir4v2co300745wv4b3m5l1ug" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 GCModeller docs library<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/SMRUCC/" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+
